@@ -1,0 +1,284 @@
+-- ARCHIVO: amb_map_l12_stancia.script
+
+emitters = {
+-- Chernobyl NPP (South)
+    {
+        x = 922.650, y = 1.385, z = -310.319,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_metal", chance = 1.0, interval = 0.2, sound_list_size = 20, last_time = 0, base_volume = 2.5, min_dist = 2.0, max_dist = 2.5},
+        }
+    },
+    -- Chernobyl NPP (South)
+    {
+        x = 920.692, y = -0.099, z = -218.293,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_metal", chance = 1.0, interval = 0.2, sound_list_size = 20, last_time = 0, base_volume = 2.5, min_dist = 2.0, max_dist = 2.5},
+        }
+    },
+    -- Chernobyl NPP (South)
+    {
+        x = 910.269, y = -0.007, z = -209.431,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_metal", chance = 1.0, interval = 0.2, sound_list_size = 20, last_time = 0, base_volume = 2.5, min_dist = 2.0, max_dist = 2.5},
+        }
+    },
+    -- Chernobyl NPP (South)
+    {
+        x = 942.903, y = -0.099, z = -207.877,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_metal", chance = 1.0, interval = 0.2, sound_list_size = 20, last_time = 0, base_volume = 2.5, min_dist = 2.0, max_dist = 2.5},
+        }
+    },
+    -- Chernobyl NPP (South)
+    {
+        x = 898.135, y = -0.103, z = -123.953,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_metal", chance = 1.0, interval = 0.2, sound_list_size = 20, last_time = 0, base_volume = 2.5, min_dist = 2.0, max_dist = 2.5},
+        }
+    },
+    -- Chernobyl NPP (South)
+    {
+        x = 896.347, y = 2.071, z = -103.275,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_metal", chance = 1.0, interval = 0.2, sound_list_size = 20, last_time = 0, base_volume = 2.5, min_dist = 2.0, max_dist = 2.5},
+        }
+    },
+    -- Chernobyl NPP (South)
+    {
+        x = 905.548, y = 1.859, z = -71.216,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_metal", chance = 1.0, interval = 0.2, sound_list_size = 20, last_time = 0, base_volume = 2.5, min_dist = 2.0, max_dist = 2.5},
+        }
+    },
+    -- Chernobyl NPP (South)
+    {
+        x = 913.928, y = 2.853, z = 4.185,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_metal", chance = 1.0, interval = 0.2, sound_list_size = 20, last_time = 0, base_volume = 2.5, min_dist = 2.0, max_dist = 2.5},
+        }
+    },
+    -- Chernobyl NPP (South)
+    {
+        x = 919.278, y = 3.310, z = 11.073,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_metal", chance = 1.0, interval = 0.2, sound_list_size = 20, last_time = 0, base_volume = 2.5, min_dist = 2.0, max_dist = 2.5},
+        }
+    },
+    -- Chernobyl NPP (South)
+    {
+        x = 930.980, y = 2.853, z = 2.167,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_metal", chance = 1.0, interval = 0.2, sound_list_size = 20, last_time = 0, base_volume = 2.5, min_dist = 2.0, max_dist = 2.5},
+        }
+    },
+    -- Chernobyl NPP (South)
+    {
+        x = 1014.198, y = 1.236, z = 35.094,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_metal", chance = 1.0, interval = 0.2, sound_list_size = 20, last_time = 0, base_volume = 2.5, min_dist = 2.0, max_dist = 2.5},
+        }
+    },
+    -- Chernobyl NPP (South)
+    {
+        x = 1013.737, y = 1.401, z = 42.198,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_metal", chance = 1.0, interval = 0.2, sound_list_size = 20, last_time = 0, base_volume = 2.5, min_dist = 2.0, max_dist = 2.5},
+        }
+    },
+    -- Chernobyl NPP (South)
+    {
+        x = 1008.472, y = 1.539, z = 47.142,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_metal", chance = 1.0, interval = 0.2, sound_list_size = 20, last_time = 0, base_volume = 2.5, min_dist = 2.0, max_dist = 2.5},
+        }
+    },
+    -- Chernobyl NPP (South)
+    {
+        x = 882.408, y = 2.047, z = 28.741,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_metal", chance = 1.0, interval = 0.2, sound_list_size = 20, last_time = 0, base_volume = 2.5, min_dist = 2.0, max_dist = 2.5},
+        }
+    },
+-- Chernobyl NPP (South) (METAL LOOP - 190.0m / 10.5 Vol)
+    {
+        x = 859.128, y = 2.900, z = -56.079,
+        max_hearing_dist = 190.0,
+        sound_list = {
+            {name="raindrops_metal_loop", chance = 1.0, interval = 46, sound_list_size = 1, last_time = 0, base_volume = 8.0, min_dist = 2.0, max_dist = 2.5},
+        }
+    },
+    -- Chernobyl NPP (South) (METAL LOOP - 190.0m / 10.5 Vol)
+    {
+        x = 859.433, y = 2.903, z = -69.836,
+        max_hearing_dist = 190.0,
+        sound_list = {
+            {name="raindrops_metal_loop", chance = 1.0, interval = 46, sound_list_size = 1, last_time = 0, base_volume = 8.0, min_dist = 2.0, max_dist = 2.5},
+        }
+    },
+    -- Chernobyl NPP (South) (METAL standard)
+    {
+        x = 846.735, y = -0.008, z = -62.456,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_metal", chance = 1.0, interval = 0.2, sound_list_size = 20, last_time = 0, base_volume = 2.5, min_dist = 2.0, max_dist = 2.5},
+        }
+    },
+    -- Chernobyl NPP (South) (METAL standard)
+    {
+        x = 839.745, y = 2.912, z = -58.387,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_metal_loop", chance = 1.0, interval = 46, sound_list_size = 1, last_time = 0, base_volume = 8.0, min_dist = 2.0, max_dist = 2.5},
+        }
+    },
+    -- Chernobyl NPP (South) (METAL standard)
+    {
+        x = 829.253, y = 1.885, z = -45.871,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_metal", chance = 1.0, interval = 0.2, sound_list_size = 20, last_time = 0, base_volume = 2.5, min_dist = 2.0, max_dist = 2.5},
+        }
+    },
+    -- Chernobyl NPP (South) (METAL standard)
+    {
+        x = 830.808, y = 1.944, z = -19.976,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_metal", chance = 1.0, interval = 0.2, sound_list_size = 20, last_time = 0, base_volume = 2.5, min_dist = 2.0, max_dist = 2.5},
+        }
+    },
+    -- Chernobyl NPP (South) (METAL standard)
+    {
+        x = 829.044, y = 2.334, z = -11.138,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_metal", chance = 1.0, interval = 0.2, sound_list_size = 20, last_time = 0, base_volume = 2.5, min_dist = 2.0, max_dist = 2.5},
+        }
+    },
+    -- Chernobyl NPP (South) (METAL standard)
+    {
+        x = 813.940, y = -0.008, z = -35.643,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_metal", chance = 1.0, interval = 0.2, sound_list_size = 20, last_time = 0, base_volume = 2.5, min_dist = 2.0, max_dist = 2.5},
+        }
+    },
+    -- Chernobyl NPP (South) (METAL standard)
+    {
+        x = 764.016, y = 0.483, z = -41.911,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_metal", chance = 1.0, interval = 0.2, sound_list_size = 20, last_time = 0, base_volume = 2.5, min_dist = 2.0, max_dist = 2.5},
+        }
+    },
+    -- Chernobyl NPP (South) (METAL standard)
+    {
+        x = 845.544, y = 3.298, z = -106.940,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_metal", chance = 1.0, interval = 0.2, sound_list_size = 20, last_time = 0, base_volume = 2.5, min_dist = 2.0, max_dist = 2.5},
+        }
+    },
+    -- Chernobyl NPP (South) (METAL standard)
+    {
+        x = 847.969, y = 1.985, z = -115.497,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_metal", chance = 1.0, interval = 0.2, sound_list_size = 20, last_time = 0, base_volume = 2.5, min_dist = 2.0, max_dist = 2.5},
+        }
+    },
+    -- Chernobyl NPP (South) (METAL standard)
+    {
+        x = 748.148, y = 1.065, z = -204.575,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_metal", chance = 1.0, interval = 0.2, sound_list_size = 20, last_time = 0, base_volume = 2.5, min_dist = 2.0, max_dist = 2.5},
+        }
+    },
+    -- Chernobyl NPP (South) (METAL standard)
+    {
+        x = 295.503, y = 2.940, z = -223.639,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_metal", chance = 1.0, interval = 0.2, sound_list_size = 20, last_time = 0, base_volume = 2.5, min_dist = 2.0, max_dist = 2.5},
+        }
+    },
+    -- Chernobyl NPP (South) (METAL standard)
+    {
+        x = 273.941, y = 3.015, z = -40.032,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_metal", chance = 1.0, interval = 0.2, sound_list_size = 20, last_time = 0, base_volume = 2.5, min_dist = 2.0, max_dist = 2.5},
+        }
+    },
+    -- Chernobyl NPP (South) (METAL standard)
+    {
+        x = 217.165, y = 2.817, z = -58.666,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_metal", chance = 1.0, interval = 0.2, sound_list_size = 20, last_time = 0, base_volume = 2.5, min_dist = 2.0, max_dist = 2.5},
+        }
+    },
+    -- Chernobyl NPP (South) (METAL standard)
+    {
+        x = 376.265, y = 1.345, z = -75.946,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_metal", chance = 1.0, interval = 0.2, sound_list_size = 20, last_time = 0, base_volume = 2.5, min_dist = 2.0, max_dist = 2.5},
+        }
+    },
+    -- Chernobyl NPP (South) (METAL standard)
+    {
+        x = 404.127, y = -0.118, z = -72.453,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_metal", chance = 1.0, interval = 0.2, sound_list_size = 20, last_time = 0, base_volume = 2.5, min_dist = 2.0, max_dist = 2.5},
+        }
+    },
+    -- Chernobyl NPP (South) (METAL standard)
+    {
+        x = 411.604, y = -0.104, z = -44.934,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_metal", chance = 1.0, interval = 0.2, sound_list_size = 20, last_time = 0, base_volume = 2.5, min_dist = 2.0, max_dist = 2.5},
+        }
+    },
+    -- Chernobyl NPP (South) (METAL standard)
+    {
+        x = 421.992, y = -0.024, z = -20.185,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_metal", chance = 1.0, interval = 0.2, sound_list_size = 20, last_time = 0, base_volume = 2.5, min_dist = 2.0, max_dist = 2.5},
+        }
+    },
+    -- Chernobyl NPP (South) (METAL standard)
+    {
+        x = 379.544, y = -0.002, z = -34.098,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_metal", chance = 1.0, interval = 0.2, sound_list_size = 20, last_time = 0, base_volume = 2.5, min_dist = 2.0, max_dist = 2.5},
+        }
+    },
+-- Chernobyl NPP (South)
+    {
+        x = 671.937, y = -0.025, z = -30.398,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_metal", chance = 1.0, interval = 0.2, sound_list_size = 20, last_time = 0, base_volume = 2.5, min_dist = 2.0, max_dist = 2.5},
+        }
+    },
+}

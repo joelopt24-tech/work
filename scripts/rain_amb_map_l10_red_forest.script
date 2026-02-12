@@ -1,0 +1,198 @@
+-- ARCHIVO: amb_map_l10_red_forest.script
+
+emitters = { 
+
+    -- Red Forest, south-east of the bridge
+    {
+        x = -16.378, y = 2.618, z = -385.723,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_metal", chance = 1.0, interval = 0.2, sound_list_size = 20, last_time = 0, base_volume = 2.5, min_dist = 2.0, max_dist = 2.5},
+        }
+    },
+    -- Red Forest, south of the Superconductor anomaly
+    {
+        x = -3.511, y = 1.352, z = -332.650,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_metal", chance = 1.0, interval = 0.2, sound_list_size = 20, last_time = 0, base_volume = 2.5, min_dist = 2.0, max_dist = 2.5},
+        }
+    },
+    -- Red Forest, south of the Superconductor anomaly
+    {
+        x = -9.467, y = 2.793, z = -329.054,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_metal", chance = 1.0, interval = 0.2, sound_list_size = 20, last_time = 0, base_volume = 2.5, min_dist = 2.0, max_dist = 2.5},
+        }
+    },
+    -- Red Forest, south of the bridge
+    {
+        x = -111.603, y = 3.248, z = -291.700,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_metal", chance = 1.0, interval = 0.2, sound_list_size = 20, last_time = 0, base_volume = 2.5, min_dist = 2.0, max_dist = 2.5},
+        }
+    },
+    -- Red Forest, east of the bridge
+    {
+        x = -102.617, y = 1.640, z = -270.124,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_metal", chance = 1.0, interval = 0.2, sound_list_size = 20, last_time = 0, base_volume = 2.5, min_dist = 2.0, max_dist = 2.5},
+        }
+    },
+    -- Red Forest, north-east of the bridge
+    {
+        x = -109.329, y = -0.070, z = -262.435,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_metal", chance = 1.0, interval = 0.2, sound_list_size = 20, last_time = 0, base_volume = 2.5, min_dist = 2.0, max_dist = 2.5},
+        }
+    },
+    -- Red Forest, north-east of the bridge
+    {
+        x = -102.803, y = 0.028, z = -254.214,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_metal", chance = 1.0, interval = 0.2, sound_list_size = 20, last_time = 0, base_volume = 2.5, min_dist = 2.0, max_dist = 2.5},
+        }
+    },
+    -- Red Forest, north-east of the bridge
+    {
+        x = -94.851, y = -0.023, z = -237.232,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_metal", chance = 1.0, interval = 0.2, sound_list_size = 20, last_time = 0, base_volume = 2.5, min_dist = 2.0, max_dist = 2.5},
+        }
+    },
+    -- Red Forest, north of the bridge
+    {
+        x = -108.235, y = -0.368, z = -243.609,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_metal", chance = 1.0, interval = 0.2, sound_list_size = 20, last_time = 0, base_volume = 2.5, min_dist = 2.0, max_dist = 2.5},
+        }
+    },
+    -- Red Forest, north of the bridge
+    {
+        x = -117.421, y = 10.697, z = -256.754,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_metal", chance = 1.0, interval = 0.2, sound_list_size = 20, last_time = 0, base_volume = 2.5, min_dist = 2.0, max_dist = 2.5},
+        }
+    },
+    -- Red Forest, west of the bridge
+    {
+        x = -136.212, y = -4.446, z = -272.493,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_metal", chance = 1.0, interval = 0.2, sound_list_size = 20, last_time = 0, base_volume = 2.5, min_dist = 2.0, max_dist = 2.5},
+        }
+    },
+    -- Red Forest, south of the bridge
+    {
+        x = -113.314, y = 0.208, z = -293.456,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_metal", chance = 1.0, interval = 0.2, sound_list_size = 20, last_time = 0, base_volume = 2.5, min_dist = 2.0, max_dist = 2.5},
+        }
+    },
+    -- Red Forest, west of the bridge
+    {
+        x = -169.672, y = 1.134, z = -274.203,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_metal", chance = 1.0, interval = 0.2, sound_list_size = 20, last_time = 0, base_volume = 2.5, min_dist = 2.0, max_dist = 2.5},
+        }
+    },
+    -- Red Forest, east of the road to Jupiter
+    {
+        x = 14.012, y = 2.767, z = -42.017,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_metal", chance = 1.0, interval = 0.2, sound_list_size = 20, last_time = 0, base_volume = 2.5, min_dist = 2.0, max_dist = 2.5},
+        }
+    },
+    -- Red Forest, east of the road to Jupiter
+    {
+        x = 9.790, y = 0.498, z = -10.483,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_metal", chance = 1.0, interval = 0.2, sound_list_size = 20, last_time = 0, base_volume = 2.5, min_dist = 2.0, max_dist = 2.5},
+        }
+    },
+    -- Red Forest, north-east of the road to Jupiter
+    {
+        x = 12.689, y = -0.001, z = 19.008,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_metal", chance = 1.0, interval = 0.2, sound_list_size = 20, last_time = 0, base_volume = 2.5, min_dist = 2.0, max_dist = 2.5},
+        }
+    },
+    -- Red Forest, north-east of the road to Jupiter
+    {
+        x = 19.211, y = 3.590, z = 21.561,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_metal", chance = 1.0, interval = 0.2, sound_list_size = 20, last_time = 0, base_volume = 2.5, min_dist = 2.0, max_dist = 2.5},
+        }
+    },
+    -- Red Forest, north-east of the road to Jupiter
+    {
+        x = 15.535, y = -0.004, z = 32.412,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_metal", chance = 1.0, interval = 0.2, sound_list_size = 20, last_time = 0, base_volume = 2.5, min_dist = 2.0, max_dist = 2.5},
+        }
+    },
+    -- Red Forest, north-east of the road to Jupiter
+    {
+        x = 26.964, y = 17.338, z = 18.423,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_metal", chance = 1.0, interval = 0.2, sound_list_size = 20, last_time = 0, base_volume = 2.5, min_dist = 2.0, max_dist = 2.5},
+        }
+    },
+-- Red Forest, north of the road to Jupiter
+    {
+        x = -60.190, y = 1.634, z = 33.616,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_metal", chance = 1.0, interval = 0.2, sound_list_size = 20, last_time = 0, base_volume = 2.5, min_dist = 2.0, max_dist = 2.5},
+        }
+    },
+    -- Red Forest, north of the road to Jupiter
+    {
+        x = -67.961, y = 2.148, z = 43.277,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_metal", chance = 1.0, interval = 0.2, sound_list_size = 20, last_time = 0, base_volume = 2.5, min_dist = 2.0, max_dist = 2.5},
+        }
+    },
+    -- Red Forest, north of the road to Jupiter
+    {
+        x = -66.800, y = 1.057, z = 64.680,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_metal", chance = 1.0, interval = 0.2, sound_list_size = 20, last_time = 0, base_volume = 2.5, min_dist = 2.0, max_dist = 2.5},
+        }
+    },
+    -- Red Forest, north of the road to Jupiter
+    {
+        x = -63.070, y = -0.001, z = 96.524,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_metal", chance = 1.0, interval = 0.2, sound_list_size = 20, last_time = 0, base_volume = 2.5, min_dist = 2.0, max_dist = 2.5},
+        }
+    },
+    -- Red Forest, north of the road to Jupiter
+    {
+        x = -45.850, y = -0.001, z = 108.244,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_metal", chance = 1.0, interval = 0.2, sound_list_size = 20, last_time = 0, base_volume = 2.5, min_dist = 2.0, max_dist = 2.5},
+        }
+    },
+
+}

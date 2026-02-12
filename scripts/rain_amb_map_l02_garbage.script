@@ -1,0 +1,310 @@
+-- =================================================================================
+-- ARCHIVO: rain_amb_map_l02_garbage.script
+-- DESCRIPCIÓN: Sonidos específicos de lluvia para Garbage (Vertedero)
+-- =================================================================================
+
+emitters = {
+    -- 1. South of the road to Cordon (Metal)
+    {
+        x = 31.395, y = 3.450, z = -321.819,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_metal", chance = 1.0, interval = 0.2, sound_list_size = 20, last_time = 0, base_volume = 2.5, min_dist = 2.0, max_dist = 2.5},
+        }
+    },
+
+    -- 2. By the road to Cordon (Metal)
+    {
+        x = 30.507, y = 2.596, z = -308.033,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_metal", chance = 1.0, interval = 0.2, sound_list_size = 20, last_time = 0, base_volume = 2.5, min_dist = 2.0, max_dist = 2.5},
+        }
+    },
+
+    -- 3. Near the road to Cordon (Metal)
+    {
+        x = 38.000, y = 1.472, z = -307.395,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_metal", chance = 1.0, interval = 0.2, sound_list_size = 20, last_time = 0, base_volume = 2.5, min_dist = 2.0, max_dist = 2.5},
+        }
+    },
+
+    -- 4. North of the road to Cordon (Metal)
+    {
+        x = 36.212, y = 0.881, z = -292.435,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_metal", chance = 1.0, interval = 0.2, sound_list_size = 20, last_time = 0, base_volume = 2.5, min_dist = 2.0, max_dist = 2.5},
+        }
+    },
+
+    -- 5. North-east of the road to Cordon (Metal)
+    {
+        x = 46.252, y = 1.538, z = -288.847,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_metal", chance = 1.0, interval = 0.2, sound_list_size = 20, last_time = 0, base_volume = 2.5, min_dist = 2.0, max_dist = 2.5},
+        }
+    },
+
+    -- 6. East of the vehicle graveyard (Metal)
+    {
+        x = -38.603, y = 0.568, z = -216.746,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_metal", chance = 1.0, interval = 0.2, sound_list_size = 20, last_time = 0, base_volume = 2.5, min_dist = 2.0, max_dist = 2.5},
+        }
+    },
+
+    -- 7. East of the vehicle graveyard (Metal)
+    {
+        x = -42.976, y = 3.266, z = -205.320,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_metal", chance = 1.0, interval = 0.2, sound_list_size = 20, last_time = 0, base_volume = 2.5, min_dist = 2.0, max_dist = 2.5},
+        }
+    },
+
+    -- 8. North of the vehicle graveyard (Metal)
+    {
+        x = -83.840, y = 0.321, z = -200.159,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_metal", chance = 1.0, interval = 0.2, sound_list_size = 20, last_time = 0, base_volume = 2.5, min_dist = 2.0, max_dist = 2.5},
+        }
+    },
+
+    -- 9. West of the vehicle graveyard (Metal)
+    {
+        x = -90.245, y = -0.641, z = -209.982,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_metal", chance = 1.0, interval = 0.2, sound_list_size = 20, last_time = 0, base_volume = 2.5, min_dist = 2.0, max_dist = 2.5},
+        }
+    },
+
+    -- 10. South-west of the vehicle graveyard (Metal)
+    {
+        x = -86.820, y = -0.849, z = -220.527,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_metal", chance = 1.0, interval = 0.2, sound_list_size = 20, last_time = 0, base_volume = 2.5, min_dist = 2.0, max_dist = 2.5},
+        }
+    },
+
+    -- 11. West of the vehicle graveyard (Metal)
+    {
+        x = -107.048, y = -0.739, z = -220.567,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_metal", chance = 1.0, interval = 0.2, sound_list_size = 20, last_time = 0, base_volume = 2.5, min_dist = 2.0, max_dist = 2.5},
+        }
+    },
+
+    -- 12. North-west of the vehicle graveyard (Metal)
+    {
+        x = -108.006, y = 0.558, z = -190.464,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_metal", chance = 1.0, interval = 0.2, sound_list_size = 20, last_time = 0, base_volume = 2.5, min_dist = 2.0, max_dist = 2.5},
+        }
+    },
+
+    -- 13. South of the Synapse anomaly (Metal)
+    {
+        x = -265.864, y = 1.643, z = -19.286,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_metal", chance = 1.0, interval = 0.2, sound_list_size = 20, last_time = 0, base_volume = 2.5, min_dist = 2.0, max_dist = 2.5},
+        }
+    },
+
+    -- 14. West of the Depot (Metal)
+    {
+        x = -159.125, y = 1.170, z = -6.012,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_metal", chance = 1.0, interval = 0.2, sound_list_size = 20, last_time = 0, base_volume = 2.5, min_dist = 2.0, max_dist = 2.5},
+        }
+    },
+
+    -- 15. By the Depot (Metal)
+    {
+        x = -115.136, y = 1.973, z = 3.564,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_metal", chance = 1.0, interval = 0.2, sound_list_size = 20, last_time = 0, base_volume = 2.5, min_dist = 2.0, max_dist = 2.5},
+        }
+    },
+
+    -- 16. South of the Depot (Metal)
+    {
+        x = -109.582, y = 1.704, z = -19.380,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_metal", chance = 1.0, interval = 0.2, sound_list_size = 20, last_time = 0, base_volume = 2.5, min_dist = 2.0, max_dist = 2.5},
+        }
+    },
+
+    -- 17. South of the Depot (Metal)
+    {
+        x = -114.131, y = 2.056, z = -19.637,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_metal", chance = 1.0, interval = 0.2, sound_list_size = 20, last_time = 0, base_volume = 2.5, min_dist = 2.0, max_dist = 2.5},
+        }
+    },
+
+    -- 18. East of the Depot (Metal)
+    {
+        x = -76.934, y = 4.788, z = 8.379,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_metal", chance = 1.0, interval = 0.2, sound_list_size = 20, last_time = 0, base_volume = 2.5, min_dist = 2.0, max_dist = 2.5},
+        }
+    },
+-- 19. East of the Depot (Wood)
+    {
+        x = -61.440, y = 1.216, z = 13.358,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops", chance = 1.0, interval = 0.4, sound_list_size = 8, last_time = 0, base_volume = 2.0, min_dist = 2.0, max_dist = 2.5},
+        }
+    },
+
+    -- 20. East of the Depot (Wood)
+    {
+        x = -64.427, y = 0.962, z = 2.824,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops", chance = 1.0, interval = 0.4, sound_list_size = 8, last_time = 0, base_volume = 2.0, min_dist = 2.0, max_dist = 2.5},
+        }
+    },
+
+    -- 21. North of the swamp (Metal)
+    {
+        x = 73.625, y = 5.245, z = -20.808,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_metal", chance = 1.0, interval = 0.2, sound_list_size = 20, last_time = 0, base_volume = 2.5, min_dist = 2.0, max_dist = 2.5},
+        }
+    },
+
+    -- 22. North of the swamp (Metal)
+    {
+        x = 84.238, y = 4.103, z = -6.644,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_metal", chance = 1.0, interval = 0.2, sound_list_size = 20, last_time = 0, base_volume = 2.5, min_dist = 2.0, max_dist = 2.5},
+        }
+    },
+
+    -- 23. West of the swamp (Metal)
+    {
+        x = 61.338, y = 3.244, z = -150.663,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_metal", chance = 1.0, interval = 0.2, sound_list_size = 20, last_time = 0, base_volume = 2.5, min_dist = 2.0, max_dist = 2.5},
+        }
+    },
+
+    -- 24. West of the swamp (Metal)
+    {
+        x = 69.540, y = -0.922, z = -137.967,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_metal", chance = 1.0, interval = 0.2, sound_list_size = 20, last_time = 0, base_volume = 2.5, min_dist = 2.0, max_dist = 2.5},
+        }
+    },
+
+    -- 25. North of the swamp (Metal)
+    {
+        x = 138.278, y = 4.532, z = -54.354,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_metal", chance = 1.0, interval = 0.2, sound_list_size = 20, last_time = 0, base_volume = 2.5, min_dist = 2.0, max_dist = 2.5},
+        }
+    },
+
+    -- 26. South of the Rostok checkpoint (Metal)
+    {
+        x = 44.855, y = 1.958, z = 168.670,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_metal", chance = 1.0, interval = 0.2, sound_list_size = 20, last_time = 0, base_volume = 2.5, min_dist = 2.0, max_dist = 2.5},
+        }
+    },
+
+    -- 27. South-east of the Rostok checkpoint (Metal)
+    {
+        x = 103.142, y = -1.284, z = 158.099,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_metal", chance = 1.0, interval = 0.2, sound_list_size = 20, last_time = 0, base_volume = 2.5, min_dist = 2.0, max_dist = 2.5},
+        }
+    },
+
+    -- 28. South-east of the Rostok checkpoint (Wood)
+    {
+        x = 99.711, y = 3.795, z = 172.853,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops", chance = 1.0, interval = 0.4, sound_list_size = 8, last_time = 0, base_volume = 2.0, min_dist = 2.0, max_dist = 2.5},
+        }
+    },
+-- 29. South-east of the Rostok checkpoint (Metal)
+    {
+        x = 99.395, y = 12.032, z = 174.909,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_metal", chance = 1.0, interval = 0.2, sound_list_size = 20, last_time = 0, base_volume = 2.5, min_dist = 2.0, max_dist = 2.5},
+        }
+    },
+
+    -- 30. North of the Rostok checkpoint (Metal)
+    {
+        x = 43.589, y = 4.946, z = 240.140,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_metal", chance = 1.0, interval = 0.2, sound_list_size = 20, last_time = 0, base_volume = 2.5, min_dist = 2.0, max_dist = 2.5},
+        }
+    },
+
+    -- 31. East of the Rostok checkpoint (Metal)
+    {
+        x = 59.366, y = 2.656, z = 216.293,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_metal", chance = 1.0, interval = 0.2, sound_list_size = 20, last_time = 0, base_volume = 2.5, min_dist = 2.0, max_dist = 2.5},
+        }
+    },
+
+    -- 32. North-west of the Rostok checkpoint (Metal)
+    {
+        x = -4.598, y = 2.576, z = 256.946,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_metal", chance = 1.0, interval = 0.2, sound_list_size = 20, last_time = 0, base_volume = 2.5, min_dist = 2.0, max_dist = 2.5},
+        }
+    },
+
+    -- 33. North-west of the Rostok checkpoint (Metal)
+    {
+        x = -15.988, y = 1.731, z = 269.912,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_metal", chance = 1.0, interval = 0.2, sound_list_size = 20, last_time = 0, base_volume = 2.5, min_dist = 2.0, max_dist = 2.5},
+        }
+    },
+
+    -- 34. East of the Synapse anomaly (Metal)
+    {
+        x = -179.594, y = 2.149, z = 111.566,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_metal", chance = 1.0, interval = 0.2, sound_list_size = 20, last_time = 0, base_volume = 2.5, min_dist = 2.0, max_dist = 2.5},
+        }
+    }
+}

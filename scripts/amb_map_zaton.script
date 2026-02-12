@@ -1,0 +1,630 @@
+-- ARCHIVO: amb_map_zaton.script
+
+emitters = {
+    -- 1. East of the waste processing plant (Elevated)
+    {
+        x = 407.912, y = 35.310, z = -394.792,
+        max_hearing_dist = 80.0,
+        sound_list = {
+            {name="metal_structure_small_strong", chance = 0.9, interval = 25, sound_list_size = 20, last_time = 0, base_volume = 1.5, min_dist = 5.0, max_dist = 13.0},
+            {name="metal_structure_small_weak", chance = 0.9, interval = 12, sound_list_size = 32, last_time = 0, base_volume = 1.3, min_dist = 5.0, max_dist = 12.0},
+
+        }
+    },
+    -- 2. East of the waste processing plant (Elevated)
+    {
+        x = 386.252, y = 33.406, z = -429.201,
+        max_hearing_dist = 80.0,
+        sound_list = {
+            {name="metal_structure_small_strong", chance = 0.9, interval = 25, sound_list_size = 20, last_time = 0, base_volume = 1.5, min_dist = 5.0, max_dist = 13.0},
+            {name="metal_structure_small_weak", chance = 0.9, interval = 12, sound_list_size = 32, last_time = 0, base_volume = 1.3, min_dist = 5.0, max_dist = 12.0},
+
+        }
+    },
+    -- 3. North of the waste processing plant (Elevated)
+    {
+        x = 338.335, y = 33.277, z = -365.768,
+        max_hearing_dist = 80.0,
+        sound_list = {
+            {name="metal_structure_small_strong", chance = 0.9, interval = 25, sound_list_size = 20, last_time = 0, base_volume = 1.5, min_dist = 5.0, max_dist = 13.0},
+            {name="metal_structure_small_weak", chance = 0.9, interval = 12, sound_list_size = 32, last_time = 0, base_volume = 1.3, min_dist = 5.0, max_dist = 12.0},
+
+        }
+    },
+    -- 4. South-west of the waste processing plant (Elevated)
+    {
+        x = 288.723, y = 33.241, z = -433.021,
+        max_hearing_dist = 80.0,
+        sound_list = {
+            {name="metal_structure_small_strong", chance = 0.9, interval = 25, sound_list_size = 20, last_time = 0, base_volume = 1.5, min_dist = 5.0, max_dist = 13.0},
+            {name="metal_structure_small_weak", chance = 0.9, interval = 12, sound_list_size = 32, last_time = 0, base_volume = 1.3, min_dist = 5.0, max_dist = 12.0},
+
+        }
+    },
+    -- 5. South of the waste processing plant (Roof/High)
+    {
+        x = 322.070, y = 42.935, z = -422.202,
+        max_hearing_dist = 90.0,
+        sound_list = {
+            {name="metal_structure_small_strong", chance = 0.9, interval = 25, sound_list_size = 20, last_time = 0, base_volume = 1.5, min_dist = 5.0, max_dist = 13.0},
+            {name="metal_structure_small_weak", chance = 0.9, interval = 12, sound_list_size = 32, last_time = 0, base_volume = 1.3, min_dist = 5.0, max_dist = 12.0},
+            {name="hangar_details", chance = 0.9, interval = 10, sound_list_size = 12, last_time = 0, base_volume = 3.0, min_dist = 5.0, max_dist = 10.0},
+            {name="hangar_metal_details", chance = 0.9, interval = 10, sound_list_size = 10, last_time = 0, base_volume = 3.0, min_dist = 5.0, max_dist = 10.0},
+            {name="hangar_wind_gust", chance = 0.9, interval = 12, sound_list_size = 22, last_time = 0, base_volume = 3.0, min_dist = 5.0, max_dist = 10.0},
+        }
+    },
+    -- 6. North of the waste processing plant (Roof/High)
+    {
+        x = 324.498, y = 41.746, z = -398.779,
+        max_hearing_dist = 90.0,
+        sound_list = {
+                {name="hangar_details", chance = 0.9, interval = 10, sound_list_size = 12, last_time = 0, base_volume = 3.0, min_dist = 5.0, max_dist = 10.0},
+                {name="hangar_metal_details", chance = 0.9, interval = 10, sound_list_size = 10, last_time = 0, base_volume = 3.0, min_dist = 5.0, max_dist = 10.0},
+                {name="hangar_wind_gust", chance = 0.9, interval = 12, sound_list_size = 22, last_time = 0, base_volume = 3.0, min_dist = 5.0, max_dist = 10.0},
+            	{name="generic_concrete_large_room", chance = 0.9, interval = 10, sound_list_size = 17, last_time = 0, base_volume = 2.0, min_dist = 5.0, max_dist = 13.0},
+            	{name="underground_concrete_details", chance = 0.9, interval = 15, sound_list_size = 22, last_time = 0, base_volume = 1.5, min_dist = 5.0, max_dist = 13.0},
+        }
+    },
+
+    -- 7. North-east of the waste processing plant (High/Bridge start)
+    {
+        x = 429.559, y = 33.254, z = -326.348,
+        max_hearing_dist = 110.0,
+        sound_list = {
+            {name="hangar_metal_details", chance = 0.9, interval = 10, sound_list_size = 10, last_time = 0, base_volume = 3.5, min_dist = 5.0, max_dist = 10.0},
+            {name="hangar_wind_gust", chance = 0.9, interval = 12, sound_list_size = 22, last_time = 0, base_volume = 3.5, min_dist = 5.0, max_dist = 10.0},
+            {name="generic_concrete_large_room", chance = 0.9, interval = 10, sound_list_size = 17, last_time = 0, base_volume = 2.0, min_dist = 5.0, max_dist = 13.0},
+            {name="underground_concrete_details", chance = 0.9, interval = 15, sound_list_size = 22, last_time = 0, base_volume = 1.5, min_dist = 5.0, max_dist = 13.0},
+
+        }
+    },
+    -- 8. South of Preobrazhensky bridge
+    {
+        x = 431.354, y = 32.635, z = -289.586,
+        max_hearing_dist = 120.0,
+        sound_list = {
+            {name="hangar_metal_details", chance = 0.9, interval = 10, sound_list_size = 10, last_time = 0, base_volume = 3.5, min_dist = 5.0, max_dist = 10.0},
+            {name="hangar_wind_gust", chance = 0.9, interval = 12, sound_list_size = 22, last_time = 0, base_volume = 3.5, min_dist = 5.0, max_dist = 10.0},
+            {name="generic_concrete_large_room", chance = 0.9, interval = 10, sound_list_size = 17, last_time = 0, base_volume = 2.0, min_dist = 5.0, max_dist = 13.0},
+            {name="underground_concrete_details", chance = 0.9, interval = 15, sound_list_size = 22, last_time = 0, base_volume = 1.5, min_dist = 5.0, max_dist = 13.0},
+        }
+    },
+    -- 9. South of Preobrazhensky bridge (2)
+    {
+        x = 431.623, y = 33.257, z = -239.939,
+        max_hearing_dist = 150.0,
+        sound_list = {
+            {name="hangar_metal_details", chance = 0.9, interval = 10, sound_list_size = 10, last_time = 0, base_volume = 3.5, min_dist = 5.0, max_dist = 10.0},
+            {name="hangar_wind_gust", chance = 0.9, interval = 12, sound_list_size = 22, last_time = 0, base_volume = 3.5, min_dist = 5.0, max_dist = 10.0},
+            {name="generic_concrete_large_room", chance = 0.9, interval = 10, sound_list_size = 17, last_time = 0, base_volume = 2.0, min_dist = 5.0, max_dist = 13.0},
+            {name="underground_concrete_details", chance = 0.9, interval = 15, sound_list_size = 22, last_time = 0, base_volume = 1.5, min_dist = 5.0, max_dist = 13.0},
+        }
+    },
+    -- 10. North of Preobrazhensky bridge
+    {
+        x = 430.917, y = 33.257, z = -171.909,
+        max_hearing_dist = 120.0,
+        sound_list = {
+            {name="hangar_metal_details", chance = 0.9, interval = 10, sound_list_size = 10, last_time = 0, base_volume = 3.5, min_dist = 5.0, max_dist = 10.0},
+            {name="hangar_wind_gust", chance = 0.9, interval = 12, sound_list_size = 22, last_time = 0, base_volume = 3.5, min_dist = 5.0, max_dist = 10.0},
+            {name="generic_concrete_large_room", chance = 0.9, interval = 10, sound_list_size = 17, last_time = 0, base_volume = 2.0, min_dist = 5.0, max_dist = 13.0},
+            {name="underground_concrete_details", chance = 0.9, interval = 15, sound_list_size = 22, last_time = 0, base_volume = 1.5, min_dist = 5.0, max_dist = 13.0},
+        }
+    },
+    -- 11. South of the ranger station (Elevated)
+    {
+        x = 436.878, y = 35.812, z = -64.403,
+        max_hearing_dist = 110.0,
+        sound_list = {
+            {name="metal_structure_small_strong", chance = 0.9, interval = 25, sound_list_size = 20, last_time = 0, base_volume = 1.5, min_dist = 5.0, max_dist = 13.0},
+            {name="metal_structure_small_weak", chance = 0.9, interval = 12, sound_list_size = 32, last_time = 0, base_volume = 1.3, min_dist = 5.0, max_dist = 12.0},
+        }
+    },
+    -- 12. South of the ranger station (Elevated)
+    {
+        x = 419.470, y = 36.261, z = -29.418,
+        max_hearing_dist = 230.0,
+        sound_list = {
+            {name="hangar_metal_details", chance = 0.9, interval = 10, sound_list_size = 10, last_time = 0, base_volume = 3.5, min_dist = 5.0, max_dist = 10.0},
+            {name="hangar_wind_gust", chance = 0.9, interval = 12, sound_list_size = 22, last_time = 0, base_volume = 3.5, min_dist = 5.0, max_dist = 10.0},
+            {name="generic_concrete_large_room", chance = 0.9, interval = 10, sound_list_size = 17, last_time = 0, base_volume = 2.0, min_dist = 5.0, max_dist = 13.0},
+            {name="underground_concrete_details", chance = 0.9, interval = 15, sound_list_size = 22, last_time = 0, base_volume = 1.5, min_dist = 5.0, max_dist = 13.0},
+        }
+    },
+    -- 13. North of the ranger station (Elevated)
+    {
+        x = 437.370, y = 35.541, z = 26.409,
+        max_hearing_dist = 110.0,
+        sound_list = {
+            {name="metal_structure_small_strong", chance = 0.9, interval = 25, sound_list_size = 20, last_time = 0, base_volume = 1.5, min_dist = 5.0, max_dist = 13.0},
+            {name="metal_structure_small_weak", chance = 0.9, interval = 12, sound_list_size = 32, last_time = 0, base_volume = 1.3, min_dist = 5.0, max_dist = 12.0},
+            {name="hangar_wind_gust", chance = 0.9, interval = 15, sound_list_size = 22, last_time = 0, base_volume = 3.0, min_dist = 5.0, max_dist = 12.0},
+        }
+    },
+    -- 14. West of the ranger station (Elevated)
+    {
+        x = 381.020, y = 34.314, z = -24.854,
+        max_hearing_dist = 150.0,
+        sound_list = {
+            {name="hangar_metal_details", chance = 0.9, interval = 10, sound_list_size = 10, last_time = 0, base_volume = 3.5, min_dist = 5.0, max_dist = 10.0},
+            {name="hangar_wind_gust", chance = 0.9, interval = 12, sound_list_size = 22, last_time = 0, base_volume = 3.5, min_dist = 5.0, max_dist = 10.0},
+            {name="generic_concrete_large_room", chance = 0.9, interval = 10, sound_list_size = 17, last_time = 0, base_volume = 2.0, min_dist = 5.0, max_dist = 13.0},
+            {name="underground_concrete_details", chance = 0.9, interval = 15, sound_list_size = 22, last_time = 0, base_volume = 1.5, min_dist = 5.0, max_dist = 13.0},
+        }
+    },
+
+    -- 15. South of the dock cranes (Elevated)
+    {
+        x = 228.152, y = 7.238, z = -23.553,
+        max_hearing_dist = 190.0,
+        sound_list = {
+            {name="metal_structure_small_strong", chance = 0.9, interval = 25, sound_list_size = 20, last_time = 0, base_volume = 1.5, min_dist = 5.0, max_dist = 13.0},
+            {name="metal_structure_small_weak", chance = 0.9, interval = 12, sound_list_size = 32, last_time = 0, base_volume = 1.3, min_dist = 5.0, max_dist = 12.0},
+
+        }
+    },
+    -- 16. At the dock cranes (Elevated)
+    {
+        x = 213.994, y = 6.807, z = 12.993,
+        max_hearing_dist = 100.0,
+        sound_list = {
+            {name="metal_structure_small_strong", chance = 0.9, interval = 25, sound_list_size = 20, last_time = 0, base_volume = 1.5, min_dist = 5.0, max_dist = 13.0},
+            {name="metal_structure_small_weak", chance = 0.9, interval = 12, sound_list_size = 32, last_time = 0, base_volume = 1.3, min_dist = 5.0, max_dist = 12.0},
+
+        }
+    },
+    -- 17. West of the dock cranes (Ground Level)
+    {
+        x = 196.789, y = -4.013, z = 8.008,
+        max_hearing_dist = 110.0,
+        sound_list = {
+            {name="metal_structure_small_strong", chance = 0.9, interval = 25, sound_list_size = 20, last_time = 0, base_volume = 1.5, min_dist = 5.0, max_dist = 13.0},
+            {name="metal_structure_small_weak", chance = 0.9, interval = 12, sound_list_size = 32, last_time = 0, base_volume = 1.3, min_dist = 5.0, max_dist = 12.0},
+        }
+    },
+    -- 18. North of the dock cranes (High)
+    {
+        x = 212.319, y = 18.592, z = 16.900,
+        max_hearing_dist = 180.0,
+        sound_list = {
+            {name="metal_structure_small_strong", chance = 0.9, interval = 25, sound_list_size = 20, last_time = 0, base_volume = 1.5, min_dist = 5.0, max_dist = 13.0},
+            {name="metal_structure_small_weak", chance = 0.9, interval = 12, sound_list_size = 32, last_time = 0, base_volume = 1.3, min_dist = 5.0, max_dist = 12.0},
+            {name="hangar_metal_details", chance = 0.9, interval = 10, sound_list_size = 10, last_time = 0, base_volume = 3.5, min_dist = 5.0, max_dist = 10.0},
+            {name="hangar_wind_gust", chance = 0.9, interval = 12, sound_list_size = 22, last_time = 0, base_volume = 3.5, min_dist = 5.0, max_dist = 10.0},
+        }
+    },
+    -- 19. South of the dock cranes (High)
+    {
+        x = 214.297, y = 19.256, z = 1.226,
+        max_hearing_dist = 150.0,
+        sound_list = {
+            {name="hangar_metal_details", chance = 0.9, interval = 10, sound_list_size = 10, last_time = 0, base_volume = 3.5, min_dist = 5.0, max_dist = 10.0},
+            {name="hangar_wind_gust", chance = 0.9, interval = 12, sound_list_size = 22, last_time = 0, base_volume = 3.5, min_dist = 5.0, max_dist = 10.0},
+        }
+    },
+    -- 20. East of the old barge
+    {
+        x = 164.657, y = 1.662, z = -139.737,
+        max_hearing_dist = 110.0,
+        sound_list = {
+            {name="metal_structure_small_strong", chance = 0.9, interval = 25, sound_list_size = 20, last_time = 0, base_volume = 1.5, min_dist = 5.0, max_dist = 13.0},
+            {name="metal_structure_small_weak", chance = 0.9, interval = 12, sound_list_size = 32, last_time = 0, base_volume = 1.3, min_dist = 5.0, max_dist = 12.0},
+        }
+    },
+    -- 21. East of the old barge (Elevated)
+    {
+        x = 155.500, y = 20.015, z = -138.943,
+        max_hearing_dist = 120.0,
+        sound_list = {
+            {name="metal_structure_small_strong", chance = 0.9, interval = 25, sound_list_size = 20, last_time = 0, base_volume = 1.5, min_dist = 5.0, max_dist = 13.0},
+            {name="metal_structure_small_weak", chance = 0.9, interval = 12, sound_list_size = 32, last_time = 0, base_volume = 1.3, min_dist = 5.0, max_dist = 12.0},
+            {name="hangar_wind_gust", chance = 0.9, interval = 15, sound_list_size = 22, last_time = 0, base_volume = 3.0, min_dist = 5.0, max_dist = 12.0},
+        }
+    },
+    -- 22. East of the Shevchenko
+    {
+        x = 65.856, y = -0.543, z = 38.334,
+        max_hearing_dist = 180.0,
+        sound_list = {
+            {name="metal_structure_small_strong", chance = 0.9, interval = 25, sound_list_size = 20, last_time = 0, base_volume = 1.5, min_dist = 5.0, max_dist = 13.0},
+            {name="metal_structure_small_weak", chance = 0.9, interval = 12, sound_list_size = 32, last_time = 0, base_volume = 1.3, min_dist = 5.0, max_dist = 12.0},
+            {name="hangar_wind_gust", chance = 0.9, interval = 15, sound_list_size = 22, last_time = 0, base_volume = 3.0, min_dist = 5.0, max_dist = 12.0},
+        }
+    },
+
+    -- 23. East of the sawmill (Elevated)
+    {
+        x = -302.523, y = 18.088, z = 347.824,
+        max_hearing_dist = 110.0,
+        sound_list = {
+            {name="metal_structure_small_strong", chance = 0.9, interval = 25, sound_list_size = 20, last_time = 0, base_volume = 1.5, min_dist = 5.0, max_dist = 13.0},
+            {name="metal_structure_small_weak", chance = 0.9, interval = 12, sound_list_size = 32, last_time = 0, base_volume = 1.3, min_dist = 5.0, max_dist = 12.0},
+            {name="hangar_wind_gust", chance = 0.9, interval = 15, sound_list_size = 22, last_time = 0, base_volume = 3.0, min_dist = 5.0, max_dist = 12.0},
+        }
+    },
+    -- 24. West of the sawmill (Elevated)
+    {
+        x = -358.359, y = 18.115, z = 349.766,
+        max_hearing_dist = 90.0,
+        sound_list = {
+            {name="metal_structure_small_strong", chance = 0.9, interval = 25, sound_list_size = 20, last_time = 0, base_volume = 1.5, min_dist = 5.0, max_dist = 13.0},
+            {name="metal_structure_small_weak", chance = 0.9, interval = 12, sound_list_size = 32, last_time = 0, base_volume = 1.3, min_dist = 5.0, max_dist = 12.0},
+            {name="hangar_wind_gust", chance = 0.9, interval = 15, sound_list_size = 22, last_time = 0, base_volume = 3.0, min_dist = 5.0, max_dist = 12.0},
+        }
+    },
+    -- 25. North of the sawmill (Elevated)
+    {
+        x = -341.875, y = 9.374, z = 409.026,
+        max_hearing_dist = 120.0,
+        sound_list = {
+            {name="metal_structure_small_strong", chance = 0.9, interval = 25, sound_list_size = 20, last_time = 0, base_volume = 1.5, min_dist = 5.0, max_dist = 13.0},
+            {name="metal_structure_small_weak", chance = 0.9, interval = 12, sound_list_size = 32, last_time = 0, base_volume = 1.3, min_dist = 5.0, max_dist = 12.0},
+            {name="hangar_wind_gust", chance = 0.9, interval = 15, sound_list_size = 22, last_time = 0, base_volume = 3.0, min_dist = 5.0, max_dist = 12.0},
+        }
+    },
+    -- 26. South-east of the sawmill (Elevated)
+    {
+        x = -323.352, y = 18.190, z = 321.763,
+        max_hearing_dist = 150.0,
+        sound_list = {
+            {name="metal_structure_small_strong", chance = 0.9, interval = 25, sound_list_size = 20, last_time = 0, base_volume = 1.5, min_dist = 5.0, max_dist = 13.0},
+            {name="metal_structure_small_weak", chance = 0.9, interval = 12, sound_list_size = 32, last_time = 0, base_volume = 1.3, min_dist = 5.0, max_dist = 12.0},
+            {name="hangar_wind_gust", chance = 0.9, interval = 15, sound_list_size = 22, last_time = 0, base_volume = 3.0, min_dist = 5.0, max_dist = 12.0},
+        }
+    },
+    -- 27. North of the antenna complex (Elevated)
+    {
+        x = -389.025, y = 13.044, z = 42.999,
+        max_hearing_dist = 110.0,
+        sound_list = {
+            {name="metal_structure_small_strong", chance = 0.9, interval = 25, sound_list_size = 20, last_time = 0, base_volume = 1.5, min_dist = 5.0, max_dist = 13.0},
+            {name="metal_structure_small_weak", chance = 0.9, interval = 12, sound_list_size = 32, last_time = 0, base_volume = 1.3, min_dist = 5.0, max_dist = 12.0},
+            {name="hangar_wind_gust", chance = 0.9, interval = 15, sound_list_size = 22, last_time = 0, base_volume = 3.0, min_dist = 5.0, max_dist = 12.0},
+        }
+    },
+    -- 28. North of the antenna complex (2) (Elevated)
+    {
+        x = -408.279, y = 12.568, z = 30.670,
+        max_hearing_dist = 150.0,
+        sound_list = {
+            {name="metal_structure_small_strong", chance = 0.9, interval = 25, sound_list_size = 20, last_time = 0, base_volume = 1.5, min_dist = 5.0, max_dist = 13.0},
+            {name="metal_structure_small_weak", chance = 0.9, interval = 12, sound_list_size = 32, last_time = 0, base_volume = 1.3, min_dist = 5.0, max_dist = 12.0},
+
+        }
+    },
+    -- 29. North-east of the antenna complex (Elevated)
+    {
+        x = -365.698, y = 11.562, z = 14.374,
+        max_hearing_dist = 130.0,
+        sound_list = {
+            {name="metal_structure_small_strong", chance = 0.9, interval = 25, sound_list_size = 20, last_time = 0, base_volume = 1.5, min_dist = 5.0, max_dist = 13.0},
+            {name="metal_structure_small_weak", chance = 0.9, interval = 12, sound_list_size = 32, last_time = 0, base_volume = 1.3, min_dist = 5.0, max_dist = 12.0},
+
+        }
+    },
+    -- 30. South-east of the antenna complex (Elevated)
+    {
+        x = -369.366, y = 11.312, z = -48.564,
+        max_hearing_dist = 120.0,
+        sound_list = {
+            {name="metal_structure_small_strong", chance = 0.9, interval = 25, sound_list_size = 20, last_time = 0, base_volume = 1.5, min_dist = 5.0, max_dist = 13.0},
+            {name="metal_structure_small_weak", chance = 0.9, interval = 12, sound_list_size = 32, last_time = 0, base_volume = 1.3, min_dist = 5.0, max_dist = 12.0},
+
+        }
+    },
+    -- 31. East of the Iron Forest anomaly (High Plateau)
+    {
+        x = -335.172, y = 39.815, z = -322.838,
+        max_hearing_dist = 130.0,
+        sound_list = {
+            {name="metal_structure_small_strong", chance = 0.9, interval = 25, sound_list_size = 20, last_time = 0, base_volume = 1.5, min_dist = 5.0, max_dist = 13.0},
+            {name="metal_structure_small_weak", chance = 0.9, interval = 12, sound_list_size = 32, last_time = 0, base_volume = 1.3, min_dist = 5.0, max_dist = 12.0},
+
+        }
+    },
+    -- 32. South-east of the Iron Forest anomaly (High Plateau)
+    {
+        x = -329.913, y = 40.031, z = -353.749,
+        max_hearing_dist = 110.0,
+        sound_list = {
+            {name="metal_structure_small_strong", chance = 0.9, interval = 25, sound_list_size = 20, last_time = 0, base_volume = 1.5, min_dist = 5.0, max_dist = 13.0},
+            {name="metal_structure_small_weak", chance = 0.9, interval = 12, sound_list_size = 32, last_time = 0, base_volume = 1.3, min_dist = 5.0, max_dist = 12.0},
+
+        }
+    },
+    -- 33. South of the Iron Forest anomaly (High Plateau)
+    {
+        x = -347.829, y = 40.156, z = -383.327,
+        max_hearing_dist = 130.0,
+        sound_list = {
+            {name="metal_structure_small_strong", chance = 0.9, interval = 25, sound_list_size = 20, last_time = 0, base_volume = 1.5, min_dist = 5.0, max_dist = 13.0},
+            {name="metal_structure_small_weak", chance = 0.9, interval = 12, sound_list_size = 32, last_time = 0, base_volume = 1.3, min_dist = 5.0, max_dist = 12.0},
+
+        }
+    },
+    -- 34. South-west of the Iron Forest anomaly (High Plateau)
+    {
+        x = -388.583, y = 40.082, z = -365.186,
+        max_hearing_dist = 110.0,
+        sound_list = {
+            {name="metal_structure_small_strong", chance = 0.9, interval = 25, sound_list_size = 20, last_time = 0, base_volume = 1.5, min_dist = 5.0, max_dist = 13.0},
+            {name="metal_structure_small_weak", chance = 0.9, interval = 12, sound_list_size = 32, last_time = 0, base_volume = 1.3, min_dist = 5.0, max_dist = 12.0},
+
+        }
+    },
+    -- 35. West of the Iron Forest anomaly (High Plateau)
+    {
+        x = -412.477, y = 40.020, z = -326.600,
+        max_hearing_dist = 150.0,
+        sound_list = {
+            {name="metal_structure_small_strong", chance = 0.9, interval = 25, sound_list_size = 20, last_time = 0, base_volume = 1.5, min_dist = 5.0, max_dist = 13.0},
+            {name="metal_structure_small_weak", chance = 0.9, interval = 12, sound_list_size = 32, last_time = 0, base_volume = 1.3, min_dist = 5.0, max_dist = 12.0},
+
+        }
+    },
+    -- 36. North of the workshop substation (Elevated)
+    {
+        x = -144.387, y = 20.955, z = -380.050,
+        max_hearing_dist = 110.0,
+        sound_list = {
+            {name="metal_structure_small_strong", chance = 0.9, interval = 25, sound_list_size = 20, last_time = 0, base_volume = 1.5, min_dist = 5.0, max_dist = 13.0},
+            {name="metal_structure_small_weak", chance = 0.9, interval = 12, sound_list_size = 32, last_time = 0, base_volume = 1.3, min_dist = 5.0, max_dist = 12.0},
+
+        }
+    },
+    -- 37. North-east of the workshop substation (Elevated)
+    {
+        x = -128.488, y = 24.141, z = -403.765,
+        max_hearing_dist = 115.0,
+        sound_list = {
+            {name="metal_structure_small_strong", chance = 0.9, interval = 25, sound_list_size = 20, last_time = 0, base_volume = 1.5, min_dist = 5.0, max_dist = 13.0},
+            {name="metal_structure_small_weak", chance = 0.9, interval = 12, sound_list_size = 32, last_time = 0, base_volume = 1.3, min_dist = 5.0, max_dist = 12.0},
+            {name="hangar_wind_gust", chance = 0.9, interval = 15, sound_list_size = 22, last_time = 0, base_volume = 3.0, min_dist = 5.0, max_dist = 12.0},
+        }
+    },
+    -- 38. Near the workshop substation (Elevated)
+    {
+        x = -139.368, y = 29.079, z = -412.579,
+        max_hearing_dist = 130.0,
+        sound_list = {
+            {name="metal_structure_small_strong", chance = 0.9, interval = 25, sound_list_size = 20, last_time = 0, base_volume = 1.5, min_dist = 5.0, max_dist = 13.0},
+            {name="metal_structure_small_weak", chance = 0.9, interval = 12, sound_list_size = 32, last_time = 0, base_volume = 1.3, min_dist = 5.0, max_dist = 12.0},
+            {name="hangar_wind_gust", chance = 0.9, interval = 15, sound_list_size = 22, last_time = 0, base_volume = 3.0, min_dist = 5.0, max_dist = 12.0},
+        }
+    },
+
+    -- 39. North-east of the refuelling station (Concrete/Roof)
+    {
+        x = -95.058, y = 6.528, z = -213.363,
+        max_hearing_dist = 110.0,
+        sound_list = {
+            {name="generic_concrete_large_room", chance = 0.9, interval = 10, sound_list_size = 17, last_time = 0, base_volume = 2.0, min_dist = 5.0, max_dist = 13.0},
+            {name="underground_concrete_details", chance = 0.9, interval = 15, sound_list_size = 22, last_time = 0, base_volume = 1.5, min_dist = 5.0, max_dist = 13.0},
+        }
+    },
+    -- 40. North of the refuelling station (Underground/Lower)
+    {
+        x = -103.604, y = -7.157, z = -208.170,
+        max_hearing_dist = 120.0,
+        sound_list = {
+            {name="generic_concrete_large_room", chance = 0.9, interval = 10, sound_list_size = 17, last_time = 0, base_volume = 2.0, min_dist = 5.0, max_dist = 13.0},
+            {name="underground_concrete_details", chance = 0.9, interval = 15, sound_list_size = 22, last_time = 0, base_volume = 1.5, min_dist = 5.0, max_dist = 13.0},
+        }
+    },
+    -- 41. East of the refuelling station (Concrete)
+    {
+        x = -91.924, y = -2.449, z = -220.813,
+        max_hearing_dist = 130.0,
+        sound_list = {
+            {name="generic_concrete_large_room", chance = 0.9, interval = 10, sound_list_size = 17, last_time = 0, base_volume = 2.0, min_dist = 5.0, max_dist = 13.0},
+            {name="underground_concrete_details", chance = 0.9, interval = 15, sound_list_size = 22, last_time = 0, base_volume = 1.5, min_dist = 5.0, max_dist = 13.0},
+        }
+    },
+    -- 42. North-east of the refuelling station (Concrete)
+    {
+        x = -90.086, y = -0.327, z = -209.646,
+        max_hearing_dist = 150.0,
+        sound_list = {
+            {name="generic_concrete_large_room", chance = 0.9, interval = 10, sound_list_size = 17, last_time = 0, base_volume = 2.0, min_dist = 5.0, max_dist = 13.0},
+            {name="underground_concrete_details", chance = 0.9, interval = 15, sound_list_size = 22, last_time = 0, base_volume = 1.5, min_dist = 5.0, max_dist = 13.0},
+        }
+    },
+    -- 43. North-west of the refuelling station (Deep Caves)
+    {
+        x = -118.753, y = -14.995, z = -196.678,
+        max_hearing_dist = 210.0,
+        sound_list = {
+            {name="generic_concrete_large_room", chance = 0.9, interval = 10, sound_list_size = 17, last_time = 0, base_volume = 2.0, min_dist = 5.0, max_dist = 13.0},
+            {name="underground_concrete_details", chance = 0.9, interval = 15, sound_list_size = 22, last_time = 0, base_volume = 1.5, min_dist = 5.0, max_dist = 13.0},
+        }
+    },
+    -- 44. West of the refuelling station (Deep Caves)
+    {
+        x = -139.278, y = -17.133, z = -201.650,
+        max_hearing_dist = 110.0,
+        sound_list = {
+            {name="generic_concrete_large_room", chance = 0.9, interval = 10, sound_list_size = 17, last_time = 0, base_volume = 2.0, min_dist = 5.0, max_dist = 13.0},
+            {name="underground_concrete_details", chance = 0.9, interval = 15, sound_list_size = 22, last_time = 0, base_volume = 1.5, min_dist = 5.0, max_dist = 13.0},
+        }
+    },
+    -- 45. North-west of the refuelling station (Deep Caves)
+    {
+        x = -151.426, y = -22.173, z = -187.271,
+        max_hearing_dist = 120.0,
+        sound_list = {
+            {name="generic_concrete_large_room", chance = 0.9, interval = 10, sound_list_size = 17, last_time = 0, base_volume = 2.0, min_dist = 5.0, max_dist = 13.0},
+            {name="underground_concrete_details", chance = 0.9, interval = 15, sound_list_size = 22, last_time = 0, base_volume = 1.5, min_dist = 5.0, max_dist = 13.0},
+        }
+    },
+    -- 46. West of the refuelling station (Deep Caves)
+    {
+        x = -133.742, y = -14.319, z = -219.113,
+        max_hearing_dist = 150.0,
+        sound_list = {
+            {name="generic_concrete_large_room", chance = 0.9, interval = 10, sound_list_size = 17, last_time = 0, base_volume = 2.0, min_dist = 5.0, max_dist = 13.0},
+            {name="underground_concrete_details", chance = 0.9, interval = 15, sound_list_size = 22, last_time = 0, base_volume = 1.5, min_dist = 5.0, max_dist = 13.0},
+        }
+    },
+    -- 47. South-west of the refuelling station (Lower/Slope)
+    {
+        x = -113.211, y = -6.221, z = -228.719,
+        max_hearing_dist = 160.0,
+        sound_list = {
+            {name="generic_concrete_large_room", chance = 0.9, interval = 10, sound_list_size = 17, last_time = 0, base_volume = 2.0, min_dist = 5.0, max_dist = 13.0},
+            {name="underground_concrete_details", chance = 0.9, interval = 15, sound_list_size = 22, last_time = 0, base_volume = 1.5, min_dist = 5.0, max_dist = 13.0},
+        }
+    },
+
+-- Zaton, east of the old barge
+    {
+        x = 156.297, y = 9.378, z = -139.955,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="interior_detail_wood", chance = 1.0, interval = 8, sound_list_size = 25, last_time = 0, base_volume = 0.9, min_dist = 1.0, max_dist = 1.5},
+        }
+    },
+    -- Zaton, east of the old barge
+    {
+        x = 155.633, y = 19.985, z = -138.941,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="interior_detail_wood", chance = 1.0, interval = 8, sound_list_size = 25, last_time = 0, base_volume = 0.9, min_dist = 1.0, max_dist = 1.5},
+        }
+    },
+    -- Zaton, east of the old barge
+    {
+        x = 157.121, y = 2.374, z = -139.862,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="interior_detail_wood", chance = 1.0, interval = 8, sound_list_size = 25, last_time = 0, base_volume = 0.9, min_dist = 1.0, max_dist = 1.5},
+        }
+    },
+    -- Zaton, west of the old barge
+    {
+        x = 146.299, y = 1.923, z = -139.421,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="interior_detail_wood", chance = 1.0, interval = 8, sound_list_size = 25, last_time = 0, base_volume = 0.9, min_dist = 1.0, max_dist = 1.5},
+        }
+    },
+    -- Zaton, near the sawmill
+    {
+        x = -352.109, y = 24.448, z = 345.324,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="interior_detail_wood", chance = 1.0, interval = 8, sound_list_size = 25, last_time = 0, base_volume = 0.9, min_dist = 1.0, max_dist = 1.5},
+        }
+    },
+    -- Zaton, west of the sawmill
+    {
+        x = -362.336, y = 24.463, z = 345.158,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="interior_detail_wood", chance = 1.0, interval = 8, sound_list_size = 25, last_time = 0, base_volume = 0.9, min_dist = 1.0, max_dist = 1.5},
+        }
+    },
+    -- Zaton, east of the sawmill
+    {
+        x = -325.276, y = 21.257, z = 353.747,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="interior_detail_wood", chance = 1.0, interval = 8, sound_list_size = 25, last_time = 0, base_volume = 0.9, min_dist = 1.0, max_dist = 1.5},
+        }
+    },
+    -- Zaton, north of the sawmill
+    {
+        x = -314.265, y = 13.528, z = 409.869,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="interior_detail_wood", chance = 1.0, interval = 8, sound_list_size = 25, last_time = 0, base_volume = 0.9, min_dist = 1.0, max_dist = 1.5},
+        }
+    },
+    -- Zaton, north of the sawmill
+    {
+        x = -321.567, y = 9.791, z = 417.394,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="interior_detail_wood", chance = 1.0, interval = 8, sound_list_size = 25, last_time = 0, base_volume = 0.9, min_dist = 1.0, max_dist = 1.5},
+        }
+    },
+    -- Zaton, north of the sawmill
+    {
+        x = -314.096, y = 9.797, z = 423.118,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="interior_detail_wood", chance = 1.0, interval = 8, sound_list_size = 25, last_time = 0, base_volume = 0.9, min_dist = 1.0, max_dist = 1.5},
+        }
+    },
+    -- Zaton, north of the burnt village
+    {
+        x = -43.939, y = 28.700, z = 354.276,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="interior_detail_wood", chance = 1.0, interval = 8, sound_list_size = 25, last_time = 0, base_volume = 0.9, min_dist = 1.0, max_dist = 1.5},
+        }
+    },
+    -- Zaton, north-east of the burnt village
+    {
+        x = -19.145, y = 27.734, z = 323.792,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="interior_detail_wood", chance = 1.0, interval = 8, sound_list_size = 25, last_time = 0, base_volume = 0.9, min_dist = 1.0, max_dist = 1.5},
+        }
+    },
+    -- Zaton, north of Izumrudnoye
+    {
+        x = -172.380, y = 7.858, z = 143.446,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="interior_detail_wood", chance = 1.0, interval = 8, sound_list_size = 25, last_time = 0, base_volume = 0.9, min_dist = 1.0, max_dist = 1.5},
+        }
+    },
+    -- Zaton, south-west of Izumrudnoye
+    {
+        x = -181.774, y = 8.940, z = 92.209,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="interior_detail_wood", chance = 1.0, interval = 8, sound_list_size = 25, last_time = 0, base_volume = 0.9, min_dist = 1.0, max_dist = 1.5},
+        }
+    },
+    -- Zaton, south of Izumrudnoye
+    {
+        x = -182.809, y = 9.410, z = 77.883,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="interior_detail_wood", chance = 1.0, interval = 8, sound_list_size = 25, last_time = 0, base_volume = 0.9, min_dist = 1.0, max_dist = 1.5},
+        }
+    },
+    -- Zaton, south-east of Izumrudnoye
+    {
+        x = -160.411, y = 8.451, z = 87.823,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="interior_detail_wood", chance = 1.0, interval = 8, sound_list_size = 25, last_time = 0, base_volume = 0.9, min_dist = 1.0, max_dist = 1.5},
+        }
+    },
+    -- Zaton, south of Izumrudnoye
+    {
+        x = -163.025, y = 8.950, z = 76.787,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="interior_detail_wood", chance = 1.0, interval = 8, sound_list_size = 25, last_time = 0, base_volume = 0.9, min_dist = 1.0, max_dist = 1.5},
+        }
+    },
+    -- Zaton, west of the ranger station
+    {
+        x = 379.789, y = 40.806, z = -38.052,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="interior_detail_wood", chance = 1.0, interval = 8, sound_list_size = 25, last_time = 0, base_volume = 0.9, min_dist = 1.0, max_dist = 1.5},
+        }
+    },
+    -- Zaton, west of the ranger station
+    {
+        x = 379.715, y = 40.912, z = -23.433,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="interior_detail_wood", chance = 1.0, interval = 8, sound_list_size = 25, last_time = 0, base_volume = 0.9, min_dist = 1.0, max_dist = 1.5},
+        }
+    },
+}

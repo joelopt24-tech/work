@@ -1,0 +1,326 @@
+-- ARCHIVO: amb_map_l14_hospital.script
+
+emitters = {
+    -- Hospital
+    {
+        x = -87.193, y = 32.978, z = 776.625,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops", chance = 1.0, interval = 0.4, sound_list_size = 8, last_time = 0, base_volume = 1.0, min_dist = 2.0, max_dist = 2.5},
+        }
+    },
+    -- Hospital
+    {
+        x = -91.873, y = 24.385, z = 766.357,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_interior", chance = 1.0, interval = 0.2, sound_list_size = 34, last_time = 0, base_volume = 0.9, min_dist = 1.0, max_dist = 1.5},
+        }
+    },
+    -- Hospital
+    {
+        x = -91.925, y = 24.624, z = 756.497,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_interior", chance = 1.0, interval = 0.2, sound_list_size = 34, last_time = 0, base_volume = 0.9, min_dist = 1.0, max_dist = 1.5},
+        }
+    },
+    -- Hospital
+    {
+        x = -88.492, y = 25.623, z = 748.001,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_interior", chance = 1.0, interval = 0.2, sound_list_size = 34, last_time = 0, base_volume = 0.9, min_dist = 1.0, max_dist = 1.5},
+        }
+    },
+    -- Hospital
+    {
+        x = -86.491, y = 31.976, z = 742.764,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_interior", chance = 1.0, interval = 0.2, sound_list_size = 34, last_time = 0, base_volume = 0.9, min_dist = 1.0, max_dist = 1.5},
+        }
+    },
+    -- Hospital
+    {
+        x = -79.459, y = 31.957, z = 728.678,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_interior", chance = 1.0, interval = 0.2, sound_list_size = 34, last_time = 0, base_volume = 0.9, min_dist = 1.0, max_dist = 1.5},
+        }
+    },
+    -- Hospital
+    {
+        x = -79.322, y = 31.959, z = 711.809,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_interior", chance = 1.0, interval = 0.2, sound_list_size = 34, last_time = 0, base_volume = 0.9, min_dist = 1.0, max_dist = 1.5},
+        }
+    },
+    -- Hospital
+    {
+        x = -75.109, y = 31.957, z = 701.229,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_interior", chance = 1.0, interval = 0.2, sound_list_size = 34, last_time = 0, base_volume = 0.9, min_dist = 1.0, max_dist = 1.5},
+        }
+    },
+    -- Hospital
+    {
+        x = -93.193, y = 31.958, z = 729.547,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_interior", chance = 1.0, interval = 0.2, sound_list_size = 34, last_time = 0, base_volume = 0.9, min_dist = 1.0, max_dist = 1.5},
+        }
+    },
+    -- Hospital
+    {
+        x = -97.347, y = 25.059, z = 732.434,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_interior", chance = 1.0, interval = 0.2, sound_list_size = 34, last_time = 0, base_volume = 0.9, min_dist = 1.0, max_dist = 1.5},
+        }
+    },
+    -- Hospital
+    {
+        x = -89.849, y = 24.882, z = 729.773,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops", chance = 1.0, interval = 0.4, sound_list_size = 8, last_time = 0, base_volume = 1.0, min_dist = 2.0, max_dist = 2.5},
+        }
+    },
+    -- Hospital
+    {
+        x = -83.889, y = 24.675, z = 724.085,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops", chance = 1.0, interval = 0.4, sound_list_size = 8, last_time = 0, base_volume = 1.0, min_dist = 2.0, max_dist = 2.5},
+        }
+    },
+    -- Hospital
+    {
+        x = -83.756, y = 24.359, z = 707.066,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops", chance = 1.0, interval = 0.4, sound_list_size = 8, last_time = 0, base_volume = 1.0, min_dist = 2.0, max_dist = 2.5},
+        }
+    },
+-- Hospital
+    {
+        x = -79.075, y = 31.959, z = 727.849,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_interior", chance = 1.0, interval = 0.2, sound_list_size = 34, last_time = 0, base_volume = 0.9, min_dist = 1.0, max_dist = 1.5},
+        }
+    },
+    -- Hospital
+    {
+        x = -77.510, y = 31.958, z = 701.870,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_interior", chance = 1.0, interval = 0.2, sound_list_size = 34, last_time = 0, base_volume = 0.9, min_dist = 1.0, max_dist = 1.5},
+        }
+    },
+    -- Hospital
+    {
+        x = -93.003, y = 31.961, z = 690.130,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_interior", chance = 1.0, interval = 0.2, sound_list_size = 34, last_time = 0, base_volume = 0.9, min_dist = 1.0, max_dist = 1.5},
+        }
+    },
+    -- Hospital
+    {
+        x = -75.693, y = 31.958, z = 676.768,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_interior", chance = 1.0, interval = 0.2, sound_list_size = 34, last_time = 0, base_volume = 0.9, min_dist = 1.0, max_dist = 1.5},
+        }
+    },
+    -- Hospital
+    {
+        x = -96.771, y = 31.958, z = 673.569,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_interior", chance = 1.0, interval = 0.2, sound_list_size = 34, last_time = 0, base_volume = 0.9, min_dist = 1.0, max_dist = 1.5},
+        }
+    },
+    -- Hospital
+    {
+        x = -95.318, y = 31.960, z = 650.246,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_interior", chance = 1.0, interval = 0.2, sound_list_size = 34, last_time = 0, base_volume = 0.9, min_dist = 1.0, max_dist = 1.5},
+        }
+    },
+    -- Hospital
+    {
+        x = -95.647, y = 32.210, z = 630.774,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_interior", chance = 1.0, interval = 0.2, sound_list_size = 34, last_time = 0, base_volume = 0.9, min_dist = 1.0, max_dist = 1.5},
+        }
+    },
+    -- Hospital
+    {
+        x = -76.925, y = 31.962, z = 648.604,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_interior", chance = 1.0, interval = 0.2, sound_list_size = 34, last_time = 0, base_volume = 0.9, min_dist = 1.0, max_dist = 1.5},
+        }
+    },
+    -- Hospital
+    {
+        x = -77.305, y = 31.954, z = 661.691,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_interior", chance = 1.0, interval = 0.2, sound_list_size = 34, last_time = 0, base_volume = 0.9, min_dist = 1.0, max_dist = 1.5},
+        }
+    },
+    -- Hospital
+    {
+        x = -78.122, y = 31.959, z = 624.675,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_interior", chance = 1.0, interval = 0.2, sound_list_size = 34, last_time = 0, base_volume = 0.9, min_dist = 1.0, max_dist = 1.5},
+        }
+    },
+    -- Hospital
+    {
+        x = -67.347, y = 28.858, z = 637.430,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_interior", chance = 1.0, interval = 0.2, sound_list_size = 34, last_time = 0, base_volume = 0.9, min_dist = 1.0, max_dist = 1.5},
+        }
+    },
+-- Hospital (Standard Raindrops)
+    {
+        x = -93.380, y = 24.958, z = 646.624,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops", chance = 1.0, interval = 0.4, sound_list_size = 8, last_time = 0, base_volume = 1.0, min_dist = 2.0, max_dist = 2.5},
+        }
+    },
+    -- Hospital (Standard Raindrops)
+    {
+        x = -79.616, y = 24.957, z = 671.160,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops", chance = 1.0, interval = 0.4, sound_list_size = 8, last_time = 0, base_volume = 1.0, min_dist = 2.0, max_dist = 2.5},
+        }
+    },
+    -- Hospital (Interior)
+    {
+        x = -87.492, y = 32.060, z = 621.260,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_interior", chance = 1.0, interval = 0.2, sound_list_size = 34, last_time = 0, base_volume = 0.9, min_dist = 1.0, max_dist = 1.5},
+        }
+    },
+    -- Hospital (Interior)
+    {
+        x = -96.460, y = 24.952, z = 644.972,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_interior", chance = 1.0, interval = 0.2, sound_list_size = 34, last_time = 0, base_volume = 0.9, min_dist = 1.0, max_dist = 1.5},
+        }
+    },
+    -- Hospital (Interior)
+    {
+        x = -104.859, y = 28.619, z = 663.015,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_interior", chance = 1.0, interval = 0.2, sound_list_size = 34, last_time = 0, base_volume = 0.9, min_dist = 1.0, max_dist = 1.5},
+        }
+    },
+    -- Hospital (Interior)
+    {
+        x = -103.409, y = 32.235, z = 629.651,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_interior", chance = 1.0, interval = 0.2, sound_list_size = 34, last_time = 0, base_volume = 0.9, min_dist = 1.0, max_dist = 1.5},
+        }
+    },
+    -- Hospital (Interior)
+    {
+        x = -104.373, y = 27.387, z = 626.011,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_interior", chance = 1.0, interval = 0.2, sound_list_size = 34, last_time = 0, base_volume = 0.9, min_dist = 1.0, max_dist = 1.5},
+        }
+    },
+-- Hospital
+    {
+        x = -103.283, y = 34.242, z = 616.543,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_interior", chance = 1.0, interval = 0.2, sound_list_size = 34, last_time = 0, base_volume = 0.9, min_dist = 1.0, max_dist = 1.5},
+        }
+    },
+    -- Hospital
+    {
+        x = -96.991, y = 24.885, z = 609.360,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_interior", chance = 1.0, interval = 0.2, sound_list_size = 34, last_time = 0, base_volume = 0.9, min_dist = 1.0, max_dist = 1.5},
+        }
+    },
+    -- Hospital
+    {
+        x = -86.716, y = 24.669, z = 611.078,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_interior", chance = 1.0, interval = 0.2, sound_list_size = 34, last_time = 0, base_volume = 0.9, min_dist = 1.0, max_dist = 1.5},
+        }
+    },
+    -- Hospital
+    {
+        x = -80.374, y = 23.768, z = 600.873,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_interior", chance = 1.0, interval = 0.2, sound_list_size = 34, last_time = 0, base_volume = 0.9, min_dist = 1.0, max_dist = 1.5},
+        }
+    },
+    -- Hospital
+    {
+        x = -82.658, y = 21.275, z = 575.853,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_interior", chance = 1.0, interval = 0.2, sound_list_size = 34, last_time = 0, base_volume = 0.9, min_dist = 1.0, max_dist = 1.5},
+        }
+    },
+    -- Hospital
+    {
+        x = -92.486, y = 21.831, z = 569.425,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_interior", chance = 1.0, interval = 0.2, sound_list_size = 34, last_time = 0, base_volume = 0.9, min_dist = 1.0, max_dist = 1.5},
+        }
+    },
+    -- Hospital
+    {
+        x = -86.038, y = 21.826, z = 567.758,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops", chance = 1.0, interval = 0.4, sound_list_size = 8, last_time = 0, base_volume = 1.0, min_dist = 2.0, max_dist = 2.5},
+        }
+    },
+    -- Hospital
+    {
+        x = -80.701, y = 20.305, z = 565.127,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_interior", chance = 1.0, interval = 0.2, sound_list_size = 34, last_time = 0, base_volume = 0.9, min_dist = 1.0, max_dist = 1.5},
+        }
+    },
+    -- Hospital
+    {
+        x = -76.379, y = 19.880, z = 567.131,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_interior", chance = 1.0, interval = 0.2, sound_list_size = 34, last_time = 0, base_volume = 0.9, min_dist = 1.0, max_dist = 1.5},
+        }
+    },
+
+}
+

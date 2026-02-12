@@ -1,0 +1,319 @@
+-- =================================================================================
+-- ARCHIVO: rain_amb_map_y04_pole.script
+-- =================================================================================
+
+emitters = {
+    -- 1. West of the village (Wood)
+    {
+        x = -192.448, y = -10.085, z = -17.594,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_wood", chance = 1.0, interval = 0.2, sound_list_size = 25, last_time = 0, base_volume = 2.5, min_dist = 2.0, max_dist = 5.0},
+        }
+    },
+
+    -- 2. West of the village (Wood)
+    {
+        x = -194.661, y = -11.810, z = -44.975,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_wood", chance = 1.0, interval = 0.2, sound_list_size = 25, last_time = 0, base_volume = 2.5, min_dist = 2.0, max_dist = 5.0},
+        }
+    },
+
+    -- 3. West of the village (Wood)
+    {
+        x = -170.479, y = -13.861, z = -51.051,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_wood", chance = 1.0, interval = 0.2, sound_list_size = 25, last_time = 0, base_volume = 2.5, min_dist = 2.0, max_dist = 5.0},
+        }
+    },
+
+    -- 4. North-west of the village (Wood)
+    {
+        x = -150.129, y = -12.455, z = -26.381,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_wood", chance = 1.0, interval = 0.2, sound_list_size = 25, last_time = 0, base_volume = 2.5, min_dist = 2.0, max_dist = 5.0},
+        }
+    },
+
+    -- 5. North-east of the village (Wood)
+    {
+        x = -118.760, y = -13.017, z = -26.268,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_wood", chance = 1.0, interval = 0.2, sound_list_size = 25, last_time = 0, base_volume = 2.5, min_dist = 2.0, max_dist = 5.0},
+        }
+    },
+
+    -- 6. South-east of the village (Wood)
+    {
+        x = -124.344, y = -13.124, z = -61.401,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_wood", chance = 1.0, interval = 0.2, sound_list_size = 25, last_time = 0, base_volume = 2.5, min_dist = 2.0, max_dist = 5.0},
+        }
+    },
+
+    -- 7. Near the village (Metal)
+    {
+        x = -143.201, y = -17.842, z = -36.650,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_metal", chance = 1.0, interval = 0.2, sound_list_size = 20, last_time = 0, base_volume = 2.5, min_dist = 2.0, max_dist = 2.5},
+        }
+    },
+
+    -- 8. East of the village (Metal)
+    {
+        x = -101.902, y = -17.329, z = -34.852,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_metal", chance = 1.0, interval = 0.2, sound_list_size = 20, last_time = 0, base_volume = 2.5, min_dist = 2.0, max_dist = 2.5},
+        }
+    },
+
+    -- 9. East of the village (Metal)
+    {
+        x = -51.551, y = -13.056, z = -16.537,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_metal", chance = 1.0, interval = 0.2, sound_list_size = 20, last_time = 0, base_volume = 2.5, min_dist = 2.0, max_dist = 2.5},
+        }
+    },
+
+    -- 10. South-east of the factory's canteen (Metal)
+    {
+        x = -44.207, y = -7.790, z = 4.779,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_metal", chance = 1.0, interval = 0.2, sound_list_size = 20, last_time = 0, base_volume = 2.5, min_dist = 2.0, max_dist = 2.5},
+        }
+    },
+
+-- 11. East of the factory's canteen (Metal)
+    {
+        x = -80.964, y = 2.370, z = 77.865,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_metal", chance = 1.0, interval = 0.2, sound_list_size = 20, last_time = 0, base_volume = 2.5, min_dist = 2.0, max_dist = 2.5},
+        }
+    },
+
+    -- 12. Near the factory's canteen (Metal)
+    {
+        x = -102.504, y = 2.586, z = 76.163,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_metal", chance = 1.0, interval = 0.2, sound_list_size = 20, last_time = 0, base_volume = 2.5, min_dist = 2.0, max_dist = 2.5},
+        }
+    },
+
+    -- 13. Near the factory's canteen (Metal)
+    {
+        x = -108.967, y = 2.327, z = 77.841,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_metal", chance = 1.0, interval = 0.2, sound_list_size = 20, last_time = 0, base_volume = 2.5, min_dist = 2.0, max_dist = 2.5},
+        }
+    },
+
+    -- 14. South of the factory's canteen (Metal)
+    {
+        x = -111.256, y = 2.038, z = 62.621,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_metal", chance = 1.0, interval = 0.2, sound_list_size = 20, last_time = 0, base_volume = 2.5, min_dist = 2.0, max_dist = 2.5},
+        }
+    },
+
+    -- 15. South-west of the factory's canteen (Metal)
+    {
+        x = -118.575, y = 1.740, z = 58.667,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_metal", chance = 1.0, interval = 0.2, sound_list_size = 20, last_time = 0, base_volume = 2.5, min_dist = 2.0, max_dist = 2.5},
+        }
+    },
+
+    -- 16. South-east of the factory's canteen (Wood)
+    {
+        x = -88.916, y = 6.457, z = 61.940,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_wood", chance = 1.0, interval = 0.2, sound_list_size = 25, last_time = 0, base_volume = 2.5, min_dist = 2.0, max_dist = 5.0},
+        }
+    },
+
+-- 17. East of the old car park (Metal)
+    {
+        x = -84.194, y = 2.215, z = 161.739,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_metal", chance = 1.0, interval = 0.2, sound_list_size = 20, last_time = 0, base_volume = 2.5, min_dist = 2.0, max_dist = 2.5},
+        }
+    },
+
+    -- 18. North-east of the old car park (Metal)
+    {
+        x = -112.121, y = 2.061, z = 174.813,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_metal", chance = 1.0, interval = 0.2, sound_list_size = 20, last_time = 0, base_volume = 2.5, min_dist = 2.0, max_dist = 2.5},
+        }
+    },
+
+    -- 19. North-west of the old car park (Metal)
+    {
+        x = -136.125, y = 2.628, z = 186.680,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_metal", chance = 1.0, interval = 0.2, sound_list_size = 20, last_time = 0, base_volume = 2.5, min_dist = 2.0, max_dist = 2.5},
+        }
+    },
+
+    -- 20. North-west of the old car park (Metal)
+    {
+        x = -141.966, y = 2.661, z = 188.765,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_metal", chance = 1.0, interval = 0.2, sound_list_size = 20, last_time = 0, base_volume = 2.5, min_dist = 2.0, max_dist = 2.5},
+        }
+    },
+
+    -- 21. North-west of the old car park (Metal)
+    {
+        x = -148.295, y = 2.712, z = 188.838,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_metal", chance = 1.0, interval = 0.2, sound_list_size = 20, last_time = 0, base_volume = 2.5, min_dist = 2.0, max_dist = 2.5},
+        }
+    },
+
+    -- 22. West of the old car park (Metal)
+    {
+        x = -148.630, y = 1.734, z = 167.741,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_metal", chance = 1.0, interval = 0.2, sound_list_size = 20, last_time = 0, base_volume = 2.5, min_dist = 2.0, max_dist = 2.5},
+        }
+    },
+
+    -- 23. South-west of the old car park (Metal)
+    {
+        x = -135.736, y = 1.041, z = 158.102,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_metal", chance = 1.0, interval = 0.2, sound_list_size = 20, last_time = 0, base_volume = 2.5, min_dist = 2.0, max_dist = 2.5},
+        }
+    },
+
+    -- 24. South-east of the old car park (Metal)
+    {
+        x = -101.013, y = 3.178, z = 149.141,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_metal", chance = 1.0, interval = 0.2, sound_list_size = 20, last_time = 0, base_volume = 2.5, min_dist = 2.0, max_dist = 2.5},
+        }
+    },
+
+    -- 25. East of the old car park (Metal)
+    {
+        x = -61.068, y = 2.920, z = 132.896,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_metal", chance = 1.0, interval = 0.2, sound_list_size = 20, last_time = 0, base_volume = 2.5, min_dist = 2.0, max_dist = 2.5},
+        }
+    },
+-- 26. East of the factory's canteen (Metal)
+    {
+        x = -49.123, y = 3.219, z = 105.076,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_metal", chance = 1.0, interval = 0.2, sound_list_size = 20, last_time = 0, base_volume = 2.5, min_dist = 2.0, max_dist = 2.5},
+        }
+    },
+
+    -- 27. South-west of the abandoned factory (Metal)
+    {
+        x = -15.070, y = 0.561, z = 90.461,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_metal", chance = 1.0, interval = 0.2, sound_list_size = 20, last_time = 0, base_volume = 2.5, min_dist = 2.0, max_dist = 2.5},
+        }
+    },
+
+    -- 28. South-west of the abandoned factory (Metal)
+    {
+        x = 1.373, y = 0.487, z = 84.391,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_metal", chance = 1.0, interval = 0.2, sound_list_size = 20, last_time = 0, base_volume = 2.5, min_dist = 2.0, max_dist = 2.5},
+        }
+    },
+
+    -- 29. South-west of the abandoned factory (Metal)
+    {
+        x = 6.182, y = 1.302, z = 85.888,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_metal", chance = 1.0, interval = 0.2, sound_list_size = 20, last_time = 0, base_volume = 2.5, min_dist = 2.0, max_dist = 2.5},
+        }
+    },
+
+    -- 30. South-west of the abandoned factory (Metal)
+    {
+        x = -5.815, y = 1.463, z = 97.070,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_metal", chance = 1.0, interval = 0.2, sound_list_size = 20, last_time = 0, base_volume = 2.5, min_dist = 2.0, max_dist = 2.5},
+        }
+    },
+
+    -- 31. West of the abandoned factory (Metal)
+    {
+        x = -4.800, y = 1.532, z = 130.557,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_metal", chance = 1.0, interval = 0.2, sound_list_size = 20, last_time = 0, base_volume = 2.5, min_dist = 2.0, max_dist = 2.5},
+        }
+    },
+
+    -- 32. West of the abandoned factory (Metal)
+    {
+        x = 12.110, y = 2.042, z = 133.797,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_metal", chance = 1.0, interval = 0.2, sound_list_size = 20, last_time = 0, base_volume = 2.5, min_dist = 2.0, max_dist = 2.5},
+        }
+    },
+
+    -- 33. North-east of the abandoned factory (Metal)
+    {
+        x = 49.086, y = 2.249, z = 151.300,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_metal", chance = 1.0, interval = 0.2, sound_list_size = 20, last_time = 0, base_volume = 2.5, min_dist = 2.0, max_dist = 2.5},
+        }
+    },
+
+    -- 34. East of the abandoned factory (Metal)
+    {
+        x = 60.468, y = 2.058, z = 135.009,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_metal", chance = 1.0, interval = 0.2, sound_list_size = 20, last_time = 0, base_volume = 2.5, min_dist = 2.0, max_dist = 2.5},
+        }
+    },
+
+    -- 35. North-east of the abandoned factory (Wood)
+    {
+        x = 68.857, y = 8.788, z = 160.293,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_wood", chance = 1.0, interval = 0.2, sound_list_size = 25, last_time = 0, base_volume = 2.5, min_dist = 2.0, max_dist = 5.0},
+        }
+    }
+}

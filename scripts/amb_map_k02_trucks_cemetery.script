@@ -1,0 +1,126 @@
+-- ARCHIVO: amb_map_k02_trucks_cemetery.script
+
+emitters = {
+    -- 1. South-east of the way to Rostok (Elevated)
+    {
+        x = -185.755, y = 8.836, z = 104.859,
+        max_hearing_dist = 120.0,
+        sound_list = {
+            {name="hangar_metal_details", chance = 0.9, interval = 10, sound_list_size = 10, last_time = 0, base_volume = 3.5, min_dist = 5.0, max_dist = 10.0},
+            {name="hangar_wind_gust", chance = 0.9, interval = 12, sound_list_size = 22, last_time = 0, base_volume = 3.5, min_dist = 5.0, max_dist = 10.0},
+            {name="big_metal_structure_wind_small", chance = 0.9, interval = 20, sound_list_size = 16, last_time = 0, base_volume = 2.5, min_dist = 5.0, max_dist = 10.0},
+            {name="big_metal_structure_wind_medium", chance = 0.9, interval = 30, sound_list_size = 16, last_time = 0, base_volume = 2.5, min_dist = 5.0, max_dist = 10.0},
+        }
+    },
+    -- 2. North-east of the valley (Ground Level)
+    {
+        x = -75.280, y = 1.550, z = 31.387,
+        max_hearing_dist = 130.0,
+        sound_list = {
+            {name="metal_structure_small_strong", chance = 0.9, interval = 25, sound_list_size = 20, last_time = 0, base_volume = 1.5, min_dist = 5.0, max_dist = 13.0},
+            {name="metal_structure_small_weak", chance = 0.9, interval = 12, sound_list_size = 32, last_time = 0, base_volume = 1.3, min_dist = 5.0, max_dist = 12.0},
+        }
+    },
+    -- 3. South of the valley (Elevated)
+    {
+        x = -180.477, y = 10.879, z = -113.593,
+        max_hearing_dist = 140.0,
+        sound_list = {
+            {name="hangar_metal_details", chance = 0.9, interval = 10, sound_list_size = 10, last_time = 0, base_volume = 3.5, min_dist = 5.0, max_dist = 10.0},
+            {name="hangar_wind_gust", chance = 0.9, interval = 12, sound_list_size = 22, last_time = 0, base_volume = 3.5, min_dist = 5.0, max_dist = 10.0},
+            {name="big_metal_structure_wind_small", chance = 0.9, interval = 20, sound_list_size = 16, last_time = 0, base_volume = 2.5, min_dist = 5.0, max_dist = 10.0},
+            {name="big_metal_structure_wind_medium", chance = 0.9, interval = 30, sound_list_size = 16, last_time = 0, base_volume = 2.5, min_dist = 5.0, max_dist = 10.0},
+        }
+    },
+    -- 4. West of the containers (High)
+    {
+        x = -165.188, y = 19.178, z = -309.024,
+        max_hearing_dist = 160.0,
+        sound_list = {
+            {name="hangar_metal_details", chance = 0.9, interval = 10, sound_list_size = 10, last_time = 0, base_volume = 3.5, min_dist = 5.0, max_dist = 10.0},
+            {name="hangar_wind_gust", chance = 0.9, interval = 12, sound_list_size = 22, last_time = 0, base_volume = 3.5, min_dist = 5.0, max_dist = 10.0},
+            {name="big_metal_structure_wind_small", chance = 0.9, interval = 20, sound_list_size = 16, last_time = 0, base_volume = 2.5, min_dist = 5.0, max_dist = 10.0},
+            {name="big_metal_structure_wind_medium", chance = 0.9, interval = 30, sound_list_size = 16, last_time = 0, base_volume = 2.5, min_dist = 5.0, max_dist = 10.0},
+        }
+    },
+
+    -- 5. North-east of the hill in the woods (Elevated)
+    {
+        x = 41.145, y = 13.499, z = -26.908,
+        max_hearing_dist = 120.0,
+        sound_list = {
+            {name="hangar_metal_details", chance = 0.9, interval = 10, sound_list_size = 10, last_time = 0, base_volume = 3.5, min_dist = 5.0, max_dist = 10.0},
+            {name="hangar_wind_gust", chance = 0.9, interval = 12, sound_list_size = 22, last_time = 0, base_volume = 3.5, min_dist = 5.0, max_dist = 10.0},
+            {name="big_metal_structure_wind_small", chance = 0.9, interval = 20, sound_list_size = 16, last_time = 0, base_volume = 2.5, min_dist = 5.0, max_dist = 10.0},
+
+        }
+    },
+    -- 6. North of the fire trucks (High)
+    {
+        x = 74.574, y = 19.508, z = 263.501,
+        max_hearing_dist = 130.0,
+        sound_list = {
+            {name="hangar_metal_details", chance = 0.9, interval = 10, sound_list_size = 10, last_time = 0, base_volume = 3.5, min_dist = 5.0, max_dist = 10.0},
+            {name="hangar_wind_gust", chance = 0.9, interval = 12, sound_list_size = 22, last_time = 0, base_volume = 3.5, min_dist = 5.0, max_dist = 10.0},
+            {name="big_metal_structure_wind_small", chance = 0.9, interval = 20, sound_list_size = 16, last_time = 0, base_volume = 2.5, min_dist = 5.0, max_dist = 10.0},
+
+        }
+    },
+    -- 7. South of the north-eastern checkpoint (Elevated)
+    {
+        x = 224.497, y = 7.838, z = 295.047,
+        max_hearing_dist = 140.0,
+        sound_list = {
+            {name="hangar_metal_details", chance = 0.9, interval = 10, sound_list_size = 10, last_time = 0, base_volume = 3.5, min_dist = 5.0, max_dist = 10.0},
+            {name="hangar_wind_gust", chance = 0.9, interval = 12, sound_list_size = 22, last_time = 0, base_volume = 3.5, min_dist = 5.0, max_dist = 10.0},
+            {name="big_metal_structure_wind_small", chance = 0.9, interval = 20, sound_list_size = 16, last_time = 0, base_volume = 2.5, min_dist = 5.0, max_dist = 10.0},
+        }
+    },
+    -- 8. East of the helicopters (High)
+    {
+        x = 224.595, y = 19.543, z = -0.350,
+        max_hearing_dist = 160.0,
+        sound_list = {
+            {name="hangar_metal_details", chance = 0.9, interval = 10, sound_list_size = 10, last_time = 0, base_volume = 3.5, min_dist = 5.0, max_dist = 10.0},
+            {name="hangar_wind_gust", chance = 0.9, interval = 12, sound_list_size = 22, last_time = 0, base_volume = 3.5, min_dist = 5.0, max_dist = 10.0},
+            {name="big_metal_structure_wind_small", chance = 0.9, interval = 20, sound_list_size = 16, last_time = 0, base_volume = 2.5, min_dist = 5.0, max_dist = 10.0},
+        }
+    },
+    -- 9. East of the hill in the woods (Low)
+    {
+        x = 107.181, y = 5.547, z = -141.948,
+        max_hearing_dist = 120.0,
+        sound_list = {
+            {name="metal_structure_small_strong", chance = 0.9, interval = 25, sound_list_size = 20, last_time = 0, base_volume = 1.5, min_dist = 5.0, max_dist = 13.0},
+            {name="metal_structure_small_weak", chance = 0.9, interval = 12, sound_list_size = 32, last_time = 0, base_volume = 1.3, min_dist = 5.0, max_dist = 12.0},
+        }
+    },
+    -- 10. North-east of the southern parking lot (High)
+    {
+        x = 201.054, y = 17.044, z = -271.875,
+        max_hearing_dist = 130.0,
+        sound_list = {
+            {name="hangar_metal_details", chance = 0.9, interval = 10, sound_list_size = 10, last_time = 0, base_volume = 3.5, min_dist = 5.0, max_dist = 10.0},
+            {name="hangar_wind_gust", chance = 0.9, interval = 12, sound_list_size = 22, last_time = 0, base_volume = 3.5, min_dist = 5.0, max_dist = 10.0},
+            {name="big_metal_structure_wind_small", chance = 0.9, interval = 20, sound_list_size = 16, last_time = 0, base_volume = 2.5, min_dist = 5.0, max_dist = 10.0},
+        }
+    },
+    -- 11. North-west of the southern parking lot (Elevated)
+    {
+        x = 13.451, y = 8.790, z = -315.750,
+        max_hearing_dist = 130.0,
+        sound_list = {
+            {name="hangar_metal_details", chance = 0.9, interval = 10, sound_list_size = 10, last_time = 0, base_volume = 3.5, min_dist = 5.0, max_dist = 10.0},
+            {name="hangar_wind_gust", chance = 0.9, interval = 12, sound_list_size = 22, last_time = 0, base_volume = 3.5, min_dist = 5.0, max_dist = 10.0},
+            {name="big_metal_structure_wind_small", chance = 0.9, interval = 20, sound_list_size = 16, last_time = 0, base_volume = 2.5, min_dist = 5.0, max_dist = 10.0},
+        }
+    },
+-- Truck Cemetery, east of the southern parking lot
+    {
+        x = 266.850, y = 18.033, z = -277.789,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="interior_detail_wood", chance = 1.0, interval = 8, sound_list_size = 25, last_time = 0, base_volume = 0.8, min_dist = 1.0, max_dist = 1.5},
+        }
+    },
+}

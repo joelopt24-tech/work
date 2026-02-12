@@ -1,0 +1,650 @@
+-- =================================================================================
+-- ARCHIVO: rain_amb_map_l07_military.script
+-- DESCRIPCIÓN: Sonidos específicos de lluvia para Army Warehouses (Almacenes Militares)
+-- =================================================================================
+
+emitters = {
+    -- 1. East of the Freedom base (Metal)
+    {
+        x = 47.762, y = -3.321, z = 14.499,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_wood", chance = 1.0, interval = 0.2, sound_list_size = 25, last_time = 0, base_volume = 1.7, min_dist = 2.0, max_dist = 5.0},
+            {name="raindrops_wood_loop", chance = 1.0, interval = 45, sound_list_size = 1, last_time = 0, base_volume = 9.5, min_dist = 2.0, max_dist = 5.0},
+        }
+    },
+
+    -- 2. East of the Freedom base (Metal)
+    {
+        x = 64.324, y = -2.359, z = 15.842,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_wood", chance = 1.0, interval = 0.2, sound_list_size = 25, last_time = 0, base_volume = 1.7, min_dist = 2.0, max_dist = 5.0},
+            {name="raindrops_wood_loop", chance = 1.0, interval = 45, sound_list_size = 1, last_time = 0, base_volume = 9.5, min_dist = 2.0, max_dist = 5.0},
+        }
+    },
+
+-- 3. East of the Freedom base (Wood)
+    {
+        x = 28.775, y = -2.328, z = 16.121,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_wood", chance = 1.0, interval = 0.2, sound_list_size = 25, last_time = 0, base_volume = 1.7, min_dist = 2.0, max_dist = 5.0},
+            {name="raindrops_wood_loop", chance = 1.0, interval = 45, sound_list_size = 1, last_time = 0, base_volume = 9.5, min_dist = 2.0, max_dist = 5.0},
+        }
+    },
+
+    -- 4. South-east of the Freedom base (Wood)
+    {
+        x = 12.625, y = -1.591, z = 16.880,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_wood", chance = 1.0, interval = 0.2, sound_list_size = 25, last_time = 0, base_volume = 1.7, min_dist = 2.0, max_dist = 5.0},
+            {name="raindrops_wood_loop", chance = 1.0, interval = 45, sound_list_size = 1, last_time = 0, base_volume = 9.5, min_dist = 2.0, max_dist = 5.0},
+        }
+    },
+
+    -- 5. South of the Freedom base (Wood)
+    {
+        x = -21.813, y = 1.649, z = -28.151,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_wood", chance = 1.0, interval = 0.2, sound_list_size = 25, last_time = 0, base_volume = 1.7, min_dist = 2.0, max_dist = 5.0},
+            {name="raindrops_wood_loop", chance = 1.0, interval = 45, sound_list_size = 1, last_time = 0, base_volume = 9.5, min_dist = 2.0, max_dist = 5.0},
+        }
+    },
+
+    -- 6. South of the Freedom base (Wood)
+    {
+        x = -21.289, y = -0.079, z = -15.048,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_wood", chance = 1.0, interval = 0.2, sound_list_size = 25, last_time = 0, base_volume = 1.7, min_dist = 2.0, max_dist = 5.0},
+            {name="raindrops_wood_loop", chance = 1.0, interval = 45, sound_list_size = 1, last_time = 0, base_volume = 9.5, min_dist = 2.0, max_dist = 5.0},
+        }
+    },
+
+    -- 7. West of the Freedom base (Metal)
+    {
+        x = -76.312, y = -6.341, z = 11.938,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_metal", chance = 1.0, interval = 0.2, sound_list_size = 20, last_time = 0, base_volume = 2.5, min_dist = 2.0, max_dist = 2.5},
+        }
+    },
+
+    -- 8. West of the Freedom base (Metal)
+    {
+        x = -76.494, y = -5.231, z = 32.704,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_metal", chance = 1.0, interval = 0.2, sound_list_size = 20, last_time = 0, base_volume = 2.5, min_dist = 2.0, max_dist = 2.5},
+        }
+    },
+
+    -- 9. West of the Freedom base (Metal)
+    {
+        x = -64.180, y = -8.192, z = 14.877,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_metal", chance = 1.0, interval = 0.2, sound_list_size = 20, last_time = 0, base_volume = 2.5, min_dist = 2.0, max_dist = 2.5},
+        }
+    },
+
+    -- 10. South-west of the Freedom base (Metal)
+    {
+        x = -37.996, y = -5.564, z = -11.185,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_metal", chance = 1.0, interval = 0.2, sound_list_size = 20, last_time = 0, base_volume = 2.5, min_dist = 2.0, max_dist = 2.5},
+        }
+    },
+
+    -- 11. South-west of the Freedom base (Metal)
+    {
+        x = -46.890, y = -5.511, z = -25.164,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_metal", chance = 1.0, interval = 0.2, sound_list_size = 20, last_time = 0, base_volume = 2.5, min_dist = 2.0, max_dist = 2.5},
+        }
+    },
+
+    -- 12. South-west of the Freedom base (Metal)
+    {
+        x = -71.111, y = 12.728, z = -29.361,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_metal", chance = 1.0, interval = 0.2, sound_list_size = 20, last_time = 0, base_volume = 2.5, min_dist = 2.0, max_dist = 2.5},
+        }
+    },
+
+    -- 13. South of the Freedom base (Metal)
+    {
+        x = 5.207, y = 5.978, z = -59.820,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_metal", chance = 1.0, interval = 0.2, sound_list_size = 20, last_time = 0, base_volume = 2.5, min_dist = 2.0, max_dist = 2.5},
+        }
+    },
+
+    -- 14. South of the Freedom base (Metal)
+    {
+        x = 31.290, y = -6.629, z = -48.712,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_metal", chance = 1.0, interval = 0.2, sound_list_size = 20, last_time = 0, base_volume = 2.5, min_dist = 2.0, max_dist = 2.5},
+        }
+    },
+
+    -- 15. South-east of the Freedom base (Metal)
+    {
+        x = 73.845, y = -5.767, z = -24.658,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_metal", chance = 1.0, interval = 0.2, sound_list_size = 20, last_time = 0, base_volume = 2.5, min_dist = 2.0, max_dist = 2.5},
+        }
+    },
+
+    -- 16. East of the Freedom base (Metal)
+    {
+        x = 80.273, y = -8.722, z = -3.325,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_metal", chance = 1.0, interval = 0.2, sound_list_size = 20, last_time = 0, base_volume = 2.5, min_dist = 2.0, max_dist = 2.5},
+        }
+    },
+
+    -- 17. East of the Freedom base (Metal)
+    {
+        x = 85.458, y = 5.274, z = 11.956,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_metal", chance = 1.0, interval = 0.2, sound_list_size = 20, last_time = 0, base_volume = 2.5, min_dist = 2.0, max_dist = 2.5},
+        }
+    },
+
+    -- 18. West of the Freedom base (Metal)
+    {
+        x = -16.448, y = 7.838, z = 32.963,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_metal", chance = 1.0, interval = 0.2, sound_list_size = 20, last_time = 0, base_volume = 2.5, min_dist = 2.0, max_dist = 2.5},
+        }
+    },
+
+    -- 19. North of the Freedom base (Metal)
+    {
+        x = -18.974, y = 8.927, z = 71.122,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_metal", chance = 1.0, interval = 0.2, sound_list_size = 20, last_time = 0, base_volume = 2.5, min_dist = 2.0, max_dist = 2.5},
+        }
+    },
+
+    -- 20. East of the anomaly on the southern hill (Metal)
+    {
+        x = -104.937, y = 10.746, z = 36.659,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_metal", chance = 1.0, interval = 0.2, sound_list_size = 20, last_time = 0, base_volume = 2.5, min_dist = 2.0, max_dist = 2.5},
+        }
+    },
+-- 21. South-east of the Freedom base (Metal)
+    {
+        x = 36.442, y = -5.898, z = 3.269,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_metal", chance = 1.0, interval = 0.2, sound_list_size = 20, last_time = 0, base_volume = 2.5, min_dist = 2.0, max_dist = 2.5},
+        }
+    },
+
+    -- 22. North of the Freedom base (Wood)
+    {
+        x = 1.310, y = -0.856, z = 85.410,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_wood", chance = 1.0, interval = 0.2, sound_list_size = 25, last_time = 0, base_volume = 2.5, min_dist = 2.0, max_dist = 5.0},
+        }
+    },
+
+    -- 23. West of the old shack (Metal)
+    {
+        x = -6.628, y = -8.173, z = 125.523,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_metal", chance = 1.0, interval = 0.2, sound_list_size = 20, last_time = 0, base_volume = 2.5, min_dist = 2.0, max_dist = 2.5},
+        }
+    },
+
+    -- 24. West of the old shack (Metal)
+    {
+        x = -7.399, y = -14.464, z = 157.870,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_metal", chance = 1.0, interval = 0.2, sound_list_size = 20, last_time = 0, base_volume = 2.5, min_dist = 2.0, max_dist = 2.5},
+        }
+    },
+
+    -- 25. West of the old shack (Metal)
+    {
+        x = -16.894, y = -15.382, z = 163.959,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_metal", chance = 1.0, interval = 0.2, sound_list_size = 20, last_time = 0, base_volume = 2.5, min_dist = 2.0, max_dist = 2.5},
+        }
+    },
+
+    -- 26. North-west of the old shack (Metal)
+    {
+        x = -8.475, y = -15.358, z = 171.657,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_metal", chance = 1.0, interval = 0.2, sound_list_size = 20, last_time = 0, base_volume = 2.5, min_dist = 2.0, max_dist = 2.5},
+        }
+    },
+
+    -- 27. North-west of the old shack (Metal)
+    {
+        x = -7.647, y = -19.001, z = 214.507,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_metal", chance = 1.0, interval = 0.2, sound_list_size = 20, last_time = 0, base_volume = 2.5, min_dist = 2.0, max_dist = 2.5},
+        }
+    },
+-- 28. West of the old shack (Metal)
+    {
+        x = -56.447, y = -14.941, z = 165.314,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_metal", chance = 1.0, interval = 0.2, sound_list_size = 20, last_time = 0, base_volume = 2.5, min_dist = 2.0, max_dist = 2.5},
+        }
+    },
+
+    -- 29. North-west of the old shack (Metal)
+    {
+        x = -95.681, y = -19.021, z = 224.021,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_metal", chance = 1.0, interval = 0.2, sound_list_size = 20, last_time = 0, base_volume = 2.5, min_dist = 2.0, max_dist = 2.5},
+        }
+    },
+
+    -- 30. North-west of the old shack (Metal)
+    {
+        x = -71.824, y = -13.175, z = 245.230,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_metal", chance = 1.0, interval = 0.2, sound_list_size = 20, last_time = 0, base_volume = 2.5, min_dist = 2.0, max_dist = 2.5},
+        }
+    },
+
+    -- 31. North of the anomaly on the southern hill (Wood)
+    {
+        x = -139.624, y = -17.877, z = 132.424,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_wood", chance = 1.0, interval = 0.2, sound_list_size = 25, last_time = 0, base_volume = 2.5, min_dist = 2.0, max_dist = 5.0},
+        }
+    },
+
+-- 32. North-west of the anomaly on the southern hill (Wood)
+    {
+        x = -194.302, y = -5.405, z = 40.706,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_wood", chance = 1.0, interval = 0.2, sound_list_size = 25, last_time = 0, base_volume = 2.5, min_dist = 2.0, max_dist = 5.0},
+        }
+    },
+
+    -- 33. North of the anomaly on the southern hill (Wood)
+    {
+        x = -197.951, y = -8.945, z = 66.807,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_wood", chance = 1.0, interval = 0.2, sound_list_size = 25, last_time = 0, base_volume = 2.5, min_dist = 2.0, max_dist = 5.0},
+        }
+    },
+
+    -- 34. North-west of the anomaly on the southern hill (Wood)
+    {
+        x = -238.470, y = -5.791, z = 53.139,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_wood", chance = 1.0, interval = 0.2, sound_list_size = 25, last_time = 0, base_volume = 2.5, min_dist = 2.0, max_dist = 5.0},
+        }
+    },
+
+    -- 35. West of the anomaly on the southern hill (Metal)
+    {
+        x = -238.743, y = -11.190, z = 42.562,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_metal", chance = 1.0, interval = 0.2, sound_list_size = 20, last_time = 0, base_volume = 2.5, min_dist = 2.0, max_dist = 2.5},
+        }
+    },
+
+    -- 36. North-west of the anomaly on the southern hill (Metal)
+    {
+        x = -223.696, y = -10.382, z = 52.221,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_metal", chance = 1.0, interval = 0.2, sound_list_size = 20, last_time = 0, base_volume = 2.5, min_dist = 2.0, max_dist = 2.5},
+        }
+    },
+
+    -- 37. West of the anomaly on the southern hill (Metal)
+    {
+        x = -249.685, y = -14.467, z = -16.439,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_metal", chance = 1.0, interval = 0.2, sound_list_size = 20, last_time = 0, base_volume = 2.5, min_dist = 2.0, max_dist = 2.5},
+        }
+    },
+
+    -- 38. West of the old farmstead (Metal)
+    {
+        x = -320.249, y = -24.154, z = 55.332,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_metal", chance = 1.0, interval = 0.2, sound_list_size = 20, last_time = 0, base_volume = 2.5, min_dist = 2.0, max_dist = 2.5},
+        }
+    },
+
+    -- 39. North of the old farmstead (Metal)
+    {
+        x = -299.602, y = -23.819, z = 73.693,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_metal", chance = 1.0, interval = 0.2, sound_list_size = 20, last_time = 0, base_volume = 2.5, min_dist = 2.0, max_dist = 2.5},
+        }
+    },
+
+-- 40. South of the abandoned village (Wood)
+    {
+        x = -283.296, y = -18.010, z = 196.027,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_wood", chance = 1.0, interval = 0.2, sound_list_size = 25, last_time = 0, base_volume = 2.5, min_dist = 2.0, max_dist = 5.0},
+        }
+    },
+
+    -- 41. South-west of the abandoned village (Wood)
+    {
+        x = -304.238, y = -13.674, z = 212.200,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_wood", chance = 1.0, interval = 0.2, sound_list_size = 25, last_time = 0, base_volume = 2.5, min_dist = 2.0, max_dist = 5.0},
+        }
+    },
+
+    -- 42. West of the abandoned village (Wood)
+    {
+        x = -320.113, y = -15.307, z = 235.011,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_wood", chance = 1.0, interval = 0.2, sound_list_size = 25, last_time = 0, base_volume = 2.5, min_dist = 2.0, max_dist = 5.0},
+        }
+    },
+
+    -- 43. North of the abandoned village (Wood)
+    {
+        x = -296.389, y = -18.120, z = 288.645,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_wood", chance = 1.0, interval = 0.2, sound_list_size = 25, last_time = 0, base_volume = 2.5, min_dist = 2.0, max_dist = 5.0},
+        }
+    },
+
+    -- 44. North of the abandoned village (Wood)
+    {
+        x = -275.219, y = -16.067, z = 267.510,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_wood", chance = 1.0, interval = 0.2, sound_list_size = 25, last_time = 0, base_volume = 2.5, min_dist = 2.0, max_dist = 5.0},
+        }
+    },
+
+    -- 45. East of the abandoned village (Wood)
+    {
+        x = -268.089, y = -13.288, z = 243.959,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_wood", chance = 1.0, interval = 0.2, sound_list_size = 25, last_time = 0, base_volume = 2.5, min_dist = 2.0, max_dist = 5.0},
+        }
+    },
+
+    -- 46. East of the abandoned village (Wood)
+    {
+        x = -243.517, y = -18.116, z = 224.644,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_wood", chance = 1.0, interval = 0.2, sound_list_size = 25, last_time = 0, base_volume = 2.5, min_dist = 2.0, max_dist = 5.0},
+        }
+    },
+
+    -- 47. South-east of the abandoned village (Wood)
+    {
+        x = -228.953, y = -13.653, z = 201.478,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_wood", chance = 1.0, interval = 0.2, sound_list_size = 25, last_time = 0, base_volume = 2.5, min_dist = 2.0, max_dist = 5.0},
+        }
+    },
+
+    -- 48. East of the abandoned village (Wood)
+    {
+        x = -201.904, y = -18.245, z = 203.317,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_wood", chance = 1.0, interval = 0.2, sound_list_size = 25, last_time = 0, base_volume = 2.5, min_dist = 2.0, max_dist = 5.0},
+        }
+    },
+
+    -- 49. South-east of the abandoned village (Metal)
+    {
+        x = -221.511, y = -20.389, z = 193.702,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_metal", chance = 1.0, interval = 0.2, sound_list_size = 20, last_time = 0, base_volume = 2.5, min_dist = 2.0, max_dist = 2.5},
+        }
+    },
+
+    -- 50. South-east of the abandoned village (Metal)
+    {
+        x = -214.052, y = -20.880, z = 182.612,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_metal", chance = 1.0, interval = 0.2, sound_list_size = 20, last_time = 0, base_volume = 2.5, min_dist = 2.0, max_dist = 2.5},
+        }
+    },
+
+    -- 51. North of the abandoned village (Metal)
+    {
+        x = -294.706, y = -20.506, z = 263.216,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_metal", chance = 1.0, interval = 0.2, sound_list_size = 20, last_time = 0, base_volume = 2.5, min_dist = 2.0, max_dist = 2.5},
+        }
+    },
+
+    -- 52. North-west of the abandoned village (Metal)
+    {
+        x = -344.856, y = -16.869, z = 303.197,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_metal", chance = 1.0, interval = 0.2, sound_list_size = 20, last_time = 0, base_volume = 2.5, min_dist = 2.0, max_dist = 2.5},
+        }
+    },
+-- 53. West of the road to Radar (Metal)
+    {
+        x = -363.810, y = -10.828, z = 402.418,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_metal", chance = 1.0, interval = 0.2, sound_list_size = 20, last_time = 0, base_volume = 2.5, min_dist = 2.0, max_dist = 2.5},
+        }
+    },
+
+    -- 54. North of the abandoned village (Metal)
+    {
+        x = -363.707, y = -10.494, z = 385.746,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_metal", chance = 1.0, interval = 0.2, sound_list_size = 20, last_time = 0, base_volume = 2.5, min_dist = 2.0, max_dist = 2.5},
+        }
+    },
+
+    -- 55. South of the road to Radar (Metal)
+    {
+        x = -187.802, y = -13.022, z = 390.571,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_metal", chance = 1.0, interval = 0.2, sound_list_size = 20, last_time = 0, base_volume = 2.5, min_dist = 2.0, max_dist = 2.5},
+        }
+    },
+
+    -- 56. South of the road to Radar (Wood)
+    {
+        x = -189.058, y = -9.576, z = 375.019,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_wood", chance = 1.0, interval = 0.2, sound_list_size = 25, last_time = 0, base_volume = 2.5, min_dist = 2.0, max_dist = 5.0},
+        }
+    },
+
+    -- 57. South-east of the road to Radar (Wood)
+    {
+        x = -164.518, y = -12.562, z = 376.581,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_wood", chance = 1.0, interval = 0.2, sound_list_size = 25, last_time = 0, base_volume = 2.5, min_dist = 2.0, max_dist = 5.0},
+        }
+    },
+-- 58. South-east of the road to Radar (Metal)
+    {
+        x = -117.251, y = -18.140, z = 298.511,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_metal", chance = 1.0, interval = 0.2, sound_list_size = 20, last_time = 0, base_volume = 2.5, min_dist = 2.0, max_dist = 2.5},
+        }
+    },
+
+    -- 59. South-east of the road to Radar (Metal)
+    {
+        x = -118.667, y = -16.645, z = 302.529,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_metal", chance = 1.0, interval = 0.2, sound_list_size = 20, last_time = 0, base_volume = 2.5, min_dist = 2.0, max_dist = 2.5},
+        }
+    },
+
+    -- 60. South-east of the road to Radar (Metal)
+    {
+        x = -123.308, y = -13.963, z = 376.092,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_metal", chance = 1.0, interval = 0.2, sound_list_size = 20, last_time = 0, base_volume = 2.5, min_dist = 2.0, max_dist = 2.5},
+        }
+    },
+
+    -- 61. South of the road to Dead City (Metal)
+    {
+        x = -33.089, y = -17.565, z = 365.277,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_metal", chance = 1.0, interval = 0.2, sound_list_size = 20, last_time = 0, base_volume = 2.5, min_dist = 2.0, max_dist = 2.5},
+        }
+    },
+
+    -- 62. South-east of the road to Dead City (Metal)
+    {
+        x = 52.931, y = -17.307, z = 347.571,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_metal", chance = 1.0, interval = 0.2, sound_list_size = 20, last_time = 0, base_volume = 2.5, min_dist = 2.0, max_dist = 2.5},
+        }
+    },
+
+    -- 63. South-east of the road to Dead City (Metal)
+    {
+        x = 61.049, y = -15.239, z = 350.535,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_metal", chance = 1.0, interval = 0.2, sound_list_size = 20, last_time = 0, base_volume = 2.5, min_dist = 2.0, max_dist = 2.5},
+        }
+    },
+
+    -- 64. South-east of the road to Dead City (Metal)
+    {
+        x = 59.843, y = -13.235, z = 376.773,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_metal", chance = 1.0, interval = 0.2, sound_list_size = 20, last_time = 0, base_volume = 2.5, min_dist = 2.0, max_dist = 2.5},
+        }
+    },
+
+    -- 65. South-east of the road to Dead City (Metal)
+    {
+        x = 91.014, y = 2.062, z = 304.197,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_metal", chance = 1.0, interval = 0.2, sound_list_size = 20, last_time = 0, base_volume = 2.5, min_dist = 2.0, max_dist = 2.5},
+        }
+    },
+-- Army Warehouses, south of the Freedom base
+    {
+        x = -21.367, y = 0.579, z = -31.148,
+        max_hearing_dist = 150.0,
+        sound_list = {
+            {name="raindrops_wood_loop", chance = 1.0, interval = 45, sound_list_size = 1, last_time = 0, base_volume = 11.0, min_dist = 2.0, max_dist = 5.0},
+        }
+    },
+    -- Army Warehouses, south of the Freedom base
+    {
+        x = -21.874, y = 0.978, z = -17.961,
+        max_hearing_dist = 150.0,
+        sound_list = {
+            {name="raindrops_wood_loop", chance = 1.0, interval = 45, sound_list_size = 1, last_time = 0, base_volume = 11.0, min_dist = 2.0, max_dist = 5.0},
+        }
+    },
+    -- Army Warehouses, south-east of the Freedom base
+    {
+        x = 5.594, y = -1.284, z = 16.206,
+        max_hearing_dist = 150.0,
+        sound_list = {
+            {name="raindrops_wood_loop", chance = 1.0, interval = 45, sound_list_size = 1, last_time = 0, base_volume = 11.0, min_dist = 2.0, max_dist = 5.0},
+        }
+    },
+    -- Army Warehouses, east of the Freedom base
+    {
+        x = 24.468, y = -2.036, z = 16.127,
+        max_hearing_dist = 150.0,
+        sound_list = {
+            {name="raindrops_wood_loop", chance = 1.0, interval = 45, sound_list_size = 1, last_time = 0, base_volume = 11.0, min_dist = 2.0, max_dist = 5.0},
+        }
+    },
+    -- Army Warehouses, east of the Freedom base
+    {
+        x = 54.357, y = -2.701, z = 15.850,
+        max_hearing_dist = 150.0,
+        sound_list = {
+            {name="raindrops_wood_loop", chance = 1.0, interval = 45, sound_list_size = 1, last_time = 0, base_volume = 11.0, min_dist = 2.0, max_dist = 5.0},
+        }
+    },
+    -- Army Warehouses, west of the Freedom base
+    {
+        x = -73.763, y = -6.606, z = 19.095,
+        max_hearing_dist = 150.0,
+        sound_list = {
+            {name="raindrops_wood_loop", chance = 1.0, interval = 45, sound_list_size = 1, last_time = 0, base_volume = 11.0, min_dist = 2.0, max_dist = 5.0},
+        }
+    },
+    -- Army Warehouses, west of the Freedom base
+    {
+        x = -75.471, y = -5.441, z = 34.552,
+        max_hearing_dist = 150.0,
+        sound_list = {
+            {name="raindrops_wood_loop", chance = 1.0, interval = 45, sound_list_size = 1, last_time = 0, base_volume = 11.0, min_dist = 2.0, max_dist = 5.0},
+        }
+    },
+
+}

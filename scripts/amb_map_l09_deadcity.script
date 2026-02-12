@@ -1,0 +1,534 @@
+-- ARCHIVO: amb_map_l09_deadcity.script
+
+emitters = {
+    -- 1. South-west of the mercenary base
+    {
+        x = -59.868, y = 1.478, z = 11.914,
+        max_hearing_dist = 120.0,
+        sound_list = {
+            {name="metal_structure_small_strong", chance = 0.9, interval = 25, sound_list_size = 20, last_time = 0, base_volume = 1.5, min_dist = 5.0, max_dist = 13.0},
+            {name="metal_structure_small_weak", chance = 0.9, interval = 12, sound_list_size = 32, last_time = 0, base_volume = 1.3, min_dist = 5.0, max_dist = 12.0},
+        }
+    },
+    -- 2. East of the mercenary base
+    {
+        x = -13.913, y = 1.251, z = 38.055,
+        max_hearing_dist = 100.0,
+        sound_list = {
+            {name="metal_structure_small_strong", chance = 0.9, interval = 25, sound_list_size = 20, last_time = 0, base_volume = 1.5, min_dist = 5.0, max_dist = 13.0},
+            {name="metal_structure_small_weak", chance = 0.9, interval = 12, sound_list_size = 32, last_time = 0, base_volume = 1.3, min_dist = 5.0, max_dist = 12.0},
+        }
+    },
+    -- 3. South of the road to Limansk
+    {
+        x = -60.343, y = 1.247, z = 74.235,
+        max_hearing_dist = 90.0,
+        sound_list = {
+            {name="metal_structure_small_strong", chance = 0.9, interval = 25, sound_list_size = 20, last_time = 0, base_volume = 1.5, min_dist = 5.0, max_dist = 13.0},
+            {name="metal_structure_small_weak", chance = 0.9, interval = 12, sound_list_size = 32, last_time = 0, base_volume = 1.3, min_dist = 5.0, max_dist = 12.0},
+        }
+    },
+    -- 4. North-west of the tunnel to the Army Warehouses
+    {
+        x = 84.968, y = 1.039, z = 50.281,
+        max_hearing_dist = 120.0,
+        sound_list = {
+            {name="metal_structure_small_weak", chance = 0.9, interval = 12, sound_list_size = 32, last_time = 0, base_volume = 1.3, min_dist = 5.0, max_dist = 12.0},
+        }
+    },
+    -- 5. North-east of the abandoned school
+    {
+        x = 80.302, y = 1.251, z = -55.044,
+        max_hearing_dist = 90.0,
+        sound_list = {
+            {name="metal_structure_small_weak", chance = 0.9, interval = 12, sound_list_size = 32, last_time = 0, base_volume = 1.3, min_dist = 5.0, max_dist = 12.0},
+        }
+    },
+    -- 6. South-east of the isolated houses
+    {
+        x = -124.628, y = 3.117, z = -112.993,
+        max_hearing_dist = 110.0,
+        sound_list = {
+            {name="metal_structure_small_weak", chance = 0.9, interval = 12, sound_list_size = 32, last_time = 0, base_volume = 1.3, min_dist = 5.0, max_dist = 12.0},
+        }
+    },
+
+    -- 7. East of the isolated houses (Elevated)
+    {
+        x = -96.552, y = 15.619, z = -82.545,
+        max_hearing_dist = 80.0,
+        sound_list = {
+            {name="urban_debris", chance = 0.9, interval = 15, sound_list_size = 16, last_time = 0, base_volume = 0.9, min_dist = 5.0, max_dist = 13.0},
+            {name="urban_glass", chance = 0.9, interval = 40, sound_list_size = 18, last_time = 0, base_volume = 0.9, min_dist = 5.0, max_dist = 12.0},
+            {name="urban_steps", chance = 0.9, interval = 10, sound_list_size = 11, last_time = 0, base_volume = 1.0, min_dist = 5.0, max_dist = 12.0},
+            {name="urban_windows", chance = 0.9, interval = 15, sound_list_size = 18, last_time = 0, base_volume = 0.8, min_dist = 5.0, max_dist = 12.0},
+        }
+    },
+    -- 8. East of the isolated houses (Elevated 2)
+    {
+        x = -98.494, y = 15.626, z = -94.327,
+        max_hearing_dist = 80.0,
+        sound_list = {
+            {name="urban_debris", chance = 0.9, interval = 15, sound_list_size = 16, last_time = 0, base_volume = 0.9, min_dist = 5.0, max_dist = 13.0},
+            {name="urban_glass", chance = 0.9, interval = 40, sound_list_size = 18, last_time = 0, base_volume = 0.9, min_dist = 5.0, max_dist = 12.0},
+            {name="urban_steps", chance = 0.9, interval = 10, sound_list_size = 11, last_time = 0, base_volume = 1.0, min_dist = 5.0, max_dist = 12.0},
+            {name="urban_windows", chance = 0.9, interval = 15, sound_list_size = 18, last_time = 0, base_volume = 0.8, min_dist = 5.0, max_dist = 12.0},
+        }
+    },
+    -- 9. West of the derelict monoblock (Elevated)
+    {
+        x = -89.958, y = 15.621, z = -84.881,
+        max_hearing_dist = 80.0,
+        sound_list = {
+            {name="urban_debris", chance = 0.9, interval = 15, sound_list_size = 16, last_time = 0, base_volume = 0.9, min_dist = 5.0, max_dist = 13.0},
+            {name="urban_glass", chance = 0.9, interval = 40, sound_list_size = 18, last_time = 0, base_volume = 0.9, min_dist = 5.0, max_dist = 12.0},
+            {name="urban_steps", chance = 0.9, interval = 10, sound_list_size = 11, last_time = 0, base_volume = 1.0, min_dist = 5.0, max_dist = 12.0},
+            {name="urban_windows", chance = 0.9, interval = 15, sound_list_size = 18, last_time = 0, base_volume = 0.8, min_dist = 5.0, max_dist = 12.0},
+        }
+    },
+
+    -- 10. East of the isolated houses (Urban)
+    {
+        x = -90.046, y = 2.883, z = -108.703,
+        max_hearing_dist = 80.0,
+        sound_list = {
+            {name="urban_debris", chance = 0.9, interval = 15, sound_list_size = 16, last_time = 0, base_volume = 0.9, min_dist = 5.0, max_dist = 13.0},
+            {name="urban_glass", chance = 0.9, interval = 40, sound_list_size = 18, last_time = 0, base_volume = 0.9, min_dist = 5.0, max_dist = 12.0},
+            {name="urban_steps", chance = 0.9, interval = 10, sound_list_size = 11, last_time = 0, base_volume = 1.0, min_dist = 5.0, max_dist = 12.0},
+            {name="urban_windows", chance = 0.9, interval = 15, sound_list_size = 18, last_time = 0, base_volume = 0.8, min_dist = 5.0, max_dist = 12.0},
+        }
+    },
+    -- 11. East of the isolated houses (Urban)
+    {
+        x = -98.013, y = 2.886, z = -120.447,
+        max_hearing_dist = 80.0,
+        sound_list = {
+            {name="urban_debris", chance = 0.9, interval = 15, sound_list_size = 16, last_time = 0, base_volume = 0.9, min_dist = 5.0, max_dist = 13.0},
+            {name="urban_glass", chance = 0.9, interval = 40, sound_list_size = 18, last_time = 0, base_volume = 0.9, min_dist = 5.0, max_dist = 12.0},
+            {name="urban_steps", chance = 0.9, interval = 10, sound_list_size = 11, last_time = 0, base_volume = 1.0, min_dist = 5.0, max_dist = 12.0},
+            {name="urban_windows", chance = 0.9, interval = 15, sound_list_size = 18, last_time = 0, base_volume = 0.8, min_dist = 5.0, max_dist = 12.0},
+        }
+    },
+    -- 12. East of the isolated houses (Upper Floor)
+    {
+        x = -91.380, y = 15.622, z = -108.263,
+        max_hearing_dist = 80.0,
+        sound_list = {
+            {name="urban_debris", chance = 0.9, interval = 15, sound_list_size = 16, last_time = 0, base_volume = 0.9, min_dist = 5.0, max_dist = 13.0},
+            {name="urban_glass", chance = 0.9, interval = 40, sound_list_size = 18, last_time = 0, base_volume = 0.9, min_dist = 5.0, max_dist = 12.0},
+            {name="urban_steps", chance = 0.9, interval = 10, sound_list_size = 11, last_time = 0, base_volume = 1.0, min_dist = 5.0, max_dist = 12.0},
+            {name="urban_windows", chance = 0.9, interval = 15, sound_list_size = 18, last_time = 0, base_volume = 0.8, min_dist = 5.0, max_dist = 12.0},
+        }
+    },
+    -- 13. East of the isolated houses (Upper Floor)
+    {
+        x = -98.651, y = 15.626, z = -118.392,
+        max_hearing_dist = 80.0,
+        sound_list = {
+            {name="urban_debris", chance = 0.9, interval = 15, sound_list_size = 16, last_time = 0, base_volume = 0.9, min_dist = 5.0, max_dist = 13.0},
+            {name="urban_glass", chance = 0.9, interval = 40, sound_list_size = 18, last_time = 0, base_volume = 0.9, min_dist = 5.0, max_dist = 12.0},
+            {name="urban_steps", chance = 0.9, interval = 10, sound_list_size = 11, last_time = 0, base_volume = 1.0, min_dist = 5.0, max_dist = 12.0},
+            {name="urban_windows", chance = 0.9, interval = 15, sound_list_size = 18, last_time = 0, base_volume = 0.8, min_dist = 5.0, max_dist = 12.0},
+        }
+    },
+    -- 14. West of the derelict monoblock (Upper Floor)
+    {
+        x = -98.476, y = 12.498, z = -52.223,
+        max_hearing_dist = 80.0,
+        sound_list = {
+            {name="urban_debris", chance = 0.9, interval = 15, sound_list_size = 16, last_time = 0, base_volume = 0.9, min_dist = 5.0, max_dist = 13.0},
+            {name="urban_glass", chance = 0.9, interval = 40, sound_list_size = 18, last_time = 0, base_volume = 0.9, min_dist = 5.0, max_dist = 12.0},
+            {name="urban_steps", chance = 0.9, interval = 10, sound_list_size = 11, last_time = 0, base_volume = 1.0, min_dist = 5.0, max_dist = 12.0},
+            {name="urban_windows", chance = 0.9, interval = 15, sound_list_size = 18, last_time = 0, base_volume = 0.8, min_dist = 5.0, max_dist = 12.0},
+        }
+    },
+    -- 15. North-west of the derelict monoblock (Upper Floor)
+    {
+        x = -106.244, y = 12.429, z = -24.232,
+        max_hearing_dist = 80.0,
+        sound_list = {
+            {name="urban_debris", chance = 0.9, interval = 15, sound_list_size = 16, last_time = 0, base_volume = 0.9, min_dist = 5.0, max_dist = 13.0},
+            {name="urban_glass", chance = 0.9, interval = 40, sound_list_size = 18, last_time = 0, base_volume = 0.9, min_dist = 5.0, max_dist = 12.0},
+            {name="urban_steps", chance = 0.9, interval = 10, sound_list_size = 11, last_time = 0, base_volume = 1.0, min_dist = 5.0, max_dist = 12.0},
+            {name="urban_windows", chance = 0.9, interval = 15, sound_list_size = 18, last_time = 0, base_volume = 0.8, min_dist = 5.0, max_dist = 12.0},
+        }
+    },
+    -- 16. North of the isolated houses (Urban)
+    {
+        x = -126.915, y = 2.886, z = -21.645,
+        max_hearing_dist = 80.0,
+        sound_list = {
+            {name="urban_debris", chance = 0.9, interval = 15, sound_list_size = 16, last_time = 0, base_volume = 0.9, min_dist = 5.0, max_dist = 13.0},
+            {name="urban_glass", chance = 0.9, interval = 40, sound_list_size = 18, last_time = 0, base_volume = 0.9, min_dist = 5.0, max_dist = 12.0},
+            {name="urban_steps", chance = 0.9, interval = 10, sound_list_size = 11, last_time = 0, base_volume = 1.0, min_dist = 5.0, max_dist = 12.0},
+            {name="urban_windows", chance = 0.9, interval = 15, sound_list_size = 18, last_time = 0, base_volume = 0.8, min_dist = 5.0, max_dist = 12.0},
+        }
+    },
+    -- 17. East of the mercenary base (Urban)
+    {
+        x = 25.895, y = 2.886, z = 19.625,
+        max_hearing_dist = 80.0,
+        sound_list = {
+            {name="urban_debris", chance = 0.9, interval = 15, sound_list_size = 16, last_time = 0, base_volume = 0.9, min_dist = 5.0, max_dist = 13.0},
+            {name="urban_glass", chance = 0.9, interval = 40, sound_list_size = 18, last_time = 0, base_volume = 0.9, min_dist = 5.0, max_dist = 12.0},
+            {name="urban_steps", chance = 0.9, interval = 10, sound_list_size = 11, last_time = 0, base_volume = 1.0, min_dist = 5.0, max_dist = 12.0},
+            {name="urban_windows", chance = 0.9, interval = 15, sound_list_size = 18, last_time = 0, base_volume = 0.8, min_dist = 5.0, max_dist = 12.0},
+        }
+    },
+    -- 18. East of the mercenary base (Urban 2)
+    {
+        x = 38.488, y = 2.884, z = 26.035,
+        max_hearing_dist = 80.0,
+        sound_list = {
+            {name="urban_debris", chance = 0.9, interval = 15, sound_list_size = 16, last_time = 0, base_volume = 0.9, min_dist = 5.0, max_dist = 13.0},
+            {name="urban_glass", chance = 0.9, interval = 40, sound_list_size = 18, last_time = 0, base_volume = 0.9, min_dist = 5.0, max_dist = 12.0},
+            {name="urban_steps", chance = 0.9, interval = 10, sound_list_size = 11, last_time = 0, base_volume = 1.0, min_dist = 5.0, max_dist = 12.0},
+            {name="urban_windows", chance = 0.9, interval = 15, sound_list_size = 18, last_time = 0, base_volume = 0.8, min_dist = 5.0, max_dist = 12.0},
+        }
+    },
+    -- 19. East of the mercenary base (Upper Floor)
+    {
+        x = 22.202, y = 15.625, z = 24.647,
+        max_hearing_dist = 80.0,
+        sound_list = {
+            {name="urban_debris", chance = 0.9, interval = 15, sound_list_size = 16, last_time = 0, base_volume = 0.9, min_dist = 5.0, max_dist = 13.0},
+            {name="urban_glass", chance = 0.9, interval = 40, sound_list_size = 18, last_time = 0, base_volume = 0.9, min_dist = 5.0, max_dist = 12.0},
+            {name="urban_steps", chance = 0.9, interval = 10, sound_list_size = 11, last_time = 0, base_volume = 1.0, min_dist = 5.0, max_dist = 12.0},
+            {name="urban_windows", chance = 0.9, interval = 15, sound_list_size = 18, last_time = 0, base_volume = 0.8, min_dist = 5.0, max_dist = 12.0},
+        }
+    },
+    -- 20. East of the mercenary base (Upper Floor 2)
+    {
+        x = 37.480, y = 15.623, z = 22.825,
+        max_hearing_dist = 80.0,
+        sound_list = {
+            {name="urban_debris", chance = 0.9, interval = 15, sound_list_size = 16, last_time = 0, base_volume = 0.9, min_dist = 5.0, max_dist = 13.0},
+            {name="urban_glass", chance = 0.9, interval = 40, sound_list_size = 18, last_time = 0, base_volume = 0.9, min_dist = 5.0, max_dist = 12.0},
+            {name="urban_steps", chance = 0.9, interval = 10, sound_list_size = 11, last_time = 0, base_volume = 1.0, min_dist = 5.0, max_dist = 12.0},
+            {name="urban_windows", chance = 0.9, interval = 15, sound_list_size = 18, last_time = 0, base_volume = 0.8, min_dist = 5.0, max_dist = 12.0},
+        }
+    },
+    -- 21. East of the mercenary base (Urban 3)
+    {
+        x = 50.059, y = 2.886, z = 29.089,
+        max_hearing_dist = 80.0,
+        sound_list = {
+            {name="urban_debris", chance = 0.9, interval = 15, sound_list_size = 16, last_time = 0, base_volume = 0.9, min_dist = 5.0, max_dist = 13.0},
+            {name="urban_glass", chance = 0.9, interval = 40, sound_list_size = 18, last_time = 0, base_volume = 0.9, min_dist = 5.0, max_dist = 12.0},
+            {name="urban_steps", chance = 0.9, interval = 10, sound_list_size = 11, last_time = 0, base_volume = 1.0, min_dist = 5.0, max_dist = 12.0},
+            {name="urban_windows", chance = 0.9, interval = 15, sound_list_size = 18, last_time = 0, base_volume = 0.8, min_dist = 5.0, max_dist = 12.0},
+        }
+    },
+    -- 22. East of the mercenary base (Urban 4)
+    {
+        x = 62.044, y = 2.886, z = 22.764,
+        max_hearing_dist = 80.0,
+        sound_list = {
+            {name="urban_debris", chance = 0.9, interval = 15, sound_list_size = 16, last_time = 0, base_volume = 0.9, min_dist = 5.0, max_dist = 13.0},
+            {name="urban_glass", chance = 0.9, interval = 40, sound_list_size = 18, last_time = 0, base_volume = 0.9, min_dist = 5.0, max_dist = 12.0},
+            {name="urban_steps", chance = 0.9, interval = 10, sound_list_size = 11, last_time = 0, base_volume = 1.0, min_dist = 5.0, max_dist = 12.0},
+            {name="urban_windows", chance = 0.9, interval = 15, sound_list_size = 18, last_time = 0, base_volume = 0.8, min_dist = 5.0, max_dist = 12.0},
+        }
+    },
+    -- 23. East of the mercenary base (Upper Floor 3)
+    {
+        x = 50.062, y = 15.619, z = 27.585,
+        max_hearing_dist = 80.0,
+        sound_list = {
+            {name="urban_debris", chance = 0.9, interval = 15, sound_list_size = 16, last_time = 0, base_volume = 0.9, min_dist = 5.0, max_dist = 13.0},
+            {name="urban_glass", chance = 0.9, interval = 40, sound_list_size = 18, last_time = 0, base_volume = 0.9, min_dist = 5.0, max_dist = 12.0},
+            {name="urban_steps", chance = 0.9, interval = 10, sound_list_size = 11, last_time = 0, base_volume = 1.0, min_dist = 5.0, max_dist = 12.0},
+            {name="urban_windows", chance = 0.9, interval = 15, sound_list_size = 18, last_time = 0, base_volume = 0.8, min_dist = 5.0, max_dist = 12.0},
+        }
+    },
+    -- 24. East of the mercenary base (Upper Floor 4)
+    {
+        x = 61.915, y = 15.624, z = 22.555,
+        max_hearing_dist = 80.0,
+        sound_list = {
+            {name="urban_debris", chance = 0.9, interval = 15, sound_list_size = 16, last_time = 0, base_volume = 0.9, min_dist = 5.0, max_dist = 13.0},
+            {name="urban_glass", chance = 0.9, interval = 40, sound_list_size = 18, last_time = 0, base_volume = 0.9, min_dist = 5.0, max_dist = 12.0},
+            {name="urban_steps", chance = 0.9, interval = 10, sound_list_size = 11, last_time = 0, base_volume = 1.0, min_dist = 5.0, max_dist = 12.0},
+            {name="urban_windows", chance = 0.9, interval = 15, sound_list_size = 18, last_time = 0, base_volume = 0.8, min_dist = 5.0, max_dist = 12.0},
+        }
+    },
+    -- 25. East of the mercenary base (Urban 5)
+    {
+        x = 55.776, y = 2.886, z = 63.110,
+        max_hearing_dist = 80.0,
+        sound_list = {
+            {name="urban_debris", chance = 0.9, interval = 15, sound_list_size = 16, last_time = 0, base_volume = 0.9, min_dist = 5.0, max_dist = 13.0},
+            {name="urban_glass", chance = 0.9, interval = 40, sound_list_size = 18, last_time = 0, base_volume = 0.9, min_dist = 5.0, max_dist = 12.0},
+            {name="urban_steps", chance = 0.9, interval = 10, sound_list_size = 11, last_time = 0, base_volume = 1.0, min_dist = 5.0, max_dist = 12.0},
+            {name="urban_windows", chance = 0.9, interval = 15, sound_list_size = 18, last_time = 0, base_volume = 0.8, min_dist = 5.0, max_dist = 12.0},
+        }
+    },
+    -- 26. East of the mercenary base (Urban 6)
+    {
+        x = 43.964, y = 2.887, z = 59.718,
+        max_hearing_dist = 80.0,
+        sound_list = {
+            {name="urban_debris", chance = 0.9, interval = 15, sound_list_size = 16, last_time = 0, base_volume = 0.9, min_dist = 5.0, max_dist = 13.0},
+            {name="urban_glass", chance = 0.9, interval = 40, sound_list_size = 18, last_time = 0, base_volume = 0.9, min_dist = 5.0, max_dist = 12.0},
+            {name="urban_steps", chance = 0.9, interval = 10, sound_list_size = 11, last_time = 0, base_volume = 1.0, min_dist = 5.0, max_dist = 12.0},
+            {name="urban_windows", chance = 0.9, interval = 15, sound_list_size = 18, last_time = 0, base_volume = 0.8, min_dist = 5.0, max_dist = 12.0},
+        }
+    },
+    -- 27. East of the mercenary base (Upper Floor 5)
+    {
+        x = 52.178, y = 15.699, z = 60.119,
+        max_hearing_dist = 80.0,
+        sound_list = {
+            {name="urban_debris", chance = 0.9, interval = 15, sound_list_size = 16, last_time = 0, base_volume = 0.9, min_dist = 5.0, max_dist = 13.0},
+            {name="urban_glass", chance = 0.9, interval = 40, sound_list_size = 18, last_time = 0, base_volume = 0.9, min_dist = 5.0, max_dist = 12.0},
+            {name="urban_steps", chance = 0.9, interval = 10, sound_list_size = 11, last_time = 0, base_volume = 1.0, min_dist = 5.0, max_dist = 12.0},
+            {name="urban_windows", chance = 0.9, interval = 15, sound_list_size = 18, last_time = 0, base_volume = 0.8, min_dist = 5.0, max_dist = 12.0},
+        }
+    },
+    -- 28. East of the mercenary base (Urban 7)
+    {
+        x = 31.411, y = 2.887, z = 61.492,
+        max_hearing_dist = 80.0,
+        sound_list = {
+            {name="urban_debris", chance = 0.9, interval = 15, sound_list_size = 16, last_time = 0, base_volume = 0.9, min_dist = 5.0, max_dist = 13.0},
+            {name="urban_glass", chance = 0.9, interval = 40, sound_list_size = 18, last_time = 0, base_volume = 0.9, min_dist = 5.0, max_dist = 12.0},
+            {name="urban_steps", chance = 0.9, interval = 10, sound_list_size = 11, last_time = 0, base_volume = 1.0, min_dist = 5.0, max_dist = 12.0},
+            {name="urban_windows", chance = 0.9, interval = 15, sound_list_size = 18, last_time = 0, base_volume = 0.8, min_dist = 5.0, max_dist = 12.0},
+        }
+    },
+    -- 29. East of the mercenary base (Urban 8)
+    {
+        x = 21.380, y = 2.886, z = 60.083,
+        max_hearing_dist = 80.0,
+        sound_list = {
+            {name="urban_debris", chance = 0.9, interval = 15, sound_list_size = 16, last_time = 0, base_volume = 0.9, min_dist = 5.0, max_dist = 13.0},
+            {name="urban_glass", chance = 0.9, interval = 40, sound_list_size = 18, last_time = 0, base_volume = 0.9, min_dist = 5.0, max_dist = 12.0},
+            {name="urban_steps", chance = 0.9, interval = 10, sound_list_size = 11, last_time = 0, base_volume = 1.0, min_dist = 5.0, max_dist = 12.0},
+            {name="urban_windows", chance = 0.9, interval = 15, sound_list_size = 18, last_time = 0, base_volume = 0.8, min_dist = 5.0, max_dist = 12.0},
+        }
+    },
+    -- 30. East of the mercenary base (Upper Floor 6)
+    {
+        x = 27.339, y = 15.701, z = 59.970,
+        max_hearing_dist = 80.0,
+        sound_list = {
+            {name="urban_debris", chance = 0.9, interval = 15, sound_list_size = 16, last_time = 0, base_volume = 0.9, min_dist = 5.0, max_dist = 13.0},
+            {name="urban_glass", chance = 0.9, interval = 40, sound_list_size = 18, last_time = 0, base_volume = 0.9, min_dist = 5.0, max_dist = 12.0},
+            {name="urban_steps", chance = 0.9, interval = 10, sound_list_size = 11, last_time = 0, base_volume = 1.0, min_dist = 5.0, max_dist = 12.0},
+            {name="urban_windows", chance = 0.9, interval = 15, sound_list_size = 18, last_time = 0, base_volume = 0.8, min_dist = 5.0, max_dist = 12.0},
+        }
+    },
+    -- 31. East of the road to Limansk (Urban)
+    {
+        x = 23.096, y = 2.883, z = 100.953,
+        max_hearing_dist = 80.0,
+        sound_list = {
+            {name="urban_debris", chance = 0.9, interval = 15, sound_list_size = 16, last_time = 0, base_volume = 0.9, min_dist = 5.0, max_dist = 13.0},
+            {name="urban_glass", chance = 0.9, interval = 40, sound_list_size = 18, last_time = 0, base_volume = 0.9, min_dist = 5.0, max_dist = 12.0},
+            {name="urban_steps", chance = 0.9, interval = 10, sound_list_size = 11, last_time = 0, base_volume = 1.0, min_dist = 5.0, max_dist = 12.0},
+            {name="urban_windows", chance = 0.9, interval = 15, sound_list_size = 18, last_time = 0, base_volume = 0.8, min_dist = 5.0, max_dist = 12.0},
+        }
+    },
+    -- 32. East of the road to Limansk (Urban 2)
+    {
+        x = 36.572, y = 2.882, z = 100.958,
+        max_hearing_dist = 80.0,
+        sound_list = {
+            {name="urban_debris", chance = 0.9, interval = 15, sound_list_size = 16, last_time = 0, base_volume = 0.9, min_dist = 5.0, max_dist = 13.0},
+            {name="urban_glass", chance = 0.9, interval = 40, sound_list_size = 18, last_time = 0, base_volume = 0.9, min_dist = 5.0, max_dist = 12.0},
+            {name="urban_steps", chance = 0.9, interval = 10, sound_list_size = 11, last_time = 0, base_volume = 1.0, min_dist = 5.0, max_dist = 12.0},
+            {name="urban_windows", chance = 0.9, interval = 15, sound_list_size = 18, last_time = 0, base_volume = 0.8, min_dist = 5.0, max_dist = 12.0},
+        }
+    },
+    -- 33. East of the road to Limansk (Upper Floor)
+    {
+        x = 22.463, y = 15.623, z = 103.328,
+        max_hearing_dist = 80.0,
+        sound_list = {
+            {name="urban_debris", chance = 0.9, interval = 15, sound_list_size = 16, last_time = 0, base_volume = 0.9, min_dist = 5.0, max_dist = 13.0},
+            {name="urban_glass", chance = 0.9, interval = 40, sound_list_size = 18, last_time = 0, base_volume = 0.9, min_dist = 5.0, max_dist = 12.0},
+            {name="urban_steps", chance = 0.9, interval = 10, sound_list_size = 11, last_time = 0, base_volume = 1.0, min_dist = 5.0, max_dist = 12.0},
+            {name="urban_windows", chance = 0.9, interval = 15, sound_list_size = 18, last_time = 0, base_volume = 0.8, min_dist = 5.0, max_dist = 12.0},
+        }
+    },
+    -- 34. East of the road to Limansk (Upper Floor 2)
+    {
+        x = 38.376, y = 15.626, z = 104.031,
+        max_hearing_dist = 80.0,
+        sound_list = {
+            {name="urban_debris", chance = 0.9, interval = 10, sound_list_size = 16, last_time = 0, base_volume = 0.9, min_dist = 5.0, max_dist = 13.0},
+            {name="urban_glass", chance = 0.9, interval = 15, sound_list_size = 18, last_time = 0, base_volume = 0.9, min_dist = 5.0, max_dist = 12.0},
+            {name="urban_steps", chance = 0.9, interval = 10, sound_list_size = 11, last_time = 0, base_volume = 1.0, min_dist = 5.0, max_dist = 12.0},
+            {name="urban_windows", chance = 0.9, interval = 15, sound_list_size = 18, last_time = 0, base_volume = 0.8, min_dist = 5.0, max_dist = 12.0},
+        }
+    },
+
+-- Dead City, north-west of the isolated houses
+    {
+        x = -150.262, y = 4.139, z = -90.941,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="interior_detail_wood", chance = 1.0, interval = 8, sound_list_size = 25, last_time = 0, base_volume = 0.9, min_dist = 1.0, max_dist = 1.5},
+        }
+    },
+    -- Dead City, north-west of the isolated houses
+    {
+        x = -157.684, y = 4.150, z = -90.119,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="interior_detail_wood", chance = 1.0, interval = 8, sound_list_size = 25, last_time = 0, base_volume = 0.9, min_dist = 1.0, max_dist = 1.5},
+        }
+    },
+    -- Dead City, west of the isolated houses
+    {
+        x = -157.756, y = 4.753, z = -106.340,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="interior_detail_wood", chance = 1.0, interval = 8, sound_list_size = 25, last_time = 0, base_volume = 0.9, min_dist = 1.0, max_dist = 1.5},
+        }
+    },
+    -- Dead City, south-west of the isolated houses
+    {
+        x = -157.986, y = 4.762, z = -112.586,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="interior_detail_wood", chance = 1.0, interval = 8, sound_list_size = 25, last_time = 0, base_volume = 0.9, min_dist = 1.0, max_dist = 1.5},
+        }
+    },
+    -- Dead City, south of the isolated houses
+    {
+        x = -170.294, y = 10.662, z = -226.582,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="interior_detail_wood", chance = 1.0, interval = 8, sound_list_size = 25, last_time = 0, base_volume = 0.9, min_dist = 1.0, max_dist = 1.5},
+        }
+    },
+    -- Dead City, south of the isolated houses
+    {
+        x = -176.408, y = 10.359, z = -224.884,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="interior_detail_wood", chance = 1.0, interval = 8, sound_list_size = 25, last_time = 0, base_volume = 0.9, min_dist = 1.0, max_dist = 1.5},
+        }
+    },
+    -- Dead City, south of the isolated houses
+    {
+        x = -169.810, y = 10.361, z = -225.301,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="interior_detail_wood", chance = 1.0, interval = 8, sound_list_size = 25, last_time = 0, base_volume = 0.9, min_dist = 1.0, max_dist = 1.5},
+        }
+    },
+    -- Dead City, south of the tunnel to the Army Warehouses
+    {
+        x = 173.044, y = 6.875, z = -121.676,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="interior_detail_wood", chance = 1.0, interval = 8, sound_list_size = 25, last_time = 0, base_volume = 0.9, min_dist = 1.0, max_dist = 1.5},
+        }
+    },
+    -- Dead City, south of the tunnel to the Army Warehouses
+    {
+        x = 173.144, y = 7.125, z = -116.923,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="interior_detail_wood", chance = 1.0, interval = 8, sound_list_size = 25, last_time = 0, base_volume = 0.9, min_dist = 1.0, max_dist = 1.5},
+        }
+    },
+    -- Dead City, north-west of the tunnel to the Army Warehouses
+    {
+        x = 117.149, y = 4.748, z = 19.843,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="interior_detail_wood", chance = 1.0, interval = 8, sound_list_size = 25, last_time = 0, base_volume = 0.9, min_dist = 1.0, max_dist = 1.5},
+        }
+    },
+    -- Dead City, north-west of the tunnel to the Army Warehouses
+    {
+        x = 109.686, y = 4.627, z = 19.249,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="interior_detail_wood", chance = 1.0, interval = 8, sound_list_size = 25, last_time = 0, base_volume = 0.9, min_dist = 1.0, max_dist = 1.5},
+        }
+    },
+    -- Dead City, north-west of the tunnel to the Army Warehouses
+    {
+        x = 92.982, y = 4.504, z = 22.875,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="interior_detail_wood", chance = 1.0, interval = 8, sound_list_size = 25, last_time = 0, base_volume = 0.9, min_dist = 1.0, max_dist = 1.5},
+        }
+    },
+    -- Dead City, north of the abandoned school
+    {
+        x = 56.441, y = 3.827, z = -21.217,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="interior_detail_wood", chance = 1.0, interval = 8, sound_list_size = 25, last_time = 0, base_volume = 0.9, min_dist = 1.0, max_dist = 1.5},
+        }
+    },
+    -- Dead City, north of the abandoned school
+    {
+        x = 49.674, y = 3.837, z = -24.530,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="interior_detail_wood", chance = 1.0, interval = 8, sound_list_size = 25, last_time = 0, base_volume = 0.9, min_dist = 1.0, max_dist = 1.5},
+        }
+    },
+    -- Dead City, north of the tunnel to the Army Warehouses
+    {
+        x = 109.704, y = 4.122, z = 64.337,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="interior_detail_wood", chance = 1.0, interval = 8, sound_list_size = 25, last_time = 0, base_volume = 0.9, min_dist = 1.0, max_dist = 1.5},
+        }
+    },
+    -- Dead City, north of the tunnel to the Army Warehouses
+    {
+        x = 119.177, y = 4.120, z = 63.256,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="interior_detail_wood", chance = 1.0, interval = 8, sound_list_size = 25, last_time = 0, base_volume = 0.9, min_dist = 1.0, max_dist = 1.5},
+        }
+    },
+    -- Dead City, west of the mercenary base
+    {
+        x = -113.472, y = 6.479, z = 26.958,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="interior_detail_wood", chance = 1.0, interval = 8, sound_list_size = 25, last_time = 0, base_volume = 0.9, min_dist = 1.0, max_dist = 1.5},
+        }
+    },
+    -- Dead City, west of the mercenary base
+    {
+        x = -113.532, y = 6.488, z = 21.353,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="interior_detail_wood", chance = 1.0, interval = 8, sound_list_size = 25, last_time = 0, base_volume = 0.9, min_dist = 1.0, max_dist = 1.5},
+        }
+    },
+    -- Dead City, west of the road to Limansk
+    {
+        x = -147.231, y = 3.028, z = 47.875,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="interior_detail_wood", chance = 1.0, interval = 8, sound_list_size = 25, last_time = 0, base_volume = 0.9, min_dist = 1.0, max_dist = 1.5},
+        }
+    },
+    -- Dead City, south-west of the road to Limansk
+    {
+        x = -156.786, y = 7.123, z = 33.392,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="interior_detail_wood", chance = 1.0, interval = 8, sound_list_size = 25, last_time = 0, base_volume = 0.9, min_dist = 1.0, max_dist = 1.5},
+        }
+    },
+    -- Dead City, west of the mercenary base
+    {
+        x = -157.767, y = 7.277, z = 22.423,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="interior_detail_wood", chance = 1.0, interval = 8, sound_list_size = 25, last_time = 0, base_volume = 0.9, min_dist = 1.0, max_dist = 1.5},
+        }
+    },
+}

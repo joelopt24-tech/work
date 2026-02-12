@@ -1,0 +1,372 @@
+-- ARCHIVO: amb_map_l10_radar.script
+
+emitters = {
+-- Radar, south of the road to Army Warehouses
+    {
+        x = 571.551, y = -51.083, z = -399.450,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_metal", chance = 1.0, interval = 0.2, sound_list_size = 20, last_time = 0, base_volume = 2.5, min_dist = 2.0, max_dist = 2.5},
+        }
+    },
+    -- Radar, south of the road to Army Warehouses
+    {
+        x = 587.583, y = -49.978, z = -368.391,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_metal", chance = 1.0, interval = 0.2, sound_list_size = 20, last_time = 0, base_volume = 2.5, min_dist = 2.0, max_dist = 2.5},
+        }
+    },
+    -- Radar, north-east of the road to Army Warehouses
+    {
+        x = 601.738, y = -50.277, z = -342.603,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_metal", chance = 1.0, interval = 0.2, sound_list_size = 20, last_time = 0, base_volume = 2.5, min_dist = 2.0, max_dist = 2.5},
+        }
+    },
+    -- Radar, north of the road to Army Warehouses
+    {
+        x = 600.096, y = -49.633, z = -326.193,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_metal", chance = 1.0, interval = 0.2, sound_list_size = 20, last_time = 0, base_volume = 2.5, min_dist = 2.0, max_dist = 2.5},
+        }
+    },
+    -- Radar, north of the road to Army Warehouses
+    {
+        x = 610.897, y = -50.262, z = -305.272,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_metal", chance = 1.0, interval = 0.2, sound_list_size = 20, last_time = 0, base_volume = 2.5, min_dist = 2.0, max_dist = 2.5},
+        }
+    },
+    -- Radar, north of the road to Army Warehouses
+    {
+        x = 531.159, y = -46.186, z = -246.023,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_metal", chance = 1.0, interval = 0.2, sound_list_size = 20, last_time = 0, base_volume = 2.5, min_dist = 2.0, max_dist = 2.5},
+        }
+    },
+    -- Radar, south-west of the forest
+    {
+        x = 355.872, y = -41.886, z = -198.058,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_metal", chance = 1.0, interval = 0.2, sound_list_size = 20, last_time = 0, base_volume = 2.5, min_dist = 2.0, max_dist = 2.5},
+        }
+    },
+    -- Radar, south-east of the forest
+    {
+        x = 552.394, y = -60.284, z = -218.797,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_metal", chance = 1.0, interval = 0.2, sound_list_size = 20, last_time = 0, base_volume = 2.5, min_dist = 2.0, max_dist = 2.5},
+        }
+    },
+    -- Radar, east of the forest
+    {
+        x = 564.370, y = -59.559, z = -206.723,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_metal", chance = 1.0, interval = 0.2, sound_list_size = 20, last_time = 0, base_volume = 2.5, min_dist = 2.0, max_dist = 2.5},
+        }
+    },
+    -- Radar, east of the forest
+    {
+        x = 612.177, y = -61.291, z = -165.378,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_metal", chance = 1.0, interval = 0.2, sound_list_size = 20, last_time = 0, base_volume = 2.5, min_dist = 2.0, max_dist = 2.5},
+        }
+    },
+    -- Radar, east of the forest
+    {
+        x = 614.399, y = -61.177, z = -171.346,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_metal", chance = 1.0, interval = 0.2, sound_list_size = 20, last_time = 0, base_volume = 2.5, min_dist = 2.0, max_dist = 2.5},
+        }
+    },
+    -- Radar, east of the forest
+    {
+        x = 601.130, y = -53.952, z = -91.980,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_metal", chance = 1.0, interval = 0.2, sound_list_size = 20, last_time = 0, base_volume = 2.5, min_dist = 2.0, max_dist = 2.5},
+        }
+    },
+    -- Radar, east of the forest
+    {
+        x = 594.753, y = -54.683, z = -83.646,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_metal", chance = 1.0, interval = 0.2, sound_list_size = 20, last_time = 0, base_volume = 2.5, min_dist = 2.0, max_dist = 2.5},
+        }
+    },
+    -- Radar, east of the road block
+    {
+        x = 618.483, y = -47.442, z = -29.279,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_metal", chance = 1.0, interval = 0.2, sound_list_size = 20, last_time = 0, base_volume = 2.5, min_dist = 2.0, max_dist = 2.5},
+        }
+    },
+    -- Radar, east of the road block
+    {
+        x = 597.063, y = -46.946, z = 17.423,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_metal", chance = 1.0, interval = 0.2, sound_list_size = 20, last_time = 0, base_volume = 2.5, min_dist = 2.0, max_dist = 2.5},
+        }
+    },
+    -- Radar, east of the road block
+    {
+        x = 575.072, y = -46.311, z = 18.951,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_metal", chance = 1.0, interval = 0.2, sound_list_size = 20, last_time = 0, base_volume = 2.5, min_dist = 2.0, max_dist = 2.5},
+        }
+    },
+    -- Radar, east of the road block
+    {
+        x = 548.643, y = -50.007, z = 15.065,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_metal", chance = 1.0, interval = 0.2, sound_list_size = 20, last_time = 0, base_volume = 2.5, min_dist = 2.0, max_dist = 2.5},
+        }
+    },
+    -- Radar, east of the road to Pripyat
+    {
+        x = 560.019, y = -40.076, z = 178.549,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_metal", chance = 1.0, interval = 0.2, sound_list_size = 20, last_time = 0, base_volume = 2.5, min_dist = 2.0, max_dist = 2.5},
+        }
+    },
+    -- Radar, east of the road to Pripyat
+    {
+        x = 623.572, y = -40.522, z = 188.036,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_metal", chance = 1.0, interval = 0.2, sound_list_size = 20, last_time = 0, base_volume = 2.5, min_dist = 2.0, max_dist = 2.5},
+        }
+    },
+    -- Radar, east of the road block
+    {
+        x = 503.653, y = -47.131, z = -0.191,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_metal", chance = 1.0, interval = 0.2, sound_list_size = 20, last_time = 0, base_volume = 2.5, min_dist = 2.0, max_dist = 2.5},
+        }
+    },
+    -- Radar, east of the road block
+    {
+        x = 478.436, y = -48.012, z = 1.732,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_metal", chance = 1.0, interval = 0.2, sound_list_size = 20, last_time = 0, base_volume = 2.5, min_dist = 2.0, max_dist = 2.5},
+        }
+    },
+    -- Radar, east of the road block
+    {
+        x = 465.313, y = -47.625, z = 15.036,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_metal", chance = 1.0, interval = 0.2, sound_list_size = 20, last_time = 0, base_volume = 2.5, min_dist = 2.0, max_dist = 2.5},
+        }
+    },
+    -- Radar, west of the road block
+    {
+        x = 420.619, y = -47.138, z = 1.667,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_metal", chance = 1.0, interval = 0.2, sound_list_size = 20, last_time = 0, base_volume = 2.5, min_dist = 2.0, max_dist = 2.5},
+        }
+    },
+    -- Radar, west of the road block
+    {
+        x = 425.663, y = -47.782, z = 16.186,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_metal", chance = 1.0, interval = 0.2, sound_list_size = 20, last_time = 0, base_volume = 2.5, min_dist = 2.0, max_dist = 2.5},
+        }
+    },
+    -- Radar, west of the road block (WOOD)
+    {
+        x = 395.063, y = -46.232, z = 15.990,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_wood", chance = 1.0, interval = 0.2, sound_list_size = 25, last_time = 0, base_volume = 2.0, min_dist = 2.0, max_dist = 2.5},
+        }
+    },
+-- Radar, south of the road to Pripyat
+    {
+        x = 379.178, y = -35.907, z = 116.936,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_metal", chance = 1.0, interval = 0.2, sound_list_size = 20, last_time = 0, base_volume = 2.5, min_dist = 2.0, max_dist = 2.5},
+        }
+    },
+    -- Radar, south of the road to Pripyat
+    {
+        x = 389.105, y = -34.622, z = 119.208,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_metal", chance = 1.0, interval = 0.2, sound_list_size = 20, last_time = 0, base_volume = 2.5, min_dist = 2.0, max_dist = 2.5},
+        }
+    },
+    -- Radar, near the road to Pripyat
+    {
+        x = 381.612, y = -31.600, z = 134.403,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_metal", chance = 1.0, interval = 0.2, sound_list_size = 20, last_time = 0, base_volume = 2.5, min_dist = 2.0, max_dist = 2.5},
+        }
+    },
+    -- Radar, north of the road to Pripyat
+    {
+        x = 393.392, y = -30.095, z = 155.327,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_metal", chance = 1.0, interval = 0.2, sound_list_size = 20, last_time = 0, base_volume = 2.5, min_dist = 2.0, max_dist = 2.5},
+        }
+    },
+    -- Radar, west of the road block
+    {
+        x = 380.613, y = -50.395, z = 16.492,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_metal", chance = 1.0, interval = 0.2, sound_list_size = 20, last_time = 0, base_volume = 2.5, min_dist = 2.0, max_dist = 2.5},
+        }
+    },
+    -- Radar, west of the road block
+    {
+        x = 368.966, y = -47.806, z = 2.259,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_metal", chance = 1.0, interval = 0.2, sound_list_size = 20, last_time = 0, base_volume = 2.5, min_dist = 2.0, max_dist = 2.5},
+        }
+    },
+    -- Radar, north-east of the antennas
+    {
+        x = 96.852, y = 3.823, z = -13.075,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_metal", chance = 1.0, interval = 0.2, sound_list_size = 20, last_time = 0, base_volume = 2.5, min_dist = 2.0, max_dist = 2.5},
+        }
+    },
+    -- Radar, east of the antennas
+    {
+        x = 107.149, y = 2.686, z = -82.794,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_metal", chance = 1.0, interval = 0.2, sound_list_size = 20, last_time = 0, base_volume = 2.5, min_dist = 2.0, max_dist = 2.5},
+        }
+    },
+    -- Radar, east of the antennas
+    {
+        x = 43.745, y = 1.015, z = -78.683,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_metal", chance = 1.0, interval = 0.2, sound_list_size = 20, last_time = 0, base_volume = 2.5, min_dist = 2.0, max_dist = 2.5},
+        }
+    },
+    -- Radar, near the antennas
+    {
+        x = 6.764, y = -0.323, z = -68.479,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_metal", chance = 1.0, interval = 0.2, sound_list_size = 20, last_time = 0, base_volume = 2.5, min_dist = 2.0, max_dist = 2.5},
+        }
+    },
+    -- Radar, north of the antennas
+    {
+        x = 52.852, y = 4.677, z = 70.311,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_metal", chance = 1.0, interval = 0.2, sound_list_size = 20, last_time = 0, base_volume = 2.5, min_dist = 2.0, max_dist = 2.5},
+        }
+    },
+    -- Radar, north of the antennas
+    {
+        x = 67.833, y = 0.139, z = 63.053,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_metal", chance = 1.0, interval = 0.2, sound_list_size = 20, last_time = 0, base_volume = 2.5, min_dist = 2.0, max_dist = 2.5},
+        }
+    },
+    -- Radar, north-east of the antennas
+    {
+        x = 56.480, y = 2.925, z = 3.566,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_metal", chance = 1.0, interval = 0.2, sound_list_size = 20, last_time = 0, base_volume = 2.5, min_dist = 2.0, max_dist = 2.5},
+        }
+    },
+    -- Radar, north-east of the antennas
+    {
+        x = 69.195, y = -4.440, z = -29.344,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_metal", chance = 1.0, interval = 0.2, sound_list_size = 20, last_time = 0, base_volume = 2.5, min_dist = 2.0, max_dist = 2.5},
+        }
+    },
+    -- Radar, north-east of the antennas
+    {
+        x = 82.871, y = -1.321, z = -23.871,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_metal", chance = 1.0, interval = 0.2, sound_list_size = 20, last_time = 0, base_volume = 2.5, min_dist = 2.0, max_dist = 2.5},
+        }
+    },
+    -- Radar, east of the antennas (METAL LOOP)
+    {
+        x = 68.987, y = -1.277, z = -46.212,
+        max_hearing_dist = 190.0,
+        sound_list = {
+            {name="raindrops_metal_loop", chance = 1.0, interval = 46, sound_list_size = 1, last_time = 0, base_volume = 10.5, min_dist = 2.0, max_dist = 2.5},
+        }
+    },
+    -- Radar, east of the antennas (METAL LOOP)
+    {
+        x = 60.961, y = -0.937, z = -56.896,
+        max_hearing_dist = 190.0,
+        sound_list = {
+            {name="raindrops_metal_loop", chance = 1.0, interval = 46, sound_list_size = 1, last_time = 0, base_volume = 10.5, min_dist = 2.0, max_dist = 2.5},
+        }
+    },
+    -- Radar, east of the antennas (METAL LOOP)
+    {
+        x = 50.809, y = -1.176, z = -45.173,
+        max_hearing_dist = 190.0,
+        sound_list = {
+            {name="raindrops_metal_loop", chance = 1.0, interval = 46, sound_list_size = 1, last_time = 0, base_volume = 10.5, min_dist = 2.0, max_dist = 2.5},
+        }
+    },
+    -- Radar, north-east of the antennas (METAL LOOP)
+    {
+        x = 33.545, y = 2.377, z = -43.181,
+        max_hearing_dist = 190.0,
+        sound_list = {
+            {name="raindrops_metal_loop", chance = 1.0, interval = 46, sound_list_size = 1, last_time = 0, base_volume = 10.5, min_dist = 2.0, max_dist = 2.5},
+        }
+    },
+    -- Radar, north-west of the antennas (METAL LOOP)
+    {
+        x = -11.700, y = 6.218, z = -45.636,
+        max_hearing_dist = 190.0,
+        sound_list = {
+            {name="raindrops_metal_loop", chance = 1.0, interval = 46, sound_list_size = 1, last_time = 0, base_volume = 10.5, min_dist = 2.0, max_dist = 2.5},
+        }
+    },
+    -- Radar, west of the antennas (METAL LOOP)
+    {
+        x = -12.519, y = 6.583, z = -59.965,
+        max_hearing_dist = 190.0,
+        sound_list = {
+            {name="raindrops_metal_loop", chance = 1.0, interval = 46, sound_list_size = 1, last_time = 0, base_volume = 10.5, min_dist = 2.0, max_dist = 2.5},
+        }
+    },
+}

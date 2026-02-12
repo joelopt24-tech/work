@@ -1,0 +1,967 @@
+-- ARCHIVO: amb_map_zaton.script
+
+emitters = {
+    -- Zaton, east of the waste processing plant (METAL standard)
+    {
+        x = 393.872, y = 33.639, z = -429.687,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_metal", chance = 1.0, interval = 0.2, sound_list_size = 20, last_time = 0, base_volume = 2.5, min_dist = 2.0, max_dist = 2.5},
+        }
+    },
+    -- Zaton, north-west of the waste processing plant (METAL LOOP - 190.0m / 10.5 Vol)
+    {
+        x = 239.989, y = 38.147, z = -330.918,
+        max_hearing_dist = 200.0,
+        sound_list = {
+            {name="raindrops_metal_loop", chance = 1.0, interval = 46, sound_list_size = 1, last_time = 0, base_volume = 10.0, min_dist = 5.0, max_dist = 5.5},
+        }
+    },
+    -- Zaton, north-east of the southern plateau (METAL standard)
+    {
+        x = 134.864, y = 37.300, z = -440.823,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_metal", chance = 1.0, interval = 0.2, sound_list_size = 20, last_time = 0, base_volume = 2.5, min_dist = 2.0, max_dist = 2.5},
+        }
+    },
+    -- Zaton, south of Preobrazhensky bridge (METAL LOOP - 190.0m / 10.5 Vol)
+    {
+        x = 430.708, y = 32.688, z = -281.415,
+        max_hearing_dist = 190.0,
+        sound_list = {
+            {name="raindrops_metal", chance = 1.0, interval = 0.2, sound_list_size = 20, last_time = 0, base_volume = 2.5, min_dist = 2.0, max_dist = 2.5},
+        }
+    },
+    -- Zaton, south of Preobrazhensky bridge (METAL LOOP - 190.0m / 10.5 Vol)
+    {
+        x = 431.598, y = 33.256, z = -274.622,
+        max_hearing_dist = 190.0,
+        sound_list = {
+            {name="raindrops_metal", chance = 1.0, interval = 0.2, sound_list_size = 20, last_time = 0, base_volume = 2.5, min_dist = 2.0, max_dist = 2.5},
+        }
+    },
+    -- Zaton, south of Preobrazhensky bridge (METAL LOOP - 190.0m / 10.5 Vol)
+    {
+        x = 428.967, y = 33.257, z = -265.272,
+        max_hearing_dist = 190.0,
+        sound_list = {
+            {name="raindrops_metal", chance = 1.0, interval = 0.2, sound_list_size = 20, last_time = 0, base_volume = 2.5, min_dist = 2.0, max_dist = 2.5},
+        }
+    },
+    -- Zaton, south of Preobrazhensky bridge (METAL LOOP - 190.0m / 10.5 Vol)
+    {
+        x = 431.595, y = 33.253, z = -247.236,
+        max_hearing_dist = 190.0,
+        sound_list = {
+            {name="raindrops_metal", chance = 1.0, interval = 0.2, sound_list_size = 20, last_time = 0, base_volume = 2.5, min_dist = 2.0, max_dist = 2.5},
+        }
+    },
+    -- Zaton, south of Preobrazhensky bridge (METAL LOOP - 190.0m / 10.5 Vol)
+    {
+        x = 430.998, y = 34.675, z = -236.173,
+        max_hearing_dist = 190.0,
+        sound_list = {
+            {name="raindrops_metal", chance = 1.0, interval = 0.2, sound_list_size = 20, last_time = 0, base_volume = 2.5, min_dist = 2.0, max_dist = 2.5},
+        }
+    },
+    -- Zaton, east of the ranger station (METAL LOOP - 190.0m / 10.5 Vol)
+    {
+        x = 440.835, y = 36.543, z = -29.282,
+        max_hearing_dist = 190.0,
+        sound_list = {
+            {name="raindrops_metal", chance = 1.0, interval = 0.2, sound_list_size = 20, last_time = 0, base_volume = 2.5, min_dist = 2.0, max_dist = 2.5},
+        }
+    },
+    -- Zaton, north of the ranger station (METAL LOOP - 190.0m / 10.5 Vol)
+    {
+        x = 428.000, y = 33.972, z = 50.757,
+        max_hearing_dist = 190.0,
+        sound_list = {
+            {name="raindrops_metal", chance = 1.0, interval = 0.2, sound_list_size = 20, last_time = 0, base_volume = 2.5, min_dist = 2.0, max_dist = 2.5},
+        }
+    },
+    -- Zaton, north of the ranger station (METAL LOOP - 190.0m / 10.5 Vol)
+    {
+        x = 399.520, y = 35.141, z = 18.590,
+        max_hearing_dist = 190.0,
+        sound_list = {
+            {name="raindrops_metal", chance = 1.0, interval = 0.2, sound_list_size = 20, last_time = 0, base_volume = 2.5, min_dist = 2.0, max_dist = 2.5},
+        }
+    },
+    -- Zaton, north-west of the ranger station (METAL LOOP - 190.0m / 10.5 Vol)
+    {
+        x = 395.535, y = 35.376, z = -1.735,
+        max_hearing_dist = 190.0,
+        sound_list = {
+            {name="raindrops_metal", chance = 1.0, interval = 0.2, sound_list_size = 20, last_time = 0, base_volume = 2.5, min_dist = 2.0, max_dist = 2.5},
+        }
+    },
+    -- Zaton, south of the ranger station (METAL LOOP - 190.0m / 10.5 Vol)
+    {
+        x = 412.977, y = 39.866, z = -49.685,
+        max_hearing_dist = 190.0,
+        sound_list = {
+            {name="raindrops_metal", chance = 1.0, interval = 0.2, sound_list_size = 20, last_time = 0, base_volume = 2.5, min_dist = 2.0, max_dist = 2.5},
+        }
+    },
+    -- Zaton, south of the ranger station (METAL LOOP - 190.0m / 10.5 Vol)
+    {
+        x = 422.542, y = 47.031, z = -42.981,
+        max_hearing_dist = 190.0,
+        sound_list = {
+            {name="raindrops_metal_loop", chance = 1.0, interval = 46, sound_list_size = 1, last_time = 0, base_volume = 12.0, min_dist = 5.0, max_dist = 5.5},
+        }
+    },
+    -- Zaton, south of the ranger station (METAL LOOP - 190.0m / 10.5 Vol)
+    {
+        x = 421.842, y = 46.944, z = -26.832,
+        max_hearing_dist = 190.0,
+        sound_list = {
+            {name="raindrops_metal_loop", chance = 1.0, interval = 46, sound_list_size = 1, last_time = 0, base_volume = 12.0, min_dist = 5.0, max_dist = 5.5},
+        }
+    },
+    -- Zaton, north of the ranger station (METAL LOOP - 190.0m / 10.5 Vol)
+    {
+        x = 422.380, y = 47.010, z = -2.771,
+        max_hearing_dist = 190.0,
+        sound_list = {
+            {name="raindrops_metal_loop", chance = 1.0, interval = 46, sound_list_size = 1, last_time = 0, base_volume = 12.0, min_dist = 5.0, max_dist = 5.5},
+        }
+    },
+    -- Zaton, north-west of the ranger station (METAL LOOP - 190.0m / 10.5 Vol)
+    {
+        x = 407.654, y = 43.070, z = -8.601,
+        max_hearing_dist = 190.0,
+        sound_list = {
+            {name="raindrops_metal_loop", chance = 1.0, interval = 46, sound_list_size = 1, last_time = 0, base_volume = 12.0, min_dist = 5.0, max_dist = 5.5},
+        }
+    },
+    -- Zaton, west of the ranger station (METAL LOOP - 190.0m / 10.5 Vol)
+    {
+        x = 407.011, y = 42.963, z = -14.623,
+        max_hearing_dist = 190.0,
+        sound_list = {
+            {name="raindrops_metal_loop", chance = 1.0, interval = 46, sound_list_size = 1, last_time = 0, base_volume = 12.0, min_dist = 5.0, max_dist = 5.5},
+        }
+    },
+    -- Zaton, north of the ranger station (METAL LOOP - 190.0m / 10.5 Vol)
+    {
+        x = 406.394, y = 39.614, z = 21.531,
+        max_hearing_dist = 190.0,
+        sound_list = {
+            {name="raindrops_metal_loop", chance = 1.0, interval = 46, sound_list_size = 1, last_time = 0, base_volume = 12.0, min_dist = 5.0, max_dist = 5.5},
+        }
+    },
+    -- Zaton, west of the ranger station (METAL LOOP - 190.0m / 10.5 Vol)
+    {
+        x = 378.887, y = 43.606, z = -13.663,
+        max_hearing_dist = 190.0,
+        sound_list = {
+            {name="raindrops_metal_loop", chance = 1.0, interval = 46, sound_list_size = 1, last_time = 0, base_volume = 12.0, min_dist = 5.0, max_dist = 5.5},
+        }
+    },
+    -- Zaton, west of the ranger station (METAL LOOP - 190.0m / 10.5 Vol)
+    {
+        x = 378.590, y = 43.452, z = -30.009,
+        max_hearing_dist = 190.0,
+        sound_list = {
+            {name="raindrops_metal_loop", chance = 1.0, interval = 46, sound_list_size = 1, last_time = 0, base_volume = 12.0, min_dist = 5.0, max_dist = 5.5},
+        }
+    },
+    -- Zaton, south-west of the ranger station (METAL LOOP - 190.0m / 10.5 Vol)
+    {
+        x = 378.442, y = 43.267, z = -45.020,
+        max_hearing_dist = 190.0,
+        sound_list = {
+            {name="raindrops_metal_loop", chance = 1.0, interval = 46, sound_list_size = 1, last_time = 0, base_volume = 12.0, min_dist = 5.0, max_dist = 5.5},
+        }
+    },
+-- Zaton, east of the waste processing plant
+    {
+        x = 393.872, y = 33.639, z = -429.687,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_metal", chance = 1.0, interval = 0.2, sound_list_size = 20, last_time = 0, base_volume = 2.5, min_dist = 2.0, max_dist = 2.5},
+        }
+    },
+    -- Zaton, north-west of the waste processing plant
+    {
+        x = 239.989, y = 38.147, z = -330.918,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_metal", chance = 1.0, interval = 0.2, sound_list_size = 20, last_time = 0, base_volume = 2.5, min_dist = 2.0, max_dist = 2.5},
+        }
+    },
+    -- Zaton, north-east of the southern plateau
+    {
+        x = 134.864, y = 37.300, z = -440.823,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_metal", chance = 1.0, interval = 0.2, sound_list_size = 20, last_time = 0, base_volume = 2.5, min_dist = 2.0, max_dist = 2.5},
+        }
+    },
+    -- Zaton, south of Preobrazhensky bridge
+    {
+        x = 430.708, y = 32.688, z = -281.415,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_metal", chance = 1.0, interval = 0.2, sound_list_size = 20, last_time = 0, base_volume = 2.5, min_dist = 2.0, max_dist = 2.5},
+        }
+    },
+    -- Zaton, south of Preobrazhensky bridge
+    {
+        x = 431.598, y = 33.256, z = -274.622,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_metal", chance = 1.0, interval = 0.2, sound_list_size = 20, last_time = 0, base_volume = 2.5, min_dist = 2.0, max_dist = 2.5},
+        }
+    },
+    -- Zaton, south of Preobrazhensky bridge
+    {
+        x = 428.967, y = 33.257, z = -265.272,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_metal", chance = 1.0, interval = 0.2, sound_list_size = 20, last_time = 0, base_volume = 2.5, min_dist = 2.0, max_dist = 2.5},
+        }
+    },
+    -- Zaton, south of Preobrazhensky bridge
+    {
+        x = 431.595, y = 33.253, z = -247.236,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_metal", chance = 1.0, interval = 0.2, sound_list_size = 20, last_time = 0, base_volume = 2.5, min_dist = 2.0, max_dist = 2.5},
+        }
+    },
+    -- Zaton, south of Preobrazhensky bridge
+    {
+        x = 430.998, y = 34.675, z = -236.173,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_metal", chance = 1.0, interval = 0.2, sound_list_size = 20, last_time = 0, base_volume = 2.5, min_dist = 2.0, max_dist = 2.5},
+        }
+    },
+    -- Zaton, east of the ranger station
+    {
+        x = 440.835, y = 36.543, z = -29.282,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_metal", chance = 1.0, interval = 0.2, sound_list_size = 20, last_time = 0, base_volume = 2.5, min_dist = 2.0, max_dist = 2.5},
+        }
+    },
+    -- Zaton, north of the ranger station
+    {
+        x = 429.000, y = 33.972, z = 50.757,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_metal", chance = 1.0, interval = 0.2, sound_list_size = 20, last_time = 0, base_volume = 2.5, min_dist = 2.0, max_dist = 2.5},
+        }
+    },
+    -- Zaton, north of the ranger station
+    {
+        x = 399.520, y = 35.141, z = 18.590,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_metal", chance = 1.0, interval = 0.2, sound_list_size = 20, last_time = 0, base_volume = 2.5, min_dist = 2.0, max_dist = 2.5},
+        }
+    },
+    -- Zaton, north-west of the ranger station
+    {
+        x = 395.535, y = 35.376, z = -1.735,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_metal", chance = 1.0, interval = 0.2, sound_list_size = 20, last_time = 0, base_volume = 2.5, min_dist = 2.0, max_dist = 2.5},
+        }
+    },
+    -- Zaton, south of the ranger station
+    {
+        x = 412.977, y = 39.866, z = -49.685,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_metal", chance = 1.0, interval = 0.2, sound_list_size = 20, last_time = 0, base_volume = 2.5, min_dist = 2.0, max_dist = 2.5},
+        }
+    },
+    -- Zaton, south of the ranger station
+    {
+        x = 422.542, y = 47.031, z = -42.981,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_metal", chance = 1.0, interval = 0.2, sound_list_size = 20, last_time = 0, base_volume = 2.5, min_dist = 2.0, max_dist = 2.5},
+        }
+    },
+    -- Zaton, south of the ranger station
+    {
+        x = 421.842, y = 46.944, z = -26.832,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_metal", chance = 1.0, interval = 0.2, sound_list_size = 20, last_time = 0, base_volume = 2.5, min_dist = 2.0, max_dist = 2.5},
+        }
+    },
+    -- Zaton, north of the ranger station
+    {
+        x = 422.380, y = 47.010, z = -2.771,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_metal", chance = 1.0, interval = 0.2, sound_list_size = 20, last_time = 0, base_volume = 2.5, min_dist = 2.0, max_dist = 2.5},
+        }
+    },
+    -- Zaton, north-west of the ranger station
+    {
+        x = 407.654, y = 43.070, z = -8.601,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_metal", chance = 1.0, interval = 0.2, sound_list_size = 20, last_time = 0, base_volume = 2.5, min_dist = 2.0, max_dist = 2.5},
+        }
+    },
+    -- Zaton, west of the ranger station
+    {
+        x = 407.011, y = 42.963, z = -14.623,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_metal", chance = 1.0, interval = 0.2, sound_list_size = 20, last_time = 0, base_volume = 2.5, min_dist = 2.0, max_dist = 2.5},
+        }
+    },
+    -- Zaton, north of the ranger station
+    {
+        x = 406.394, y = 39.614, z = 21.531,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_metal", chance = 1.0, interval = 0.2, sound_list_size = 20, last_time = 0, base_volume = 2.5, min_dist = 2.0, max_dist = 2.5},
+        }
+    },
+    -- Zaton, west of the ranger station
+    {
+        x = 378.887, y = 43.606, z = -13.663,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_metal", chance = 1.0, interval = 0.2, sound_list_size = 20, last_time = 0, base_volume = 2.5, min_dist = 2.0, max_dist = 2.5},
+        }
+    },
+    -- Zaton, west of the ranger station
+    {
+        x = 378.590, y = 43.452, z = -30.009,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_metal", chance = 1.0, interval = 0.2, sound_list_size = 20, last_time = 0, base_volume = 2.5, min_dist = 2.0, max_dist = 2.5},
+        }
+    },
+    -- Zaton, south-west of the ranger station
+    {
+        x = 378.442, y = 43.267, z = -45.020,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_metal", chance = 1.0, interval = 0.2, sound_list_size = 20, last_time = 0, base_volume = 2.5, min_dist = 2.0, max_dist = 2.5},
+        }
+    },
+    -- Zaton, west of the ranger station
+    {
+        x = 371.274, y = 35.829, z = -7.676,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_metal", chance = 1.0, interval = 0.2, sound_list_size = 20, last_time = 0, base_volume = 2.5, min_dist = 2.0, max_dist = 2.5},
+        }
+    },
+    -- Zaton, west of the ranger station
+    {
+        x = 369.947, y = 35.526, z = -0.695,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_metal", chance = 1.0, interval = 0.2, sound_list_size = 20, last_time = 0, base_volume = 2.5, min_dist = 2.0, max_dist = 2.5},
+        }
+    },
+    -- Zaton, north-west of the ranger station
+    {
+        x = 396.146, y = 35.523, z = -2.249,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_metal", chance = 1.0, interval = 0.2, sound_list_size = 20, last_time = 0, base_volume = 2.5, min_dist = 2.0, max_dist = 2.5},
+        }
+    },
+    -- Zaton, north-west of the ranger station
+    {
+        x = 399.960, y = 35.305, z = 16.201,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_metal", chance = 1.0, interval = 0.2, sound_list_size = 20, last_time = 0, base_volume = 2.5, min_dist = 2.0, max_dist = 2.5},
+        }
+    },
+    -- Zaton, north of the ranger station
+    {
+        x = 428.075, y = 33.952, z = 49.932,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_metal", chance = 1.0, interval = 0.2, sound_list_size = 20, last_time = 0, base_volume = 2.5, min_dist = 2.0, max_dist = 2.5},
+        }
+    },
+    -- Zaton, south of the dock cranes
+    {
+        x = 228.774, y = 7.205, z = -17.106,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_metal", chance = 1.0, interval = 0.2, sound_list_size = 20, last_time = 0, base_volume = 2.5, min_dist = 2.0, max_dist = 2.5},
+        }
+    },
+    -- Zaton, south of the dock cranes
+    {
+        x = 217.639, y = 6.594, z = -36.933,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_metal", chance = 1.0, interval = 0.2, sound_list_size = 20, last_time = 0, base_volume = 2.5, min_dist = 2.0, max_dist = 2.5},
+        }
+    },
+    -- Zaton, south of the dock cranes
+    {
+        x = 210.920, y = 6.883, z = -31.664,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_metal", chance = 1.0, interval = 0.2, sound_list_size = 20, last_time = 0, base_volume = 2.5, min_dist = 2.0, max_dist = 2.5},
+        }
+    },
+    -- Zaton, south of the dock cranes
+    {
+        x = 228.845, y = 7.203, z = -17.196,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_metal", chance = 1.0, interval = 0.2, sound_list_size = 20, last_time = 0, base_volume = 2.5, min_dist = 2.0, max_dist = 2.5},
+        }
+    },
+    -- Zaton, east of the dock cranes
+    {
+        x = 235.824, y = 11.580, z = 1.960,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_metal", chance = 1.0, interval = 0.2, sound_list_size = 20, last_time = 0, base_volume = 2.5, min_dist = 2.0, max_dist = 2.5},
+        }
+    },
+    -- Zaton, north of the dock cranes
+    {
+        x = 281.846, y = 19.108, z = 136.385,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_metal", chance = 1.0, interval = 0.2, sound_list_size = 20, last_time = 0, base_volume = 2.5, min_dist = 2.0, max_dist = 2.5},
+        }
+    },
+    -- Zaton, south-east of the dredge station
+    {
+        x = 412.311, y = -1.286, z = 216.728,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_metal", chance = 1.0, interval = 0.2, sound_list_size = 20, last_time = 0, base_volume = 2.5, min_dist = 2.0, max_dist = 2.5},
+        }
+    },
+    -- Zaton, east of the dredge station
+    {
+        x = 411.354, y = -1.303, z = 226.264,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_metal", chance = 1.0, interval = 0.2, sound_list_size = 20, last_time = 0, base_volume = 2.5, min_dist = 2.0, max_dist = 2.5},
+        }
+    },
+    -- Zaton, north-east of the dredge station
+    {
+        x = 403.072, y = -4.000, z = 241.574,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_metal", chance = 1.0, interval = 0.2, sound_list_size = 20, last_time = 0, base_volume = 2.5, min_dist = 2.0, max_dist = 2.5},
+        }
+    },
+    -- Zaton, north of the dredge station
+    {
+        x = 371.869, y = -6.431, z = 276.612,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_metal", chance = 1.0, interval = 0.2, sound_list_size = 20, last_time = 0, base_volume = 2.5, min_dist = 2.0, max_dist = 2.5},
+        }
+    },
+    -- Zaton, north-east of the sawmill
+    {
+        x = -311.667, y = 8.813, z = 399.082,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_metal", chance = 1.0, interval = 0.2, sound_list_size = 20, last_time = 0, base_volume = 2.5, min_dist = 2.0, max_dist = 2.5},
+        }
+    },
+    -- Zaton, north of the sawmill
+    {
+        x = -313.374, y = 16.214, z = 424.888,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_metal", chance = 1.0, interval = 0.2, sound_list_size = 20, last_time = 0, base_volume = 2.5, min_dist = 2.0, max_dist = 2.5},
+        }
+    },
+    -- Zaton, north of the sawmill
+    {
+        x = -318.146, y = 15.540, z = 416.932,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_metal", chance = 1.0, interval = 0.2, sound_list_size = 20, last_time = 0, base_volume = 2.5, min_dist = 2.0, max_dist = 2.5},
+        }
+    },
+    -- Zaton, north of the sawmill
+    {
+        x = -330.403, y = 15.067, z = 418.037,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_metal", chance = 1.0, interval = 0.2, sound_list_size = 20, last_time = 0, base_volume = 2.5, min_dist = 2.0, max_dist = 2.5},
+        }
+    },
+    -- Zaton, north of the sawmill
+    {
+        x = -344.480, y = 21.805, z = 353.480,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_metal", chance = 1.0, interval = 0.2, sound_list_size = 20, last_time = 0, base_volume = 2.5, min_dist = 2.0, max_dist = 2.5},
+        }
+    },
+    -- Zaton, north-west of the sawmill
+    {
+        x = -362.443, y = 21.890, z = 353.025,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_metal", chance = 1.0, interval = 0.2, sound_list_size = 20, last_time = 0, base_volume = 2.5, min_dist = 2.0, max_dist = 2.5},
+        }
+    },
+    -- Zaton, west of the sawmill
+    {
+        x = -361.641, y = 27.555, z = 345.631,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_metal", chance = 1.0, interval = 0.2, sound_list_size = 20, last_time = 0, base_volume = 2.5, min_dist = 2.0, max_dist = 2.5},
+        }
+    },
+    -- Zaton, by the sawmill
+    {
+        x = -351.649, y = 27.731, z = 345.228,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_metal", chance = 1.0, interval = 0.2, sound_list_size = 20, last_time = 0, base_volume = 2.5, min_dist = 2.0, max_dist = 2.5},
+        }
+    },
+    -- Zaton, east of the sawmill
+    {
+        x = -324.730, y = 25.394, z = 352.678,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_metal", chance = 1.0, interval = 0.2, sound_list_size = 20, last_time = 0, base_volume = 2.5, min_dist = 2.0, max_dist = 2.5},
+        }
+    },
+    -- Zaton, east of the sawmill
+    {
+        x = -314.612, y = 25.086, z = 352.197,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_metal", chance = 1.0, interval = 0.2, sound_list_size = 20, last_time = 0, base_volume = 2.5, min_dist = 2.0, max_dist = 2.5},
+        }
+    },
+    -- Zaton, east of the sawmill
+    {
+        x = -299.794, y = 25.948, z = 350.173,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_metal", chance = 1.0, interval = 0.2, sound_list_size = 20, last_time = 0, base_volume = 2.5, min_dist = 2.0, max_dist = 2.5},
+        }
+    },
+    -- Zaton, north-east of the sawmill
+    {
+        x = -311.077, y = 8.794, z = 398.455,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_metal", chance = 1.0, interval = 0.2, sound_list_size = 20, last_time = 0, base_volume = 2.5, min_dist = 2.0, max_dist = 2.5},
+        }
+    },
+    -- Zaton, east of the sawmill
+    {
+        x = -323.798, y = 18.071, z = 335.570,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_metal", chance = 1.0, interval = 0.2, sound_list_size = 20, last_time = 0, base_volume = 2.5, min_dist = 2.0, max_dist = 2.5},
+        }
+    },
+
+-- Zaton, north of Preobrazhensky bridge (METAL standard)
+    {
+        x = 424.427, y = 33.469, z = -172.504,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_metal", chance = 1.0, interval = 0.2, sound_list_size = 20, last_time = 0, base_volume = 2.5, min_dist = 2.0, max_dist = 2.5},
+        }
+    },
+    -- Zaton, at the Scar anomaly (METAL standard)
+    {
+        x = 321.695, y = -2.591, z = -219.694,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_metal", chance = 1.0, interval = 0.2, sound_list_size = 20, last_time = 0, base_volume = 2.5, min_dist = 2.0, max_dist = 2.5},
+        }
+    },
+    -- Zaton, south of the old barge (METAL LOOP - 190.0m / 10.5 Vol)
+    {
+        x = 156.143, y = 7.994, z = -189.325,
+        max_hearing_dist = 190.0,
+        sound_list = {
+            {name="raindrops_metal_loop", chance = 1.0, interval = 46, sound_list_size = 1, last_time = 0, base_volume = 10.5, min_dist = 2.0, max_dist = 2.5},
+        }
+    },
+    -- Zaton, east of the old barge (METAL LOOP - 190.0m / 10.5 Vol)
+    {
+        x = 163.157, y = -0.804, z = -140.166,
+        max_hearing_dist = 190.0,
+        sound_list = {
+            {name="raindrops_metal_loop", chance = 1.0, interval = 46, sound_list_size = 1, last_time = 0, base_volume = 10.5, min_dist = 2.0, max_dist = 2.5},
+        }
+    },
+    -- Zaton, near the old barge (METAL LOOP - 190.0m / 10.5 Vol)
+    {
+        x = 156.312, y = -4.464, z = -139.948,
+        max_hearing_dist = 190.0,
+        sound_list = {
+            {name="raindrops_metal_loop", chance = 1.0, interval = 46, sound_list_size = 1, last_time = 0, base_volume = 10.5, min_dist = 2.0, max_dist = 2.5},
+        }
+    },
+    -- Zaton, west of the old barge (METAL LOOP - 190.0m / 10.5 Vol)
+    {
+        x = 137.266, y = -4.475, z = -140.834,
+        max_hearing_dist = 190.0,
+        sound_list = {
+            {name="raindrops_metal_loop", chance = 1.0, interval = 46, sound_list_size = 1, last_time = 0, base_volume = 10.5, min_dist = 2.0, max_dist = 2.5},
+        }
+    },
+
+-- Zaton, north of the workshop substation (METAL standard)
+    {
+        x = -125.460, y = 23.223, z = -334.890,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_metal", chance = 1.0, interval = 0.2, sound_list_size = 20, last_time = 0, base_volume = 2.5, min_dist = 2.0, max_dist = 2.5},
+        }
+    },
+    -- Zaton, north of the workshop substation (METAL standard)
+    {
+        x = -117.717, y = 25.474, z = -381.869,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_metal", chance = 1.0, interval = 0.2, sound_list_size = 20, last_time = 0, base_volume = 2.5, min_dist = 2.0, max_dist = 2.5},
+        }
+    },
+    -- Zaton, north of the workshop substation (METAL LOOP - 190.0m / 10.5 Vol)
+    {
+        x = -128.791, y = 31.554, z = -400.391,
+        max_hearing_dist = 190.0,
+        sound_list = {
+            {name="raindrops_metal_loop", chance = 1.0, interval = 46, sound_list_size = 1, last_time = 0, base_volume = 10.5, min_dist = 2.0, max_dist = 2.5},
+        }
+    },
+    -- Zaton, north of the workshop substation (METAL LOOP - 190.0m / 10.5 Vol)
+    {
+        x = -137.623, y = 30.550, z = -394.210,
+        max_hearing_dist = 190.0,
+        sound_list = {
+            {name="raindrops_metal_loop", chance = 1.0, interval = 46, sound_list_size = 1, last_time = 0, base_volume = 10.5, min_dist = 2.0, max_dist = 2.5},
+        }
+    },
+    -- Zaton, south-west of the workshop substation (METAL LOOP - 190.0m / 10.5 Vol)
+    {
+        x = -142.135, y = 29.077, z = -418.889,
+        max_hearing_dist = 190.0,
+        sound_list = {
+            {name="raindrops_metal_loop", chance = 1.0, interval = 46, sound_list_size = 1, last_time = 0, base_volume = 10.5, min_dist = 2.0, max_dist = 2.5},
+        }
+    },
+    -- Zaton, by the workshop substation (METAL LOOP - 190.0m / 10.5 Vol)
+    {
+        x = -141.646, y = 29.077, z = -413.340,
+        max_hearing_dist = 190.0,
+        sound_list = {
+            {name="raindrops_metal_loop", chance = 1.0, interval = 46, sound_list_size = 1, last_time = 0, base_volume = 10.5, min_dist = 2.0, max_dist = 2.5},
+        }
+    },
+
+-- Zaton, north of the Iron Forest anomaly (METAL standard)
+    {
+        x = -339.948, y = 39.603, z = -289.956,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_metal", chance = 1.0, interval = 0.2, sound_list_size = 20, last_time = 0, base_volume = 2.5, min_dist = 2.0, max_dist = 2.5},
+        }
+    },
+    -- Zaton, west of the Iron Forest anomaly (METAL standard)
+    {
+        x = -402.202, y = 40.037, z = -333.228,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_metal", chance = 1.0, interval = 0.2, sound_list_size = 20, last_time = 0, base_volume = 2.5, min_dist = 2.0, max_dist = 2.5},
+        }
+    },
+    -- Zaton, south-west of the Oakpine anomaly (METAL LOOP - 190.0m / 10.5 Vol)
+    {
+        x = -358.320, y = 23.176, z = -179.927,
+        max_hearing_dist = 190.0,
+        sound_list = {
+            {name="raindrops_metal_loop", chance = 1.0, interval = 46, sound_list_size = 1, last_time = 0, base_volume = 10.5, min_dist = 2.0, max_dist = 2.5},
+        }
+    },
+    -- Zaton, north-west of the refuelling station (METAL LOOP - 190.0m / 10.5 Vol)
+    {
+        x = -159.157, y = 22.198, z = -155.619,
+        max_hearing_dist = 190.0,
+        sound_list = {
+            {name="raindrops_metal_loop", chance = 1.0, interval = 46, sound_list_size = 1, last_time = 0, base_volume = 10.5, min_dist = 2.0, max_dist = 2.5},
+        }
+    },
+    -- Zaton, north-west of the refuelling station (METAL LOOP - 190.0m / 10.5 Vol)
+    {
+        x = -161.710, y = 23.822, z = -169.101,
+        max_hearing_dist = 190.0,
+        sound_list = {
+            {name="raindrops_metal_loop", chance = 1.0, interval = 46, sound_list_size = 1, last_time = 0, base_volume = 10.5, min_dist = 2.0, max_dist = 2.5},
+        }
+    },
+    -- Zaton, west of the refuelling station (METAL LOOP - 190.0m / 10.5 Vol)
+    {
+        x = -162.831, y = 26.659, z = -196.624,
+        max_hearing_dist = 190.0,
+        sound_list = {
+            {name="raindrops_metal_loop", chance = 1.0, interval = 46, sound_list_size = 1, last_time = 0, base_volume = 10.5, min_dist = 2.0, max_dist = 2.5},
+        }
+    },
+    -- Zaton, north-west of the refuelling station (METAL LOOP - 190.0m / 10.5 Vol)
+    {
+        x = -165.561, y = 26.630, z = -183.347,
+        max_hearing_dist = 190.0,
+        sound_list = {
+            {name="raindrops_metal_loop", chance = 1.0, interval = 46, sound_list_size = 1, last_time = 0, base_volume = 10.5, min_dist = 2.0, max_dist = 2.5},
+        }
+    },
+-- 1. Zaton, north of the Claw anomaly (METAL standard)
+    {
+        x = -84.978, y = 5.817, z = -109.569,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_metal", chance = 1.0, interval = 0.2, sound_list_size = 20, last_time = 0, base_volume = 2.5, min_dist = 2.0, max_dist = 2.5},
+        }
+    },
+    -- 2. Zaton, south of Izumrudnoye (METAL standard)
+    {
+        x = -160.799, y = 7.137, z = -26.049,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_metal", chance = 1.0, interval = 0.2, sound_list_size = 20, last_time = 0, base_volume = 2.5, min_dist = 2.0, max_dist = 2.5},
+        }
+    },
+    -- 3. Zaton, south of Izumrudnoye (METAL standard)
+    {
+        x = -188.365, y = -2.834, z = 16.520,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_metal", chance = 1.0, interval = 0.2, sound_list_size = 20, last_time = 0, base_volume = 2.5, min_dist = 2.0, max_dist = 2.5},
+        }
+    },
+    -- 4. Zaton, west of the Shevchenko (METAL LOOP - 190.0m / 10.5 Vol)
+    {
+        x = -6.693, y = 2.361, z = 36.350,
+        max_hearing_dist = 190.0,
+        sound_list = {
+            {name="raindrops_metal_loop", chance = 1.0, interval = 46, sound_list_size = 1, last_time = 0, base_volume = 10.5, min_dist = 2.0, max_dist = 2.5},
+        }
+    },
+    -- 5. Zaton, by the Shevchenko (METAL LOOP - 190.0m / 10.5 Vol)
+    {
+        x = 8.998, y = 2.132, z = 36.001,
+        max_hearing_dist = 190.0,
+        sound_list = {
+            {name="raindrops_metal_loop", chance = 1.0, interval = 46, sound_list_size = 1, last_time = 0, base_volume = 10.5, min_dist = 2.0, max_dist = 2.5},
+        }
+    },
+    -- 6. Zaton, west of the Shevchenko (METAL LOOP - 190.0m / 10.5 Vol)
+    {
+        x = 5.541, y = 4.529, z = 36.869,
+        max_hearing_dist = 190.0,
+        sound_list = {
+            {name="raindrops_metal_loop", chance = 1.0, interval = 46, sound_list_size = 1, last_time = 0, base_volume = 10.5, min_dist = 2.0, max_dist = 2.5},
+        }
+    },
+    -- 7. Zaton, east of the Shevchenko (METAL LOOP - 190.0m / 10.5 Vol)
+    {
+        x = 30.459, y = -0.541, z = 36.491,
+        max_hearing_dist = 190.0,
+        sound_list = {
+            {name="raindrops_metal_loop", chance = 1.0, interval = 46, sound_list_size = 1, last_time = 0, base_volume = 10.5, min_dist = 2.0, max_dist = 2.5},
+        }
+    },
+    -- 8. Zaton, east of the Shevchenko (METAL LOOP - 190.0m / 10.5 Vol)
+    {
+        x = 66.193, y = -0.540, z = 38.787,
+        max_hearing_dist = 190.0,
+        sound_list = {
+            {name="raindrops_metal_loop", chance = 1.0, interval = 46, sound_list_size = 1, last_time = 0, base_volume = 10.5, min_dist = 2.0, max_dist = 2.5},
+        }
+    },
+    -- 9. Zaton, south-east of the Shevchenko (METAL standard - 4 de 4 últimos)
+    {
+        x = 35.063, y = -5.101, z = 8.590,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_metal", chance = 1.0, interval = 0.2, sound_list_size = 20, last_time = 0, base_volume = 2.5, min_dist = 2.0, max_dist = 2.5},
+        }
+    },
+    -- 10. Zaton, south-east of the Shevchenko (METAL standard - 3 de 4 últimos)
+    {
+        x = 33.371, y = -5.647, z = 17.291,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_metal", chance = 1.0, interval = 0.2, sound_list_size = 20, last_time = 0, base_volume = 2.5, min_dist = 2.0, max_dist = 2.5},
+        }
+    },
+    -- 11. Zaton, south-east of the Shevchenko (METAL standard - 2 de 4 últimos)
+    {
+        x = 27.588, y = -5.410, z = 19.417,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_metal", chance = 1.0, interval = 0.2, sound_list_size = 20, last_time = 0, base_volume = 2.5, min_dist = 2.0, max_dist = 2.5},
+        }
+    },
+    -- 12. Zaton, south-east of the Shevchenko (METAL standard - 1 de 4 últimos)
+    {
+        x = 24.408, y = -4.461, z = 13.669,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_metal", chance = 1.0, interval = 0.2, sound_list_size = 20, last_time = 0, base_volume = 2.5, min_dist = 2.0, max_dist = 2.5},
+        }
+    },
+-- Zaton, west of the Skadovsk
+    {
+        x = 102.940, y = 1.358, z = 183.387,
+        max_hearing_dist = 190.0,
+        sound_list = {
+            {name="raindrops_metal_loop", chance = 1.0, interval = 46, sound_list_size = 1, last_time = 0, base_volume = 8.5, min_dist = 2.0, max_dist = 2.5},
+        }
+    },
+    -- Zaton, west of the Skadovsk
+    {
+        x = 118.581, y = -1.339, z = 182.677,
+        max_hearing_dist = 190.0,
+        sound_list = {
+            {name="raindrops_metal_loop", chance = 1.0, interval = 46, sound_list_size = 1, last_time = 0, base_volume = 8.5, min_dist = 2.0, max_dist = 2.5},
+        }
+    },
+    -- Zaton, west of the Skadovsk
+    {
+        x = 122.957, y = -2.400, z = 182.907,
+        max_hearing_dist = 190.0,
+        sound_list = {
+            {name="raindrops_metal_loop", chance = 1.0, interval = 46, sound_list_size = 1, last_time = 0, base_volume = 8.5, min_dist = 2.0, max_dist = 2.5},
+        }
+    },
+    -- Zaton, near the Skadovsk
+    {
+        x = 133.703, y = -2.587, z = 182.750,
+        max_hearing_dist = 190.0,
+        sound_list = {
+            {name="raindrops_metal_loop", chance = 1.0, interval = 46, sound_list_size = 1, last_time = 0, base_volume = 8.5, min_dist = 2.0, max_dist = 2.5},
+        }
+    },
+    -- Zaton, east of the Skadovsk
+    {
+        x = 146.706, y = -2.589, z = 179.345,
+        max_hearing_dist = 190.0,
+        sound_list = {
+            {name="raindrops_metal_loop", chance = 1.0, interval = 46, sound_list_size = 1, last_time = 0, base_volume = 8.5, min_dist = 2.0, max_dist = 2.5},
+        }
+    },
+    -- Zaton, west of the Skadovsk
+    {
+        x = 101.016, y = -1.340, z = 188.511,
+        max_hearing_dist = 190.0,
+        sound_list = {
+            {name="raindrops_metal_loop", chance = 1.0, interval = 46, sound_list_size = 1, last_time = 0, base_volume = 8.5, min_dist = 2.0, max_dist = 2.5},
+        }
+    },
+    -- Zaton, west of the Skadovsk
+    {
+        x = 113.279, y = 1.361, z = 188.126,
+        max_hearing_dist = 190.0,
+        sound_list = {
+            {name="raindrops_metal_loop", chance = 1.0, interval = 46, sound_list_size = 1, last_time = 0, base_volume = 8.5, min_dist = 2.0, max_dist = 2.5},
+        }
+    },
+-- Zaton, south of Izumrudnoye (WOOD LOOP)
+    {
+        x = -180.945, y = 13.803, z = 78.465,
+        max_hearing_dist = 150.0,
+        sound_list = {
+            {name="raindrops_wood_loop", chance = 1.0, interval = 45, sound_list_size = 1, last_time = 0, base_volume = 9.0, min_dist = 2.0, max_dist = 5.0},
+        }
+    },
+    -- Zaton, south-west of Izumrudnoye (WOOD LOOP)
+    {
+        x = -181.561, y = 13.312, z = 90.464,
+        max_hearing_dist = 150.0,
+        sound_list = {
+            {name="raindrops_wood_loop", chance = 1.0, interval = 45, sound_list_size = 1, last_time = 0, base_volume = 9.0, min_dist = 2.0, max_dist = 5.0},
+        }
+    },
+    -- Zaton, south-east of Izumrudnoye (WOOD LOOP)
+    {
+        x = -159.897, y = 13.290, z = 89.915,
+        max_hearing_dist = 150.0,
+        sound_list = {
+            {name="raindrops_wood_loop", chance = 1.0, interval = 45, sound_list_size = 1, last_time = 0, base_volume = 9.0, min_dist = 2.0, max_dist = 5.0},
+        }
+    },
+    -- Zaton, south of Izumrudnoye (WOOD LOOP)
+    {
+        x = -161.020, y = 13.200, z = 76.197,
+        max_hearing_dist = 150.0,
+        sound_list = {
+            {name="raindrops_wood_loop", chance = 1.0, interval = 45, sound_list_size = 1, last_time = 0, base_volume = 9.0, min_dist = 2.0, max_dist = 5.0},
+        }
+    },
+    -- Zaton, north of Izumrudnoye (WOOD LOOP)
+    {
+        x = -177.426, y = 15.910, z = 141.913,
+        max_hearing_dist = 150.0,
+        sound_list = {
+            {name="raindrops_wood_loop", chance = 1.0, interval = 45, sound_list_size = 1, last_time = 0, base_volume = 9.0, min_dist = 2.0, max_dist = 5.0},
+        }
+    },
+    -- Zaton, north of Izumrudnoye (WOOD LOOP)
+    {
+        x = -167.620, y = 13.636, z = 145.890,
+        max_hearing_dist = 150.0,
+        sound_list = {
+            {name="raindrops_wood_loop", chance = 1.0, interval = 45, sound_list_size = 1, last_time = 0, base_volume = 9.0, min_dist = 2.0, max_dist = 5.0},
+        }
+    },
+    -- Zaton, east of the sawmill (METAL LOOP)
+    {
+        x = -300.165, y = 24.996, z = 346.474,
+        max_hearing_dist = 150.0,
+        sound_list = {
+            {name="raindrops_metal_loop", chance = 1.0, interval = 46, sound_list_size = 1, last_time = 0, base_volume = 10.5, min_dist = 2.0, max_dist = 2.5},
+        }
+    },
+    -- Zaton, west of the sawmill (METAL LOOP)
+    {
+        x = -357.567, y = 26.353, z = 348.013,
+        max_hearing_dist = 150.0,
+        sound_list = {
+            {name="raindrops_metal_loop", chance = 1.0, interval = 46, sound_list_size = 1, last_time = 0, base_volume = 10.5, min_dist = 2.0, max_dist = 2.5},
+        }
+    },
+    -- Zaton, north of the sawmill (METAL LOOP)
+    {
+        x = -326.831, y = 14.777, z = 418.102,
+        max_hearing_dist = 150.0,
+        sound_list = {
+            {name="raindrops_metal_loop", chance = 1.0, interval = 46, sound_list_size = 1, last_time = 0, base_volume = 10.5, min_dist = 2.0, max_dist = 2.5},
+        }
+    },
+    -- Zaton, north of the sawmill (METAL LOOP)
+    {
+        x = -312.416, y = 15.711, z = 418.151,
+        max_hearing_dist = 150.0,
+        sound_list = {
+            {name="raindrops_metal_loop", chance = 1.0, interval = 46, sound_list_size = 1, last_time = 0, base_volume = 10.5, min_dist = 2.0, max_dist = 2.5},
+        }
+    },
+}

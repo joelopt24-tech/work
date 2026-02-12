@@ -1,0 +1,578 @@
+-- =================================================================================
+-- FILE: amb_main.script
+-- VERSION: PRILER LOGIC + CUSTOM THRESHOLDS (0.5 / 0.9)
+-- =================================================================================
+
+local last_tick = 0
+
+-- ### MCM HELPERS
+
+local function get_tick_interval()
+    if amb_mcm and amb_mcm.get_tick_interval then return amb_mcm.get_tick_interval() end
+    return 100
+end
+
+local function is_mod_enabled()
+    if amb_mcm and amb_mcm.is_enabled then return amb_mcm.is_enabled() end
+    return true
+end
+
+local function is_context_enabled(context)
+    if amb_mcm and amb_mcm.is_context_enabled then return amb_mcm.is_context_enabled(context) end
+    return true
+end
+
+local function is_sound_enabled(sound_name)
+    if amb_mcm and amb_mcm.is_sound_enabled then return amb_mcm.is_sound_enabled(sound_name) end
+    return true
+end
+
+local function get_sound_volume(sound_name, base_volume)
+    if amb_mcm and amb_mcm.get_sound_volume then return amb_mcm.get_sound_volume(sound_name, base_volume) end
+    return base_volume or 1.0
+end
+
+local function get_sound_interval(base_interval)
+    if amb_mcm and amb_mcm.get_sound_interval then return amb_mcm.get_sound_interval(base_interval) end
+    return base_interval
+end
+
+local function get_rain_sound_interval(base_interval, rain_density)
+    if amb_mcm and amb_mcm.get_rain_sound_interval then return amb_mcm.get_rain_sound_interval(base_interval, rain_density) end
+    return base_interval
+end
+
+local function debug_log(msg)
+    if amb_mcm and amb_mcm.get_config and amb_mcm.get_config("debug_mode") then
+        printf("[S2_AMB] " .. tostring(msg))
+    end
+end
+
+-- ### CACHED REFERENCES
+
+local cached_level_name = nil
+local cached_player_pos = nil
+local cached_time = 0
+
+local sound_path_cache = {}
+local emitter_vector_cache = {}
+local rain_emitter_vector_cache = {}
+local current_cached_level = nil
+
+-- staggered processing
+local emitter_process_index = 1
+local EMITTERS_PER_TICK = 50
+
+-- rain emitter cache
+local rain_nearby_cache = {}
+local rain_cache_last_rebuild = 0
+local RAIN_CACHE_REBUILD_INTERVAL = 1000
+local RAIN_CACHE_RADIUS = 70
+
+-- DYNAMIC LOOP VARIABLES
+local current_rain_loop_obj = nil
+local current_rain_type = "none"
+
+local underground_levels_hash = nil
+
+local function build_underground_hash()
+    if underground_levels_hash then return end
+    underground_levels_hash = {}
+    if amb_defs and amb_defs.underground_levels then
+        for i = 1, #amb_defs.underground_levels do
+            underground_levels_hash[amb_defs.underground_levels[i]] = true
+        end
+    end
+end
+
+local function is_underground_level(level_name)
+    if not underground_levels_hash then build_underground_hash() end
+    return underground_levels_hash[level_name] or false
+end
+
+-- ### SOUND PATH CACHE (FIXED FOR LOOPS)
+
+local function get_cached_sound_path(name, index)
+    local key = name
+    if not sound_path_cache[key] then sound_path_cache[key] = {} end
+    
+    local idx_key = index or "single"
+
+    if not sound_path_cache[key][idx_key] then
+        if index then
+            -- Priler style: sound_revamp\name\name1
+            sound_path_cache[key][idx_key] = "sound_revamp\\" .. name .. "\\" .. name .. tostring(index)
+        else
+            -- Loop style: sound_revamp\name\name
+            sound_path_cache[key][idx_key] = "sound_revamp\\" .. name .. "\\" .. name
+        end
+    end
+    return sound_path_cache[key][idx_key]
+end
+
+-- ### RANDOM WITHOUT REPEAT
+
+local random_listing = {}
+local function random_without_repeat(n, m)
+    if n == m then return n end
+    
+    local key = n * 10000 + m
+    local last = random_listing[key]
+    local new_num = math.random(n, m)
+    
+    if last then
+        local attempts = 0
+        while new_num == last and attempts < 5 do
+            new_num = math.random(n, m)
+            attempts = attempts + 1
+        end
+    end
+    
+    random_listing[key] = new_num
+    return new_num
+end
+
+-- ### EMITTER VECTOR CACHE
+
+local function cache_emitter_vectors(level_name)
+    if current_cached_level == level_name then return end
+    
+    current_cached_level = level_name
+    emitter_vector_cache = {}
+    rain_emitter_vector_cache = {}
+    
+    local static_emitters = amb_static.static_sound_emitters[level_name]
+    if static_emitters then
+        for i, emitter in ipairs(static_emitters) do
+            emitter_vector_cache[i] = vector():set(emitter.x, emitter.y, emitter.z)
+        end
+    end
+    
+    local rain_emitters = amb_static.rain_sound_emitters[level_name]
+    if rain_emitters then
+        for i, emitter in ipairs(rain_emitters) do
+            rain_emitter_vector_cache[i] = vector():set(emitter.x, emitter.y, emitter.z)
+        end
+    end
+    
+    emitter_process_index = 1
+    rain_nearby_cache = {}
+    rain_cache_last_rebuild = 0
+    
+    -- Stop loops on level change
+    if current_rain_loop_obj and current_rain_loop_obj:playing() then
+        current_rain_loop_obj:stop()
+    end
+    current_rain_loop_obj = nil
+    current_rain_type = "none"
+end
+
+-- ### PLAY SOUND
+
+local function play_sound(sound_name, sound_index, sound_base_volume, min_dist, max_dist)
+    if not cached_player_pos then return false end
+    if not is_sound_enabled(sound_name) then return false end
+    
+    local min_d = min_dist or 2.0
+    local max_d = max_dist or 7.5
+    local dis = math.random() * (max_d - min_d) + min_d
+    
+    local dx = math.random() * 2 - 1
+    local dy = math.random() * 2 - 1
+    local dz = (math.random() * 2 - 1) / 1.5
+    local inv_len = dis / math.sqrt(dx*dx + dy*dy + dz*dz)
+    
+    local pos = vector():set(
+        cached_player_pos.x + dx * inv_len,
+        cached_player_pos.y + dy * inv_len,
+        cached_player_pos.z + dz * inv_len
+    )
+    
+    local sound_path = get_cached_sound_path(sound_name, sound_index)
+    local sound = xr_sound.get_safe_sound_object(sound_path)
+    if sound then
+        local final_volume = get_sound_volume(sound_name, sound_base_volume or 1)
+        sound:play_no_feedback(nil, 0, 0, pos, final_volume, 1)
+        return true
+    end
+    return false
+end
+
+local function play_static_sound(sound_name, sound_index, pos_vector, sound_base_volume)
+    if not is_sound_enabled(sound_name) then return false end
+    
+    local sound_path = get_cached_sound_path(sound_name, sound_index)
+    local sound = xr_sound.get_safe_sound_object(sound_path)
+    if sound then
+        local final_volume = get_sound_volume(sound_name, sound_base_volume or 1)
+        sound:play_no_feedback(nil, 0, 0, pos_vector, final_volume, 1)
+        return true
+    end
+    return false
+end
+
+-- ### INIT EVENT TIMES
+
+function actor_on_first_update()
+    local D = amb_defs
+    if not D then return end
+    
+    local time_now = time_global()
+    
+    local function init_list(list)
+        if not list then return end
+        for i = 1, #list do
+            list[i].last_time = (list[i].interval) * (math.random() + 0.5) + time_now
+        end
+    end
+    
+    init_list(D.event_list_cover_indoor)
+    init_list(D.generic_day_outdoor_sounds)
+    init_list(D.generic_night_outdoor_sounds)
+    init_list(D.event_list_underground)
+    init_list(D.event_list_on_rain_outdoor)
+    init_list(D.event_list_on_rain_indoor)
+    init_list(D.event_list_on_storm_outdoor)
+    init_list(D.event_list_on_storm_indoor)
+    
+    for _, map_data in pairs(D.map_specific_outdoor_sounds) do
+        init_list(map_data.day)
+        init_list(map_data.night)
+    end
+    
+    for _, sound_list in pairs(D.map_specific_underground_sounds) do
+        init_list(sound_list)
+    end
+    
+    for _, emitter_list in pairs(amb_static.static_sound_emitters) do
+        for _, emitter in ipairs(emitter_list) do
+            if emitter.sound_list then
+                for _, sound_event in ipairs(emitter.sound_list) do
+                    sound_event.last_time = 0
+                end
+            end
+        end
+    end
+    
+    for _, emitter_list in pairs(amb_static.rain_sound_emitters) do
+        for _, emitter in ipairs(emitter_list) do
+            if emitter.sound_list then
+                for _, sound_event in ipairs(emitter.sound_list) do
+                    sound_event.last_time = 0
+                end
+            end
+        end
+    end
+    
+    build_underground_hash()
+end
+
+-- ### PROCESS SOUND LIST
+
+local function process_sound_list(sound_list, time_current)
+    if not sound_list then return end
+    
+    for i = 1, #sound_list do
+        local event = sound_list[i]
+        local base_interval = get_sound_interval(event.interval)
+        local interval_ms = base_interval * 1000 * (1.4 - math.random())
+        local elapsed = time_current - (event.last_time or 0)
+        
+        if elapsed > interval_ms then
+            if math.random() < event.chance then
+                local sound_index = random_without_repeat(1, event.sound_list_size)
+                play_sound(event.name, sound_index, event.base_volume, event.min_dist, event.max_dist)
+            end
+            event.last_time = time_current
+        end
+    end
+end
+
+-- ### PROCESS STATIC EMITTERS
+
+local function process_static_emitters(time_current)
+    if not is_context_enabled("static_emitters") then return end
+    
+    local emitters = amb_static.static_sound_emitters[cached_level_name]
+    if not emitters or not cached_player_pos then return end
+    
+    local num_emitters = #emitters
+    if num_emitters == 0 then return end
+    
+    local px, py, pz = cached_player_pos.x, cached_player_pos.y, cached_player_pos.z
+    local start_idx = emitter_process_index
+    local end_idx = math.min(start_idx + EMITTERS_PER_TICK - 1, num_emitters)
+    
+    for i = start_idx, end_idx do
+        local emitter = emitters[i]
+        local dx = emitter.x - px
+        local dy = emitter.y - py
+        local dz = emitter.z - pz
+        local dist_sq = dx*dx + dy*dy + dz*dz
+        local max_dist = emitter.max_hearing_dist or 50.0
+        local max_dist_sq = max_dist * max_dist
+        
+        if dist_sq <= max_dist_sq and emitter.sound_list then
+            local emitter_pos = emitter_vector_cache[i]
+            if emitter_pos then
+                for k = 1, #emitter.sound_list do
+                    local sound_event = emitter.sound_list[k]
+                    local base_interval = get_sound_interval(sound_event.interval)
+                    local interval_ms = base_interval * 1000
+                    
+                    if (time_current - (sound_event.last_time or 0)) > interval_ms then
+                        if math.random() < sound_event.chance then
+                            local sound_index = random_without_repeat(1, sound_event.sound_list_size)
+                            play_static_sound(sound_event.name, sound_index, emitter_pos, sound_event.base_volume)
+                        end
+                        sound_event.last_time = time_current
+                    end
+                end
+            end
+        elseif dist_sq > max_dist_sq and emitter.sound_list then
+            for k = 1, #emitter.sound_list do
+                emitter.sound_list[k].last_time = 0
+            end
+        end
+    end
+    
+    emitter_process_index = end_idx + 1
+    if emitter_process_index > num_emitters then
+        emitter_process_index = 1
+    end
+end
+
+-- ### PROCESS RAIN EMITTERS
+
+local function rebuild_rain_nearby_cache(emitters, px, py, pz)
+    rain_nearby_cache = {}
+    local cache_radius_sq = RAIN_CACHE_RADIUS * RAIN_CACHE_RADIUS
+    
+    for i = 1, #emitters do
+        local emitter = emitters[i]
+        local dx = emitter.x - px
+        local dy = emitter.y - py
+        local dz = emitter.z - pz
+        local dist_sq = dx*dx + dy*dy + dz*dz
+        
+        if dist_sq <= cache_radius_sq then
+            rain_nearby_cache[#rain_nearby_cache + 1] = i
+        end
+    end
+    rain_cache_last_rebuild = cached_time
+end
+
+local function process_rain_emitters(time_current, rain_factor)
+    local emitters = amb_static.rain_sound_emitters[cached_level_name]
+    if not emitters or not cached_player_pos then return end
+    
+    local num_emitters = #emitters
+    if num_emitters == 0 then return end
+    
+    local px, py, pz = cached_player_pos.x, cached_player_pos.y, cached_player_pos.z
+    
+    if (time_current - rain_cache_last_rebuild) > RAIN_CACHE_REBUILD_INTERVAL or #rain_nearby_cache == 0 then
+        rebuild_rain_nearby_cache(emitters, px, py, pz)
+    end
+    
+    for j = 1, #rain_nearby_cache do
+        local i = rain_nearby_cache[j]
+        local emitter = emitters[i]
+        if emitter then
+            local dx = emitter.x - px
+            local dy = emitter.y - py
+            local dz = emitter.z - pz
+            local dist_sq = dx*dx + dy*dy + dz*dz
+            local max_dist = emitter.max_hearing_dist or 50.0
+            local max_dist_sq = max_dist * max_dist
+            
+            if dist_sq <= max_dist_sq and emitter.sound_list then
+                local emitter_pos = rain_emitter_vector_cache[i]
+                if emitter_pos then
+                    for k = 1, #emitter.sound_list do
+                        local sound_event = emitter.sound_list[k]
+                        local base_interval = get_rain_sound_interval(sound_event.interval, rain_factor)
+                        local interval_ms = base_interval * 1000
+                        
+                        if (time_current - (sound_event.last_time or 0)) > interval_ms then
+                            if math.random() < sound_event.chance then
+                                local sound_index = random_without_repeat(1, sound_event.sound_list_size)
+                                play_static_sound(sound_event.name, sound_index, emitter_pos, sound_event.base_volume)
+                            end
+                            sound_event.last_time = time_current
+                        end
+                    end
+                end
+            elseif dist_sq > max_dist_sq and emitter.sound_list then
+                for k = 1, #emitter.sound_list do
+                    emitter.sound_list[k].last_time = 0
+                end
+            end
+        end
+    end
+end
+
+-- =========================================================
+-- DYNAMIC RAIN LOOPS 
+-- =========================================================
+local function process_dynamic_rain_loop(effective_rain_intensity, is_underground)
+    local settings = amb_defs.rain_loop_settings
+    if not settings then return end
+
+    -- Si no hay intensidad efectiva o estamos bajo tierra, apagar todo
+    if is_underground or effective_rain_intensity <= 0 then
+        if current_rain_loop_obj and current_rain_loop_obj:playing() then
+            current_rain_loop_obj:stop()
+        end
+        current_rain_type = "none"
+        return
+    end
+
+
+    local new_type = "none"
+    
+
+    if effective_rain_intensity >= 0.9 then 
+        new_type = "storm"   -- >= 0.9 (Muy fuerte)
+    elseif effective_rain_intensity >= 0.5 then 
+        new_type = "medium"  -- >= 0.5 (Media)
+    else 
+        new_type = "weak"    -- < 0.005 (Suave, desde que empieza a llover)
+    end
+
+    -- Volumen calculado por el motor (Maneja interiores/exteriores)
+    local engine_rain_volume = level.get_rain_volume()
+    local config_volume = (settings[new_type] and settings[new_type].volume) or 1.0
+    local final_vol = config_volume * engine_rain_volume
+
+    if new_type ~= current_rain_type then
+        if current_rain_loop_obj and current_rain_loop_obj:playing() then
+            current_rain_loop_obj:stop()
+        end
+
+        if new_type ~= "none" and settings[new_type] then
+            local sound_name = settings[new_type].file
+            local sound_path = get_cached_sound_path(sound_name, nil) 
+            
+            current_rain_loop_obj = xr_sound.get_safe_sound_object(sound_path)
+            
+            if current_rain_loop_obj then
+                current_rain_loop_obj:play_at_pos(db.actor, vector():set(0,0,0), 0, sound_object.s2d + sound_object.looped)
+                current_rain_loop_obj.volume = final_vol
+            end
+        end
+        current_rain_type = new_type
+        
+    elseif current_rain_loop_obj and current_rain_loop_obj:playing() then
+        current_rain_loop_obj.volume = final_vol
+        current_rain_loop_obj.position = db.actor:position()
+    end
+end
+
+-- ### MAIN UPDATE
+
+function actor_on_update()
+    local string_format = string.format
+    local g_tostring = tostring
+    
+    if not is_mod_enabled() then return end
+    
+    cached_time = time_global()
+    
+    local tick_interval = get_tick_interval()
+    if (cached_time - last_tick) <= tick_interval then return end
+    last_tick = cached_time
+    
+    local player = db.actor
+    if not (player and player:alive()) then return end
+    
+    cached_player_pos = player:position()
+    cached_level_name = level.name()
+    local current_hour = level.get_time_hours()
+    local rain_factor = level.rain_factor()
+    local current_weather = level.get_weather() or ""
+    
+    cache_emitter_vectors(cached_level_name)
+    
+    local D = amb_defs
+    if not D then return end
+    
+    local is_night = (current_hour >= 21 or current_hour < 5)
+    local is_storming = rain_factor > 0.7
+    
+
+    local is_rain_weather = string.find(current_weather, "w_rain") and not string.find(current_weather, "w_rain6")
+    local is_raining = rain_factor > 0.05 or is_rain_weather
+    
+
+    local effective_rain = 0
+    if is_raining or is_storming then
+        effective_rain = is_rain_weather and math.max(rain_factor, 0.15) or rain_factor
+    end
+    
+    if cached_time % 5000 < tick_interval then
+        debug_log(string_format("RainLogic: Factor=%.2f | Effective=%.2f | Weather=%s", rain_factor, effective_rain, current_weather))
+    end
+
+    -- 0. STATIC EMITTERS
+    process_static_emitters(cached_time)
+    
+    -- 1. RAIN EMITTERS (GOTAS INDIVIDUALES)
+    if (is_raining or is_storming) and is_context_enabled("rain") then
+        process_rain_emitters(cached_time, effective_rain)
+    end
+    
+    -- 2. RAIN LOOPS (AMBIENTE CONTINUO) - Conectado a effective_rain
+    local is_underground = GetEvent("underground") or is_underground_level(cached_level_name)
+    process_dynamic_rain_loop(effective_rain, is_underground)
+    
+    -- 3. OTHER AMBIENCE
+    if is_underground then
+        if is_context_enabled("underground") then
+            local lab_specific_list = D.map_specific_underground_sounds[cached_level_name]
+            if lab_specific_list then process_sound_list(lab_specific_list, cached_time) end
+            process_sound_list(D.event_list_underground, cached_time)
+        end
+        
+    elseif GetEvent("current_safe_cover") then
+        if is_context_enabled("indoor") then
+            if is_storming and is_context_enabled("storm") then
+                process_sound_list(D.event_list_on_storm_indoor, cached_time)
+            elseif is_raining and is_context_enabled("rain") then
+                process_sound_list(D.event_list_on_rain_indoor, cached_time)
+            else
+                process_sound_list(D.event_list_cover_indoor, cached_time)
+            end
+        end
+        
+    else
+        if is_storming and is_context_enabled("storm") then
+            process_sound_list(D.event_list_on_storm_outdoor, cached_time)
+        elseif is_raining and is_context_enabled("rain") then
+            process_sound_list(D.event_list_on_rain_outdoor, cached_time)
+        else
+            if is_night then
+                if is_context_enabled("night") then
+                    process_sound_list(D.generic_night_outdoor_sounds, cached_time)
+                end
+            else
+                if is_context_enabled("day") then
+                    process_sound_list(D.generic_day_outdoor_sounds, cached_time)
+                end
+            end
+            
+            local map_data = D.map_specific_outdoor_sounds[cached_level_name]
+            if map_data then
+                local map_list = is_night and map_data.night or map_data.day
+                if map_list then process_sound_list(map_list, cached_time) end
+            end
+        end
+    end
+end
+
+-- ### GAME START
+
+function on_game_start()
+    RegisterScriptCallback("actor_on_update", actor_on_update)
+    RegisterScriptCallback("actor_on_first_update", actor_on_first_update)
+end

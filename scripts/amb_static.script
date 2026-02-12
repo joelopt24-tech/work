@@ -1,0 +1,115 @@
+-- =================================================================================
+-- ARCHIVO: amb_static.script (GESTOR DE MAPAS)
+-- =================================================================================
+-- Carga sonidos estáticos globales y de lluvia desde la raíz de scripts/
+-- Busca archivos 'amb_map_xxxxx' y 'rain_amb_map_xxxxx'
+-- =================================================================================
+
+static_sound_emitters = {} -- Sonidos Globales (Siempre activos)
+rain_sound_emitters = {}   -- Sonidos de Lluvia (Solo activos con lluvia)
+
+function init()
+    -- ============================================================
+    -- CARGA DE MAPAS (GLOBAL Y LLUVIA)
+    -- ============================================================
+
+    -- 1. Cordon (l01_escape)
+    if amb_map_l01_escape then static_sound_emitters["l01_escape"] = amb_map_l01_escape.emitters end
+    if rain_amb_map_l01_escape then rain_sound_emitters["l01_escape"] = rain_amb_map_l01_escape.emitters end
+
+    -- Meadow (y04_pole)
+    if amb_map_y04_pole then static_sound_emitters["y04_pole"] = amb_map_y04_pole.emitters end
+    if rain_amb_map_y04_pole then rain_sound_emitters["y04_pole"] = rain_amb_map_y04_pole.emitters end
+
+    -- 2. Garbage (l02_garbage)
+    if amb_map_l02_garbage then static_sound_emitters["l02_garbage"] = amb_map_l02_garbage.emitters end
+    if rain_amb_map_l02_garbage then rain_sound_emitters["l02_garbage"] = rain_amb_map_l02_garbage.emitters end
+
+    -- 3. Agroprom (l03_agroprom)
+    if amb_map_l03_agroprom then static_sound_emitters["l03_agroprom"] = amb_map_l03_agroprom.emitters end
+    if rain_amb_map_l03_agroprom then rain_sound_emitters["l03_agroprom"] = rain_amb_map_l03_agroprom.emitters end
+
+    -- 4. Dark Valley (l04_darkvalley)
+    if amb_map_l04_darkvalley then static_sound_emitters["l04_darkvalley"] = amb_map_l04_darkvalley.emitters end
+    if rain_amb_map_l04_darkvalley then rain_sound_emitters["l04_darkvalley"] = rain_amb_map_l04_darkvalley.emitters end
+
+    -- 5. Rostok / Bar (l05_bar)
+    if amb_map_l05_bar then static_sound_emitters["l05_bar"] = amb_map_l05_bar.emitters end
+    if rain_amb_map_l05_bar then rain_sound_emitters["l05_bar"] = rain_amb_map_l05_bar.emitters end
+
+    -- Truck Cemetery (k02_trucks_cemetery)
+    if amb_map_k02_trucks_cemetery then static_sound_emitters["k02_trucks_cemetery"] = amb_map_k02_trucks_cemetery.emitters end
+    if rain_amb_map_k02_trucks_cemetery then rain_sound_emitters["k02_trucks_cemetery"] = rain_amb_map_k02_trucks_cemetery.emitters end
+
+    -- 6. Wild Territory (l06_rostok)
+    if amb_map_l06_rostok then static_sound_emitters["l06_rostok"] = amb_map_l06_rostok.emitters end
+    if rain_amb_map_l06_rostok then rain_sound_emitters["l06_rostok"] = rain_amb_map_l06_rostok.emitters end
+
+    -- 7. Army Warehouses (l07_military)
+    if amb_map_l07_military then static_sound_emitters["l07_military"] = amb_map_l07_military.emitters end
+    if rain_amb_map_l07_military then rain_sound_emitters["l07_military"] = rain_amb_map_l07_military.emitters end
+
+    -- 8. Yantar (l08_yantar)
+    if amb_map_l08_yantar then static_sound_emitters["l08_yantar"] = amb_map_l08_yantar.emitters end
+    if rain_amb_map_l08_yantar then rain_sound_emitters["l08_yantar"] = rain_amb_map_l08_yantar.emitters end
+
+    -- 9. Red Forest (l10_red_forest)
+    if amb_map_l10_red_forest then static_sound_emitters["l10_red_forest"] = amb_map_l10_red_forest.emitters end
+    if rain_amb_map_l10_red_forest then rain_sound_emitters["l10_red_forest"] = rain_amb_map_l10_red_forest.emitters end
+
+    -- 10. Limansk (l10_limansk)
+    if amb_map_l10_limansk then static_sound_emitters["l10_limansk"] = amb_map_l10_limansk.emitters end
+    if rain_amb_map_l10_limansk then rain_sound_emitters["l10_limansk"] = rain_amb_map_l10_limansk.emitters end
+
+    -- 11. Great Swamps (k00_marsh)
+    if amb_map_k00_marsh then static_sound_emitters["k00_marsh"] = amb_map_k00_marsh.emitters end
+    if rain_amb_map_k00_marsh then rain_sound_emitters["k00_marsh"] = rain_amb_map_k00_marsh.emitters end
+
+    -- 12. Jupiter (jupiter)
+    if amb_map_jupiter then static_sound_emitters["jupiter"] = amb_map_jupiter.emitters end
+    if rain_amb_map_jupiter then rain_sound_emitters["jupiter"] = rain_amb_map_jupiter.emitters end
+
+    -- 13. Zaton (zaton)
+    if amb_map_zaton then static_sound_emitters["zaton"] = amb_map_zaton.emitters end
+    if rain_amb_map_zaton then rain_sound_emitters["zaton"] = rain_amb_map_zaton.emitters end
+
+    -- 14. Pripyat Outskirts (pripyat)
+    if amb_map_pripyat then static_sound_emitters["pripyat"] = amb_map_pripyat.emitters end
+    if rain_amb_map_pripyat then rain_sound_emitters["pripyat"] = rain_amb_map_pripyat.emitters end
+
+    -- Dead City (l09_deadcity)
+    if amb_map_l09_deadcity then static_sound_emitters["l09_deadcity"] = amb_map_l09_deadcity.emitters end
+    if rain_amb_map_l09_deadcity then rain_sound_emitters["l09_deadcity"] = rain_amb_map_l09_deadcity.emitters end
+
+    -- Radar (l10_radar)
+    if amb_map_l10_radar then static_sound_emitters["l10_radar"] = amb_map_l10_radar.emitters end
+    if rain_amb_map_l10_radar then rain_sound_emitters["l10_radar"] = rain_amb_map_l10_radar.emitters end
+
+    -- Pripyat SoC (l11_pripyat)
+    if amb_map_l11_pripyat then static_sound_emitters["l11_pripyat"] = amb_map_l11_pripyat.emitters end
+    if rain_amb_map_l11_pripyat then rain_sound_emitters["l11_pripyat"] = rain_amb_map_l11_pripyat.emitters end
+
+    -- CNPP South (l12_stancia)
+    if amb_map_l12_stancia then static_sound_emitters["l12_stancia"] = amb_map_l12_stancia.emitters end
+    if rain_amb_map_l12_stancia then rain_sound_emitters["l12_stancia"] = rain_amb_map_l12_stancia.emitters end
+
+    -- CNPP North (l12_stancia_2)
+    if amb_map_l12_stancia_2 then static_sound_emitters["l12_stancia_2"] = amb_map_l12_stancia_2.emitters end
+    if rain_amb_map_l12_stancia_2 then rain_sound_emitters["l12_stancia_2"] = rain_amb_map_l12_stancia_2.emitters end
+
+    -- Hospital (l11_hospital)
+    if amb_map_l11_hospital then static_sound_emitters["l11_hospital"] = amb_map_l11_hospital.emitters end
+    if rain_amb_map_l11_hospital then rain_sound_emitters["l11_hospital"] = rain_amb_map_l11_hospital.emitters end
+
+    -- Generators (l13_generators)
+    if amb_map_l13_generators then static_sound_emitters["l13_generators"] = amb_map_l13_generators.emitters end
+    if rain_amb_map_l13_generators then rain_sound_emitters["l13_generators"] = rain_amb_map_l13_generators.emitters end
+
+    -- Darkscape (k01_darkscape)
+    if amb_map_k01_darkscape then static_sound_emitters["k01_darkscape"] = amb_map_k01_darkscape.emitters end
+    if rain_amb_map_k01_darkscape then rain_sound_emitters["k01_darkscape"] = rain_amb_map_k01_darkscape.emitters end
+
+end
+
+-- Ejecutamos la carga
+init()

@@ -1,0 +1,279 @@
+-- =================================================================================
+-- ARCHIVO: gamedata/scripts/rain/amb_map_l01_escape.script
+-- MAPA: CORDON (Lluvia)
+-- =================================================================================
+
+emitters = {
+   -- Darkscape, north-west of the road to Cordon (RAINDROPS)
+    {
+        x = -598.204, y = -2.280, z = -402.527,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops", chance = 1.0, interval = 0.4, sound_list_size = 8, last_time = 0, base_volume = 2.0, min_dist = 2.0, max_dist = 2.5},
+        }
+    },
+    -- Darkscape, south-east of the road to Cordon (METAL)
+    {
+        x = -556.201, y = -0.454, z = -444.388,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_metal", chance = 1.0, interval = 0.2, sound_list_size = 20, last_time = 0, base_volume = 2.5, min_dist = 2.0, max_dist = 2.5},
+        }
+    },
+    -- Darkscape, south-east of the road to Cordon (METAL)
+    {
+        x = -517.488, y = 0.335, z = -464.336,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_metal", chance = 1.0, interval = 0.2, sound_list_size = 20, last_time = 0, base_volume = 2.5, min_dist = 2.0, max_dist = 2.5},
+        }
+    },
+    -- Darkscape, east of the road to Cordon (METAL)
+    {
+        x = -395.232, y = -0.649, z = -504.401,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_metal", chance = 1.0, interval = 0.2, sound_list_size = 20, last_time = 0, base_volume = 2.5, min_dist = 2.0, max_dist = 2.5},
+        }
+    },
+    -- Darkscape, east of the road to Cordon (METAL)
+    {
+        x = -333.905, y = -3.362, z = -512.517,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_metal", chance = 1.0, interval = 0.2, sound_list_size = 20, last_time = 0, base_volume = 2.5, min_dist = 2.0, max_dist = 2.5},
+        }
+    },
+    -- Darkscape, north-west of the gas station (METAL)
+    {
+        x = 391.164, y = -0.044, z = -335.578,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_metal", chance = 1.0, interval = 0.2, sound_list_size = 20, last_time = 0, base_volume = 2.5, min_dist = 2.0, max_dist = 2.5},
+        }
+    },
+    -- Darkscape, east of the road to Cordon (METAL)
+    {
+        x = -276.531, y = -3.132, z = -504.142,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_metal", chance = 1.0, interval = 0.2, sound_list_size = 20, last_time = 0, base_volume = 2.5, min_dist = 2.0, max_dist = 2.5},
+        }
+    },
+    -- Darkscape, south-west of the sawmill (METAL)
+    {
+        x = -61.902, y = 0.445, z = -525.028,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_metal", chance = 1.0, interval = 0.2, sound_list_size = 20, last_time = 0, base_volume = 2.5, min_dist = 2.0, max_dist = 2.5},
+        }
+    },
+    -- Darkscape, south-west of the sawmill (METAL)
+    {
+        x = 45.876, y = 1.163, z = -542.004,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_metal", chance = 1.0, interval = 0.2, sound_list_size = 20, last_time = 0, base_volume = 2.5, min_dist = 2.0, max_dist = 2.5},
+        }
+    },
+    -- Darkscape, south of the gas station (METAL)
+    {
+        x = 398.141, y = 1.428, z = -458.870,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_metal", chance = 1.0, interval = 0.2, sound_list_size = 20, last_time = 0, base_volume = 2.5, min_dist = 2.0, max_dist = 2.5},
+        }
+    },
+    -- Darkscape, south-west of the gas station (METAL)
+    {
+        x = 420.349, y = 4.946, z = -368.666,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_metal", chance = 1.0, interval = 0.2, sound_list_size = 20, last_time = 0, base_volume = 2.5, min_dist = 2.0, max_dist = 2.5},
+        }
+    },
+    -- Darkscape, west of the gas station (METAL)
+    {
+        x = 416.953, y = 5.524, z = -357.210,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_metal", chance = 1.0, interval = 0.2, sound_list_size = 20, last_time = 0, base_volume = 2.5, min_dist = 2.0, max_dist = 2.5},
+        }
+    },
+    -- Darkscape, north-west of the gas station (METAL)
+    {
+        x = 391.251, y = -0.018, z = -336.483,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_metal", chance = 1.0, interval = 0.2, sound_list_size = 20, last_time = 0, base_volume = 2.5, min_dist = 2.0, max_dist = 2.5},
+        }
+    },
+    -- Darkscape, north of the gas station (METAL)
+    {
+        x = 415.632, y = -0.197, z = -266.142,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_metal", chance = 1.0, interval = 0.2, sound_list_size = 20, last_time = 0, base_volume = 2.5, min_dist = 2.0, max_dist = 2.5},
+        }
+    },
+    -- Darkscape, north of the gas station (METAL)
+    {
+        x = 466.086, y = -0.837, z = -210.273,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_metal", chance = 1.0, interval = 0.2, sound_list_size = 20, last_time = 0, base_volume = 2.5, min_dist = 2.0, max_dist = 2.5},
+        }
+    },
+    -- Darkscape, south of the bridge (METAL)
+    {
+        x = 441.228, y = 1.136, z = 145.917,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_metal", chance = 1.0, interval = 0.2, sound_list_size = 20, last_time = 0, base_volume = 2.5, min_dist = 2.0, max_dist = 2.5},
+        }
+    },
+    -- Darkscape, south of the bridge (METAL)
+    {
+        x = 424.948, y = -0.556, z = 175.452,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_metal", chance = 1.0, interval = 0.2, sound_list_size = 20, last_time = 0, base_volume = 2.5, min_dist = 2.0, max_dist = 2.5},
+        }
+    },
+    -- Darkscape, west of the bridge (METAL)
+    {
+        x = 371.526, y = 25.066, z = 282.429,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_metal", chance = 1.0, interval = 0.2, sound_list_size = 20, last_time = 0, base_volume = 2.5, min_dist = 2.0, max_dist = 2.5},
+        }
+    },
+    -- Darkscape, west of the bridge (METAL)
+    {
+        x = 364.138, y = 24.220, z = 288.550,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_metal", chance = 1.0, interval = 0.2, sound_list_size = 20, last_time = 0, base_volume = 2.5, min_dist = 2.0, max_dist = 2.5},
+        }
+    },
+    -- Darkscape, north-west of the bridge (METAL)
+    {
+        x = 396.549, y = 19.429, z = 289.924,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_metal", chance = 1.0, interval = 0.2, sound_list_size = 20, last_time = 0, base_volume = 2.5, min_dist = 2.0, max_dist = 2.5},
+        }
+    },
+    -- Darkscape, west of the bridge (METAL)
+    {
+        x = 391.975, y = 22.930, z = 282.488,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_metal", chance = 1.0, interval = 0.2, sound_list_size = 20, last_time = 0, base_volume = 2.5, min_dist = 2.0, max_dist = 2.5},
+        }
+    },
+    -- Darkscape, east of the bridge (METAL)
+    {
+        x = 412.357, y = 24.184, z = 288.762,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_metal", chance = 1.0, interval = 0.2, sound_list_size = 20, last_time = 0, base_volume = 2.5, min_dist = 2.0, max_dist = 2.5},
+        }
+    },
+    -- Darkscape, north of the bridge (METAL)
+    {
+        x = 392.461, y = -2.771, z = 318.550,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_metal", chance = 1.0, interval = 0.2, sound_list_size = 20, last_time = 0, base_volume = 2.5, min_dist = 2.0, max_dist = 2.5},
+        }
+    },
+    -- Darkscape, north of the bridge (METAL)
+    {
+        x = 385.930, y = 0.322, z = 453.247,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_metal", chance = 1.0, interval = 0.2, sound_list_size = 20, last_time = 0, base_volume = 2.5, min_dist = 2.0, max_dist = 2.5},
+        }
+    },
+    -- Darkscape, north-west of the bridge (METAL)
+    {
+        x = 132.010, y = 2.492, z = 573.790,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_metal", chance = 1.0, interval = 0.2, sound_list_size = 20, last_time = 0, base_volume = 2.5, min_dist = 2.0, max_dist = 2.5},
+        }
+    },
+    -- Darkscape, north-west of the bridge (METAL)
+    {
+        x = 131.899, y = 2.516, z = 574.345,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_metal", chance = 1.0, interval = 0.2, sound_list_size = 20, last_time = 0, base_volume = 2.5, min_dist = 2.0, max_dist = 2.5},
+        }
+    },
+    -- Darkscape, east of the road to Dark Valley (METAL)
+    {
+        x = -56.272, y = -3.280, z = 535.834,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_metal", chance = 1.0, interval = 0.2, sound_list_size = 20, last_time = 0, base_volume = 2.5, min_dist = 2.0, max_dist = 2.5},
+        }
+    },
+    -- Darkscape, east of the road to Dark Valley (METAL)
+    {
+        x = -210.926, y = 2.656, z = 536.356,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_metal", chance = 1.0, interval = 0.2, sound_list_size = 20, last_time = 0, base_volume = 2.5, min_dist = 2.0, max_dist = 2.5},
+        }
+    },
+    -- Darkscape, south-east of the road to Dark Valley (METAL LOOP)
+    {
+        x = -290.948, y = 3.057, z = 540.025,
+        max_hearing_dist = 190.0,
+        sound_list = {
+            {name="raindrops_metal_loop", chance = 1.0, interval = 46, sound_list_size = 1, last_time = 0, base_volume = 10.5, min_dist = 2.0, max_dist = 2.5},
+        }
+    },
+    -- Darkscape, east of the sawmill (METAL LOOP)
+    {
+        x = 274.645, y = 8.700, z = -189.960,
+        max_hearing_dist = 190.0,
+        sound_list = {
+            {name="raindrops_metal_loop", chance = 1.0, interval = 46, sound_list_size = 1, last_time = 0, base_volume = 10.5, min_dist = 2.0, max_dist = 2.5},
+        }
+    },
+    -- Darkscape, east of the sawmill (METAL LOOP)
+    {
+        x = 262.811, y = 8.886, z = -189.659,
+        max_hearing_dist = 190.0,
+        sound_list = {
+            {name="raindrops_metal_loop", chance = 1.0, interval = 46, sound_list_size = 1, last_time = 0, base_volume = 10.5, min_dist = 2.0, max_dist = 2.5},
+        }
+    },
+-- Darkscape, west of the sawmill
+    {
+        x = 234.376, y = 0.695, z = -177.827,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_metal", chance = 1.0, interval = 0.2, sound_list_size = 20, last_time = 0, base_volume = 2.5, min_dist = 2.0, max_dist = 2.5},
+        }
+    },
+    -- Darkscape, west of the sawmill
+    {
+        x = 231.882, y = 1.850, z = -182.354,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_metal", chance = 1.0, interval = 0.2, sound_list_size = 20, last_time = 0, base_volume = 2.5, min_dist = 2.0, max_dist = 2.5},
+        }
+    },
+    -- Darkscape, west of the sawmill
+    {
+        x = -175.209, y = 2.033, z = -159.207,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_metal", chance = 1.0, interval = 0.2, sound_list_size = 20, last_time = 0, base_volume = 2.5, min_dist = 2.0, max_dist = 2.5},
+        }
+    },
+}

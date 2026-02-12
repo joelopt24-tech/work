@@ -1,0 +1,183 @@
+-- =================================================================================
+-- ARCHIVO: rain_amb_map_l08_yantar.script
+-- =================================================================================
+
+emitters = {
+    -- 1. South of the mobile lab (Metal)
+    {
+        x = 25.433, y = -7.063, z = -297.636,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_metal", chance = 1.0, interval = 0.2, sound_list_size = 20, last_time = 0, base_volume = 2.5, min_dist = 2.0, max_dist = 2.5},
+        }
+    },
+
+    -- 2. South-east of the mobile lab (Metal)
+    {
+        x = 42.067, y = -10.473, z = -289.405,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_metal", chance = 1.0, interval = 0.2, sound_list_size = 20, last_time = 0, base_volume = 2.5, min_dist = 2.0, max_dist = 2.5},
+        }
+    },
+
+    -- 3. Near the mobile lab (Metal)
+    {
+        x = 27.989, y = -5.941, z = -270.917,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_metal", chance = 1.0, interval = 0.2, sound_list_size = 20, last_time = 0, base_volume = 2.5, min_dist = 2.0, max_dist = 2.5},
+        }
+    },
+
+    -- 4. East of the mobile lab (Metal)
+    {
+        x = 150.680, y = 1.058, z = -239.728,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_metal", chance = 1.0, interval = 0.2, sound_list_size = 20, last_time = 0, base_volume = 2.5, min_dist = 2.0, max_dist = 2.5},
+        }
+    },
+
+    -- 5. East of the mobile lab (Metal)
+    {
+        x = 181.734, y = 5.341, z = -240.661,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_metal", chance = 1.0, interval = 0.2, sound_list_size = 20, last_time = 0, base_volume = 2.5, min_dist = 2.0, max_dist = 2.5},
+        }
+    },
+
+    -- 6. East of the mobile lab (Metal)
+    {
+        x = 191.881, y = 5.803, z = -242.773,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_metal", chance = 1.0, interval = 0.2, sound_list_size = 20, last_time = 0, base_volume = 2.5, min_dist = 2.0, max_dist = 2.5},
+        }
+    },
+
+    -- 7. South of the entrance to the plant (Metal)
+    {
+        x = 114.986, y = 3.868, z = -156.916,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_metal", chance = 1.0, interval = 0.2, sound_list_size = 20, last_time = 0, base_volume = 2.5, min_dist = 2.0, max_dist = 2.5},
+        }
+    },
+
+    -- 8. South of the entrance to the plant (Metal)
+    {
+        x = 119.037, y = 3.259, z = -133.934,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_metal", chance = 1.0, interval = 0.2, sound_list_size = 20, last_time = 0, base_volume = 2.5, min_dist = 2.0, max_dist = 2.5},
+        }
+    },
+
+    -- 9. South of the entrance to the plant (Metal)
+    {
+        x = 141.001, y = -0.327, z = -136.644,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_metal", chance = 1.0, interval = 0.2, sound_list_size = 20, last_time = 0, base_volume = 2.5, min_dist = 2.0, max_dist = 2.5},
+        }
+    },
+
+    -- 10. South of the entrance to the plant (Metal)
+    {
+        x = 105.984, y = 3.197, z = -84.519,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_metal", chance = 1.0, interval = 0.2, sound_list_size = 20, last_time = 0, base_volume = 2.5, min_dist = 2.0, max_dist = 2.5},
+        }
+    },
+
+    -- 11. East of the road to Dead City (Metal)
+    {
+        x = 48.289, y = 2.539, z = 19.655,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_metal", chance = 1.0, interval = 0.2, sound_list_size = 20, last_time = 0, base_volume = 2.5, min_dist = 2.0, max_dist = 2.5},
+        }
+    },
+
+    -- 12. East of the road to Dead City (Metal)
+    {
+        x = 34.318, y = 1.767, z = -1.799,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_metal", chance = 1.0, interval = 0.2, sound_list_size = 20, last_time = 0, base_volume = 2.5, min_dist = 2.0, max_dist = 2.5},
+        }
+    },
+
+    -- 13. East of the road to Dead City (Metal)
+    {
+        x = 19.351, y = 7.056, z = -17.479,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_metal", chance = 1.0, interval = 0.2, sound_list_size = 20, last_time = 0, base_volume = 2.5, min_dist = 2.0, max_dist = 2.5},
+        }
+    },
+
+    -- 14. South of the road to Dead City (Metal)
+    {
+        x = 2.790, y = 2.914, z = -41.476,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_metal", chance = 1.0, interval = 0.2, sound_list_size = 20, last_time = 0, base_volume = 2.5, min_dist = 2.0, max_dist = 2.5},
+        }
+    },
+
+    -- 15. North of the anomaly behind the plant (Metal)
+    {
+        x = -9.923, y = -0.221, z = -122.448,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_metal", chance = 1.0, interval = 0.2, sound_list_size = 20, last_time = 0, base_volume = 2.5, min_dist = 2.0, max_dist = 2.5},
+        }
+    },
+
+    -- 16. North of the anomaly behind the plant (Metal)
+    {
+        x = -12.839, y = 2.775, z = -158.849,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_metal", chance = 1.0, interval = 0.2, sound_list_size = 20, last_time = 0, base_volume = 2.5, min_dist = 2.0, max_dist = 2.5},
+        }
+    },
+
+    -- 17. North-west of the anomaly behind the plant (Metal)
+    {
+        x = -86.807, y = -15.068, z = -201.020,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops", chance = 1.0, interval = 0.4, sound_list_size = 8, last_time = 0, base_volume = 2.0, min_dist = 2.0, max_dist = 2.5},
+
+        }
+    },
+-- Yantar, by the mobile lab (Bunker Roof)
+    {
+        x = 28.638, y = -5.944, z = -278.467,
+        max_hearing_dist = 150.0,
+        sound_list = {
+            {name="raindrops_metal_loop", chance = 1.0, interval = 46, sound_list_size = 1, last_time = 0, base_volume = 10.5, min_dist = 2.0, max_dist = 2.5},
+        }
+    },
+    -- Yantar, near the mobile lab (Bunker Roof)
+    {
+        x = 32.428, y = -5.943, z = -269.261,
+        max_hearing_dist = 150.0,
+        sound_list = {
+            {name="raindrops_metal_loop", chance = 1.0, interval = 46, sound_list_size = 1, last_time = 0, base_volume = 10.5, min_dist = 2.0, max_dist = 2.5},
+        }
+    },
+    -- Yantar, by the mobile lab (Bunker Roof)
+    {
+        x = 24.467, y = -5.944, z = -267.572,
+        max_hearing_dist = 150.0,
+        sound_list = {
+            {name="raindrops_metal_loop", chance = 1.0, interval = 46, sound_list_size = 1, last_time = 0, base_volume = 10.5, min_dist = 2.0, max_dist = 2.5},
+        }
+    },
+}

@@ -1,0 +1,386 @@
+-- ARCHIVO: amb_map_l09_deadcity.script
+
+emitters = {
+    -- Dead City, south-west of the mercenary base
+    {
+        x = -61.098, y = 3.948, z = 9.580,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_metal", chance = 1.0, interval = 0.2, sound_list_size = 20, last_time = 0, base_volume = 2.5, min_dist = 2.0, max_dist = 2.5},
+        }
+    },
+    -- Dead City, south of the road to Limansk
+    {
+        x = -59.504, y = 7.719, z = 62.633,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_metal", chance = 1.0, interval = 0.2, sound_list_size = 20, last_time = 0, base_volume = 2.5, min_dist = 2.0, max_dist = 2.5},
+        }
+    },
+    -- Dead City, south of the road to Limansk
+    {
+        x = -66.726, y = 7.488, z = 61.865,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_metal", chance = 1.0, interval = 0.2, sound_list_size = 20, last_time = 0, base_volume = 2.5, min_dist = 2.0, max_dist = 2.5},
+        }
+    },
+    -- Dead City, south of the road to Limansk
+    {
+        x = -66.661, y = 7.295, z = 72.958,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_metal", chance = 1.0, interval = 0.2, sound_list_size = 20, last_time = 0, base_volume = 2.5, min_dist = 2.0, max_dist = 2.5},
+        }
+    },
+    -- Dead City, south of the road to Limansk
+    {
+        x = -58.138, y = 7.418, z = 72.622,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_metal", chance = 1.0, interval = 0.2, sound_list_size = 20, last_time = 0, base_volume = 2.5, min_dist = 2.0, max_dist = 2.5},
+        }
+    },
+    -- Dead City, south-east of the road to Limansk
+    {
+        x = -46.358, y = 2.714, z = 83.524,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_metal", chance = 1.0, interval = 0.2, sound_list_size = 20, last_time = 0, base_volume = 2.5, min_dist = 2.0, max_dist = 2.5},
+        }
+    },
+    -- Dead City, west of the road to Limansk
+    {
+        x = -126.400, y = 1.076, z = 69.700,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_metal", chance = 1.0, interval = 0.2, sound_list_size = 20, last_time = 0, base_volume = 2.5, min_dist = 2.0, max_dist = 2.5},
+        }
+    },
+    -- Dead City, west of the mercenary base
+    {
+        x = -147.245, y = 2.960, z = 20.631,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_metal", chance = 1.0, interval = 0.2, sound_list_size = 20, last_time = 0, base_volume = 2.5, min_dist = 2.0, max_dist = 2.5},
+        }
+    },
+    -- Dead City, west of the mercenary base
+    {
+        x = -122.933, y = 4.583, z = -5.460,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_metal", chance = 1.0, interval = 0.2, sound_list_size = 20, last_time = 0, base_volume = 2.5, min_dist = 2.0, max_dist = 2.5},
+        }
+    },
+    -- Dead City, west of the mercenary base
+    {
+        x = -110.026, y = 4.289, z = 8.445,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_metal", chance = 1.0, interval = 0.2, sound_list_size = 20, last_time = 0, base_volume = 2.5, min_dist = 2.0, max_dist = 2.5},
+        }
+    },
+    -- Dead City, north of the isolated houses
+    {
+        x = -159.301, y = 4.608, z = -28.074,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_metal", chance = 1.0, interval = 0.2, sound_list_size = 20, last_time = 0, base_volume = 2.5, min_dist = 2.0, max_dist = 2.5},
+        }
+    },
+    -- Dead City, north of the isolated houses
+    {
+        x = -162.621, y = 4.710, z = -32.357,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_metal", chance = 1.0, interval = 0.2, sound_list_size = 20, last_time = 0, base_volume = 2.5, min_dist = 2.0, max_dist = 2.5},
+        }
+    },
+    -- Dead City, west of the derelict monoblock
+    {
+        x = -82.421, y = 3.931, z = -87.159,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_metal", chance = 1.0, interval = 0.2, sound_list_size = 20, last_time = 0, base_volume = 2.5, min_dist = 2.0, max_dist = 2.5},
+        }
+    },
+    -- Dead City, north of the road to Yantar
+    {
+        x = -16.426, y = 4.690, z = -180.031,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_metal", chance = 1.0, interval = 0.2, sound_list_size = 20, last_time = 0, base_volume = 2.5, min_dist = 2.0, max_dist = 2.5},
+        }
+    },
+    -- Dead City, south-west of the abandoned school
+    {
+        x = -1.914, y = 4.613, z = -114.405,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_metal", chance = 1.0, interval = 0.2, sound_list_size = 20, last_time = 0, base_volume = 2.5, min_dist = 2.0, max_dist = 2.5},
+        }
+    },
+    -- Dead City, west of the abandoned school
+    {
+        x = 0.084, y = 3.392, z = -99.611,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_metal", chance = 1.0, interval = 0.2, sound_list_size = 20, last_time = 0, base_volume = 2.5, min_dist = 2.0, max_dist = 2.5},
+        }
+    },
+    -- Dead City, west of the abandoned school
+    {
+        x = -2.471, y = 1.250, z = -86.159,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_metal", chance = 1.0, interval = 0.2, sound_list_size = 20, last_time = 0, base_volume = 2.5, min_dist = 2.0, max_dist = 2.5},
+        }
+    },
+    -- Dead City, south of the abandoned school
+    {
+        x = 46.129, y = 1.066, z = -135.790,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_metal", chance = 1.0, interval = 0.2, sound_list_size = 20, last_time = 0, base_volume = 2.5, min_dist = 2.0, max_dist = 2.5},
+        }
+    },
+    -- Dead City, east of the mercenary base
+    {
+        x = 69.396, y = 4.603, z = 82.185,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_metal", chance = 1.0, interval = 0.2, sound_list_size = 20, last_time = 0, base_volume = 2.5, min_dist = 2.0, max_dist = 2.5},
+        }
+    },
+    -- Dead City, east of the mercenary base
+    {
+        x = 62.255, y = 3.843, z = 80.975,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_metal", chance = 1.0, interval = 0.2, sound_list_size = 20, last_time = 0, base_volume = 2.5, min_dist = 2.0, max_dist = 2.5},
+        }
+    },
+    -- Dead City, east of the road to Limansk
+    {
+        x = 74.626, y = 4.140, z = 106.379,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_metal", chance = 1.0, interval = 0.2, sound_list_size = 20, last_time = 0, base_volume = 2.5, min_dist = 2.0, max_dist = 2.5},
+        }
+    },
+    -- Dead City, east of the road to Limansk
+    {
+        x = 9.529, y = 2.832, z = 114.701,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_metal", chance = 1.0, interval = 0.2, sound_list_size = 20, last_time = 0, base_volume = 2.5, min_dist = 2.0, max_dist = 2.5},
+        }
+    },
+    -- Dead City, east of the mercenary base
+    {
+        x = 60.382, y = 1.959, z = 78.378,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_metal", chance = 1.0, interval = 0.2, sound_list_size = 20, last_time = 0, base_volume = 2.5, min_dist = 2.0, max_dist = 2.5},
+        }
+    },
+    -- Dead City, south-east of the road to Limansk
+    {
+        x = -47.776, y = 2.091, z = 82.816,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_metal", chance = 1.0, interval = 0.2, sound_list_size = 20, last_time = 0, base_volume = 2.5, min_dist = 2.0, max_dist = 2.5},
+        }
+    },
+    -- Dead City, north-east of the mercenary base
+    {
+        x = -12.477, y = 1.245, z = 66.242,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_metal", chance = 1.0, interval = 0.2, sound_list_size = 20, last_time = 0, base_volume = 2.5, min_dist = 2.0, max_dist = 2.5},
+        }
+    },
+    -- Dead City, east of the mercenary base
+    {
+        x = -7.127, y = 1.421, z = 39.055,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_metal", chance = 1.0, interval = 0.2, sound_list_size = 20, last_time = 0, base_volume = 2.5, min_dist = 2.0, max_dist = 2.5},
+        }
+    },
+    -- Dead City, east of the mercenary base
+    {
+        x = -15.267, y = 3.336, z = 34.949,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_metal", chance = 1.0, interval = 0.2, sound_list_size = 20, last_time = 0, base_volume = 2.5, min_dist = 2.0, max_dist = 2.5},
+        }
+    },
+    -- Dead City, south-east of the mercenary base
+    {
+        x = -15.999, y = 3.352, z = 9.093,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_metal", chance = 1.0, interval = 0.2, sound_list_size = 20, last_time = 0, base_volume = 2.5, min_dist = 2.0, max_dist = 2.5},
+        }
+    },
+    -- Dead City, south of the mercenary base
+    {
+        x = -15.980, y = 1.106, z = -16.414,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_metal", chance = 1.0, interval = 0.2, sound_list_size = 20, last_time = 0, base_volume = 2.5, min_dist = 2.0, max_dist = 2.5},
+        }
+    },
+    -- Dead City, south of the mercenary base
+    {
+        x = -30.544, y = 3.354, z = 10.068,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_metal", chance = 1.0, interval = 0.2, sound_list_size = 20, last_time = 0, base_volume = 2.5, min_dist = 2.0, max_dist = 2.5},
+        }
+    },
+
+-- Dead City, west of the mercenary base
+    {
+        x = -115.867, y = 8.681, z = 23.432,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_wood", chance = 1.0, interval = 0.2, sound_list_size = 25, last_time = 0, base_volume = 1.9, min_dist = 2.0, max_dist = 5.0},
+            {name="raindrops_wood_loop", chance = 1.0, interval = 45, sound_list_size = 1, last_time = 0, base_volume = 9.0, min_dist = 2.0, max_dist = 5.0},
+        }
+    },
+    -- Dead City, west of the mercenary base
+    {
+        x = -157.941, y = 9.943, z = 27.723,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_wood", chance = 1.0, interval = 0.2, sound_list_size = 25, last_time = 0, base_volume = 1.9, min_dist = 2.0, max_dist = 5.0},
+            {name="raindrops_wood_loop", chance = 1.0, interval = 45, sound_list_size = 1, last_time = 0, base_volume = 9.0, min_dist = 2.0, max_dist = 5.0},
+        }
+    },
+    -- Dead City, north-west of the isolated houses
+    {
+        x = -151.423, y = 7.949, z = -91.547,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_wood", chance = 1.0, interval = 0.2, sound_list_size = 25, last_time = 0, base_volume = 1.9, min_dist = 2.0, max_dist = 5.0},
+            {name="raindrops_wood_loop", chance = 1.0, interval = 45, sound_list_size = 1, last_time = 0, base_volume = 9.0, min_dist = 2.0, max_dist = 5.0},
+        }
+    },
+    -- Dead City, south-west of the isolated houses
+    {
+        x = -158.873, y = 7.775, z = -111.453,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_wood", chance = 1.0, interval = 0.2, sound_list_size = 25, last_time = 0, base_volume = 1.9, min_dist = 2.0, max_dist = 5.0},
+            {name="raindrops_wood_loop", chance = 1.0, interval = 45, sound_list_size = 1, last_time = 0, base_volume = 9.0, min_dist = 2.0, max_dist = 5.0},
+        }
+    },
+    -- Dead City, south of the isolated houses
+    {
+        x = -174.217, y = 12.907, z = -222.943,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_wood", chance = 1.0, interval = 0.2, sound_list_size = 25, last_time = 0, base_volume = 1.9, min_dist = 2.0, max_dist = 5.0},
+            {name="raindrops_wood_loop", chance = 1.0, interval = 45, sound_list_size = 1, last_time = 0, base_volume = 9.0, min_dist = 2.0, max_dist = 5.0},
+        }
+    },
+    -- Dead City, south of the abandoned school
+    {
+        x = 32.573, y = 14.745, z = -109.247,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_wood", chance = 1.0, interval = 0.2, sound_list_size = 25, last_time = 0, base_volume = 1.9, min_dist = 2.0, max_dist = 5.0},
+            {name="raindrops_wood_loop", chance = 1.0, interval = 45, sound_list_size = 1, last_time = 0, base_volume = 9.0, min_dist = 2.0, max_dist = 5.0},
+        }
+    },
+    -- Dead City, west of the abandoned school
+    {
+        x = 33.152, y = 15.734, z = -92.111,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_wood", chance = 1.0, interval = 0.2, sound_list_size = 25, last_time = 0, base_volume = 1.9, min_dist = 2.0, max_dist = 5.0},
+            {name="raindrops_wood_loop", chance = 1.0, interval = 45, sound_list_size = 1, last_time = 0, base_volume = 9.0, min_dist = 2.0, max_dist = 5.0},
+        }
+    },
+    -- Dead City, east of the abandoned school
+    {
+        x = 49.620, y = 15.431, z = -89.863,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_wood", chance = 1.0, interval = 0.2, sound_list_size = 25, last_time = 0, base_volume = 1.9, min_dist = 2.0, max_dist = 5.0},
+            {name="raindrops_wood_loop", chance = 1.0, interval = 45, sound_list_size = 1, last_time = 0, base_volume = 9.0, min_dist = 2.0, max_dist = 5.0},
+        }
+    },
+    -- Dead City, north of the abandoned school (METAL STARTS HERE)
+    {
+        x = 31.961, y = 13.548, z = -69.051,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_metal", chance = 1.0, interval = 0.2, sound_list_size = 20, last_time = 0, base_volume = 2.5, min_dist = 2.0, max_dist = 2.5},
+        }
+    },
+    -- Dead City, north of the abandoned school
+    {
+        x = 52.821, y = 8.711, z = -24.533,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_metal", chance = 1.0, interval = 0.2, sound_list_size = 20, last_time = 0, base_volume = 2.5, min_dist = 2.0, max_dist = 2.5},
+        }
+    },
+    -- Dead City, north-west of the tunnel to the Army Warehouses
+    {
+        x = 92.692, y = 8.859, z = 22.259,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_metal", chance = 1.0, interval = 0.2, sound_list_size = 20, last_time = 0, base_volume = 2.5, min_dist = 2.0, max_dist = 2.5},
+        }
+    },
+    -- Dead City, north-west of the tunnel to the Army Warehouses
+    {
+        x = 113.269, y = 6.967, z = 21.993,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_wood", chance = 1.0, interval = 0.2, sound_list_size = 25, last_time = 0, base_volume = 1.9, min_dist = 2.0, max_dist = 5.0},
+            {name="raindrops_wood_loop", chance = 1.0, interval = 45, sound_list_size = 1, last_time = 0, base_volume = 9.0, min_dist = 2.0, max_dist = 5.0},
+        }
+    },
+    -- Dead City, north of the tunnel to the Army Warehouses
+    {
+        x = 115.148, y = 7.622, z = 62.127,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_wood", chance = 1.0, interval = 0.2, sound_list_size = 25, last_time = 0, base_volume = 1.9, min_dist = 2.0, max_dist = 5.0},
+            {name="raindrops_wood_loop", chance = 1.0, interval = 45, sound_list_size = 1, last_time = 0, base_volume = 9.0, min_dist = 2.0, max_dist = 5.0},
+        }
+    },
+    -- Dead City, north-west of the tunnel to the Army Warehouses
+    {
+        x = 108.856, y = 1.101, z = 33.175,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_wood", chance = 1.0, interval = 0.2, sound_list_size = 25, last_time = 0, base_volume = 1.9, min_dist = 2.0, max_dist = 5.0},
+            {name="raindrops_wood_loop", chance = 1.0, interval = 45, sound_list_size = 1, last_time = 0, base_volume = 9.0, min_dist = 2.0, max_dist = 5.0},
+        }
+    },
+    -- Dead City, south-east of the isolated houses
+    {
+        x = -106.817, y = -2.910, z = -154.868,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_wood", chance = 1.0, interval = 0.2, sound_list_size = 25, last_time = 0, base_volume = 1.9, min_dist = 2.0, max_dist = 5.0},
+            {name="raindrops_wood_loop", chance = 1.0, interval = 45, sound_list_size = 1, last_time = 0, base_volume = 9.0, min_dist = 2.0, max_dist = 5.0},
+        }
+    },
+    -- Dead City, south of the isolated houses
+    {
+        x = -111.957, y = -2.345, z = -155.290,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_wood", chance = 1.0, interval = 0.2, sound_list_size = 25, last_time = 0, base_volume = 1.9, min_dist = 2.0, max_dist = 5.0},
+            {name="raindrops_wood_loop", chance = 1.0, interval = 45, sound_list_size = 1, last_time = 0, base_volume = 9.0, min_dist = 2.0, max_dist = 5.0},
+        }
+    },
+}

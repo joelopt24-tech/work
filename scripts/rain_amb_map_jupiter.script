@@ -1,0 +1,740 @@
+-- ARCHIVO: amb_map_jupiter.script
+
+emitters = {
+   -- Jupiter, east of the helipad
+    {
+        x = -103.354, y = 26.796, z = -483.943,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_metal", chance = 1.0, interval = 0.2, sound_list_size = 20, last_time = 0, base_volume = 2.5, min_dist = 2.0, max_dist = 2.5},
+        }
+    },
+    -- Jupiter, at the helipad
+    {
+        x = -130.500, y = 26.801, z = -468.735,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_metal", chance = 1.0, interval = 0.2, sound_list_size = 20, last_time = 0, base_volume = 2.5, min_dist = 2.0, max_dist = 2.5},
+        }
+    },
+    -- Jupiter, east of the helipad
+    {
+        x = -107.577, y = 26.765, z = -462.013,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_metal", chance = 1.0, interval = 0.2, sound_list_size = 20, last_time = 0, base_volume = 2.5, min_dist = 2.0, max_dist = 2.5},
+        }
+    },
+    -- Jupiter, south of the checkpoint
+    {
+        x = 38.684, y = 26.014, z = -201.243,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_metal", chance = 1.0, interval = 0.2, sound_list_size = 20, last_time = 0, base_volume = 2.5, min_dist = 2.0, max_dist = 2.5},
+        }
+    },
+    -- Jupiter, west of the checkpoint
+    {
+        x = 30.467, y = 28.159, z = -192.278,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_metal", chance = 1.0, interval = 0.2, sound_list_size = 20, last_time = 0, base_volume = 2.5, min_dist = 2.0, max_dist = 2.5},
+        }
+    },
+    -- Jupiter, west of the checkpoint
+    {
+        x = 24.309, y = 28.574, z = -182.200,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_metal", chance = 1.0, interval = 0.2, sound_list_size = 20, last_time = 0, base_volume = 2.5, min_dist = 2.0, max_dist = 2.5},
+        }
+    },
+    -- Jupiter, north of the checkpoint
+    {
+        x = 51.565, y = 24.013, z = -167.618,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_metal", chance = 1.0, interval = 0.2, sound_list_size = 20, last_time = 0, base_volume = 2.5, min_dist = 2.0, max_dist = 2.5},
+        }
+    },
+    -- Jupiter, south-east of the checkpoint
+    {
+        x = 124.402, y = 16.804, z = -248.560,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_metal", chance = 1.0, interval = 0.2, sound_list_size = 20, last_time = 0, base_volume = 2.5, min_dist = 2.0, max_dist = 2.5},
+        }
+    },
+    -- Jupiter, west of the Concrete Bath anomaly
+    {
+        x = 105.451, y = 23.952, z = -351.146,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_metal", chance = 1.0, interval = 0.2, sound_list_size = 20, last_time = 0, base_volume = 2.5, min_dist = 2.0, max_dist = 2.5},
+        }
+    },
+    -- Jupiter, west of the Concrete Bath anomaly
+    {
+        x = 113.923, y = 17.449, z = -380.651,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_metal", chance = 1.0, interval = 0.2, sound_list_size = 20, last_time = 0, base_volume = 2.5, min_dist = 2.0, max_dist = 2.5},
+        }
+    },
+    -- Jupiter, south-west of the Concrete Bath anomaly
+    {
+        x = 103.051, y = 17.522, z = -399.165,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_metal", chance = 1.0, interval = 0.2, sound_list_size = 20, last_time = 0, base_volume = 2.5, min_dist = 2.0, max_dist = 2.5},
+        }
+    },
+    -- Jupiter, south of the Concrete Bath anomaly
+    {
+        x = 186.122, y = 30.931, z = -459.564,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_metal", chance = 1.0, interval = 0.2, sound_list_size = 20, last_time = 0, base_volume = 2.5, min_dist = 2.0, max_dist = 2.5},
+        }
+    },
+    -- Jupiter, south of the Concrete Bath anomaly
+    {
+        x = 198.987, y = 32.390, z = -486.433,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_metal", chance = 1.0, interval = 0.2, sound_list_size = 20, last_time = 0, base_volume = 2.5, min_dist = 2.0, max_dist = 2.5},
+        }
+    },
+    -- Jupiter, south of the Concrete Bath anomaly
+    {
+        x = 206.752, y = 32.326, z = -487.518,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_metal", chance = 1.0, interval = 0.2, sound_list_size = 20, last_time = 0, base_volume = 2.5, min_dist = 2.0, max_dist = 2.5},
+        }
+    },
+    -- Jupiter, north of the Jupiter factory
+    {
+        x = 294.817, y = 30.551, z = -189.801,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_metal", chance = 1.0, interval = 0.2, sound_list_size = 20, last_time = 0, base_volume = 2.5, min_dist = 2.0, max_dist = 2.5},
+        }
+    },
+    -- Jupiter, east of the Concrete Bath anomaly
+    {
+        x = 463.545, y = 27.258, z = -386.211,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_metal", chance = 1.0, interval = 0.2, sound_list_size = 20, last_time = 0, base_volume = 2.5, min_dist = 2.0, max_dist = 2.5},
+        }
+    },
+    -- Jupiter, south-east of the Jupiter factory
+    {
+        x = 474.557, y = 27.922, z = -381.514,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_metal", chance = 1.0, interval = 0.2, sound_list_size = 20, last_time = 0, base_volume = 2.5, min_dist = 2.0, max_dist = 2.5},
+        }
+    },
+    -- Jupiter, east of the Concrete Bath anomaly
+    {
+        x = 451.979, y = 30.114, z = -418.274,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_metal", chance = 1.0, interval = 0.2, sound_list_size = 20, last_time = 0, base_volume = 2.5, min_dist = 2.0, max_dist = 2.5},
+        }
+    },
+    -- Jupiter, east of the Concrete Bath anomaly
+    {
+        x = 450.214, y = 31.166, z = -436.844,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_metal", chance = 1.0, interval = 0.2, sound_list_size = 20, last_time = 0, base_volume = 2.5, min_dist = 2.0, max_dist = 2.5},
+        }
+    },
+    -- Jupiter, south-east of the Concrete Bath anomaly
+    {
+        x = 427.996, y = 30.511, z = -454.578,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_metal", chance = 1.0, interval = 0.2, sound_list_size = 20, last_time = 0, base_volume = 2.5, min_dist = 2.0, max_dist = 2.5},
+        }
+    },
+    -- Jupiter, south-east of the Concrete Bath anomaly
+    {
+        x = 413.674, y = 27.303, z = -459.385,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_metal", chance = 1.0, interval = 0.2, sound_list_size = 20, last_time = 0, base_volume = 2.5, min_dist = 2.0, max_dist = 2.5},
+        }
+    },
+    -- Jupiter, south-east of the Concrete Bath anomaly
+    {
+        x = 414.609, y = 30.458, z = -432.401,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_metal", chance = 1.0, interval = 0.2, sound_list_size = 20, last_time = 0, base_volume = 2.5, min_dist = 2.0, max_dist = 2.5},
+        }
+    },
+    -- Jupiter, east of the Concrete Bath anomaly
+    {
+        x = 410.619, y = 38.034, z = -382.184,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_metal", chance = 1.0, interval = 0.2, sound_list_size = 20, last_time = 0, base_volume = 2.5, min_dist = 2.0, max_dist = 2.5},
+        }
+    },
+    -- Jupiter, east of the Concrete Bath anomaly
+    {
+        x = 398.679, y = 38.029, z = -379.973,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_metal", chance = 1.0, interval = 0.2, sound_list_size = 20, last_time = 0, base_volume = 2.5, min_dist = 2.0, max_dist = 2.5},
+        }
+    },
+    -- Jupiter, north of the Jupiter factory
+    {
+        x = 310.085, y = 31.679, z = -140.342,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_metal", chance = 1.0, interval = 0.2, sound_list_size = 20, last_time = 0, base_volume = 2.5, min_dist = 2.0, max_dist = 2.5},
+        }
+    },
+    -- Jupiter, south-east of the cement factory
+    {
+        x = 386.993, y = 10.252, z = 310.353,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_metal", chance = 1.0, interval = 0.2, sound_list_size = 20, last_time = 0, base_volume = 2.5, min_dist = 2.0, max_dist = 2.5},
+        }
+    },
+    -- Jupiter, south-east of the cement factory
+    {
+        x = 374.370, y = 10.453, z = 311.710,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_metal", chance = 1.0, interval = 0.2, sound_list_size = 20, last_time = 0, base_volume = 2.5, min_dist = 2.0, max_dist = 2.5},
+        }
+    },
+    -- Jupiter, south-east of the cement factory
+    {
+        x = 375.225, y = 11.865, z = 320.090,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_metal", chance = 1.0, interval = 0.2, sound_list_size = 20, last_time = 0, base_volume = 2.5, min_dist = 2.0, max_dist = 2.5},
+        }
+    },
+    -- Jupiter, east of the cement factory
+    {
+        x = 386.023, y = 11.930, z = 321.007,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_metal", chance = 1.0, interval = 0.2, sound_list_size = 20, last_time = 0, base_volume = 2.5, min_dist = 2.0, max_dist = 2.5},
+        }
+    },
+    -- Jupiter, east of the cement factory
+    {
+        x = 391.161, y = 3.517, z = 332.452,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_metal", chance = 1.0, interval = 0.2, sound_list_size = 20, last_time = 0, base_volume = 2.5, min_dist = 2.0, max_dist = 2.5},
+        }
+    },
+    -- Jupiter, north-east of the cement factory
+    {
+        x = 424.196, y = 2.583, z = 377.422,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_metal", chance = 1.0, interval = 0.2, sound_list_size = 20, last_time = 0, base_volume = 2.5, min_dist = 2.0, max_dist = 2.5},
+        }
+    },
+
+-- Jupiter, west of the quarry
+    {
+        x = 227.433, y = -10.900, z = 189.597,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_metal", chance = 1.0, interval = 0.2, sound_list_size = 20, last_time = 0, base_volume = 2.5, min_dist = 2.0, max_dist = 2.5},
+        }
+    },
+    -- Jupiter, west of the quarry
+    {
+        x = 221.715, y = -9.750, z = 155.667,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_metal", chance = 1.0, interval = 0.2, sound_list_size = 20, last_time = 0, base_volume = 2.5, min_dist = 2.0, max_dist = 2.5},
+        }
+    },
+    -- Jupiter, west of the quarry
+    {
+        x = 225.195, y = -17.421, z = 150.091,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_metal", chance = 1.0, interval = 0.2, sound_list_size = 20, last_time = 0, base_volume = 2.5, min_dist = 2.0, max_dist = 2.5},
+        }
+    },
+    -- Jupiter, west of the quarry
+    {
+        x = 217.981, y = -19.931, z = 152.167,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_metal", chance = 1.0, interval = 0.2, sound_list_size = 20, last_time = 0, base_volume = 2.5, min_dist = 2.0, max_dist = 2.5},
+        }
+    },
+    -- Jupiter, west of the quarry
+    {
+        x = 230.437, y = -19.883, z = 150.950,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_metal", chance = 1.0, interval = 0.2, sound_list_size = 20, last_time = 0, base_volume = 2.5, min_dist = 2.0, max_dist = 2.5},
+        }
+    },
+    -- Jupiter, west of the quarry
+    {
+        x = 163.956, y = 5.175, z = 216.538,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_metal", chance = 1.0, interval = 0.2, sound_list_size = 20, last_time = 0, base_volume = 2.5, min_dist = 2.0, max_dist = 2.5},
+        }
+    },
+    -- Jupiter, south-east of the substation
+    {
+        x = 138.907, y = 4.110, z = 225.101,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_metal", chance = 1.0, interval = 0.2, sound_list_size = 20, last_time = 0, base_volume = 2.5, min_dist = 2.0, max_dist = 2.5},
+        }
+    },
+    -- Jupiter, south of the substation
+    {
+        x = 125.476, y = 5.135, z = 221.647,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_metal", chance = 1.0, interval = 0.2, sound_list_size = 20, last_time = 0, base_volume = 2.5, min_dist = 2.0, max_dist = 2.5},
+        }
+    },
+    -- Jupiter, south of the substation
+    {
+        x = 119.391, y = 3.003, z = 211.963,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_metal", chance = 1.0, interval = 0.2, sound_list_size = 20, last_time = 0, base_volume = 2.5, min_dist = 2.0, max_dist = 2.5},
+        }
+    },
+    -- Jupiter, south of the substation
+    {
+        x = 129.327, y = 2.260, z = 210.585,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_metal", chance = 1.0, interval = 0.2, sound_list_size = 20, last_time = 0, base_volume = 2.5, min_dist = 2.0, max_dist = 2.5},
+        }
+    },
+    -- Jupiter, south of the substation
+    {
+        x = 140.302, y = 4.345, z = 203.863,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_metal", chance = 1.0, interval = 0.2, sound_list_size = 20, last_time = 0, base_volume = 2.5, min_dist = 2.0, max_dist = 2.5},
+        }
+    },
+    -- Jupiter, south of the substation
+    {
+        x = 133.215, y = 1.488, z = 191.813,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_metal", chance = 1.0, interval = 0.2, sound_list_size = 20, last_time = 0, base_volume = 2.5, min_dist = 2.0, max_dist = 2.5},
+        }
+    },
+    -- Jupiter, by the substation
+    {
+        x = 75.941, y = 8.345, z = 330.993,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_metal", chance = 1.0, interval = 0.2, sound_list_size = 20, last_time = 0, base_volume = 2.5, min_dist = 2.0, max_dist = 2.5},
+        }
+    },
+    -- Jupiter, south-east of the tower
+    {
+        x = -107.680, y = 3.285, z = 320.359,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_metal", chance = 1.0, interval = 0.2, sound_list_size = 20, last_time = 0, base_volume = 2.5, min_dist = 2.0, max_dist = 2.5},
+        }
+    },
+    -- Jupiter, south-west of the tower
+    {
+        x = -193.047, y = -13.737, z = 337.982,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_metal", chance = 1.0, interval = 0.2, sound_list_size = 20, last_time = 0, base_volume = 2.5, min_dist = 2.0, max_dist = 2.5},
+        }
+    },
+    -- Jupiter, east of Kopachy
+    {
+        x = -322.938, y = 0.388, z = 243.376,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_metal", chance = 1.0, interval = 0.2, sound_list_size = 20, last_time = 0, base_volume = 2.5, min_dist = 2.0, max_dist = 2.5},
+        }
+    },
+    -- Jupiter, north of Kopachy
+    {
+        x = -345.802, y = 5.029, z = 261.052,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_metal", chance = 1.0, interval = 0.2, sound_list_size = 20, last_time = 0, base_volume = 2.5, min_dist = 2.0, max_dist = 2.5},
+        }
+    },
+    -- Jupiter, north of Kopachy
+    {
+        x = -335.588, y = 5.113, z = 261.211,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_metal", chance = 1.0, interval = 0.2, sound_list_size = 20, last_time = 0, base_volume = 2.5, min_dist = 2.0, max_dist = 2.5},
+        }
+    },
+    -- Jupiter, south of Kopachy
+    {
+        x = -321.506, y = 1.692, z = 176.036,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_metal", chance = 1.0, interval = 0.2, sound_list_size = 20, last_time = 0, base_volume = 2.5, min_dist = 2.0, max_dist = 2.5},
+        }
+    },
+    -- Jupiter, north-east of the Volkhov complex
+    {
+        x = -329.868, y = 7.689, z = 23.095,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_metal", chance = 1.0, interval = 0.2, sound_list_size = 20, last_time = 0, base_volume = 2.5, min_dist = 2.0, max_dist = 2.5},
+        }
+    },
+    -- Jupiter, north-east of the Volkhov complex
+    {
+        x = -323.320, y = 7.844, z = 24.528,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_metal", chance = 1.0, interval = 0.2, sound_list_size = 20, last_time = 0, base_volume = 2.5, min_dist = 2.0, max_dist = 2.5},
+        }
+    },
+    -- Jupiter, north-east of the Volkhov complex
+    {
+        x = -329.868, y = 7.841, z = 14.459,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_metal", chance = 1.0, interval = 0.2, sound_list_size = 20, last_time = 0, base_volume = 2.5, min_dist = 2.0, max_dist = 2.5},
+        }
+    },
+    -- Jupiter, east of the Volkhov complex
+    {
+        x = -331.245, y = 2.750, z = -2.665,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_metal", chance = 1.0, interval = 0.2, sound_list_size = 20, last_time = 0, base_volume = 2.5, min_dist = 2.0, max_dist = 2.5},
+        }
+    },
+    -- Jupiter, east of the Volkhov complex
+    {
+        x = -323.534, y = 7.832, z = -20.284,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_metal", chance = 1.0, interval = 0.2, sound_list_size = 20, last_time = 0, base_volume = 2.5, min_dist = 2.0, max_dist = 2.5},
+        }
+    },
+    -- Jupiter, west of the mobile lab
+    {
+        x = -214.815, y = 2.208, z = 77.049,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_metal", chance = 1.0, interval = 0.2, sound_list_size = 20, last_time = 0, base_volume = 2.5, min_dist = 2.0, max_dist = 2.5},
+        }
+    },
+    -- Jupiter, west of the mobile lab
+    {
+        x = -226.198, y = 2.208, z = 72.875,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_metal", chance = 1.0, interval = 0.2, sound_list_size = 20, last_time = 0, base_volume = 2.5, min_dist = 2.0, max_dist = 2.5},
+        }
+    },
+    -- Jupiter, east of the storage containers
+    {
+        x = -315.534, y = 1.494, z = -384.345,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_metal", chance = 1.0, interval = 0.2, sound_list_size = 20, last_time = 0, base_volume = 2.5, min_dist = 2.0, max_dist = 2.5},
+        }
+    },
+    -- Jupiter, east of the storage containers
+    {
+        x = -333.063, y = 2.871, z = -349.842,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_metal", chance = 1.0, interval = 0.2, sound_list_size = 20, last_time = 0, base_volume = 2.5, min_dist = 2.0, max_dist = 2.5},
+        }
+    },
+    -- Jupiter, east of the storage containers
+    {
+        x = -371.820, y = 4.481, z = -358.906,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_metal", chance = 1.0, interval = 0.2, sound_list_size = 20, last_time = 0, base_volume = 2.5, min_dist = 2.0, max_dist = 2.5},
+        }
+    },
+    -- Jupiter, south of the storage containers
+    {
+        x = -402.623, y = 8.995, z = -376.350,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_metal", chance = 1.0, interval = 0.2, sound_list_size = 20, last_time = 0, base_volume = 2.5, min_dist = 2.0, max_dist = 2.5},
+        }
+    },
+    -- Jupiter, south of the storage containers
+    {
+        x = -420.113, y = 9.632, z = -372.707,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_metal", chance = 1.0, interval = 0.2, sound_list_size = 20, last_time = 0, base_volume = 2.5, min_dist = 2.0, max_dist = 2.5},
+        }
+    },
+    -- Jupiter, south of the storage containers
+    {
+        x = -419.444, y = 3.095, z = -358.260,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_metal", chance = 1.0, interval = 0.2, sound_list_size = 20, last_time = 0, base_volume = 2.5, min_dist = 2.0, max_dist = 2.5},
+        }
+    },
+    -- Jupiter, by the storage containers
+    {
+        x = -420.695, y = -0.019, z = -344.081,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_metal", chance = 1.0, interval = 0.2, sound_list_size = 20, last_time = 0, base_volume = 2.5, min_dist = 2.0, max_dist = 2.5},
+        }
+    },
+    -- Jupiter, north of the storage containers
+    {
+        x = -416.617, y = -0.012, z = -322.444,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_metal", chance = 1.0, interval = 0.2, sound_list_size = 20, last_time = 0, base_volume = 2.5, min_dist = 2.0, max_dist = 2.5},
+        }
+    },
+    -- Jupiter, north-east of the storage containers
+    {
+        x = -395.934, y = 3.164, z = -333.689,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_metal", chance = 1.0, interval = 0.2, sound_list_size = 20, last_time = 0, base_volume = 2.5, min_dist = 2.0, max_dist = 2.5},
+        }
+    },
+    -- Jupiter, west of the ventilation complex
+    {
+        x = -202.543, y = 0.258, z = -283.157,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_metal", chance = 1.0, interval = 0.2, sound_list_size = 20, last_time = 0, base_volume = 2.5, min_dist = 2.0, max_dist = 2.5},
+        }
+    },
+    -- Jupiter, south-east of the parking lot
+    {
+        x = -92.940, y = 1.219, z = -157.821,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_metal", chance = 1.0, interval = 0.2, sound_list_size = 20, last_time = 0, base_volume = 2.5, min_dist = 2.0, max_dist = 2.5},
+        }
+    },
+    -- Jupiter, at the parking lot
+    {
+        x = -105.431, y = -0.393, z = -142.290,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_metal", chance = 1.0, interval = 0.2, sound_list_size = 20, last_time = 0, base_volume = 2.5, min_dist = 2.0, max_dist = 2.5},
+        }
+    },
+    -- Jupiter, near the parking lot
+    {
+        x = -108.482, y = -0.391, z = -139.420,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_metal", chance = 1.0, interval = 0.2, sound_list_size = 20, last_time = 0, base_volume = 2.5, min_dist = 2.0, max_dist = 2.5},
+        }
+    },
+    -- Jupiter, south-west of Jupiter
+    {
+        x = -78.083, y = 7.806, z = 174.966,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_metal", chance = 1.0, interval = 0.2, sound_list_size = 20, last_time = 0, base_volume = 2.5, min_dist = 2.0, max_dist = 2.5},
+        }
+    },
+    -- Jupiter, west of Jupiter
+    {
+        x = -107.594, y = 3.544, z = 177.759,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_metal", chance = 1.0, interval = 0.2, sound_list_size = 20, last_time = 0, base_volume = 2.5, min_dist = 2.0, max_dist = 2.5},
+        }
+    },
+    -- Jupiter, west of Jupiter
+    {
+        x = -95.258, y = 8.153, z = 215.496,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_metal", chance = 1.0, interval = 0.2, sound_list_size = 20, last_time = 0, base_volume = 2.5, min_dist = 2.0, max_dist = 2.5},
+        }
+    },
+    -- Jupiter, north of Jupiter
+    {
+        x = -59.772, y = 6.497, z = 242.516,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_metal", chance = 1.0, interval = 0.2, sound_list_size = 20, last_time = 0, base_volume = 2.5, min_dist = 2.0, max_dist = 2.5},
+        }
+    },
+    -- Jupiter, north of Jupiter
+    {
+        x = -40.640, y = 5.131, z = 263.554,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_metal", chance = 1.0, interval = 0.2, sound_list_size = 20, last_time = 0, base_volume = 2.5, min_dist = 2.0, max_dist = 2.5},
+        }
+    },
+    -- Jupiter, east of Jupiter
+    {
+        x = -3.040, y = 6.332, z = 211.602,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_metal", chance = 1.0, interval = 0.2, sound_list_size = 20, last_time = 0, base_volume = 2.5, min_dist = 2.0, max_dist = 2.5},
+        }
+    },
+    -- Jupiter, east of Jupiter
+    {
+        x = 1.181, y = 3.467, z = 201.840,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_metal", chance = 1.0, interval = 0.2, sound_list_size = 20, last_time = 0, base_volume = 2.5, min_dist = 2.0, max_dist = 2.5},
+        }
+    },
+    -- Jupiter, east of Jupiter
+    {
+        x = 14.727, y = 3.189, z = 170.795,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_metal", chance = 1.0, interval = 0.2, sound_list_size = 20, last_time = 0, base_volume = 2.5, min_dist = 2.0, max_dist = 2.5},
+        }
+    },
+    -- Jupiter, south of Jupiter
+    {
+        x = -33.414, y = 3.973, z = 152.902,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_metal", chance = 1.0, interval = 0.2, sound_list_size = 20, last_time = 0, base_volume = 2.5, min_dist = 2.0, max_dist = 2.5},
+        }
+    },
+-- Jupiter, south of Jupiter
+    {
+        x = -46.472, y = 11.531, z = 178.298,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_wood", chance = 1.0, interval = 0.2, sound_list_size = 25, last_time = 0, base_volume = 1.9, min_dist = 2.0, max_dist = 5.0},
+            {name="raindrops_wood_loop", chance = 1.0, interval = 45, sound_list_size = 1, last_time = 0, base_volume = 9.0, min_dist = 2.0, max_dist = 5.0},
+        }
+    },
+    -- Jupiter, south-east of Jupiter
+    {
+        x = -45.743, y = 12.479, z = 190.412,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_wood", chance = 1.0, interval = 0.2, sound_list_size = 25, last_time = 0, base_volume = 1.9, min_dist = 2.0, max_dist = 5.0},
+            {name="raindrops_wood_loop", chance = 1.0, interval = 45, sound_list_size = 1, last_time = 0, base_volume = 9.0, min_dist = 2.0, max_dist = 5.0},
+        }
+    },
+    -- Jupiter, north-east of Jupiter
+    {
+        x = -46.086, y = 12.718, z = 204.368,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_wood", chance = 1.0, interval = 0.2, sound_list_size = 25, last_time = 0, base_volume = 1.9, min_dist = 2.0, max_dist = 5.0},
+            {name="raindrops_wood_loop", chance = 1.0, interval = 45, sound_list_size = 1, last_time = 0, base_volume = 9.0, min_dist = 2.0, max_dist = 5.0},
+        }
+    },
+    -- Jupiter, north of Jupiter
+    {
+        x = -44.609, y = 10.772, z = 215.887,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_wood", chance = 1.0, interval = 0.2, sound_list_size = 25, last_time = 0, base_volume = 1.9, min_dist = 2.0, max_dist = 5.0},
+            {name="raindrops_wood_loop", chance = 1.0, interval = 45, sound_list_size = 1, last_time = 0, base_volume = 9.0, min_dist = 2.0, max_dist = 5.0},
+        }
+    },
+    -- Jupiter, north-west of Jupiter
+    {
+        x = -58.039, y = 10.933, z = 208.580,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_wood", chance = 1.0, interval = 0.2, sound_list_size = 25, last_time = 0, base_volume = 1.9, min_dist = 2.0, max_dist = 5.0},
+            {name="raindrops_wood_loop", chance = 1.0, interval = 45, sound_list_size = 1, last_time = 0, base_volume = 9.0, min_dist = 2.0, max_dist = 5.0},
+        }
+    },
+    -- Jupiter, south-west of Jupiter
+    {
+        x = -59.400, y = 10.305, z = 187.313,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_wood", chance = 1.0, interval = 0.2, sound_list_size = 25, last_time = 0, base_volume = 1.9, min_dist = 2.0, max_dist = 5.0},
+            {name="raindrops_wood_loop", chance = 1.0, interval = 45, sound_list_size = 1, last_time = 0, base_volume = 9.0, min_dist = 2.0, max_dist = 5.0},
+        }
+    },
+-- Jupiter, south of Jupiter (METAL standard)
+    {
+        x = -35.703, y = 4.765, z = 103.978,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_metal", chance = 1.0, interval = 0.2, sound_list_size = 20, last_time = 0, base_volume = 2.5, min_dist = 2.0, max_dist = 2.5},
+        }
+    },
+    -- Jupiter, south of Jupiter (METAL standard)
+    {
+        x = -35.132, y = 4.765, z = 99.312,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_metal", chance = 1.0, interval = 0.2, sound_list_size = 20, last_time = 0, base_volume = 2.5, min_dist = 2.0, max_dist = 2.5},
+        }
+    },
+    -- Jupiter, west of the mobile lab (METAL LOOP)
+    {
+        x = -220.126, y = 1.145, z = 76.025,
+        max_hearing_dist = 100.0,
+        sound_list = {
+            {name="raindrops_metal_loop", chance = 1.0, interval = 46, sound_list_size = 1, last_time = 0, base_volume = 10.5, min_dist = 2.0, max_dist = 2.5},
+        }
+    },
+    -- Jupiter, west of the mobile lab (METAL LOOP)
+    {
+        x = -225.432, y = 2.208, z = 73.822,
+        max_hearing_dist = 100.0,
+        sound_list = {
+            {name="raindrops_metal_loop", chance = 1.0, interval = 46, sound_list_size = 1, last_time = 0, base_volume = 10.5, min_dist = 2.0, max_dist = 2.5},
+        }
+    },
+-- Jupiter, north-east of Jupiter (METAL standard)
+    {
+        x = -8.591, y = 30.030, z = 251.488,
+        max_hearing_dist = 170.0,
+        sound_list = {
+            {name="raindrops_metal_loop", chance = 1.0, interval = 46, sound_list_size = 1, last_time = 0, base_volume = 10.5, min_dist = 2.0, max_dist = 2.5},
+        }
+    },
+    -- Jupiter, north-east of Jupiter (METAL standard)
+    {
+        x = -13.267, y = 29.234, z = 250.780,
+        max_hearing_dist = 190.0,
+        sound_list = {
+            {name="raindrops_metal_loop", chance = 1.0, interval = 46, sound_list_size = 1, last_time = 0, base_volume = 10.5, min_dist = 2.0, max_dist = 2.5},
+        }
+    },
+
+}

@@ -1,0 +1,144 @@
+-- ARCHIVO: amb_map_l10_red_forest.script
+
+emitters = { 
+
+    -- 1. West of the bridge (Metal + Wind)
+    {
+        x = -140.782, y = 1.477, z = -270.561,
+        max_hearing_dist = 100.0,
+        sound_list = {
+            {name="hangar_metal_details", chance = 0.9, interval = 7, sound_list_size = 10, last_time = 0, base_volume = 3.5, min_dist = 5.0, max_dist = 10.0},
+            {name="hangar_wind_gust", chance = 0.9, interval = 5, sound_list_size = 22, last_time = 0, base_volume = 3.5, min_dist = 5.0, max_dist = 10.0},
+        }
+    },
+    -- 2. West of the bridge (Metal)
+    {
+        x = -161.433, y = 0.237, z = -268.006,
+        max_hearing_dist = 90.0,
+        sound_list = {
+            {name="metal_structure_small_strong", chance = 0.9, interval = 25, sound_list_size = 20, last_time = 0, base_volume = 1.5, min_dist = 5.0, max_dist = 13.0},
+            {name="metal_structure_small_weak", chance = 0.9, interval = 12, sound_list_size = 32, last_time = 0, base_volume = 1.3, min_dist = 5.0, max_dist = 12.0},
+        }
+    },
+    -- 3. North of the bridge (Concrete)
+    {
+        x = -114.329, y = -0.641, z = -216.587,
+        max_hearing_dist = 80.0,
+        sound_list = {
+            {name="generic_concrete_large_room", chance = 0.9, interval = 10, sound_list_size = 17, last_time = 0, base_volume = 2.0, min_dist = 5.0, max_dist = 13.0},
+            {name="underground_concrete_details", chance = 0.9, interval = 15, sound_list_size = 22, last_time = 0, base_volume = 1.5, min_dist = 5.0, max_dist = 13.0},
+        }
+    },
+    -- 4. North of the bridge (Concrete)
+    {
+        x = -103.870, y = -0.820, z = -201.182,
+        max_hearing_dist = 90.0,
+        sound_list = {
+            {name="generic_concrete_large_room", chance = 0.9, interval = 10, sound_list_size = 17, last_time = 0, base_volume = 2.0, min_dist = 5.0, max_dist = 13.0},
+            {name="underground_concrete_details", chance = 0.9, interval = 15, sound_list_size = 22, last_time = 0, base_volume = 1.5, min_dist = 5.0, max_dist = 13.0},
+        }
+    },
+    -- 5. North of the bridge (Concrete)
+    {
+        x = -94.733, y = -0.822, z = -181.797,
+        max_hearing_dist = 100.0,
+        sound_list = {
+            {name="generic_concrete_large_room", chance = 0.9, interval = 10, sound_list_size = 17, last_time = 0, base_volume = 2.0, min_dist = 5.0, max_dist = 13.0},
+            {name="underground_concrete_details", chance = 0.9, interval = 15, sound_list_size = 22, last_time = 0, base_volume = 1.5, min_dist = 5.0, max_dist = 13.0},
+        }
+    },
+
+    -- 6. North-east of the road to Radar
+    {
+        x = 181.462, y = -0.174, z = -222.487,
+        max_hearing_dist = 60.0,
+        sound_list = {
+            {name="generic_concrete_large_room", chance = 0.9, interval = 10, sound_list_size = 17, last_time = 0, base_volume = 2.0, min_dist = 5.0, max_dist = 13.0},
+            {name="underground_concrete_details", chance = 0.9, interval = 15, sound_list_size = 22, last_time = 0, base_volume = 1.5, min_dist = 5.0, max_dist = 13.0},
+        }
+    },
+    -- 7. North-east of the road to Radar (2)
+    {
+        x = 182.279, y = -0.181, z = -207.567,
+        max_hearing_dist = 60.0,
+        sound_list = {
+            {name="generic_concrete_large_room", chance = 0.9, interval = 10, sound_list_size = 17, last_time = 0, base_volume = 2.0, min_dist = 5.0, max_dist = 13.0},
+            {name="underground_concrete_details", chance = 0.9, interval = 15, sound_list_size = 22, last_time = 0, base_volume = 1.5, min_dist = 5.0, max_dist = 13.0},
+        }
+    },
+    -- 8. South of the tunnel camp
+    {
+        x = 176.378, y = -0.210, z = -189.472,
+        max_hearing_dist = 60.0,
+        sound_list = {
+            {name="generic_concrete_large_room", chance = 0.9, interval = 10, sound_list_size = 17, last_time = 0, base_volume = 2.0, min_dist = 5.0, max_dist = 13.0},
+            {name="underground_concrete_details", chance = 0.9, interval = 15, sound_list_size = 22, last_time = 0, base_volume = 1.5, min_dist = 5.0, max_dist = 13.0},
+        }
+    },
+    -- 9. South-west of the tunnel camp
+    {
+        x = 155.142, y = -0.142, z = -180.876,
+        max_hearing_dist = 60.0,
+        sound_list = {
+            {name="generic_concrete_large_room", chance = 0.9, interval = 10, sound_list_size = 17, last_time = 0, base_volume = 2.0, min_dist = 5.0, max_dist = 13.0},
+            {name="underground_concrete_details", chance = 0.9, interval = 15, sound_list_size = 22, last_time = 0, base_volume = 1.5, min_dist = 5.0, max_dist = 13.0},
+        }
+    },
+
+    -- 10. By the open field (Concrete)
+    {
+        x = -94.642, y = 2.301, z = -55.592,
+        max_hearing_dist = 100.0,
+        sound_list = {
+            {name="generic_concrete_large_room", chance = 0.9, interval = 10, sound_list_size = 17, last_time = 0, base_volume = 2.0, min_dist = 5.0, max_dist = 13.0},
+            {name="underground_concrete_details", chance = 0.9, interval = 15, sound_list_size = 22, last_time = 0, base_volume = 1.5, min_dist = 5.0, max_dist = 13.0},
+        }
+    },
+    -- 11. West of the open field (Concrete)
+    {
+        x = -122.885, y = 2.332, z = -54.156,
+        max_hearing_dist = 100.0,
+        sound_list = {
+            {name="generic_concrete_large_room", chance = 0.9, interval = 10, sound_list_size = 17, last_time = 0, base_volume = 2.0, min_dist = 5.0, max_dist = 13.0},
+            {name="underground_concrete_details", chance = 0.9, interval = 15, sound_list_size = 22, last_time = 0, base_volume = 1.5, min_dist = 5.0, max_dist = 13.0},
+        }
+    },
+    -- 12. West of the open field (Concrete 2)
+    {
+        x = -151.284, y = 2.316, z = -50.201,
+        max_hearing_dist = 100.0,
+        sound_list = {
+            {name="generic_concrete_large_room", chance = 0.9, interval = 10, sound_list_size = 17, last_time = 0, base_volume = 2.0, min_dist = 5.0, max_dist = 13.0},
+            {name="underground_concrete_details", chance = 0.9, interval = 15, sound_list_size = 22, last_time = 0, base_volume = 1.5, min_dist = 5.0, max_dist = 13.0},
+        }
+    },
+    -- 13. East of the road to Jupiter
+    {
+        x = 3.842, y = -0.024, z = -42.955,
+        max_hearing_dist = 100.0,
+        sound_list = {
+            {name="metal_structure_small_strong", chance = 0.9, interval = 25, sound_list_size = 20, last_time = 0, base_volume = 1.5, min_dist = 5.0, max_dist = 13.0},
+            {name="metal_structure_small_weak", chance = 0.9, interval = 12, sound_list_size = 32, last_time = 0, base_volume = 1.3, min_dist = 5.0, max_dist = 12.0},
+        }
+    },
+    -- 14. East of the road to Jupiter (2)
+    {
+        x = 53.820, y = 0.395, z = 1.332,
+        max_hearing_dist = 120.0,
+        sound_list = {
+            {name="metal_structure_small_strong", chance = 0.9, interval = 25, sound_list_size = 20, last_time = 0, base_volume = 1.5, min_dist = 5.0, max_dist = 13.0},
+            {name="metal_structure_small_weak", chance = 0.9, interval = 12, sound_list_size = 32, last_time = 0, base_volume = 1.3, min_dist = 5.0, max_dist = 12.0},
+        }
+    },
+    -- 15. North-east of the road to Jupiter (Elevated)
+    {
+        x = 23.229, y = 12.913, z = 19.440,
+        max_hearing_dist = 130.0,
+        sound_list = {
+            {name="metal_structure_small_weak", chance = 0.9, interval = 12, sound_list_size = 32, last_time = 0, base_volume = 1.3, min_dist = 5.0, max_dist = 12.0},
+            {name="hangar_metal_details", chance = 0.9, interval = 7, sound_list_size = 10, last_time = 0, base_volume = 3.5, min_dist = 5.0, max_dist = 10.0},
+            {name="hangar_wind_gust", chance = 0.9, interval = 5, sound_list_size = 22, last_time = 0, base_volume = 3.5, min_dist = 5.0, max_dist = 10.0},
+        }
+    },
+
+}

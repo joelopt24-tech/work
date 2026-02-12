@@ -1,0 +1,112 @@
+emitters = {
+        -- 1. North of the southern complex
+        {
+            x = -125.844, y = -0.000, z = -165.659,
+            max_hearing_dist = 10.0,
+            sound_list = {
+                {name="metal_structure_small_strong", chance = 0.9, interval = 15, sound_list_size = 20, last_time = 0, base_volume = 1.5, min_dist = 5.0, max_dist = 13.0},
+                {name="metal_structure_small_weak", chance = 0.9, interval = 12, sound_list_size = 32, last_time = 0, base_volume = 1.3, min_dist = 5.0, max_dist = 12.0},
+            }
+        },
+        -- 2. South-west of the southern complex
+        {
+            x = -165.554, y = -0.200, z = -213.139,
+            max_hearing_dist = 100.0,
+            sound_list = {
+                {name="metal_structure_small_strong", chance = 0.9, interval = 15, sound_list_size = 20, last_time = 0, base_volume = 1.5, min_dist = 5.0, max_dist = 13.0},
+                {name="metal_structure_small_weak", chance = 0.9, interval = 12, sound_list_size = 32, last_time = 0, base_volume = 1.3, min_dist = 5.0, max_dist = 12.0},
+            }
+        },
+        -- 3. West of the northern complex
+        {
+            x = -42.915, y = -0.209, z = 1.901,
+            max_hearing_dist = 90.0,
+            sound_list = {
+                {name="metal_structure_small_strong", chance = 0.9, interval = 20, sound_list_size = 20, last_time = 0, base_volume = 1.5, min_dist = 5.0, max_dist = 13.0},
+                {name="metal_structure_small_weak", chance = 0.9, interval = 10, sound_list_size = 32, last_time = 0, base_volume = 1.3, min_dist = 5.0, max_dist = 12.0},
+            }
+        },
+        -- 4. North of the northern complex
+        {
+            x = 9.347, y = -0.140, z = 45.885,
+            max_hearing_dist = 90.0,
+            sound_list = {
+                {name="metal_structure_small_strong", chance = 0.9, interval = 15, sound_list_size = 20, last_time = 0, base_volume = 1.5, min_dist = 5.0, max_dist = 13.0},
+                {name="metal_structure_small_weak", chance = 0.9, interval = 10, sound_list_size = 32, last_time = 0, base_volume = 1.3, min_dist = 5.0, max_dist = 12.0},
+            }
+        },
+        -- 5. By the northern complex (Elevated)
+        {
+            x = 28.578, y = 7.511, z = -9.632,
+            max_hearing_dist = 90.0,
+            sound_list = {
+                {name="metal_structure_small_strong", chance = 0.9, interval = 25, sound_list_size = 20, last_time = 0, base_volume = 1.5, min_dist = 5.0, max_dist = 13.0},
+                {name="metal_structure_small_weak", chance = 0.9, interval = 10, sound_list_size = 32, last_time = 0, base_volume = 1.3, min_dist = 5.0, max_dist = 12.0},
+                {name="hangar_wind_gust", chance = 0.9, interval = 15, sound_list_size = 22, last_time = 0, base_volume = 3.0, min_dist = 5.0, max_dist = 12.0},
+            }
+        },
+        -- 6. West of the northern complex (Elevated)
+        {
+            x = -4.460, y = 10.032, z = -1.293,
+            max_hearing_dist = 90.0,
+            sound_list = {
+                {name="metal_structure_small_strong", chance = 0.9, interval = 25, sound_list_size = 20, last_time = 0, base_volume = 1.5, min_dist = 5.0, max_dist = 13.0},
+                {name="metal_structure_small_weak", chance = 0.9, interval = 12, sound_list_size = 32, last_time = 0, base_volume = 1.3, min_dist = 5.0, max_dist = 12.0},
+                {name="hangar_wind_gust", chance = 0.9, interval = 15, sound_list_size = 22, last_time = 0, base_volume = 3.0, min_dist = 5.0, max_dist = 12.0},
+            }
+        },
+        -- 7. South-east of the anomaly on the hill
+        {
+            x = 195.367, y = 0.175, z = 47.519,
+            max_hearing_dist = 90.0,
+            sound_list = {
+                {name="generic_concrete_large_room", chance = 0.9, interval = 20, sound_list_size = 17, last_time = 0, base_volume = 1.8, min_dist = 5.0, max_dist = 13.0},
+                {name="underground_concrete_details", chance = 0.9, interval = 15, sound_list_size = 22, last_time = 0, base_volume = 1.0, min_dist = 5.0, max_dist = 13.0},
+            }
+        },
+        -- 8. South-east of the anomaly on the hill (2)
+        {
+            x = 225.138, y = -0.145, z = 52.647,
+            max_hearing_dist = 80.0,
+            sound_list = {
+                {name="generic_concrete_large_room", chance = 0.9, interval = 20, sound_list_size = 17, last_time = 0, base_volume = 1.8, min_dist = 5.0, max_dist = 13.0},
+                {name="underground_concrete_details", chance = 0.9, interval = 15, sound_list_size = 22, last_time = 0, base_volume = 1.0, min_dist = 5.0, max_dist = 13.0},
+            }
+        },
+        -- 9. East of the anomaly on the hill
+        {
+            x = 250.176, y = 0.172, z = 66.112,
+            max_hearing_dist = 100.0,
+            sound_list = {
+                {name="generic_concrete_large_room", chance = 0.9, interval = 20, sound_list_size = 17, last_time = 0, base_volume = 1.8, min_dist = 5.0, max_dist = 13.0},
+                {name="underground_concrete_details", chance = 0.9, interval = 15, sound_list_size = 22, last_time = 0, base_volume = 1.0, min_dist = 5.0, max_dist = 13.0},
+            }
+        },
+        -- 10. East of the swamps (FROGS)
+        {
+            x = -169.876, y = 1.139, z = 35.469,
+            max_hearing_dist = 90.0,
+            sound_list = {
+                {name="frogs_swamp", chance = 0.9, interval = 10, sound_list_size = 32, last_time = 0, base_volume = 3.5, min_dist = 15.0, max_dist = 25.0},
+                {name="frogs_swamp_B", chance = 0.8, interval = 5, sound_list_size = 31, last_time = 0, base_volume = 3.5, min_dist = 10.0, max_dist = 15.0},
+            }
+        },
+        -- 11. East of the swamps (FROGS 2)
+        {
+            x = -179.461, y = 1.997, z = 59.738,
+            max_hearing_dist = 80.0,
+            sound_list = {
+                {name="frogs_swamp", chance = 0.9, interval = 10, sound_list_size = 32, last_time = 0, base_volume = 3.5, min_dist = 15.0, max_dist = 25.0},
+                {name="frogs_swamp_B", chance = 0.8, interval = 5, sound_list_size = 31, last_time = 0, base_volume = 3.5, min_dist = 10.0, max_dist = 15.0},
+            }
+        },
+        -- 12. North of the swamps (FROGS 3)
+        {
+            x = -192.006, y = 1.209, z = 101.656,
+            max_hearing_dist = 100.0,
+            sound_list = {
+                {name="frogs_swamp", chance = 0.9, interval = 10, sound_list_size = 32, last_time = 0, base_volume = 3.5, min_dist = 15.0, max_dist = 25.0},
+                {name="frogs_swamp_B", chance = 0.8, interval = 5, sound_list_size = 31, last_time = 0, base_volume = 3.5, min_dist = 10.0, max_dist = 15.0},
+            }
+        }
+    }

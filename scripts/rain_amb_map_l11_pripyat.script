@@ -1,0 +1,790 @@
+-- ARCHIVO: amb_map_l11_pripyat.script
+
+emitters = {
+-- Pripyat, north-east of the Monolith base
+    {
+        x = 102.044, y = 2.485, z = 219.246,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_metal", chance = 1.0, interval = 0.2, sound_list_size = 20, last_time = 0, base_volume = 2.0, min_dist = 2.0, max_dist = 2.0},
+        }
+    },
+    -- Pripyat, north-east of the Monolith base
+    {
+        x = 106.977, y = 1.486, z = 225.342,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_metal", chance = 1.0, interval = 0.2, sound_list_size = 20, last_time = 0, base_volume = 2.0, min_dist = 2.0, max_dist = 2.0},
+        }
+    },
+    -- Pripyat, east of the Monolith base
+    {
+        x = 115.888, y = 1.501, z = 207.057,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_metal", chance = 1.0, interval = 0.2, sound_list_size = 20, last_time = 0, base_volume = 2.0, min_dist = 2.0, max_dist = 2.0},
+        }
+    },
+    -- Pripyat, east of the Monolith base
+    {
+        x = 105.868, y = 1.799, z = 208.284,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_metal", chance = 1.0, interval = 0.2, sound_list_size = 20, last_time = 0, base_volume = 2.0, min_dist = 2.0, max_dist = 2.0},
+        }
+    },
+    -- Pripyat, north-east of the Monolith base
+    {
+        x = 96.144, y = -0.562, z = 243.868,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_metal", chance = 1.0, interval = 0.2, sound_list_size = 20, last_time = 0, base_volume = 2.0, min_dist = 2.0, max_dist = 2.0},
+        }
+    },
+    -- Pripyat, north-east of the Monolith base
+    {
+        x = 98.680, y = 0.985, z = 249.373,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_metal", chance = 1.0, interval = 0.2, sound_list_size = 20, last_time = 0, base_volume = 2.0, min_dist = 2.0, max_dist = 2.0},
+        }
+    },
+    -- Pripyat, north-east of the Monolith base
+    {
+        x = 106.014, y = 1.310, z = 252.700,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_metal", chance = 1.0, interval = 0.2, sound_list_size = 20, last_time = 0, base_volume = 2.0, min_dist = 2.0, max_dist = 2.0},
+        }
+    },
+    -- Pripyat, east of the Monolith base
+    {
+        x = 149.832, y = -0.775, z = 227.523,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_metal", chance = 1.0, interval = 0.2, sound_list_size = 20, last_time = 0, base_volume = 2.0, min_dist = 2.0, max_dist = 2.0},
+        }
+    },
+    -- Pripyat, east of the Monolith base
+    {
+        x = 172.214, y = -2.209, z = 228.612,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_metal", chance = 1.0, interval = 0.2, sound_list_size = 20, last_time = 0, base_volume = 2.0, min_dist = 2.0, max_dist = 2.0},
+        }
+    },
+    -- Pripyat, east of the Monolith base
+    {
+        x = 173.197, y = -1.368, z = 224.481,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_metal", chance = 1.0, interval = 0.2, sound_list_size = 20, last_time = 0, base_volume = 2.0, min_dist = 2.0, max_dist = 2.0},
+        }
+    },
+    -- Pripyat, east of the Monolith base
+    {
+        x = 177.360, y = -0.570, z = 203.192,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_metal", chance = 1.0, interval = 0.2, sound_list_size = 20, last_time = 0, base_volume = 2.0, min_dist = 2.0, max_dist = 2.0},
+        }
+    },
+    -- Pripyat, east of the Monolith base
+    {
+        x = 176.763, y = 0.724, z = 176.396,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_metal", chance = 1.0, interval = 0.2, sound_list_size = 20, last_time = 0, base_volume = 2.0, min_dist = 2.0, max_dist = 2.0},
+        }
+    },
+    -- Pripyat, east of the Monolith base
+    {
+        x = 171.794, y = 0.005, z = 173.676,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_metal", chance = 1.0, interval = 0.2, sound_list_size = 20, last_time = 0, base_volume = 2.0, min_dist = 2.0, max_dist = 2.0},
+        }
+    },
+    -- Pripyat, east of the Monolith base
+    {
+        x = 178.259, y = -0.769, z = 159.805,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_metal", chance = 1.0, interval = 0.2, sound_list_size = 20, last_time = 0, base_volume = 2.0, min_dist = 2.0, max_dist = 2.0},
+        }
+    },
+    -- Pripyat, east of the Monolith base
+    {
+        x = 177.398, y = -1.318, z = 140.744,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_metal", chance = 1.0, interval = 0.2, sound_list_size = 20, last_time = 0, base_volume = 2.0, min_dist = 2.0, max_dist = 2.0},
+        }
+    },
+    -- Pripyat, east of the Monolith base
+    {
+        x = 174.369, y = -0.311, z = 141.620,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_metal", chance = 1.0, interval = 0.2, sound_list_size = 20, last_time = 0, base_volume = 2.0, min_dist = 2.0, max_dist = 2.0},
+        }
+    },
+    -- Pripyat, east of the Monolith base
+    {
+        x = 171.840, y = -2.270, z = 101.747,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_metal", chance = 1.0, interval = 0.2, sound_list_size = 20, last_time = 0, base_volume = 2.0, min_dist = 2.0, max_dist = 2.0},
+        }
+    },
+    -- Pripyat, south-east of the Monolith base
+    {
+        x = 108.881, y = -0.406, z = 74.692,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_metal", chance = 1.0, interval = 0.2, sound_list_size = 20, last_time = 0, base_volume = 2.0, min_dist = 2.0, max_dist = 2.0},
+        }
+    },
+    -- Pripyat, south-east of the Monolith base
+    {
+        x = 111.953, y = -2.356, z = 54.436,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_metal", chance = 1.0, interval = 0.2, sound_list_size = 20, last_time = 0, base_volume = 2.0, min_dist = 2.0, max_dist = 2.0},
+        }
+    },
+    -- Pripyat, south of the Monolith base
+    {
+        x = 71.667, y = -1.094, z = -15.896,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_metal", chance = 1.0, interval = 0.2, sound_list_size = 20, last_time = 0, base_volume = 2.0, min_dist = 2.0, max_dist = 2.0},
+        }
+    },
+    -- Pripyat, south of the Monolith base
+    {
+        x = 77.785, y = -0.188, z = -10.682,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_metal", chance = 1.0, interval = 0.2, sound_list_size = 20, last_time = 0, base_volume = 2.0, min_dist = 2.0, max_dist = 2.0},
+        }
+    },
+    -- Pripyat, south of the Monolith base
+    {
+        x = 84.983, y = 0.443, z = -36.953,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_metal", chance = 1.0, interval = 0.2, sound_list_size = 20, last_time = 0, base_volume = 2.0, min_dist = 2.0, max_dist = 2.0},
+        }
+    },
+    -- Pripyat, north of the road to Radar
+    {
+        x = 99.464, y = -0.762, z = -66.249,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_metal", chance = 1.0, interval = 0.2, sound_list_size = 20, last_time = 0, base_volume = 2.0, min_dist = 2.0, max_dist = 2.0},
+        }
+    },
+    -- Pripyat, north-east of the road to Radar
+    {
+        x = 121.843, y = -0.413, z = -63.636,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_metal", chance = 1.0, interval = 0.2, sound_list_size = 20, last_time = 0, base_volume = 2.0, min_dist = 2.0, max_dist = 2.0},
+        }
+    },
+-- Pripyat, north of the road to Radar
+    {
+        x = 50.549, y = -2.397, z = -167.525,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_metal", chance = 1.0, interval = 0.2, sound_list_size = 20, last_time = 0, base_volume = 2.0, min_dist = 2.0, max_dist = 2.0},
+        }
+    },
+    -- Pripyat, north-east of the road to Radar
+    {
+        x = 58.141, y = -1.237, z = -168.720,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_metal", chance = 1.0, interval = 0.2, sound_list_size = 20, last_time = 0, base_volume = 2.0, min_dist = 2.0, max_dist = 2.0},
+        }
+    },
+    -- Pripyat, north-east of the road to Radar
+    {
+        x = 44.711, y = -0.973, z = -185.267,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_metal", chance = 1.0, interval = 0.2, sound_list_size = 20, last_time = 0, base_volume = 2.0, min_dist = 2.0, max_dist = 2.0},
+        }
+    },
+    -- Pripyat, north of the road to Radar
+    {
+        x = 37.626, y = -2.272, z = -190.236,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_metal", chance = 1.0, interval = 0.2, sound_list_size = 20, last_time = 0, base_volume = 2.0, min_dist = 2.0, max_dist = 2.0},
+        }
+    },
+    -- Pripyat, north of the road to Radar
+    {
+        x = 26.749, y = -0.680, z = -194.390,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_metal", chance = 1.0, interval = 0.2, sound_list_size = 20, last_time = 0, base_volume = 2.0, min_dist = 2.0, max_dist = 2.0},
+        }
+    },
+    -- Pripyat, north of the road to Radar
+    {
+        x = 28.356, y = -0.009, z = -181.027,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_metal", chance = 1.0, interval = 0.2, sound_list_size = 20, last_time = 0, base_volume = 2.0, min_dist = 2.0, max_dist = 2.0},
+        }
+    },
+    -- Pripyat, north of the road to Radar
+    {
+        x = 20.994, y = -0.785, z = -176.093,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_metal", chance = 1.0, interval = 0.2, sound_list_size = 20, last_time = 0, base_volume = 2.0, min_dist = 2.0, max_dist = 2.0},
+        }
+    },
+    -- Pripyat, north of the road to Radar
+    {
+        x = 22.041, y = 0.199, z = -166.043,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_metal", chance = 1.0, interval = 0.2, sound_list_size = 20, last_time = 0, base_volume = 2.0, min_dist = 2.0, max_dist = 2.0},
+        }
+    },
+    -- Pripyat, north of the road to Radar
+    {
+        x = 19.386, y = -0.454, z = -158.777,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_metal", chance = 1.0, interval = 0.2, sound_list_size = 20, last_time = 0, base_volume = 2.0, min_dist = 2.0, max_dist = 2.0},
+        }
+    },
+    -- Pripyat, north of the road to Radar
+    {
+        x = 9.310, y = -0.469, z = -190.299,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_metal", chance = 1.0, interval = 0.2, sound_list_size = 20, last_time = 0, base_volume = 2.0, min_dist = 2.0, max_dist = 2.0},
+        }
+    },
+    -- Pripyat, north of the road to Radar
+    {
+        x = 0.139, y = -2.394, z = -190.246,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_metal", chance = 1.0, interval = 0.2, sound_list_size = 20, last_time = 0, base_volume = 2.0, min_dist = 2.0, max_dist = 2.0},
+        }
+    },
+    -- Pripyat, north of the road to Radar
+    {
+        x = 15.241, y = -0.994, z = -210.586,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_metal", chance = 1.0, interval = 0.2, sound_list_size = 20, last_time = 0, base_volume = 2.0, min_dist = 2.0, max_dist = 2.0},
+        }
+    },
+    -- Pripyat, north of the road to Radar
+    {
+        x = -1.841, y = -1.069, z = -223.601,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_metal", chance = 1.0, interval = 0.2, sound_list_size = 20, last_time = 0, base_volume = 2.0, min_dist = 2.0, max_dist = 2.0},
+        }
+    },
+    -- Pripyat, north-east of the road to Radar
+    {
+        x = 19.996, y = -1.190, z = -242.662,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_metal", chance = 1.0, interval = 0.2, sound_list_size = 20, last_time = 0, base_volume = 2.0, min_dist = 2.0, max_dist = 2.0},
+        }
+    },
+    -- Pripyat, east of the road to Radar
+    {
+        x = 18.016, y = 0.293, z = -252.203,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_metal", chance = 1.0, interval = 0.2, sound_list_size = 20, last_time = 0, base_volume = 2.0, min_dist = 2.0, max_dist = 2.0},
+        }
+    },
+    -- Pripyat, by the road to Radar
+    {
+        x = -1.386, y = 0.166, z = -262.932,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_metal", chance = 1.0, interval = 0.2, sound_list_size = 20, last_time = 0, base_volume = 2.0, min_dist = 2.0, max_dist = 2.0},
+        }
+    },
+
+-- Pripyat, north of the road to Radar
+    {
+        x = -1.815, y = -0.763, z = -176.845,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_metal", chance = 1.0, interval = 0.2, sound_list_size = 20, last_time = 0, base_volume = 2.0, min_dist = 2.0, max_dist = 2.0},
+        }
+    },
+    -- Pripyat, north of the road to Radar
+    {
+        x = 0.478, y = -2.396, z = -164.463,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_metal", chance = 1.0, interval = 0.2, sound_list_size = 20, last_time = 0, base_volume = 2.0, min_dist = 2.0, max_dist = 2.0},
+        }
+    },
+    -- Pripyat, north of the road to Radar
+    {
+        x = -0.371, y = -0.816, z = -150.051,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_metal", chance = 1.0, interval = 0.2, sound_list_size = 20, last_time = 0, base_volume = 2.0, min_dist = 2.0, max_dist = 2.0},
+        }
+    },
+    -- Pripyat, north of the road to Radar
+    {
+        x = 9.821, y = -0.287, z = -140.720,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_metal", chance = 1.0, interval = 0.2, sound_list_size = 20, last_time = 0, base_volume = 2.0, min_dist = 2.0, max_dist = 2.0},
+        }
+    },
+    -- Pripyat, north of the road to Radar
+    {
+        x = 21.090, y = -1.421, z = -136.653,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_metal", chance = 1.0, interval = 0.2, sound_list_size = 20, last_time = 0, base_volume = 2.0, min_dist = 2.0, max_dist = 2.0},
+        }
+    },
+    -- Pripyat, north of the road to Radar
+    {
+        x = 23.117, y = -0.626, z = -115.756,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_metal", chance = 1.0, interval = 0.2, sound_list_size = 20, last_time = 0, base_volume = 2.0, min_dist = 2.0, max_dist = 2.0},
+        }
+    },
+    -- Pripyat, north of the road to Radar
+    {
+        x = 20.638, y = 0.160, z = -95.753,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_metal", chance = 1.0, interval = 0.2, sound_list_size = 20, last_time = 0, base_volume = 2.0, min_dist = 2.0, max_dist = 2.0},
+        }
+    },
+    -- Pripyat, north of the road to Radar
+    {
+        x = -0.114, y = 0.526, z = -102.393,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_metal", chance = 1.0, interval = 0.2, sound_list_size = 20, last_time = 0, base_volume = 2.0, min_dist = 2.0, max_dist = 2.0},
+        }
+    },
+    -- Pripyat, north of the road to Radar
+    {
+        x = -3.142, y = -2.392, z = -83.827,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_metal", chance = 1.0, interval = 0.2, sound_list_size = 20, last_time = 0, base_volume = 2.0, min_dist = 2.0, max_dist = 2.0},
+        }
+    },
+    -- Pripyat, north of the road to Radar
+    {
+        x = 10.079, y = -2.073, z = -75.515,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_metal", chance = 1.0, interval = 0.2, sound_list_size = 20, last_time = 0, base_volume = 2.0, min_dist = 2.0, max_dist = 2.0},
+        }
+    },
+    -- Pripyat, north of the road to Radar
+    {
+        x = 21.953, y = -0.142, z = -85.016,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_metal", chance = 1.0, interval = 0.2, sound_list_size = 20, last_time = 0, base_volume = 2.0, min_dist = 2.0, max_dist = 2.0},
+        }
+    },
+    -- Pripyat, north of the road to Radar
+    {
+        x = 21.359, y = -0.886, z = -66.223,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_metal", chance = 1.0, interval = 0.2, sound_list_size = 20, last_time = 0, base_volume = 2.0, min_dist = 2.0, max_dist = 2.0},
+        }
+    },
+    -- Pripyat, north of the road to Radar
+    {
+        x = -40.430, y = -0.814, z = -86.845,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_metal", chance = 1.0, interval = 0.2, sound_list_size = 20, last_time = 0, base_volume = 2.0, min_dist = 2.0, max_dist = 2.0},
+        }
+    },
+    -- Pripyat, north of the road to Radar
+    {
+        x = -45.197, y = -0.587, z = -87.832,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_metal", chance = 1.0, interval = 0.2, sound_list_size = 20, last_time = 0, base_volume = 2.0, min_dist = 2.0, max_dist = 2.0},
+        }
+    },
+    -- Pripyat, north of the road to Radar
+    {
+        x = -34.280, y = -0.246, z = -112.675,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_metal", chance = 1.0, interval = 0.2, sound_list_size = 20, last_time = 0, base_volume = 2.0, min_dist = 2.0, max_dist = 2.0},
+        }
+    },
+    -- Pripyat, north of the road to Radar
+    {
+        x = -53.592, y = -1.060, z = -58.260,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_metal", chance = 1.0, interval = 0.2, sound_list_size = 20, last_time = 0, base_volume = 2.0, min_dist = 2.0, max_dist = 2.0},
+        }
+    },
+    -- Pripyat, north of the road to Radar
+    {
+        x = -58.239, y = 0.501, z = -64.944,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_metal", chance = 1.0, interval = 0.2, sound_list_size = 20, last_time = 0, base_volume = 2.0, min_dist = 2.0, max_dist = 2.0},
+        }
+    },
+    -- Pripyat, south-west of the Monolith base
+    {
+        x = -116.590, y = 3.475, z = -25.946,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_metal", chance = 1.0, interval = 0.2, sound_list_size = 20, last_time = 0, base_volume = 2.0, min_dist = 2.0, max_dist = 2.0},
+        }
+    },
+    -- Pripyat, south-west of the Monolith base
+    {
+        x = -116.103, y = 3.587, z = -36.226,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_metal", chance = 1.0, interval = 0.2, sound_list_size = 20, last_time = 0, base_volume = 2.0, min_dist = 2.0, max_dist = 2.0},
+        }
+    },
+    -- Pripyat, north of the road to Radar
+    {
+        x = -117.753, y = 3.119, z = -48.578,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_metal", chance = 1.0, interval = 0.2, sound_list_size = 20, last_time = 0, base_volume = 2.0, min_dist = 2.0, max_dist = 2.0},
+        }
+    },
+    -- Pripyat, south of the Monolith base
+    {
+        x = -85.719, y = -0.450, z = -21.372,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_metal", chance = 1.0, interval = 0.2, sound_list_size = 20, last_time = 0, base_volume = 2.0, min_dist = 2.0, max_dist = 2.0},
+        }
+    },
+    -- Pripyat, south-west of the Monolith base
+    {
+        x = -86.394, y = 1.120, z = 33.672,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_metal", chance = 1.0, interval = 0.2, sound_list_size = 20, last_time = 0, base_volume = 2.0, min_dist = 2.0, max_dist = 2.0},
+        }
+    },
+-- Pripyat, south-west of the Monolith base
+    {
+        x = -124.785, y = 0.516, z = 38.587,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_metal", chance = 1.0, interval = 0.2, sound_list_size = 20, last_time = 0, base_volume = 2.0, min_dist = 2.0, max_dist = 2.0},
+        }
+    },
+    -- Pripyat, south-west of the Monolith base
+    {
+        x = -145.559, y = -1.376, z = 41.849,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_metal", chance = 1.0, interval = 0.2, sound_list_size = 20, last_time = 0, base_volume = 2.0, min_dist = 2.0, max_dist = 2.0},
+        }
+    },
+    -- Pripyat, south-west of the Monolith base
+    {
+        x = -147.514, y = -0.758, z = 44.717,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_metal", chance = 1.0, interval = 0.2, sound_list_size = 20, last_time = 0, base_volume = 2.0, min_dist = 2.0, max_dist = 2.0},
+        }
+    },
+    -- Pripyat, south-west of the Monolith base
+    {
+        x = -158.952, y = 0.531, z = 46.208,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_metal", chance = 1.0, interval = 0.2, sound_list_size = 20, last_time = 0, base_volume = 2.0, min_dist = 2.0, max_dist = 2.0},
+        }
+    },
+    -- Pripyat, south-west of the Monolith base
+    {
+        x = -161.524, y = 0.518, z = 51.028,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_metal", chance = 1.0, interval = 0.2, sound_list_size = 20, last_time = 0, base_volume = 2.0, min_dist = 2.0, max_dist = 2.0},
+        }
+    },
+    -- Pripyat, west of the Monolith base
+    {
+        x = -162.853, y = 0.530, z = 65.957,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_metal", chance = 1.0, interval = 0.2, sound_list_size = 20, last_time = 0, base_volume = 2.0, min_dist = 2.0, max_dist = 2.0},
+        }
+    },
+    -- Pripyat, west of the Monolith base
+    {
+        x = -146.529, y = -0.224, z = 73.946,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_metal", chance = 1.0, interval = 0.2, sound_list_size = 20, last_time = 0, base_volume = 2.0, min_dist = 2.0, max_dist = 2.0},
+        }
+    },
+    -- Pripyat, south-west of the Monolith base
+    {
+        x = -91.988, y = -2.391, z = 77.145,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_metal", chance = 1.0, interval = 0.2, sound_list_size = 20, last_time = 0, base_volume = 2.0, min_dist = 2.0, max_dist = 2.0},
+        }
+    },
+    -- Pripyat, south-west of the Monolith base
+    {
+        x = -99.798, y = -0.587, z = 90.986,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_metal", chance = 1.0, interval = 0.2, sound_list_size = 20, last_time = 0, base_volume = 2.0, min_dist = 2.0, max_dist = 2.0},
+        }
+    },
+    -- Pripyat, west of the Monolith base
+    {
+        x = -97.149, y = -1.113, z = 129.443,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_metal", chance = 1.0, interval = 0.2, sound_list_size = 20, last_time = 0, base_volume = 2.0, min_dist = 2.0, max_dist = 2.0},
+        }
+    },
+    -- Pripyat, west of the Monolith base
+    {
+        x = -98.798, y = -0.223, z = 128.283,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_metal", chance = 1.0, interval = 0.2, sound_list_size = 20, last_time = 0, base_volume = 2.0, min_dist = 2.0, max_dist = 2.0},
+        }
+    },
+    -- Pripyat, west of the Monolith base
+    {
+        x = -98.870, y = -0.799, z = 153.951,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_metal", chance = 1.0, interval = 0.2, sound_list_size = 20, last_time = 0, base_volume = 2.0, min_dist = 2.0, max_dist = 2.0},
+        }
+    },
+    -- Pripyat, north-west of the Monolith base
+    {
+        x = -104.211, y = -1.076, z = 232.918,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_metal", chance = 1.0, interval = 0.2, sound_list_size = 20, last_time = 0, base_volume = 2.0, min_dist = 2.0, max_dist = 2.0},
+        }
+    },
+    -- Pripyat, north-west of the Monolith base
+    {
+        x = -116.415, y = 1.352, z = 232.197,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_metal", chance = 1.0, interval = 0.2, sound_list_size = 20, last_time = 0, base_volume = 2.0, min_dist = 2.0, max_dist = 2.0},
+        }
+    },
+    -- Pripyat, north-west of the Monolith base
+    {
+        x = -97.973, y = -1.078, z = 240.720,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_metal", chance = 1.0, interval = 0.2, sound_list_size = 20, last_time = 0, base_volume = 2.0, min_dist = 2.0, max_dist = 2.0},
+        }
+    },
+    -- Pripyat, north-west of the Monolith base
+    {
+        x = -92.777, y = 0.380, z = 247.934,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_metal", chance = 1.0, interval = 0.2, sound_list_size = 20, last_time = 0, base_volume = 2.0, min_dist = 2.0, max_dist = 2.0},
+        }
+    },
+    -- Pripyat, north-west of the Monolith base
+    {
+        x = -57.254, y = 1.352, z = 231.889,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_metal", chance = 1.0, interval = 0.2, sound_list_size = 20, last_time = 0, base_volume = 2.0, min_dist = 2.0, max_dist = 2.0},
+        }
+    },
+    -- Pripyat, north of the Monolith base
+    {
+        x = -36.042, y = 2.302, z = 234.747,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_metal", chance = 1.0, interval = 0.2, sound_list_size = 20, last_time = 0, base_volume = 2.0, min_dist = 2.0, max_dist = 2.0},
+        }
+    },
+    -- Pripyat, north of the Monolith base
+    {
+        x = -35.593, y = 1.611, z = 250.638,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_metal", chance = 1.0, interval = 0.2, sound_list_size = 20, last_time = 0, base_volume = 2.0, min_dist = 2.0, max_dist = 2.0},
+        }
+    },
+    -- Pripyat, north of the Monolith base
+    {
+        x = -38.779, y = 0.784, z = 255.617,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_metal", chance = 1.0, interval = 0.2, sound_list_size = 20, last_time = 0, base_volume = 2.0, min_dist = 2.0, max_dist = 2.0},
+        }
+    },
+    -- Pripyat, north of the Monolith base
+    {
+        x = 12.247, y = -0.627, z = 251.827,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_metal", chance = 1.0, interval = 0.2, sound_list_size = 20, last_time = 0, base_volume = 2.0, min_dist = 2.0, max_dist = 2.0},
+        }
+    },
+    -- Pripyat, north of the Monolith base
+    {
+        x = 20.630, y = 0.515, z = 236.710,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_metal", chance = 1.0, interval = 0.2, sound_list_size = 20, last_time = 0, base_volume = 2.0, min_dist = 2.0, max_dist = 2.0},
+        }
+    },
+    -- Pripyat, north of the Monolith base
+    {
+        x = 34.586, y = 2.264, z = 246.757,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_metal", chance = 1.0, interval = 0.2, sound_list_size = 20, last_time = 0, base_volume = 2.0, min_dist = 2.0, max_dist = 2.0},
+        }
+    },
+    -- Pripyat, north of the Monolith base
+    {
+        x = 34.288, y = 0.217, z = 250.948,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_metal", chance = 1.0, interval = 0.2, sound_list_size = 20, last_time = 0, base_volume = 2.0, min_dist = 2.0, max_dist = 2.0},
+        }
+    },
+    -- Pripyat, north of the Monolith base
+    {
+        x = -7.733, y = 3.419, z = 344.342,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_metal", chance = 1.0, interval = 0.2, sound_list_size = 20, last_time = 0, base_volume = 2.0, min_dist = 2.0, max_dist = 2.0},
+        }
+    },
+    -- Pripyat, north of the Monolith base
+    {
+        x = 71.240, y = 3.634, z = 338.472,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_metal", chance = 1.0, interval = 0.2, sound_list_size = 20, last_time = 0, base_volume = 2.0, min_dist = 2.0, max_dist = 2.0},
+        }
+    },
+-- Pripyat, south of the Monolith base
+    {
+        x = 2.352, y = -0.869, z = -10.817,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_metal", chance = 1.0, interval = 0.2, sound_list_size = 20, last_time = 0, base_volume = 2.0, min_dist = 2.0, max_dist = 2.0},
+        }
+    },
+    -- Pripyat, south of the Monolith base
+    {
+        x = 8.347, y = -0.267, z = -2.012,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_metal", chance = 1.0, interval = 0.2, sound_list_size = 20, last_time = 0, base_volume = 2.0, min_dist = 2.0, max_dist = 2.0},
+        }
+    },
+    -- Pripyat, south of the Monolith base
+    {
+        x = 12.763, y = -0.056, z = -0.576,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_metal", chance = 1.0, interval = 0.2, sound_list_size = 20, last_time = 0, base_volume = 2.0, min_dist = 2.0, max_dist = 2.0},
+        }
+    },
+    -- Pripyat, south of the Monolith base
+    {
+        x = 19.203, y = -0.588, z = 2.272,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_metal", chance = 1.0, interval = 0.2, sound_list_size = 20, last_time = 0, base_volume = 2.0, min_dist = 2.0, max_dist = 2.0},
+        }
+    },
+
+-- Pripyat, south of the Monolith base
+    {
+        x = 35.791, y = 0.480, z = 68.563,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_metal", chance = 1.0, interval = 0.2, sound_list_size = 20, last_time = 0, base_volume = 2.0, min_dist = 2.0, max_dist = 2.0},
+        }
+    },
+    -- Pripyat, south of the Monolith base
+    {
+        x = 32.167, y = -1.045, z = 80.248,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_metal", chance = 1.0, interval = 0.2, sound_list_size = 20, last_time = 0, base_volume = 2.0, min_dist = 2.0, max_dist = 2.0},
+        }
+    },
+    -- Pripyat, south of the Monolith base
+    {
+        x = 38.114, y = -0.785, z = 81.765,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_metal", chance = 1.0, interval = 0.2, sound_list_size = 20, last_time = 0, base_volume = 2.0, min_dist = 2.0, max_dist = 2.0},
+        }
+    },
+    -- Pripyat, south of the Monolith base
+    {
+        x = 27.575, y = -0.453, z = 75.507,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_metal", chance = 1.0, interval = 0.2, sound_list_size = 20, last_time = 0, base_volume = 2.0, min_dist = 2.0, max_dist = 2.0},
+        }
+    },
+    -- Pripyat, south-west of the Monolith base
+    {
+        x = -64.624, y = -0.958, z = 65.079,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_metal", chance = 1.0, interval = 0.2, sound_list_size = 20, last_time = 0, base_volume = 2.0, min_dist = 2.0, max_dist = 2.0},
+        }
+    },
+    -- Pripyat, south-west of the Monolith base
+    {
+        x = -63.549, y = -0.116, z = 58.237,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_metal", chance = 1.0, interval = 0.2, sound_list_size = 20, last_time = 0, base_volume = 2.0, min_dist = 2.0, max_dist = 2.0},
+        }
+    },
+}

@@ -1,0 +1,212 @@
+-- =================================================================================
+-- ARCHIVO: rain_amb_map_l03_agroprom.script
+-- =================================================================================
+
+emitters = {
+    -- 1. North-west of the southern complex (Wood)
+    {
+        x = -179.580, y = 5.150, z = -132.138,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_wood", chance = 1.0, interval = 0.2, sound_list_size = 25, last_time = 0, base_volume = 2.5, min_dist = 2.0, max_dist = 5.0},
+        }
+    },
+
+    -- 2. West of the southern complex (Wood)
+    {
+        x = -153.200, y = 7.721, z = -171.710,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_wood", chance = 1.0, interval = 0.2, sound_list_size = 25, last_time = 0, base_volume = 2.5, min_dist = 2.0, max_dist = 5.0},
+        }
+    },
+
+    -- 3. North-west of the southern complex (Wood)
+    {
+        x = -155.789, y = 7.417, z = -150.633,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_wood", chance = 1.0, interval = 0.2, sound_list_size = 25, last_time = 0, base_volume = 2.5, min_dist = 2.0, max_dist = 5.0},
+        }
+    },
+
+    -- 4. South-east of the southern complex (Metal)
+    {
+        x = -107.802, y = 5.118, z = -194.922,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_metal", chance = 1.0, interval = 0.2, sound_list_size = 20, last_time = 0, base_volume = 2.5, min_dist = 2.0, max_dist = 2.5},
+        }
+    },
+
+    -- 5. North of the southern complex (Metal)
+    {
+        x = -136.193, y = 2.905, z = -139.428,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_metal", chance = 1.0, interval = 0.2, sound_list_size = 20, last_time = 0, base_volume = 2.5, min_dist = 2.0, max_dist = 2.5},
+        }
+    },
+
+    -- 6. East of the southern complex (Metal)
+    {
+        x = -45.846, y = -0.270, z = -178.333,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_metal", chance = 1.0, interval = 0.2, sound_list_size = 20, last_time = 0, base_volume = 2.5, min_dist = 2.0, max_dist = 2.5},
+        }
+    },
+
+    -- 7. North of the anomaly to the south (Metal)
+    {
+        x = -14.954, y = 1.236, z = -156.546,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_metal", chance = 1.0, interval = 0.2, sound_list_size = 20, last_time = 0, base_volume = 2.5, min_dist = 2.0, max_dist = 2.5},
+        }
+    },
+
+    -- 8. North of the anomaly to the south (Metal)
+    {
+        x = 24.456, y = 2.543, z = -141.218,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_metal", chance = 1.0, interval = 0.2, sound_list_size = 20, last_time = 0, base_volume = 2.5, min_dist = 2.0, max_dist = 2.5},
+        }
+    },
+
+    -- 9. South-east of the northern complex (Metal)
+    {
+        x = 93.690, y = 3.273, z = -73.622,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_metal", chance = 1.0, interval = 0.2, sound_list_size = 20, last_time = 0, base_volume = 2.5, min_dist = 2.0, max_dist = 2.5},
+        }
+    },
+
+    -- 10. East of the northern complex (Metal)
+    {
+        x = 95.572, y = 3.462, z = -38.200,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_metal", chance = 1.0, interval = 0.2, sound_list_size = 20, last_time = 0, base_volume = 2.5, min_dist = 2.0, max_dist = 2.5},
+        }
+    },
+
+    -- 11. East of the northern complex (Metal)
+    {
+        x = 108.369, y = 4.274, z = -50.480,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_metal", chance = 1.0, interval = 0.2, sound_list_size = 20, last_time = 0, base_volume = 2.5, min_dist = 2.0, max_dist = 2.5},
+        }
+    },
+
+    -- 12. East of the northern complex (Metal)
+    {
+        x = 118.931, y = 2.034, z = -20.874,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_metal", chance = 1.0, interval = 0.2, sound_list_size = 20, last_time = 0, base_volume = 2.5, min_dist = 2.0, max_dist = 2.5},
+        }
+    },
+
+    -- 13. South of the anomaly on the hill (Metal)
+    {
+        x = 158.661, y = 3.111, z = -10.897,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_metal", chance = 1.0, interval = 0.2, sound_list_size = 20, last_time = 0, base_volume = 2.5, min_dist = 2.0, max_dist = 2.5},
+        }
+    },
+
+    -- 14. South of the anomaly on the hill (Metal)
+    {
+        x = 180.898, y = 2.261, z = 11.397,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_metal", chance = 1.0, interval = 0.2, sound_list_size = 20, last_time = 0, base_volume = 2.5, min_dist = 2.0, max_dist = 2.5},
+        }
+    },
+
+    -- 15. South-east of the anomaly on the hill (Metal)
+    {
+        x = 234.479, y = 2.420, z = 2.161,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_metal", chance = 1.0, interval = 0.2, sound_list_size = 20, last_time = 0, base_volume = 2.5, min_dist = 2.0, max_dist = 2.5},
+        }
+    },
+
+    -- 16. South-east of the anomaly on the hill (Metal)
+    {
+        x = 268.348, y = 1.944, z = -7.965,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_metal", chance = 1.0, interval = 0.2, sound_list_size = 20, last_time = 0, base_volume = 2.5, min_dist = 2.0, max_dist = 2.5},
+        }
+    },
+
+    -- 17. South-east of the anomaly on the hill (Metal)
+    {
+        x = 269.656, y = 2.318, z = 1.402,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_metal", chance = 1.0, interval = 0.2, sound_list_size = 20, last_time = 0, base_volume = 2.5, min_dist = 2.0, max_dist = 2.5},
+        }
+    },
+
+    -- 18. South-west of the anomaly on the hill (Metal)
+    {
+        x = 126.976, y = 16.452, z = 66.069,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_metal", chance = 1.0, interval = 0.2, sound_list_size = 20, last_time = 0, base_volume = 2.5, min_dist = 2.0, max_dist = 2.5},
+        }
+    },
+
+    -- 19. North-east of the northern complex (Metal)
+    {
+        x = 84.136, y = 2.925, z = 32.415,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_metal", chance = 1.0, interval = 0.2, sound_list_size = 20, last_time = 0, base_volume = 2.5, min_dist = 2.0, max_dist = 2.5},
+        }
+    },
+
+    -- 20. East of the northern complex (Metal)
+    {
+        x = 61.292, y = 2.721, z = -17.572,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_metal", chance = 1.0, interval = 0.2, sound_list_size = 20, last_time = 0, base_volume = 2.5, min_dist = 2.0, max_dist = 2.5},
+        }
+    },
+    
+    -- 21. North-west of the northern complex (Metal)
+    {
+        x = -13.478, y = 2.814, z = 25.924,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_metal", chance = 1.0, interval = 0.2, sound_list_size = 20, last_time = 0, base_volume = 2.5, min_dist = 2.0, max_dist = 2.5},
+        }
+    },
+
+    -- 22. North of the northern complex (Metal)
+    {
+        x = 29.318, y = 2.348, z = 34.085,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_metal", chance = 1.0, interval = 0.2, sound_list_size = 20, last_time = 0, base_volume = 2.5, min_dist = 2.0, max_dist = 2.5},
+        }
+    },
+
+    -- 23. South-east of the swamps (Wood)
+    {
+        x = -185.036, y = 9.288, z = 35.530,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_wood", chance = 1.0, interval = 0.2, sound_list_size = 25, last_time = 0, base_volume = 2.5, min_dist = 2.0, max_dist = 5.0},
+        }
+    }
+}

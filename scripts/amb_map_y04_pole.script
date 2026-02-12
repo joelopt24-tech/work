@@ -1,0 +1,191 @@
+-- ARCHIVO: amb_map_meadow.script
+
+emitters = {
+    -- 1. North-west of the factory's canteen
+    {
+        x = -117.228, y = 0.558, z = 85.689,
+        max_hearing_dist = 70.0,
+        sound_list = {
+            {name="metal_structure_small_strong", chance = 0.9, interval = 25, sound_list_size = 20, last_time = 0, base_volume = 1.5, min_dist = 5.0, max_dist = 13.0},
+            {name="metal_structure_small_weak", chance = 0.9, interval = 12, sound_list_size = 32, last_time = 0, base_volume = 1.3, min_dist = 5.0, max_dist = 12.0},
+        }
+    },
+    -- 2. North-east of the old car park
+    {
+        x = -116.473, y = -0.122, z = 173.992,
+        max_hearing_dist = 70.0,
+        sound_list = {
+            {name="metal_structure_small_strong", chance = 0.9, interval = 25, sound_list_size = 20, last_time = 0, base_volume = 1.5, min_dist = 5.0, max_dist = 13.0},
+            {name="metal_structure_small_weak", chance = 0.9, interval = 12, sound_list_size = 32, last_time = 0, base_volume = 1.3, min_dist = 5.0, max_dist = 12.0},
+        }
+    },
+    -- 3. West of the old car park
+    {
+        x = -162.362, y = -0.002, z = 179.941,
+        max_hearing_dist = 70.0,
+        sound_list = {
+            {name="metal_structure_small_strong", chance = 0.9, interval = 25, sound_list_size = 20, last_time = 0, base_volume = 1.5, min_dist = 5.0, max_dist = 13.0},
+            {name="metal_structure_small_weak", chance = 0.9, interval = 12, sound_list_size = 32, last_time = 0, base_volume = 1.3, min_dist = 5.0, max_dist = 12.0},
+        }
+    },
+    -- 4. South of the abandoned factory
+    {
+        x = 20.561, y = 0.070, z = 92.932,
+        max_hearing_dist = 70.0,
+        sound_list = {
+            {name="metal_structure_small_strong", chance = 0.9, interval = 25, sound_list_size = 20, last_time = 0, base_volume = 1.5, min_dist = 5.0, max_dist = 13.0},
+            {name="metal_structure_small_weak", chance = 0.9, interval = 12, sound_list_size = 32, last_time = 0, base_volume = 1.3, min_dist = 5.0, max_dist = 12.0},
+        }
+    },
+    -- 5. South-east of the abandoned factory
+    {
+        x = 52.397, y = 0.196, z = 126.805,
+        max_hearing_dist = 70.0,
+        sound_list = {
+            {name="metal_structure_small_strong", chance = 0.9, interval = 25, sound_list_size = 20, last_time = 0, base_volume = 1.5, min_dist = 5.0, max_dist = 13.0},
+            {name="metal_structure_small_weak", chance = 0.9, interval = 12, sound_list_size = 32, last_time = 0, base_volume = 1.3, min_dist = 5.0, max_dist = 12.0},
+        }
+    },
+    -- 6. South-east of the abandoned factory (2)
+    {
+        x = 81.824, y = 1.349, z = 114.124,
+        max_hearing_dist = 70.0,
+        sound_list = {
+            {name="metal_structure_small_strong", chance = 0.9, interval = 25, sound_list_size = 20, last_time = 0, base_volume = 1.5, min_dist = 5.0, max_dist = 13.0},
+            {name="metal_structure_small_weak", chance = 0.9, interval = 12, sound_list_size = 32, last_time = 0, base_volume = 1.3, min_dist = 5.0, max_dist = 12.0},
+        }
+    },
+
+    -- 7. East of the abandoned factory (Hangar)
+    {
+        x = 103.719, y = 0.398, z = 129.938,
+        max_hearing_dist = 90.0,
+        sound_list = {
+            {name="hangar_metal_details", chance = 0.9, interval = 10, sound_list_size = 10, last_time = 0, base_volume = 3.5, min_dist = 5.0, max_dist = 10.0},
+            {name="hangar_wind_gust", chance = 0.9, interval = 12, sound_list_size = 22, last_time = 0, base_volume = 3.5, min_dist = 5.0, max_dist = 10.0},
+            {name="big_metal_structure_wind_small", chance = 0.9, interval = 20, sound_list_size = 16, last_time = 0, base_volume = 2.5, min_dist = 5.0, max_dist = 10.0},
+            {name="big_metal_structure_wind_medium", chance = 0.9, interval = 30, sound_list_size = 16, last_time = 0, base_volume = 2.5, min_dist = 5.0, max_dist = 10.0},
+        }
+    },
+    -- 8. East of the abandoned factory (2) (Hangar)
+    {
+        x = 97.345, y = 0.395, z = 166.245,
+        max_hearing_dist = 130.0,
+        sound_list = {
+            {name="hangar_metal_details", chance = 0.9, interval = 10, sound_list_size = 10, last_time = 0, base_volume = 3.5, min_dist = 5.0, max_dist = 10.0},
+            {name="hangar_wind_gust", chance = 0.9, interval = 12, sound_list_size = 22, last_time = 0, base_volume = 3.5, min_dist = 5.0, max_dist = 10.0},
+            {name="big_metal_structure_wind_small", chance = 0.9, interval = 20, sound_list_size = 16, last_time = 0, base_volume = 2.5, min_dist = 5.0, max_dist = 10.0},
+            {name="big_metal_structure_wind_medium", chance = 0.9, interval = 30, sound_list_size = 16, last_time = 0, base_volume = 2.5, min_dist = 5.0, max_dist = 10.0},
+        }
+    },
+    -- 9. North-east of the abandoned factory (Hangar)
+    {
+        x = 87.936, y = 0.586, z = 195.824,
+        max_hearing_dist = 90.0,
+        sound_list = {
+            {name="hangar_metal_details", chance = 0.9, interval = 10, sound_list_size = 10, last_time = 0, base_volume = 3.5, min_dist = 5.0, max_dist = 10.0},
+            {name="hangar_wind_gust", chance = 0.9, interval = 12, sound_list_size = 22, last_time = 0, base_volume = 3.5, min_dist = 5.0, max_dist = 10.0},
+            {name="big_metal_structure_wind_small", chance = 0.9, interval = 20, sound_list_size = 16, last_time = 0, base_volume = 2.5, min_dist = 5.0, max_dist = 10.0},
+            {name="big_metal_structure_wind_medium", chance = 0.9, interval = 30, sound_list_size = 16, last_time = 0, base_volume = 2.5, min_dist = 5.0, max_dist = 10.0},
+        }
+    },
+    -- 10. North of the abandoned factory (Hangar)
+    {
+        x = 51.327, y = 0.400, z = 188.503,
+        max_hearing_dist = 110.0,
+        sound_list = {
+            {name="hangar_metal_details", chance = 0.9, interval = 10, sound_list_size = 10, last_time = 0, base_volume = 3.5, min_dist = 5.0, max_dist = 10.0},
+            {name="hangar_wind_gust", chance = 0.9, interval = 12, sound_list_size = 22, last_time = 0, base_volume = 3.5, min_dist = 5.0, max_dist = 10.0},
+            {name="big_metal_structure_wind_small", chance = 0.9, interval = 20, sound_list_size = 16, last_time = 0, base_volume = 2.5, min_dist = 5.0, max_dist = 10.0},
+            {name="big_metal_structure_wind_medium", chance = 0.9, interval = 30, sound_list_size = 16, last_time = 0, base_volume = 2.5, min_dist = 5.0, max_dist = 10.0},
+        }
+    },
+-- Meadow, west of the village
+    {
+        x = -194.090, y = -16.124, z = -40.817,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="interior_detail_wood", chance = 1.0, interval = 8, sound_list_size = 25, last_time = 0, base_volume = 0.8, min_dist = 1.0, max_dist = 1.5},
+        }
+    },
+    -- Meadow, west of the village
+    {
+        x = -195.774, y = -16.127, z = -48.863,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="interior_detail_wood", chance = 1.0, interval = 8, sound_list_size = 25, last_time = 0, base_volume = 0.8, min_dist = 1.0, max_dist = 1.5},
+        }
+    },
+    -- Meadow, west of the village
+    {
+        x = -169.991, y = -17.329, z = -52.134,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="interior_detail_wood", chance = 1.0, interval = 8, sound_list_size = 25, last_time = 0, base_volume = 0.8, min_dist = 1.0, max_dist = 1.5},
+        }
+    },
+    -- Meadow, south-east of the village
+    {
+        x = -122.832, y = -17.237, z = -61.685,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="interior_detail_wood", chance = 1.0, interval = 8, sound_list_size = 25, last_time = 0, base_volume = 0.8, min_dist = 1.0, max_dist = 1.5},
+        }
+    },
+    -- Meadow, north-east of the village
+    {
+        x = -116.715, y = -16.152, z = -26.111,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="interior_detail_wood", chance = 1.0, interval = 8, sound_list_size = 25, last_time = 0, base_volume = 0.8, min_dist = 1.0, max_dist = 1.5},
+        }
+    },
+    -- Meadow, north-west of the village
+    {
+        x = -147.206, y = -16.038, z = -26.528,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="interior_detail_wood", chance = 1.0, interval = 8, sound_list_size = 25, last_time = 0, base_volume = 0.8, min_dist = 1.0, max_dist = 1.5},
+        }
+    },
+    -- Meadow, north-west of the village
+    {
+        x = -154.911, y = -16.335, z = -26.325,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="interior_detail_wood", chance = 1.0, interval = 8, sound_list_size = 25, last_time = 0, base_volume = 0.8, min_dist = 1.0, max_dist = 1.5},
+        }
+    },
+    -- Meadow, west of the village
+    {
+        x = -191.203, y = -14.047, z = -19.414,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="interior_detail_wood", chance = 1.0, interval = 8, sound_list_size = 25, last_time = 0, base_volume = 0.8, min_dist = 1.0, max_dist = 1.5},
+        }
+    },
+    -- Meadow, west of the village
+    {
+        x = -225.701, y = -13.614, z = -17.652,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="interior_detail_wood", chance = 1.0, interval = 8, sound_list_size = 25, last_time = 0, base_volume = 0.8, min_dist = 1.0, max_dist = 1.5},
+        }
+    },
+    -- Meadow, west of the village
+    {
+        x = -232.430, y = -13.635, z = -18.088,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="interior_detail_wood", chance = 1.0, interval = 8, sound_list_size = 25, last_time = 0, base_volume = 0.8, min_dist = 1.0, max_dist = 1.5},
+        }
+    },
+    -- Meadow, west of the village
+    {
+        x = -232.949, y = -14.266, z = -41.438,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="interior_detail_wood", chance = 1.0, interval = 8, sound_list_size = 25, last_time = 0, base_volume = 0.8, min_dist = 1.0, max_dist = 1.5},
+        }
+    },
+}

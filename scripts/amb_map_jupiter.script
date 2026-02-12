@@ -1,0 +1,754 @@
+-- ARCHIVO: amb_map_jupiter.script
+
+emitters = {
+    -- 1. South of the ventilation complex
+    {
+        x = -59.795, y = 33.498, z = -336.065,
+        max_hearing_dist = 110.0,
+        sound_list = {
+            {name="metal_structure_small_strong", chance = 0.9, interval = 25, sound_list_size = 20, last_time = 0, base_volume = 1.5, min_dist = 5.0, max_dist = 13.0},
+            {name="metal_structure_small_weak", chance = 0.9, interval = 12, sound_list_size = 32, last_time = 0, base_volume = 1.3, min_dist = 5.0, max_dist = 12.0},
+            -- Agrego viento porque está alto (Y=33)
+            {name="hangar_wind_gust", chance = 0.9, interval = 15, sound_list_size = 22, last_time = 0, base_volume = 3.0, min_dist = 5.0, max_dist = 12.0},
+        }
+    },
+    -- 2. North-east of the ventilation complex
+    {
+        x = -52.600, y = 23.644, z = -307.980,
+        max_hearing_dist = 130.0,
+        sound_list = {
+            {name="metal_structure_small_strong", chance = 0.9, interval = 25, sound_list_size = 20, last_time = 0, base_volume = 1.5, min_dist = 5.0, max_dist = 13.0},
+            {name="metal_structure_small_weak", chance = 0.9, interval = 12, sound_list_size = 32, last_time = 0, base_volume = 1.3, min_dist = 5.0, max_dist = 12.0},
+             -- Agrego viento porque está alto (Y=23)
+            {name="hangar_wind_gust", chance = 0.9, interval = 15, sound_list_size = 22, last_time = 0, base_volume = 3.0, min_dist = 5.0, max_dist = 12.0},
+        }
+    },
+    -- 3. South-west of the Concrete Bath anomaly
+    {
+        x = 224.762, y = 16.368, z = -323.298,
+        max_hearing_dist = 110.0,
+        sound_list = {
+            {name="acidhiss", chance = 0.9, interval = 2, sound_list_size = 10, last_time = 0, base_volume = 3.0, min_dist = 5.0, max_dist = 10.0},
+        }
+    },
+    -- 4. North of the Concrete Bath anomaly
+    {
+        x = 228.604, y = 16.312, z = -306.766,
+        max_hearing_dist = 100.0,
+        sound_list = {
+            {name="acidhiss", chance = 0.9, interval = 1, sound_list_size = 10, last_time = 0, base_volume = 3.0, min_dist = 5.0, max_dist = 10.0},
+        }
+    },
+    -- 5. North-west of the Jupiter factory
+    {
+        x = 269.715, y = 27.496, z = -223.872,
+        max_hearing_dist = 100.0,
+        sound_list = {
+            {name="metal_structure_small_strong", chance = 0.9, interval = 25, sound_list_size = 20, last_time = 0, base_volume = 1.5, min_dist = 5.0, max_dist = 13.0},
+            {name="metal_structure_small_weak", chance = 0.9, interval = 12, sound_list_size = 32, last_time = 0, base_volume = 1.3, min_dist = 5.0, max_dist = 12.0},
+            -- Agrego viento (Y=27)
+            {name="hangar_wind_gust", chance = 0.9, interval = 15, sound_list_size = 22, last_time = 0, base_volume = 3.0, min_dist = 5.0, max_dist = 12.0},
+        }
+    },
+    -- 6. East of the Jupiter factory
+    {
+        x = 335.809, y = 26.863, z = -255.515,
+        max_hearing_dist = 120.0,
+        sound_list = {
+            {name="metal_structure_small_strong", chance = 0.9, interval = 25, sound_list_size = 20, last_time = 0, base_volume = 1.5, min_dist = 5.0, max_dist = 13.0},
+            {name="metal_structure_small_weak", chance = 0.9, interval = 12, sound_list_size = 32, last_time = 0, base_volume = 1.3, min_dist = 5.0, max_dist = 12.0},
+             -- Agrego viento (Y=26)
+            {name="hangar_wind_gust", chance = 0.9, interval = 15, sound_list_size = 22, last_time = 0, base_volume = 3.0, min_dist = 5.0, max_dist = 12.0},
+        }
+    },
+    -- 7. East of the Jupiter factory (2)
+    {
+        x = 429.578, y = 26.600, z = -279.501,
+        max_hearing_dist = 110.0,
+        sound_list = {
+            {name="metal_structure_small_strong", chance = 0.9, interval = 25, sound_list_size = 20, last_time = 0, base_volume = 1.5, min_dist = 5.0, max_dist = 13.0},
+            {name="metal_structure_small_weak", chance = 0.9, interval = 12, sound_list_size = 32, last_time = 0, base_volume = 1.3, min_dist = 5.0, max_dist = 12.0},
+             -- Agrego viento (Y=26)
+            {name="hangar_wind_gust", chance = 0.9, interval = 15, sound_list_size = 22, last_time = 0, base_volume = 3.0, min_dist = 5.0, max_dist = 12.0},
+        }
+    },
+	-- 8. East of the Concrete Bath anomaly
+    {
+        x = 460.998, y = 27.358, z = -393.456,
+        max_hearing_dist = 100.0,
+        sound_list = {
+            {name="metal_structure_small_strong", chance = 0.9, interval = 25, sound_list_size = 20, last_time = 0, base_volume = 1.5, min_dist = 5.0, max_dist = 13.0},
+            {name="metal_structure_small_weak", chance = 0.9, interval = 12, sound_list_size = 32, last_time = 0, base_volume = 1.3, min_dist = 5.0, max_dist = 12.0},
+        }
+    },
+    -- 9. East of the Concrete Bath anomaly (Elevated)
+    {
+        x = 473.114, y = 36.870, z = -406.018,
+        max_hearing_dist = 120.0,
+        sound_list = {
+	    {name="hangar_metal_details", chance = 0.9, interval = 10, sound_list_size = 10, last_time = 0, base_volume = 3.5, min_dist = 5.0, max_dist = 10.0},
+            {name="hangar_wind_gust", chance = 0.9, interval = 12, sound_list_size = 22, last_time = 0, base_volume = 3.5, min_dist = 5.0, max_dist = 10.0},
+        }
+    },
+    -- 10. South-east of the Concrete Bath anomaly
+    {
+        x = 439.454, y = 28.263, z = -464.728,
+        max_hearing_dist = 100.0,
+        sound_list = {
+            {name="metal_structure_small_strong", chance = 0.9, interval = 25, sound_list_size = 20, last_time = 0, base_volume = 1.5, min_dist = 5.0, max_dist = 13.0},
+            {name="metal_structure_small_weak", chance = 0.9, interval = 12, sound_list_size = 32, last_time = 0, base_volume = 1.3, min_dist = 5.0, max_dist = 12.0},
+        }
+    },
+    -- 11. East of the Concrete Bath anomaly (2)
+    {
+        x = 409.588, y = 27.543, z = -393.765,
+        max_hearing_dist = 100.0,
+        sound_list = {
+            {name="metal_structure_small_strong", chance = 0.9, interval = 25, sound_list_size = 20, last_time = 0, base_volume = 1.5, min_dist = 5.0, max_dist = 13.0},
+            {name="metal_structure_small_weak", chance = 0.9, interval = 12, sound_list_size = 32, last_time = 0, base_volume = 1.3, min_dist = 5.0, max_dist = 12.0},
+        }
+    },
+    -- 12. East of the Concrete Bath anomaly (3)
+    {
+        x = 407.077, y = 27.514, z = -371.814,
+        max_hearing_dist = 150.0,
+        sound_list = {
+            {name="metal_structure_small_strong", chance = 0.9, interval = 25, sound_list_size = 20, last_time = 0, base_volume = 1.5, min_dist = 5.0, max_dist = 13.0},
+            {name="metal_structure_small_weak", chance = 0.9, interval = 12, sound_list_size = 32, last_time = 0, base_volume = 1.3, min_dist = 5.0, max_dist = 12.0},
+        }
+    },
+    -- 13. East of the Concrete Bath anomaly (Elevated 2)
+    {
+        x = 400.993, y = 30.973, z = -374.129,
+        max_hearing_dist = 150.0,
+        sound_list = {
+            {name="metal_structure_small_strong", chance = 0.9, interval = 25, sound_list_size = 20, last_time = 0, base_volume = 1.5, min_dist = 5.0, max_dist = 13.0},
+            {name="metal_structure_small_weak", chance = 0.9, interval = 12, sound_list_size = 32, last_time = 0, base_volume = 1.3, min_dist = 5.0, max_dist = 12.0},
+	    {name="hangar_metal_details", chance = 0.9, interval = 10, sound_list_size = 10, last_time = 0, base_volume = 3.5, min_dist = 5.0, max_dist = 10.0},
+            {name="hangar_wind_gust", chance = 0.9, interval = 12, sound_list_size = 22, last_time = 0, base_volume = 3.5, min_dist = 5.0, max_dist = 10.0},
+        }
+    },
+
+    -- 14. South-east of the storage containers
+    {
+        x = -403.045, y = 3.121, z = -354.562,
+        max_hearing_dist = 120.0,
+        sound_list = {
+            {name="metal_structure_small_strong", chance = 0.9, interval = 25, sound_list_size = 20, last_time = 0, base_volume = 1.5, min_dist = 5.0, max_dist = 13.0},
+            {name="metal_structure_small_weak", chance = 0.9, interval = 12, sound_list_size = 32, last_time = 0, base_volume = 1.3, min_dist = 5.0, max_dist = 12.0},
+        }
+    },
+    -- 15. South of the storage containers (Elevated)
+    {
+        x = -406.807, y = 9.727, z = -372.997,
+        max_hearing_dist = 110.0,
+        sound_list = {
+            {name="metal_structure_small_strong", chance = 0.9, interval = 25, sound_list_size = 20, last_time = 0, base_volume = 1.5, min_dist = 5.0, max_dist = 13.0},
+            {name="metal_structure_small_weak", chance = 0.9, interval = 12, sound_list_size = 32, last_time = 0, base_volume = 1.3, min_dist = 5.0, max_dist = 12.0},
+	    {name="hangar_metal_details", chance = 0.9, interval = 10, sound_list_size = 10, last_time = 0, base_volume = 3.5, min_dist = 5.0, max_dist = 10.0},
+            {name="hangar_wind_gust", chance = 0.9, interval = 12, sound_list_size = 22, last_time = 0, base_volume = 3.5, min_dist = 5.0, max_dist = 10.0},
+        }
+    },
+    -- 16. South-west of the storage containers
+    {
+        x = -449.851, y = 0.101, z = -367.330,
+        max_hearing_dist = 90.0,
+        sound_list = {
+            {name="metal_structure_small_strong", chance = 0.9, interval = 25, sound_list_size = 20, last_time = 0, base_volume = 1.5, min_dist = 5.0, max_dist = 13.0},
+            {name="metal_structure_small_weak", chance = 0.9, interval = 12, sound_list_size = 32, last_time = 0, base_volume = 1.3, min_dist = 5.0, max_dist = 12.0},
+        }
+    },
+    -- 17. North of the storage containers
+    {
+        x = -414.849, y = -0.013, z = -324.697,
+        max_hearing_dist = 100.0,
+        sound_list = {
+            {name="metal_structure_small_strong", chance = 0.9, interval = 25, sound_list_size = 20, last_time = 0, base_volume = 1.5, min_dist = 5.0, max_dist = 13.0},
+            {name="metal_structure_small_weak", chance = 0.9, interval = 12, sound_list_size = 32, last_time = 0, base_volume = 1.3, min_dist = 5.0, max_dist = 12.0},
+        }
+    },
+    -- 18. East of the storage containers (Frogs)
+    {
+        x = -313.801, y = -2.954, z = -302.876,
+        max_hearing_dist = 100.0,
+        sound_list = {
+            {name="frogs_swamp", chance = 0.9, interval = 10, sound_list_size = 32, last_time = 0, base_volume = 3.5, min_dist = 15.0, max_dist = 25.0},
+            {name="frogs_swamp_B", chance = 0.8, interval = 5, sound_list_size = 31, last_time = 0, base_volume = 3.5, min_dist = 10.0, max_dist = 15.0},
+        }
+    },
+    -- 19. North-east of the storage containers (Frogs)
+    {
+        x = -315.562, y = -2.950, z = -280.446,
+        max_hearing_dist = 120.0,
+        sound_list = {
+            {name="frogs_swamp", chance = 0.9, interval = 10, sound_list_size = 32, last_time = 0, base_volume = 3.5, min_dist = 15.0, max_dist = 25.0},
+            {name="frogs_swamp_B", chance = 0.8, interval = 5, sound_list_size = 31, last_time = 0, base_volume = 3.5, min_dist = 10.0, max_dist = 15.0},
+        }
+    },
+    -- 20. North-east of the storage containers (2) (Frogs)
+    {
+        x = -321.862, y = -2.990, z = -255.041,
+        max_hearing_dist = 100.0,
+        sound_list = {
+            {name="frogs_swamp", chance = 0.9, interval = 10, sound_list_size = 32, last_time = 0, base_volume = 3.5, min_dist = 15.0, max_dist = 25.0},
+            {name="frogs_swamp_B", chance = 0.8, interval = 5, sound_list_size = 31, last_time = 0, base_volume = 3.5, min_dist = 10.0, max_dist = 15.0},
+        }
+    },
+    -- 21. North-east of the storage containers (3) (Frogs)
+    {
+        x = -300.603, y = -2.956, z = -227.331,
+        max_hearing_dist = 120.0,
+        sound_list = {
+            {name="frogs_swamp", chance = 0.9, interval = 10, sound_list_size = 32, last_time = 0, base_volume = 3.5, min_dist = 15.0, max_dist = 25.0},
+            {name="frogs_swamp_B", chance = 0.8, interval = 5, sound_list_size = 31, last_time = 0, base_volume = 3.5, min_dist = 10.0, max_dist = 15.0},
+        }
+    },
+    -- 22. North of the storage containers (Frogs)
+    {
+        x = -406.022, y = -2.936, z = -231.385,
+        max_hearing_dist = 130.0,
+        sound_list = {
+            {name="frogs_swamp", chance = 0.9, interval = 10, sound_list_size = 32, last_time = 0, base_volume = 3.5, min_dist = 15.0, max_dist = 25.0},
+            {name="frogs_swamp_B", chance = 0.8, interval = 5, sound_list_size = 31, last_time = 0, base_volume = 3.5, min_dist = 10.0, max_dist = 15.0},
+        }
+    },
+    -- 23. North of the storage containers (2) (Frogs)
+    {
+        x = -431.257, y = -2.889, z = -228.575,
+        max_hearing_dist = 140.0,
+        sound_list = {
+            {name="frogs_swamp", chance = 0.9, interval = 10, sound_list_size = 32, last_time = 0, base_volume = 3.5, min_dist = 15.0, max_dist = 25.0},
+            {name="frogs_swamp_B", chance = 0.8, interval = 5, sound_list_size = 31, last_time = 0, base_volume = 3.5, min_dist = 10.0, max_dist = 15.0},
+        }
+    },
+    -- 24. East of the Volkhov complex (Elevated)
+    {
+        x = -328.123, y = 7.851, z = 9.794,
+        max_hearing_dist = 100.0,
+        sound_list = {
+            {name="metal_structure_small_strong", chance = 0.9, interval = 25, sound_list_size = 20, last_time = 0, base_volume = 1.5, min_dist = 5.0, max_dist = 13.0},
+            {name="metal_structure_small_weak", chance = 0.9, interval = 12, sound_list_size = 32, last_time = 0, base_volume = 1.3, min_dist = 5.0, max_dist = 12.0},
+            -- Agrego viento por la altura (Y=7.8)
+            {name="hangar_wind_gust", chance = 0.9, interval = 15, sound_list_size = 22, last_time = 0, base_volume = 3.0, min_dist = 5.0, max_dist = 12.0},
+        }
+    },
+    -- 25. East of the Volkhov complex
+    {
+        x = -353.691, y = 2.641, z = -2.756,
+        max_hearing_dist = 70.0,
+        sound_list = {
+            {name="metal_structure_small_weak", chance = 0.9, interval = 12, sound_list_size = 32, last_time = 0, base_volume = 1.3, min_dist = 5.0, max_dist = 12.0},
+            {name="generic_concrete_large_room", chance = 0.9, interval = 10, sound_list_size = 17, last_time = 0, base_volume = 2.0, min_dist = 5.0, max_dist = 13.0},
+            {name="underground_concrete_details", chance = 0.9, interval = 15, sound_list_size = 22, last_time = 0, base_volume = 1.5, min_dist = 5.0, max_dist = 13.0},
+        }
+    },
+    -- 26. West of the Volkhov complex
+    {
+        x = -393.521, y = 2.640, z = 10.212,
+        max_hearing_dist = 70.0,
+        sound_list = {
+            {name="generic_concrete_large_room", chance = 0.9, interval = 10, sound_list_size = 17, last_time = 0, base_volume = 2.0, min_dist = 5.0, max_dist = 13.0},
+            {name="underground_concrete_details", chance = 0.9, interval = 15, sound_list_size = 22, last_time = 0, base_volume = 1.5, min_dist = 5.0, max_dist = 13.0},
+        }
+    },
+    -- 27. East of the Volkhov complex (Elevated)
+    {
+        x = -286.669, y = 7.856, z = -3.834,
+        max_hearing_dist = 80.0,
+        sound_list = {
+            {name="metal_structure_small_strong", chance = 0.9, interval = 25, sound_list_size = 20, last_time = 0, base_volume = 1.5, min_dist = 5.0, max_dist = 13.0},
+            {name="metal_structure_small_weak", chance = 0.9, interval = 12, sound_list_size = 32, last_time = 0, base_volume = 1.3, min_dist = 5.0, max_dist = 12.0},
+        }
+    },
+    -- 28. West of the mobile lab (HANGAR SOUNDS)
+    {
+        x = -221.643, y = 3.335, z = 75.903,
+        max_hearing_dist = 140.0,
+        sound_list = {
+            {name="hangar_metal_details", chance = 0.9, interval = 10, sound_list_size = 10, last_time = 0, base_volume = 3.5, min_dist = 5.0, max_dist = 10.0},
+            {name="hangar_wind_gust", chance = 0.9, interval = 12, sound_list_size = 22, last_time = 0, base_volume = 3.5, min_dist = 5.0, max_dist = 10.0},
+        }
+    },
+    -- 29. North of the mobile lab (FROGS)
+    {
+        x = -221.204, y = -4.320, z = 129.453,
+        max_hearing_dist = 100.0,
+        sound_list = {
+            {name="frogs_swamp", chance = 0.9, interval = 10, sound_list_size = 32, last_time = 0, base_volume = 3.5, min_dist = 15.0, max_dist = 25.0},
+            {name="frogs_swamp_B", chance = 0.8, interval = 5, sound_list_size = 31, last_time = 0, base_volume = 3.5, min_dist = 10.0, max_dist = 15.0},
+        }
+    },
+    -- 30. North of the mobile lab (2) (FROGS)
+    {
+        x = -197.810, y = -4.285, z = 141.740,
+        max_hearing_dist = 120.0,
+        sound_list = {
+            {name="frogs_swamp", chance = 0.9, interval = 10, sound_list_size = 32, last_time = 0, base_volume = 3.5, min_dist = 15.0, max_dist = 25.0},
+            {name="frogs_swamp_B", chance = 0.8, interval = 5, sound_list_size = 31, last_time = 0, base_volume = 3.5, min_dist = 10.0, max_dist = 15.0},
+        }
+    },
+    -- 31. North of the mobile lab (3) (FROGS)
+    {
+        x = -198.892, y = -4.288, z = 166.476,
+        max_hearing_dist = 130.0,
+        sound_list = {
+            {name="frogs_swamp", chance = 0.9, interval = 10, sound_list_size = 32, last_time = 0, base_volume = 3.5, min_dist = 15.0, max_dist = 25.0},
+            {name="frogs_swamp_B", chance = 0.8, interval = 5, sound_list_size = 31, last_time = 0, base_volume = 3.5, min_dist = 10.0, max_dist = 15.0},
+        }
+    },
+    -- 32. North of the mobile lab (4) (FROGS)
+    {
+        x = -196.262, y = -4.178, z = 191.342,
+        max_hearing_dist = 120.0,
+        sound_list = {
+            {name="frogs_swamp", chance = 0.9, interval = 10, sound_list_size = 32, last_time = 0, base_volume = 3.5, min_dist = 15.0, max_dist = 25.0},
+            {name="frogs_swamp_B", chance = 0.8, interval = 5, sound_list_size = 31, last_time = 0, base_volume = 3.5, min_dist = 10.0, max_dist = 15.0},
+        }
+    },
+    -- 33. West of Jupiter (FROGS)
+    {
+        x = -186.612, y = -4.302, z = 220.599,
+        max_hearing_dist = 150.0,
+        sound_list = {
+            {name="frogs_swamp", chance = 0.9, interval = 10, sound_list_size = 32, last_time = 0, base_volume = 3.5, min_dist = 15.0, max_dist = 25.0},
+            {name="frogs_swamp_B", chance = 0.8, interval = 5, sound_list_size = 31, last_time = 0, base_volume = 3.5, min_dist = 10.0, max_dist = 15.0},
+        }
+    },
+    -- 34. North-west of Jupiter
+    {
+        x = -88.810, y = 3.339, z = 223.189,
+        max_hearing_dist = 120.0,
+        sound_list = {
+            {name="metal_structure_small_strong", chance = 0.9, interval = 25, sound_list_size = 20, last_time = 0, base_volume = 1.5, min_dist = 5.0, max_dist = 13.0},
+            {name="metal_structure_small_weak", chance = 0.9, interval = 12, sound_list_size = 32, last_time = 0, base_volume = 1.3, min_dist = 5.0, max_dist = 12.0},
+        }
+    },
+    -- 35. North of Jupiter
+    {
+        x = -59.069, y = 3.643, z = 248.540,
+        max_hearing_dist = 100.0,
+        sound_list = {
+            {name="metal_structure_small_strong", chance = 0.9, interval = 25, sound_list_size = 20, last_time = 0, base_volume = 1.5, min_dist = 5.0, max_dist = 13.0},
+            {name="metal_structure_small_weak", chance = 0.9, interval = 12, sound_list_size = 32, last_time = 0, base_volume = 1.3, min_dist = 5.0, max_dist = 12.0},
+        }
+    },
+    -- 36. South of Jupiter
+    {
+        x = -28.992, y = 4.039, z = 159.628,
+        max_hearing_dist = 100.0,
+        sound_list = {
+            {name="metal_structure_small_strong", chance = 0.9, interval = 25, sound_list_size = 20, last_time = 0, base_volume = 1.5, min_dist = 5.0, max_dist = 13.0},
+            {name="metal_structure_small_weak", chance = 0.9, interval = 12, sound_list_size = 32, last_time = 0, base_volume = 1.3, min_dist = 5.0, max_dist = 12.0},
+        }
+    },
+    -- 37. South of Jupiter (Elevated)
+    {
+        x = -37.340, y = 7.686, z = 126.345,
+        max_hearing_dist = 120.0,
+        sound_list = {
+            {name="metal_structure_small_strong", chance = 0.9, interval = 25, sound_list_size = 20, last_time = 0, base_volume = 1.5, min_dist = 5.0, max_dist = 13.0},
+            {name="metal_structure_small_weak", chance = 0.9, interval = 12, sound_list_size = 32, last_time = 0, base_volume = 1.3, min_dist = 5.0, max_dist = 12.0},
+            {name="hangar_wind_gust", chance = 0.9, interval = 15, sound_list_size = 22, last_time = 0, base_volume = 3.0, min_dist = 5.0, max_dist = 12.0},
+        }
+    },
+    -- 38. South of Jupiter (Elevated 2)
+    {
+        x = -40.421, y = 5.375, z = 94.160,
+        max_hearing_dist = 110.0,
+        sound_list = {
+            {name="metal_structure_small_strong", chance = 0.9, interval = 25, sound_list_size = 20, last_time = 0, base_volume = 1.5, min_dist = 5.0, max_dist = 13.0},
+            {name="metal_structure_small_weak", chance = 0.9, interval = 12, sound_list_size = 32, last_time = 0, base_volume = 1.3, min_dist = 5.0, max_dist = 12.0},
+            {name="hangar_wind_gust", chance = 0.9, interval = 15, sound_list_size = 22, last_time = 0, base_volume = 3.0, min_dist = 5.0, max_dist = 12.0},
+        }
+    },
+    -- 39. North of the anomalous grove (Elevated)
+    {
+        x = 70.116, y = 5.787, z = 36.199,
+        max_hearing_dist = 100.0,
+        sound_list = {
+            {name="acidhiss", chance = 0.9, interval = 1, sound_list_size = 10, last_time = 0, base_volume = 3.0, min_dist = 5.0, max_dist = 10.0},
+        }
+    },
+    -- 40. North-east of the anomalous grove
+    {
+        x = 83.048, y = 4.940, z = 29.162,
+        max_hearing_dist = 120.0,
+        sound_list = {
+            {name="acidhiss", chance = 0.9, interval = 2, sound_list_size = 10, last_time = 0, base_volume = 3.0, min_dist = 5.0, max_dist = 10.0},
+        }
+    },
+    -- 41. North-east of the anomalous grove (Elevated)
+    {
+        x = 86.738, y = 6.138, z = 9.876,
+        max_hearing_dist = 140.0,
+        sound_list = {
+            {name="acidhiss", chance = 0.9, interval = 3, sound_list_size = 10, last_time = 0, base_volume = 3.0, min_dist = 5.0, max_dist = 10.0},
+        }
+    },
+    -- 42. South-west of the quarry (FROGS)
+    {
+        x = 206.367, y = -29.940, z = 56.437,
+        max_hearing_dist = 110.0,
+        sound_list = {
+            {name="frogs_swamp", chance = 0.9, interval = 10, sound_list_size = 32, last_time = 0, base_volume = 3.5, min_dist = 15.0, max_dist = 25.0},
+            {name="frogs_swamp_B", chance = 0.8, interval = 5, sound_list_size = 31, last_time = 0, base_volume = 3.5, min_dist = 10.0, max_dist = 15.0},
+        }
+    },
+    -- 43. North of the Bitumen anomaly (FROGS)
+    {
+        x = 224.856, y = -29.911, z = 42.490,
+        max_hearing_dist = 150.0,
+        sound_list = {
+            {name="frogs_swamp", chance = 0.9, interval = 10, sound_list_size = 32, last_time = 0, base_volume = 3.5, min_dist = 15.0, max_dist = 25.0},
+            {name="frogs_swamp_B", chance = 0.8, interval = 5, sound_list_size = 31, last_time = 0, base_volume = 3.5, min_dist = 10.0, max_dist = 15.0},
+        }
+    },
+    -- 44. South of the quarry (FROGS)
+    {
+        x = 243.664, y = -29.911, z = 67.885,
+        max_hearing_dist = 130.0,
+        sound_list = {
+            {name="frogs_swamp", chance = 0.9, interval = 10, sound_list_size = 32, last_time = 0, base_volume = 3.5, min_dist = 15.0, max_dist = 25.0},
+            {name="frogs_swamp_B", chance = 0.8, interval = 5, sound_list_size = 31, last_time = 0, base_volume = 3.5, min_dist = 10.0, max_dist = 15.0},
+        }
+    },
+    -- 45. South-west of the quarry (FROGS)
+    {
+        x = 215.643, y = -29.848, z = 127.923,
+        max_hearing_dist = 110.0,
+        sound_list = {
+            {name="frogs_swamp", chance = 0.9, interval = 10, sound_list_size = 32, last_time = 0, base_volume = 3.5, min_dist = 15.0, max_dist = 25.0},
+            {name="frogs_swamp_B", chance = 0.8, interval = 5, sound_list_size = 31, last_time = 0, base_volume = 3.5, min_dist = 10.0, max_dist = 15.0},
+        }
+    },
+    -- 46. West of the quarry (HANGAR SOUNDS)
+    {
+        x = 217.482, y = -22.515, z = 148.469,
+        max_hearing_dist = 110.0,
+        sound_list = {
+            {name="hangar_metal_details", chance = 0.9, interval = 10, sound_list_size = 10, last_time = 0, base_volume = 3.5, min_dist = 5.0, max_dist = 10.0},
+            {name="hangar_wind_gust", chance = 0.9, interval = 12, sound_list_size = 22, last_time = 0, base_volume = 3.5, min_dist = 5.0, max_dist = 10.0},
+        }
+    },
+    -- 47. West of the quarry (2) (HANGAR SOUNDS)
+    {
+        x = 224.207, y = -19.884, z = 156.856,
+        max_hearing_dist = 150.0,
+        sound_list = {
+            {name="hangar_metal_details", chance = 0.9, interval = 10, sound_list_size = 10, last_time = 0, base_volume = 3.5, min_dist = 5.0, max_dist = 10.0},
+            {name="hangar_wind_gust", chance = 0.9, interval = 12, sound_list_size = 22, last_time = 0, base_volume = 3.5, min_dist = 5.0, max_dist = 10.0},
+        }
+    },
+    -- 48. South-west of the quarry (HANGAR SOUNDS)
+    {
+        x = 222.175, y = -15.508, z = 123.395,
+        max_hearing_dist = 180.0,
+        sound_list = {
+            {name="hangar_metal_details", chance = 0.9, interval = 10, sound_list_size = 10, last_time = 0, base_volume = 3.5, min_dist = 5.0, max_dist = 10.0},
+            {name="hangar_wind_gust", chance = 0.9, interval = 12, sound_list_size = 22, last_time = 0, base_volume = 3.5, min_dist = 5.0, max_dist = 10.0},
+        }
+    },
+    -- 49. West of the quarry (3) (HANGAR SOUNDS)
+    {
+        x = 223.992, y = -9.729, z = 169.285,
+        max_hearing_dist = 180.0,
+        sound_list = {
+            {name="hangar_metal_details", chance = 0.9, interval = 10, sound_list_size = 10, last_time = 0, base_volume = 3.5, min_dist = 5.0, max_dist = 10.0},
+            {name="hangar_wind_gust", chance = 0.9, interval = 12, sound_list_size = 22, last_time = 0, base_volume = 3.5, min_dist = 5.0, max_dist = 10.0},
+        }
+    },
+    -- 50. West of the quarry (4) (HANGAR SOUNDS)
+    {
+        x = 224.001, y = 4.323, z = 152.866,
+        max_hearing_dist = 210.0,
+        sound_list = {
+            {name="hangar_metal_details", chance = 0.9, interval = 10, sound_list_size = 10, last_time = 0, base_volume = 3.5, min_dist = 5.0, max_dist = 10.0},
+            {name="hangar_wind_gust", chance = 0.9, interval = 12, sound_list_size = 22, last_time = 0, base_volume = 3.5, min_dist = 5.0, max_dist = 10.0},
+        }
+    },
+    -- 51. West of the quarry (5) (HANGAR SOUNDS)
+    {
+        x = 224.001, y = 4.337, z = 152.874,
+        max_hearing_dist = 230.0,
+        sound_list = {
+            {name="hangar_metal_details", chance = 0.9, interval = 10, sound_list_size = 10, last_time = 0, base_volume = 3.5, min_dist = 5.0, max_dist = 10.0},
+            {name="hangar_wind_gust", chance = 0.9, interval = 12, sound_list_size = 22, last_time = 0, base_volume = 3.5, min_dist = 5.0, max_dist = 10.0},
+        }
+    },
+
+    -- 52. South-east of the substation (METAL)
+    {
+        x = 144.192, y = 1.257, z = 206.590,
+        max_hearing_dist = 120.0,
+        sound_list = {
+            {name="metal_structure_small_strong", chance = 0.9, interval = 25, sound_list_size = 20, last_time = 0, base_volume = 1.5, min_dist = 5.0, max_dist = 13.0},
+            {name="metal_structure_small_weak", chance = 0.9, interval = 12, sound_list_size = 32, last_time = 0, base_volume = 1.3, min_dist = 5.0, max_dist = 12.0},
+        }
+    },
+    -- 53. South of the substation (METAL)
+    {
+        x = 130.286, y = 2.193, z = 208.927,
+        max_hearing_dist = 120.0,
+        sound_list = {
+            {name="metal_structure_small_strong", chance = 0.9, interval = 25, sound_list_size = 20, last_time = 0, base_volume = 1.5, min_dist = 5.0, max_dist = 13.0},
+            {name="metal_structure_small_weak", chance = 0.9, interval = 12, sound_list_size = 32, last_time = 0, base_volume = 1.3, min_dist = 5.0, max_dist = 12.0},
+        }
+    },
+    -- 54. By the substation (METAL)
+    {
+        x = 75.397, y = 4.634, z = 331.996,
+        max_hearing_dist = 110.0,
+        sound_list = {
+            {name="metal_structure_small_strong", chance = 0.9, interval = 25, sound_list_size = 20, last_time = 0, base_volume = 1.5, min_dist = 5.0, max_dist = 13.0},
+            {name="metal_structure_small_weak", chance = 0.9, interval = 12, sound_list_size = 32, last_time = 0, base_volume = 1.3, min_dist = 5.0, max_dist = 12.0},
+        }
+    },
+    -- 55. North-west of the substation (FROGS)
+    {
+        x = 7.524, y = -5.709, z = 400.630,
+        max_hearing_dist = 90.0,
+        sound_list = {
+            {name="frogs_swamp", chance = 0.9, interval = 10, sound_list_size = 32, last_time = 0, base_volume = 3.5, min_dist = 15.0, max_dist = 25.0},
+            {name="frogs_swamp_B", chance = 0.8, interval = 5, sound_list_size = 31, last_time = 0, base_volume = 3.5, min_dist = 10.0, max_dist = 15.0},
+        }
+    },
+    -- 56. North of the substation (FROGS)
+    {
+        x = 28.519, y = -5.711, z = 415.132,
+        max_hearing_dist = 80.0,
+        sound_list = {
+            {name="frogs_swamp", chance = 0.9, interval = 10, sound_list_size = 32, last_time = 0, base_volume = 3.5, min_dist = 15.0, max_dist = 25.0},
+            {name="frogs_swamp_B", chance = 0.8, interval = 5, sound_list_size = 31, last_time = 0, base_volume = 3.5, min_dist = 10.0, max_dist = 15.0},
+        }
+    },
+    -- 57. North of the substation (2) (FROGS)
+    {
+        x = 67.243, y = -5.690, z = 421.272,
+        max_hearing_dist = 110.0,
+        sound_list = {
+            {name="frogs_swamp", chance = 0.9, interval = 10, sound_list_size = 32, last_time = 0, base_volume = 3.5, min_dist = 15.0, max_dist = 25.0},
+            {name="frogs_swamp_B", chance = 0.8, interval = 5, sound_list_size = 31, last_time = 0, base_volume = 3.5, min_dist = 10.0, max_dist = 15.0},
+        }
+    },
+    -- 58. North of the substation (3) (FROGS)
+    {
+        x = 111.702, y = -5.686, z = 415.499,
+        max_hearing_dist = 120.0,
+        sound_list = {
+            {name="frogs_swamp", chance = 0.9, interval = 10, sound_list_size = 32, last_time = 0, base_volume = 3.5, min_dist = 15.0, max_dist = 25.0},
+            {name="frogs_swamp_B", chance = 0.8, interval = 5, sound_list_size = 31, last_time = 0, base_volume = 3.5, min_dist = 10.0, max_dist = 15.0},
+        }
+    },
+    -- 59. West of the Plavni anomaly (FROGS)
+    {
+        x = 175.735, y = -5.686, z = 423.529,
+        max_hearing_dist = 130.0,
+        sound_list = {
+            {name="frogs_swamp", chance = 0.9, interval = 10, sound_list_size = 32, last_time = 0, base_volume = 3.5, min_dist = 15.0, max_dist = 25.0},
+            {name="frogs_swamp_B", chance = 0.8, interval = 5, sound_list_size = 31, last_time = 0, base_volume = 3.5, min_dist = 10.0, max_dist = 15.0},
+        }
+    },
+    -- 60. North of the Plavni anomaly (FROGS)
+    {
+        x = 210.423, y = -5.690, z = 440.518,
+        max_hearing_dist = 120.0,
+        sound_list = {
+            {name="frogs_swamp", chance = 0.9, interval = 10, sound_list_size = 32, last_time = 0, base_volume = 3.5, min_dist = 15.0, max_dist = 25.0},
+            {name="frogs_swamp_B", chance = 0.8, interval = 5, sound_list_size = 31, last_time = 0, base_volume = 3.5, min_dist = 10.0, max_dist = 15.0},
+        }
+    },
+    -- 61. North-east of the Plavni anomaly (FROGS)
+    {
+        x = 292.799, y = -5.701, z = 457.046,
+        max_hearing_dist = 110.0,
+        sound_list = {
+            {name="frogs_swamp", chance = 0.9, interval = 10, sound_list_size = 32, last_time = 0, base_volume = 3.5, min_dist = 15.0, max_dist = 25.0},
+            {name="frogs_swamp_B", chance = 0.8, interval = 5, sound_list_size = 31, last_time = 0, base_volume = 3.5, min_dist = 10.0, max_dist = 15.0},
+        }
+    },
+    -- 62. East of the Plavni anomaly (FROGS)
+    {
+        x = 312.021, y = -5.702, z = 423.976,
+        max_hearing_dist = 140.0,
+        sound_list = {
+            {name="frogs_swamp", chance = 0.9, interval = 10, sound_list_size = 32, last_time = 0, base_volume = 3.5, min_dist = 15.0, max_dist = 25.0},
+            {name="frogs_swamp_B", chance = 0.8, interval = 5, sound_list_size = 31, last_time = 0, base_volume = 3.5, min_dist = 10.0, max_dist = 15.0},
+        }
+    },
+    -- 63. North of the cement factory (FROGS)
+    {
+        x = 344.749, y = -6.276, z = 427.082,
+        max_hearing_dist = 110.0,
+        sound_list = {
+            {name="frogs_swamp", chance = 0.9, interval = 10, sound_list_size = 32, last_time = 0, base_volume = 3.5, min_dist = 15.0, max_dist = 25.0},
+            {name="frogs_swamp_B", chance = 0.8, interval = 5, sound_list_size = 31, last_time = 0, base_volume = 3.5, min_dist = 10.0, max_dist = 15.0},
+        }
+    },
+    -- 64. North of the cement factory (2) (FROGS)
+    {
+        x = 380.318, y = -6.324, z = 436.460,
+        max_hearing_dist = 120.0,
+        sound_list = {
+            {name="frogs_swamp", chance = 0.9, interval = 10, sound_list_size = 32, last_time = 0, base_volume = 3.5, min_dist = 15.0, max_dist = 25.0},
+            {name="frogs_swamp_B", chance = 0.8, interval = 5, sound_list_size = 31, last_time = 0, base_volume = 3.5, min_dist = 10.0, max_dist = 15.0},
+        }
+    },
+    -- 65. North of the cement factory (3) (FROGS)
+    {
+        x = 402.176, y = -6.350, z = 426.086,
+        max_hearing_dist = 130.0,
+        sound_list = {
+            {name="frogs_swamp", chance = 0.9, interval = 10, sound_list_size = 32, last_time = 0, base_volume = 3.5, min_dist = 15.0, max_dist = 25.0},
+            {name="frogs_swamp_B", chance = 0.8, interval = 5, sound_list_size = 31, last_time = 0, base_volume = 3.5, min_dist = 10.0, max_dist = 15.0},
+        }
+    },
+    -- 66. North-east of the cement factory (FROGS)
+    {
+        x = 425.227, y = -5.718, z = 455.683,
+        max_hearing_dist = 90.0,
+        sound_list = {
+            {name="frogs_swamp", chance = 0.9, interval = 10, sound_list_size = 32, last_time = 0, base_volume = 3.5, min_dist = 15.0, max_dist = 25.0},
+            {name="frogs_swamp_B", chance = 0.8, interval = 5, sound_list_size = 31, last_time = 0, base_volume = 3.5, min_dist = 10.0, max_dist = 15.0},
+        }
+    },
+    -- 67. North-east of the cement factory (METAL)
+    {
+        x = 384.432, y = 3.618, z = 372.525,
+        max_hearing_dist = 120.0,
+        sound_list = {
+            {name="metal_structure_small_strong", chance = 0.9, interval = 25, sound_list_size = 20, last_time = 0, base_volume = 1.5, min_dist = 5.0, max_dist = 13.0},
+            {name="metal_structure_small_weak", chance = 0.9, interval = 12, sound_list_size = 32, last_time = 0, base_volume = 1.3, min_dist = 5.0, max_dist = 12.0},
+        }
+    },
+    -- 68. East of the cement factory (METAL)
+    {
+        x = 389.171, y = 3.593, z = 327.638,
+        max_hearing_dist = 130.0,
+        sound_list = {
+            {name="metal_structure_small_strong", chance = 0.9, interval = 25, sound_list_size = 20, last_time = 0, base_volume = 1.5, min_dist = 5.0, max_dist = 13.0},
+            {name="metal_structure_small_weak", chance = 0.9, interval = 12, sound_list_size = 32, last_time = 0, base_volume = 1.3, min_dist = 5.0, max_dist = 12.0},
+        }
+    },
+    -- 69. South-east of the cement factory (METAL)
+    {
+        x = 378.103, y = 6.961, z = 311.067,
+        max_hearing_dist = 150.0,
+        sound_list = {
+            {name="metal_structure_small_strong", chance = 0.9, interval = 25, sound_list_size = 20, last_time = 0, base_volume = 1.5, min_dist = 5.0, max_dist = 13.0},
+            {name="metal_structure_small_weak", chance = 0.9, interval = 12, sound_list_size = 32, last_time = 0, base_volume = 1.3, min_dist = 5.0, max_dist = 12.0},
+            -- Agrego viento (Y=6.9)
+            {name="hangar_wind_gust", chance = 0.9, interval = 15, sound_list_size = 22, last_time = 0, base_volume = 3.0, min_dist = 5.0, max_dist = 12.0},
+        }
+    },
+    -- 70. West of the cement factory (METAL)
+    {
+        x = 350.562, y = 18.633, z = 333.709,
+        max_hearing_dist = 130.0,
+        sound_list = {
+            {name="metal_structure_small_strong", chance = 0.9, interval = 25, sound_list_size = 20, last_time = 0, base_volume = 1.5, min_dist = 5.0, max_dist = 13.0},
+            {name="metal_structure_small_weak", chance = 0.9, interval = 12, sound_list_size = 32, last_time = 0, base_volume = 1.3, min_dist = 5.0, max_dist = 12.0},
+            -- Agrego viento fuerte (Y=18.6)
+            {name="hangar_wind_gust", chance = 0.9, interval = 15, sound_list_size = 22, last_time = 0, base_volume = 3.0, min_dist = 5.0, max_dist = 12.0},
+        }
+    },
+    -- 71. Near the cement factory (HANGAR)
+    {
+        x = 353.823, y = 33.371, z = 329.902,
+        max_hearing_dist = 250.0,
+        sound_list = {
+            {name="hangar_metal_details", chance = 0.9, interval = 10, sound_list_size = 10, last_time = 0, base_volume = 3.5, min_dist = 5.0, max_dist = 10.0},
+            {name="hangar_wind_gust", chance = 0.9, interval = 12, sound_list_size = 22, last_time = 0, base_volume = 3.5, min_dist = 5.0, max_dist = 10.0},
+        }
+    },
+    -- 72. East of the cement factory (HANGAR)
+    {
+        x = 372.347, y = 33.371, z = 338.394,
+        max_hearing_dist = 280.0,
+        sound_list = {
+            {name="hangar_metal_details", chance = 0.9, interval = 10, sound_list_size = 10, last_time = 0, base_volume = 3.5, min_dist = 5.0, max_dist = 10.0},
+            {name="hangar_wind_gust", chance = 0.9, interval = 12, sound_list_size = 22, last_time = 0, base_volume = 3.5, min_dist = 5.0, max_dist = 10.0},
+        }
+    },
+
+-- Jupiter, south of Kopachy
+    {
+        x = -320.985, y = 0.451, z = 173.516,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="interior_detail_wood", chance = 1.0, interval = 8, sound_list_size = 25, last_time = 0, base_volume = 0.9, min_dist = 1.0, max_dist = 1.5},
+        }
+    },
+    -- Jupiter, south of Kopachy
+    {
+        x = -319.621, y = -3.556, z = 180.791,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="interior_detail_wood", chance = 1.0, interval = 8, sound_list_size = 25, last_time = 0, base_volume = 0.9, min_dist = 1.0, max_dist = 1.5},
+        }
+    },
+    -- Jupiter, north of Kopachy
+    {
+        x = -334.990, y = -2.880, z = 257.065,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="interior_detail_wood", chance = 1.0, interval = 8, sound_list_size = 25, last_time = 0, base_volume = 0.9, min_dist = 1.0, max_dist = 1.5},
+        }
+    },
+    -- Jupiter, north of Kopachy
+    {
+        x = -347.938, y = -2.863, z = 257.272,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="interior_detail_wood", chance = 1.0, interval = 8, sound_list_size = 25, last_time = 0, base_volume = 0.9, min_dist = 1.0, max_dist = 1.5},
+        }
+    },
+    -- Jupiter, north of Kopachy
+    {
+        x = -334.489, y = -2.860, z = 265.784,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="interior_detail_wood", chance = 1.0, interval = 8, sound_list_size = 25, last_time = 0, base_volume = 0.9, min_dist = 1.0, max_dist = 1.5},
+        }
+    },
+    -- Jupiter, north of Kopachy
+    {
+        x = -343.679, y = 1.495, z = 260.759,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="interior_detail_wood", chance = 1.0, interval = 8, sound_list_size = 25, last_time = 0, base_volume = 0.9, min_dist = 1.0, max_dist = 1.5},
+        }
+    },
+    -- Jupiter, north of Kopachy
+    {
+        x = -334.891, y = 1.494, z = 261.630,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="interior_detail_wood", chance = 1.0, interval = 8, sound_list_size = 25, last_time = 0, base_volume = 0.9, min_dist = 1.0, max_dist = 1.5},
+        }
+    },
+    -- Jupiter, north-east of Jupiter
+    {
+        x = -10.279, y = 23.073, z = 252.785,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="interior_detail_wood", chance = 1.0, interval = 8, sound_list_size = 25, last_time = 0, base_volume = 0.9, min_dist = 1.0, max_dist = 1.5},
+        }
+    },
+    -- Jupiter, north-east of Jupiter
+    {
+        x = -10.316, y = 23.101, z = 245.562,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="interior_detail_wood", chance = 1.0, interval = 8, sound_list_size = 25, last_time = 0, base_volume = 0.9, min_dist = 1.0, max_dist = 1.5},
+        }
+    },
+    -- Jupiter, west of the checkpoint
+    {
+        x = 10.777, y = 24.611, z = -185.195,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="interior_detail_wood", chance = 1.0, interval = 8, sound_list_size = 25, last_time = 0, base_volume = 0.9, min_dist = 1.0, max_dist = 1.5},
+        }
+    },
+
+}

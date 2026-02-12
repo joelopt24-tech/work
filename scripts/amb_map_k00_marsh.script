@@ -1,0 +1,382 @@
+emitters = {
+        -- 1. North-east of the Clear Sky base
+        {
+            x = -154.684, y = 0.402, z = -290.152,
+            max_hearing_dist = 100.0,
+            sound_list = {
+                {name="metal_structure_small_strong", chance = 0.9, interval = 25, sound_list_size = 20, last_time = 0, base_volume = 1.5, min_dist = 5.0, max_dist = 13.0},
+                {name="metal_structure_small_weak", chance = 0.9, interval = 12, sound_list_size = 32, last_time = 0, base_volume = 1.3, min_dist = 5.0, max_dist = 12.0},
+            }
+        },
+        -- 2. North-east of the fishery
+        {
+            x = 113.408, y = 8.415, z = -148.595,
+            max_hearing_dist = 100.0,
+            sound_list = {
+                {name="metal_structure_small_strong", chance = 0.9, interval = 25, sound_list_size = 20, last_time = 0, base_volume = 1.5, min_dist = 5.0, max_dist = 13.0},
+                {name="hangar_metal_details", chance = 0.9, interval = 8, sound_list_size = 10, last_time = 0, base_volume = 3.0, min_dist = 5.0, max_dist = 10.0},
+                {name="big_metal_structure_wind_small", chance = 0.9, interval = 20, sound_list_size = 16, last_time = 0, base_volume = 2.5, min_dist = 5.0, max_dist = 10.0},
+                {name="big_metal_structure_wind_medium", chance = 0.9, interval = 30, sound_list_size = 16, last_time = 0, base_volume = 2.5, min_dist = 5.0, max_dist = 10.0},
+            }
+        },
+        -- 3. By the old church
+        {
+            x = 292.169, y = 0.142, z = -160.926,
+            max_hearing_dist = 130.0,
+            sound_list = {
+                {name="generic_wood_large_room", chance = 0.9, interval = 10, sound_list_size = 40, last_time = 0, base_volume = 1.3, min_dist = 8.0, max_dist = 12.0},
+            }
+        },
+        -- 4. South-west of the pump station
+        {
+            x = -11.289, y = 3.783, z = 13.455,
+            max_hearing_dist = 100.0,
+            sound_list = {
+                {name="metal_structure_small_strong", chance = 0.9, interval = 25, sound_list_size = 20, last_time = 0, base_volume = 1.5, min_dist = 5.0, max_dist = 13.0},
+                {name="metal_structure_small_weak", chance = 0.9, interval = 12, sound_list_size = 32, last_time = 0, base_volume = 1.3, min_dist = 5.0, max_dist = 12.0},
+            }
+        },
+        -- 5. South of the pump station
+        {
+            x = 1.430, y = 5.952, z = 3.092,
+            max_hearing_dist = 100.0,
+            sound_list = {
+                {name="metal_structure_small_strong", chance = 0.9, interval = 25, sound_list_size = 20, last_time = 0, base_volume = 1.5, min_dist = 5.0, max_dist = 13.0},
+                {name="metal_structure_small_weak", chance = 0.9, interval = 12, sound_list_size = 32, last_time = 0, base_volume = 1.3, min_dist = 5.0, max_dist = 12.0},
+            }
+        },
+        -- 6. North of the anomaly cluster
+        {
+            x = -279.527, y = 15.201, z = 23.689,
+            max_hearing_dist = 100.0,
+            sound_list = {
+                {name="metal_structure_small_strong", chance = 0.9, interval = 25, sound_list_size = 20, last_time = 0, base_volume = 1.5, min_dist = 5.0, max_dist = 13.0},
+                {name="hangar_metal_details", chance = 0.9, interval = 8, sound_list_size = 10, last_time = 0, base_volume = 3.0, min_dist = 5.0, max_dist = 10.0},
+                {name="big_metal_structure_wind_small", chance = 0.9, interval = 20, sound_list_size = 16, last_time = 0, base_volume = 2.5, min_dist = 5.0, max_dist = 10.0},
+                {name="big_metal_structure_wind_medium", chance = 0.9, interval = 30, sound_list_size = 16, last_time = 0, base_volume = 2.5, min_dist = 5.0, max_dist = 10.0},
+            }
+        },
+        {
+            x = 405.362, y = 3.725, z = 262.273,
+            max_hearing_dist = 100.0,
+            sound_list = {
+                {name="metal_structure_small_strong", chance = 0.9, interval = 5, sound_list_size = 20, last_time = 0, base_volume = 1.5, min_dist = 5.0, max_dist = 13.0},
+
+            }
+        },
+
+-- Great Swamp, south-west of the Clear Sky base
+    {
+        x = -181.329, y = 1.977, z = -315.448,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="interior_detail_wood", chance = 1.0, interval = 8, sound_list_size = 25, last_time = 0, base_volume = 0.9, min_dist = 1.0, max_dist = 1.5},
+        }
+    },
+    -- Great Swamp, north-west of the Clear Sky base
+    {
+        x = -180.033, y = 4.713, z = -284.463,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="interior_detail_wood", chance = 1.0, interval = 8, sound_list_size = 25, last_time = 0, base_volume = 0.9, min_dist = 1.0, max_dist = 1.5},
+        }
+    },
+    -- Great Swamp, north-west of the Clear Sky base
+    {
+        x = -177.356, y = 4.751, z = -278.831,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="interior_detail_wood", chance = 1.0, interval = 8, sound_list_size = 25, last_time = 0, base_volume = 0.9, min_dist = 1.0, max_dist = 1.5},
+        }
+    },
+    -- Great Swamp, north-west of the Clear Sky base
+    {
+        x = -178.868, y = 4.789, z = -271.998,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="interior_detail_wood", chance = 1.0, interval = 8, sound_list_size = 25, last_time = 0, base_volume = 0.9, min_dist = 1.0, max_dist = 1.5},
+        }
+    },
+    -- Great Swamp, north of the Clear Sky base
+    {
+        x = -160.605, y = 2.950, z = -275.324,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="interior_detail_wood", chance = 1.0, interval = 8, sound_list_size = 25, last_time = 0, base_volume = 0.9, min_dist = 1.0, max_dist = 1.5},
+        }
+    },
+    -- Great Swamp, west of the fishery
+    {
+        x = 4.730, y = 1.726, z = -239.344,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="interior_detail_wood", chance = 1.0, interval = 8, sound_list_size = 25, last_time = 0, base_volume = 0.9, min_dist = 1.0, max_dist = 1.5},
+        }
+    },
+    -- Great Swamp, north-west of the fishery
+    {
+        x = 23.471, y = 6.529, z = -214.193,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="interior_detail_wood", chance = 1.0, interval = 8, sound_list_size = 25, last_time = 0, base_volume = 0.9, min_dist = 1.0, max_dist = 1.5},
+        }
+    },
+    -- Great Swamp, north of the fishery
+    {
+        x = 33.371, y = 6.235, z = -214.438,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="interior_detail_wood", chance = 1.0, interval = 8, sound_list_size = 25, last_time = 0, base_volume = 0.9, min_dist = 1.0, max_dist = 1.5},
+        }
+    },
+    -- Great Swamp, south of the fishery
+    {
+        x = 39.610, y = 2.911, z = -243.941,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="interior_detail_wood", chance = 1.0, interval = 8, sound_list_size = 25, last_time = 0, base_volume = 0.9, min_dist = 1.0, max_dist = 1.5},
+        }
+    },
+    -- Great Swamp, south-east of the fishery
+    {
+        x = 48.024, y = 2.908, z = -237.194,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="interior_detail_wood", chance = 1.0, interval = 8, sound_list_size = 25, last_time = 0, base_volume = 0.9, min_dist = 1.0, max_dist = 1.5},
+        }
+    },
+
+-- Great Swamp, south-west of the old church
+    {
+        x = 257.859, y = 0.496, z = -180.038,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="interior_detail_wood", chance = 1.0, interval = 8, sound_list_size = 25, last_time = 0, base_volume = 0.9, min_dist = 1.0, max_dist = 1.5},
+        }
+    },
+    -- Great Swamp, south-west of the old church
+    {
+        x = 255.066, y = 0.602, z = -183.169,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="interior_detail_wood", chance = 1.0, interval = 8, sound_list_size = 25, last_time = 0, base_volume = 0.9, min_dist = 1.0, max_dist = 1.5},
+        }
+    },
+    -- Great Swamp, west of the old church
+    {
+        x = 272.709, y = 7.000, z = -160.824,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="interior_detail_wood", chance = 1.0, interval = 8, sound_list_size = 25, last_time = 0, base_volume = 0.9, min_dist = 1.0, max_dist = 1.5},
+        }
+    },
+    -- Great Swamp, west of the old church
+    {
+        x = 272.608, y = 13.654, z = -161.216,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="interior_detail_wood", chance = 1.0, interval = 8, sound_list_size = 25, last_time = 0, base_volume = 0.9, min_dist = 1.0, max_dist = 1.5},
+        }
+    },
+    -- Great Swamp, east of the old church
+    {
+        x = 288.612, y = 13.909, z = -161.041,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="interior_detail_wood", chance = 1.0, interval = 8, sound_list_size = 25, last_time = 0, base_volume = 0.9, min_dist = 1.0, max_dist = 1.5},
+        }
+    },
+    -- Great Swamp, east of the old church
+    {
+        x = 297.121, y = 13.504, z = -163.728,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="interior_detail_wood", chance = 1.0, interval = 8, sound_list_size = 25, last_time = 0, base_volume = 0.9, min_dist = 1.0, max_dist = 1.5},
+        }
+    },
+    -- Great Swamp, east of the old church
+    {
+        x = 297.976, y = 8.591, z = -160.415,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="interior_detail_wood", chance = 1.0, interval = 8, sound_list_size = 25, last_time = 0, base_volume = 0.9, min_dist = 1.0, max_dist = 1.5},
+        }
+    },
+    -- Great Swamp, near the old church
+    {
+        x = 282.547, y = 7.281, z = -160.710,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="interior_detail_wood", chance = 1.0, interval = 8, sound_list_size = 25, last_time = 0, base_volume = 0.9, min_dist = 1.0, max_dist = 1.5},
+        }
+    },
+    -- Great Swamp, near the old church
+    {
+        x = 290.502, y = 0.142, z = -161.937,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="interior_detail_wood", chance = 1.0, interval = 8, sound_list_size = 25, last_time = 0, base_volume = 0.9, min_dist = 1.0, max_dist = 1.5},
+        }
+    },
+    -- Great Swamp, north of the southern checkpoint
+    {
+        x = 483.884, y = 5.993, z = -162.810,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="interior_detail_wood", chance = 1.0, interval = 8, sound_list_size = 25, last_time = 0, base_volume = 0.9, min_dist = 1.0, max_dist = 1.5},
+        }
+    },
+    -- Great Swamp, east of the southern checkpoint
+    {
+        x = 497.587, y = 6.554, z = -176.692,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="interior_detail_wood", chance = 1.0, interval = 8, sound_list_size = 25, last_time = 0, base_volume = 0.9, min_dist = 1.0, max_dist = 1.5},
+        }
+    },
+    -- Great Swamp, east of the southern checkpoint
+    {
+        x = 496.885, y = 6.576, z = -170.857,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="interior_detail_wood", chance = 1.0, interval = 8, sound_list_size = 25, last_time = 0, base_volume = 0.9, min_dist = 1.0, max_dist = 1.5},
+        }
+    },
+    -- Great Swamp, east of the southern checkpoint
+    {
+        x = 518.631, y = 6.289, z = -182.829,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="interior_detail_wood", chance = 1.0, interval = 8, sound_list_size = 25, last_time = 0, base_volume = 0.9, min_dist = 1.0, max_dist = 1.5},
+        }
+    },
+    -- Great Swamp, east of the southern checkpoint
+    {
+        x = 517.997, y = 6.273, z = -188.300,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="interior_detail_wood", chance = 1.0, interval = 8, sound_list_size = 25, last_time = 0, base_volume = 0.9, min_dist = 1.0, max_dist = 1.5},
+        }
+    },
+    -- Great Swamp, north-east of the southern checkpoint
+    {
+        x = 500.389, y = 2.786, z = -152.574,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="interior_detail_wood", chance = 1.0, interval = 8, sound_list_size = 25, last_time = 0, base_volume = 0.9, min_dist = 1.0, max_dist = 1.5},
+        }
+    },
+    -- Great Swamp, north-east of the southern checkpoint
+    {
+        x = 508.939, y = 2.728, z = -151.740,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="interior_detail_wood", chance = 1.0, interval = 8, sound_list_size = 25, last_time = 0, base_volume = 0.9, min_dist = 1.0, max_dist = 1.5},
+        }
+    },
+    -- Great Swamp, near the machine yard
+    {
+        x = 423.036, y = 7.913, z = 237.538,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="interior_detail_wood", chance = 1.0, interval = 8, sound_list_size = 25, last_time = 0, base_volume = 0.9, min_dist = 1.0, max_dist = 1.5},
+        }
+    },
+    -- Great Swamp, north-east of the machine yard
+    {
+        x = 437.305, y = 5.317, z = 253.756,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="interior_detail_wood", chance = 1.0, interval = 8, sound_list_size = 25, last_time = 0, base_volume = 0.9, min_dist = 1.0, max_dist = 1.5},
+        }
+    },
+    -- Great Swamp, north-east of the machine yard
+    {
+        x = 598.455, y = 6.405, z = 418.465,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="interior_detail_wood", chance = 1.0, interval = 8, sound_list_size = 25, last_time = 0, base_volume = 0.9, min_dist = 1.0, max_dist = 1.5},
+        }
+    },
+    -- Great Swamp, north-east of the machine yard
+    {
+        x = 582.255, y = 7.078, z = 424.992,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="interior_detail_wood", chance = 1.0, interval = 8, sound_list_size = 25, last_time = 0, base_volume = 0.9, min_dist = 1.0, max_dist = 1.5},
+        }
+    },
+    -- Great Swamp, north-east of the machine yard
+    {
+        x = 582.211, y = 3.206, z = 438.477,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="interior_detail_wood", chance = 1.0, interval = 8, sound_list_size = 25, last_time = 0, base_volume = 0.9, min_dist = 1.0, max_dist = 1.5},
+        }
+    },
+    -- Great Swamp, north-east of the machine yard
+    {
+        x = 606.544, y = 3.442, z = 438.357,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="interior_detail_wood", chance = 1.0, interval = 8, sound_list_size = 25, last_time = 0, base_volume = 0.9, min_dist = 1.0, max_dist = 1.5},
+        }
+    },
+    -- Great Swamp, north-east of the machine yard
+    {
+        x = 619.026, y = 3.288, z = 434.753,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="interior_detail_wood", chance = 1.0, interval = 8, sound_list_size = 25, last_time = 0, base_volume = 0.9, min_dist = 1.0, max_dist = 1.5},
+        }
+    },
+    -- Great Swamp, north of the pump station
+    {
+        x = -25.477, y = 1.232, z = 299.167,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="interior_detail_wood", chance = 1.0, interval = 8, sound_list_size = 25, last_time = 0, base_volume = 0.9, min_dist = 1.0, max_dist = 1.5},
+        }
+    },
+    -- Great Swamp, north of the pump station
+    {
+        x = -23.383, y = 1.242, z = 307.731,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="interior_detail_wood", chance = 1.0, interval = 8, sound_list_size = 25, last_time = 0, base_volume = 0.9, min_dist = 1.0, max_dist = 1.5},
+        }
+    },
+    -- Great Swamp, north of the pump station
+    {
+        x = -43.627, y = 0.938, z = 296.289,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="interior_detail_wood", chance = 1.0, interval = 8, sound_list_size = 25, last_time = 0, base_volume = 0.9, min_dist = 1.0, max_dist = 1.5},
+        }
+    },
+    -- Great Swamp, west of the road to Agroprom
+    {
+        x = -170.736, y = 2.474, z = 417.762,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="interior_detail_wood", chance = 1.0, interval = 8, sound_list_size = 25, last_time = 0, base_volume = 0.9, min_dist = 1.0, max_dist = 1.5},
+        }
+    },
+    -- Great Swamp, west of the road to Agroprom
+    {
+        x = -178.293, y = 2.478, z = 418.366,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="interior_detail_wood", chance = 1.0, interval = 8, sound_list_size = 25, last_time = 0, base_volume = 0.9, min_dist = 1.0, max_dist = 1.5},
+        }
+    },
+    -- Great Swamp, west of the road to Agroprom
+    {
+        x = -207.917, y = 0.787, z = 398.707,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="interior_detail_wood", chance = 1.0, interval = 8, sound_list_size = 25, last_time = 0, base_volume = 0.9, min_dist = 1.0, max_dist = 1.5},
+        }
+    },
+
+}

@@ -1,0 +1,376 @@
+-- =================================================================================
+-- ARCHIVO: rain_amb_map_l04_darkvalley.script
+
+-- =================================================================================
+
+emitters = {
+    -- 1. South-west of the abandoned farm (Wood)
+    {
+        x = -136.062, y = 8.714, z = -507.919,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_wood", chance = 1.0, interval = 0.2, sound_list_size = 25, last_time = 0, base_volume = 2.5, min_dist = 2.0, max_dist = 5.0},
+        }
+    },
+
+    -- 2. South-east of the abandoned farm (Wood)
+    {
+        x = -99.800, y = 8.631, z = -503.627,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_wood", chance = 1.0, interval = 0.2, sound_list_size = 25, last_time = 0, base_volume = 2.5, min_dist = 2.0, max_dist = 5.0},
+        }
+    },
+
+    -- 3. Near the abandoned farm (Metal)
+    {
+        x = -115.924, y = 2.471, z = -489.302,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_metal", chance = 1.0, interval = 0.2, sound_list_size = 20, last_time = 0, base_volume = 2.5, min_dist = 2.0, max_dist = 2.5},
+        }
+    },
+
+    -- 4. East of the abandoned farm (Metal)
+    {
+        x = -33.145, y = 3.218, z = -516.797,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_metal", chance = 1.0, interval = 0.2, sound_list_size = 20, last_time = 0, base_volume = 2.5, min_dist = 2.0, max_dist = 2.5},
+        }
+    },
+
+    -- 5. North of the abandoned farm (Metal)
+    {
+        x = -62.878, y = 0.083, z = -355.516,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_metal", chance = 1.0, interval = 0.2, sound_list_size = 20, last_time = 0, base_volume = 2.5, min_dist = 2.0, max_dist = 2.5},
+        }
+    },
+
+    -- 6. West of the moving fireball (Metal)
+    {
+        x = 61.225, y = -3.211, z = -319.871,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_metal", chance = 1.0, interval = 0.2, sound_list_size = 20, last_time = 0, base_volume = 2.5, min_dist = 2.0, max_dist = 2.5},
+        }
+    },
+
+    -- 7. North-west of the moving fireball (Metal)
+    {
+        x = 94.092, y = 2.398, z = -279.033,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_metal", chance = 1.0, interval = 0.2, sound_list_size = 20, last_time = 0, base_volume = 2.5, min_dist = 2.0, max_dist = 2.5},
+        }
+    },
+
+    -- 8. North of the moving fireball (Metal)
+    {
+        x = 119.255, y = 2.198, z = -274.850,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_metal", chance = 1.0, interval = 0.2, sound_list_size = 20, last_time = 0, base_volume = 2.5, min_dist = 2.0, max_dist = 2.5},
+        }
+    },
+
+    -- 9. North of the moving fireball (Metal)
+    {
+        x = 147.447, y = 2.289, z = -277.212,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_metal", chance = 1.0, interval = 0.2, sound_list_size = 20, last_time = 0, base_volume = 2.5, min_dist = 2.0, max_dist = 2.5},
+        }
+    },
+
+    -- 10. North-east of the moving fireball (Metal)
+    {
+        x = 172.739, y = 3.937, z = -271.055,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_metal", chance = 1.0, interval = 0.2, sound_list_size = 20, last_time = 0, base_volume = 2.5, min_dist = 2.0, max_dist = 2.5},
+        }
+    },
+
+    -- 11. North of the moving fireball (Metal)
+    {
+        x = 131.758, y = 3.070, z = -196.310,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_metal", chance = 1.0, interval = 0.2, sound_list_size = 20, last_time = 0, base_volume = 2.5, min_dist = 2.0, max_dist = 2.5},
+        }
+    },
+
+    -- 12. South of the factory (Metal)
+    {
+        x = 39.653, y = 2.270, z = -224.838,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_metal", chance = 1.0, interval = 0.2, sound_list_size = 20, last_time = 0, base_volume = 2.5, min_dist = 2.0, max_dist = 2.5},
+        }
+    },
+
+    -- 13. South of the factory (Metal)
+    {
+        x = 38.077, y = 3.546, z = -215.197,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_metal", chance = 1.0, interval = 0.2, sound_list_size = 20, last_time = 0, base_volume = 2.5, min_dist = 2.0, max_dist = 2.5},
+        }
+    },
+
+    -- 14. South of the factory (Metal)
+    {
+        x = 45.264, y = 1.681, z = -202.107,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_metal", chance = 1.0, interval = 0.2, sound_list_size = 20, last_time = 0, base_volume = 2.5, min_dist = 2.0, max_dist = 2.5},
+        }
+    },
+
+    -- 15. South-east of the factory (Metal)
+    {
+        x = 60.715, y = 3.429, z = -180.997,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_metal", chance = 1.0, interval = 0.2, sound_list_size = 20, last_time = 0, base_volume = 2.5, min_dist = 2.0, max_dist = 2.5},
+        }
+    },
+
+    -- 16. East of the factory (Metal)
+    {
+        x = 57.236, y = 2.256, z = -103.294,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_metal", chance = 1.0, interval = 0.2, sound_list_size = 20, last_time = 0, base_volume = 2.5, min_dist = 2.0, max_dist = 2.5},
+        }
+    },
+
+    -- 17. West of the gas station (Metal)
+    {
+        x = 66.336, y = 2.312, z = -84.647,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_metal", chance = 1.0, interval = 0.2, sound_list_size = 20, last_time = 0, base_volume = 2.5, min_dist = 2.0, max_dist = 2.5},
+        }
+    },
+
+    -- 18. North of the gas station (Metal)
+    {
+        x = 99.298, y = 2.923, z = -37.370,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_metal", chance = 1.0, interval = 0.2, sound_list_size = 20, last_time = 0, base_volume = 2.5, min_dist = 2.0, max_dist = 2.5},
+        }
+    },
+
+    -- 19. South-east of the bandit base (Metal)
+    {
+        x = 66.073, y = 3.378, z = -18.097,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_metal", chance = 1.0, interval = 0.2, sound_list_size = 20, last_time = 0, base_volume = 2.5, min_dist = 2.0, max_dist = 2.5},
+        }
+    },
+
+    -- 20. East of the bandit base (Metal)
+    {
+        x = 49.828, y = 14.022, z = 4.577,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_metal", chance = 1.0, interval = 0.2, sound_list_size = 20, last_time = 0, base_volume = 2.5, min_dist = 2.0, max_dist = 2.5},
+        }
+    },
+
+    -- 21. North-east of the bandit base (Metal)
+    {
+        x = 49.332, y = 14.143, z = 46.912,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_metal", chance = 1.0, interval = 0.2, sound_list_size = 20, last_time = 0, base_volume = 2.5, min_dist = 2.0, max_dist = 2.5},
+        }
+    },
+
+    -- 22. West of the bandit base (Metal)
+    {
+        x = 1.708, y = 2.024, z = 22.138,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_metal", chance = 1.0, interval = 0.2, sound_list_size = 20, last_time = 0, base_volume = 2.5, min_dist = 2.0, max_dist = 2.5},
+        }
+    },
+
+    -- 23. West of the bandit base (Metal)
+    {
+        x = -19.554, y = 1.751, z = 17.631,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_metal", chance = 1.0, interval = 0.2, sound_list_size = 20, last_time = 0, base_volume = 2.5, min_dist = 2.0, max_dist = 2.5},
+        }
+    },
+
+    -- 24. South-west of the bandit base (Metal)
+    {
+        x = -3.262, y = 0.139, z = -5.526,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_metal", chance = 1.0, interval = 0.2, sound_list_size = 20, last_time = 0, base_volume = 2.5, min_dist = 2.0, max_dist = 2.5},
+        }
+    },
+
+    -- 25. West of the bandit base (Metal)
+    {
+        x = -49.396, y = 14.011, z = 6.756,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_metal", chance = 1.0, interval = 0.2, sound_list_size = 20, last_time = 0, base_volume = 2.5, min_dist = 2.0, max_dist = 2.5},
+        }
+    },
+
+    -- 26. East of the factory (Metal)
+    {
+        x = 37.777, y = 13.986, z = -99.783,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_metal", chance = 1.0, interval = 0.2, sound_list_size = 20, last_time = 0, base_volume = 2.5, min_dist = 2.0, max_dist = 2.5},
+        }
+    },
+
+    -- 27. West of the exit to the Garbage (Metal)
+    {
+        x = -162.275, y = 3.029, z = -188.444,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_metal", chance = 1.0, interval = 0.2, sound_list_size = 20, last_time = 0, base_volume = 2.5, min_dist = 2.0, max_dist = 2.5},
+        }
+    },
+
+-- 28. West of the bandit base (Metal)
+    {
+        x = -13.642, y = 8.753, z = 35.096,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_metal", chance = 1.0, interval = 0.2, sound_list_size = 20, last_time = 0, base_volume = 2.5, min_dist = 2.0, max_dist = 2.5},
+            {name="raindrops_metal_loop", chance = 1.0, interval = 46, sound_list_size = 1, last_time = 0, base_volume = 9.5, min_dist = 2.0, max_dist = 2.5},
+        }
+    },
+
+    -- 29. North-west of the bandit base (Metal)
+    {
+        x = 1.313, y = 8.687, z = 34.257,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_metal", chance = 1.0, interval = 0.2, sound_list_size = 20, last_time = 0, base_volume = 2.5, min_dist = 2.0, max_dist = 2.5},
+            {name="raindrops_metal_loop", chance = 1.0, interval = 46, sound_list_size = 1, last_time = 0, base_volume = 9.5, min_dist = 2.0, max_dist = 2.5},
+        }
+    },
+
+    -- 30. North-west of the bandit base (Metal)
+    {
+        x = 10.970, y = 12.149, z = 33.787,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_metal", chance = 1.0, interval = 0.2, sound_list_size = 20, last_time = 0, base_volume = 2.5, min_dist = 2.0, max_dist = 2.5},
+            {name="raindrops_metal_loop", chance = 1.0, interval = 46, sound_list_size = 1, last_time = 0, base_volume = 9.5, min_dist = 2.0, max_dist = 2.5},
+        }
+    },
+
+    -- 31. North of the bandit base (Metal)
+    {
+        x = 24.913, y = 11.433, z = 28.643,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_metal", chance = 1.0, interval = 0.2, sound_list_size = 20, last_time = 0, base_volume = 2.5, min_dist = 2.0, max_dist = 2.5},
+            {name="raindrops_metal_loop", chance = 1.0, interval = 46, sound_list_size = 1, last_time = 0, base_volume = 9.5, min_dist = 2.0, max_dist = 2.5},
+        }
+    },
+
+    -- 32. North of the bandit base (Metal)
+    {
+        x = 38.722, y = 8.729, z = 34.573,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_metal", chance = 1.0, interval = 0.2, sound_list_size = 20, last_time = 0, base_volume = 2.5, min_dist = 2.0, max_dist = 2.5},
+            {name="raindrops_metal_loop", chance = 1.0, interval = 46, sound_list_size = 1, last_time = 0, base_volume = 9.5, min_dist = 2.0, max_dist = 2.5},
+        }
+    },
+
+    -- 33. South of the bandit base (Metal)
+    {
+        x = 9.469, y = 11.964, z = -37.281,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_metal", chance = 1.0, interval = 0.2, sound_list_size = 20, last_time = 0, base_volume = 2.5, min_dist = 2.0, max_dist = 2.5},
+            {name="raindrops_metal_loop", chance = 1.0, interval = 46, sound_list_size = 1, last_time = 0, base_volume = 9.5, min_dist = 2.0, max_dist = 2.5},
+        }
+    },
+
+    -- 34. South-west of the bandit base (Metal)
+    {
+        x = 3.365, y = 13.943, z = -27.947,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_metal", chance = 1.0, interval = 0.2, sound_list_size = 20, last_time = 0, base_volume = 2.5, min_dist = 2.0, max_dist = 2.5},
+            {name="raindrops_metal_loop", chance = 1.0, interval = 46, sound_list_size = 1, last_time = 0, base_volume = 9.5, min_dist = 2.0, max_dist = 2.5},
+        }
+    },
+
+    -- 35. South-west of the bandit base (Metal)
+    {
+        x = -3.102, y = 11.426, z = -30.198,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_metal", chance = 1.0, interval = 0.2, sound_list_size = 20, last_time = 0, base_volume = 2.5, min_dist = 2.0, max_dist = 2.5},
+            {name="raindrops_metal_loop", chance = 1.0, interval = 46, sound_list_size = 1, last_time = 0, base_volume = 9.5, min_dist = 2.0, max_dist = 2.5},
+        }
+    },
+
+    -- 36. North of the factory (Metal)
+    {
+        x = -6.634, y = 8.843, z = -65.125,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_metal", chance = 1.0, interval = 0.2, sound_list_size = 20, last_time = 0, base_volume = 2.5, min_dist = 2.0, max_dist = 2.5},
+            {name="raindrops_metal_loop", chance = 1.0, interval = 46, sound_list_size = 1, last_time = 0, base_volume = 9.5, min_dist = 2.0, max_dist = 2.5},
+        }
+    },
+
+    -- 37. North-west of the factory (Metal)
+    {
+        x = -6.467, y = 8.170, z = -90.533,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_metal", chance = 1.0, interval = 0.2, sound_list_size = 20, last_time = 0, base_volume = 2.5, min_dist = 2.0, max_dist = 2.5},
+            {name="raindrops_metal_loop", chance = 1.0, interval = 46, sound_list_size = 1, last_time = 0, base_volume = 9.5, min_dist = 2.0, max_dist = 2.5},
+        }
+    },
+
+    -- 38. North of the factory (Metal)
+    {
+        x = 5.475, y = 2.032, z = -74.841,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_metal", chance = 1.0, interval = 0.2, sound_list_size = 20, last_time = 0, base_volume = 2.5, min_dist = 2.0, max_dist = 2.5},
+        }
+    },
+
+    -- 39. South of the bandit base (Metal)
+    {
+        x = 21.598, y = 1.349, z = -5.047,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_metal", chance = 1.0, interval = 0.2, sound_list_size = 20, last_time = 0, base_volume = 2.5, min_dist = 2.0, max_dist = 2.5},
+        }
+    },
+
+    -- 40. South-west of the bandit base (Metal)
+    {
+        x = 16.354, y = 2.371, z = -5.932,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_metal", chance = 1.0, interval = 0.2, sound_list_size = 20, last_time = 0, base_volume = 2.5, min_dist = 2.0, max_dist = 2.5},
+        }
+    }
+}

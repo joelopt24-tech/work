@@ -1,0 +1,532 @@
+-- =================================================================================
+-- ARCHIVO: gamedata/scripts/rain/amb_map_l01_escape.script
+-- MAPA: CORDON (Lluvia)
+-- =================================================================================
+
+emitters = {
+    -- 1. West of the rookie village
+    {
+        x = -217.937, y = -18.882, z = -151.015,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_metal", chance = 1.0, interval = 0.2, sound_list_size = 20, last_time = 0, base_volume = 2.0, min_dist = 2.0, max_dist = 2.0},
+        }
+    },
+
+    -- 2. Near the rookie village
+    {
+        x = -189.938, y = -18.581, z = -152.134,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_metal", chance = 1.0, interval = 0.2, sound_list_size = 20, last_time = 0, base_volume = 2.0, min_dist = 2.0, max_dist = 2.0},
+        }
+    },
+
+    -- 3. East of the rookie village
+    {
+        x = -161.125, y = -17.750, z = -155.873,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_metal", chance = 1.0, interval = 0.2, sound_list_size = 20, last_time = 0, base_volume = 2.0, min_dist = 2.0, max_dist = 2.0},
+        }
+    },
+
+    -- 4. East of the rookie village
+    {
+        x = -158.578, y = -15.824, z = -153.373,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_metal", chance = 1.0, interval = 0.2, sound_list_size = 20, last_time = 0, base_volume = 2.0, min_dist = 2.0, max_dist = 2.0},
+        }
+    },
+
+    -- 5. East of the rookie village
+    {
+        x = -163.626, y = -17.726, z = -160.272,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_metal", chance = 1.0, interval = 0.2, sound_list_size = 20, last_time = 0, base_volume = 2.0, min_dist = 2.0, max_dist = 2.0},
+        }
+    },
+
+    -- 6. East of the rookie village
+    {
+        x = -139.791, y = -11.053, z = -133.402,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_metal", chance = 1.0, interval = 0.2, sound_list_size = 20, last_time = 0, base_volume = 2.0, min_dist = 2.0, max_dist = 2.0},
+        }
+    },
+
+    -- 7. East of the rookie village
+    {
+        x = -104.858, y = -3.516, z = -108.090,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_metal", chance = 1.0, interval = 0.2, sound_list_size = 20, last_time = 0, base_volume = 2.0, min_dist = 2.0, max_dist = 2.0},
+        }
+    },
+
+    -- 8. East of the rookie village
+    {
+        x = -75.501, y = -2.352, z = -90.614,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_metal", chance = 1.0, interval = 0.2, sound_list_size = 20, last_time = 0, base_volume = 2.0, min_dist = 2.0, max_dist = 2.0},
+        }
+    },
+
+    -- 9. North-east of the rookie village
+    {
+        x = -100.151, y = -1.917, z = -72.373,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_metal", chance = 1.0, interval = 0.2, sound_list_size = 20, last_time = 0, base_volume = 2.0, min_dist = 2.0, max_dist = 2.0},
+        }
+    },
+
+-- 1. West of the rookie village
+    {
+        x = -237.662, y = -16.733, z = -155.596,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_wood", chance = 1.0, interval = 0.2, sound_list_size = 25, last_time = 0, base_volume = 1.9, min_dist = 2.0, max_dist = 5.0},
+            {name="raindrops_wood_loop", chance = 1.0, interval = 45, sound_list_size = 1, last_time = 0, base_volume = 11.0, min_dist = 2.0, max_dist = 5.0},
+
+        }
+    },
+
+    -- 2. South-west of the rookie village
+    {
+        x = -218.313, y = -14.484, z = -164.449,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_wood", chance = 1.0, interval = 0.2, sound_list_size = 25, last_time = 0, base_volume = 1.9, min_dist = 2.0, max_dist = 5.0},
+            {name="raindrops_wood_loop", chance = 1.0, interval = 45, sound_list_size = 1, last_time = 0, base_volume = 11.0, min_dist = 2.0, max_dist = 5.0},
+        }
+    },
+
+    -- 3. South-west of the rookie village
+    {
+        x = -200.668, y = -16.733, z = -159.215,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_wood", chance = 1.0, interval = 0.2, sound_list_size = 25, last_time = 0, base_volume = 1.9, min_dist = 2.0, max_dist = 5.0},
+            {name="raindrops_wood_loop", chance = 1.0, interval = 45, sound_list_size = 1, last_time = 0, base_volume = 11.0, min_dist = 2.0, max_dist = 5.0},
+
+        }
+    },
+
+    -- 4. South-east of the rookie village
+    {
+        x = -175.813, y = -17.018, z = -162.252,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_wood", chance = 1.0, interval = 0.2, sound_list_size = 25, last_time = 0, base_volume = 1.9, min_dist = 2.0, max_dist = 5.0},
+            {name="raindrops_wood_loop", chance = 1.0, interval = 45, sound_list_size = 1, last_time = 0, base_volume = 11.0, min_dist = 2.0, max_dist = 5.0},
+
+        }
+    },
+
+    -- 5. North-east of the rookie village
+    {
+        x = -171.252, y = -16.738, z = -132.387,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_wood", chance = 1.0, interval = 0.2, sound_list_size = 25, last_time = 0, base_volume = 1.9, min_dist = 2.0, max_dist = 5.0},
+            {name="raindrops_wood_loop", chance = 1.0, interval = 45, sound_list_size = 1, last_time = 0, base_volume = 11.0, min_dist = 2.0, max_dist = 5.0},
+
+        }
+    },
+
+    -- 6. North of the rookie village
+    {
+        x = -192.077, y = -16.818, z = -133.965,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_wood", chance = 1.0, interval = 0.2, sound_list_size = 25, last_time = 0, base_volume = 1.9, min_dist = 2.0, max_dist = 5.0},
+            {name="raindrops_wood_loop", chance = 1.0, interval = 45, sound_list_size = 1, last_time = 0, base_volume = 11.0, min_dist = 2.0, max_dist = 5.0},
+
+        }
+    },
+
+    -- 7. West of the rookie village
+    {
+        x = -219.897, y = -15.857, z = -133.571,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_wood", chance = 1.0, interval = 0.2, sound_list_size = 25, last_time = 0, base_volume = 1.9, min_dist = 2.0, max_dist = 5.0},
+            {name="raindrops_wood_loop", chance = 1.0, interval = 45, sound_list_size = 1, last_time = 0, base_volume = 11.0, min_dist = 2.0, max_dist = 5.0},
+
+        }
+    },
+
+    -- =============================================================================
+    -- ZONA 2: CAR PARK (METAL)
+    -- =============================================================================
+
+    -- 8. South-east of the car park
+    {
+        x = 96.302, y = -2.098, z = -22.839,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_metal", chance = 1.0, interval = 0.2, sound_list_size = 20, last_time = 0, base_volume = 2.0, min_dist = 2.0, max_dist = 2.0},
+        }
+    },
+
+    -- 9. East of the car park
+    {
+        x = 96.281, y = -2.481, z = -13.017,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_metal", chance = 1.0, interval = 0.2, sound_list_size = 20, last_time = 0, base_volume = 2.0, min_dist = 2.0, max_dist = 2.0},
+        }
+    },
+
+    -- 10. East of the car park (Metal)
+    {
+        x = 104.494, y = -5.648, z = -19.373,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_metal", chance = 1.0, interval = 0.2, sound_list_size = 20, last_time = 0, base_volume = 2.0, min_dist = 2.0, max_dist = 2.0},
+        }
+    },
+
+    -- 11. South-east of the car park (Metal)
+    {
+        x = 99.592, y = -4.869, z = -34.763,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_metal", chance = 1.0, interval = 0.2, sound_list_size = 20, last_time = 0, base_volume = 2.0, min_dist = 2.0, max_dist = 2.0},
+        }
+    },
+
+    -- 12. East of the car park (Wood)
+    {
+        x = 112.498, y = 0.205, z = -30.230,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_wood", chance = 1.0, interval = 0.2, sound_list_size = 25, last_time = 0, base_volume = 2.0, min_dist = 2.0, max_dist = 5.0},
+
+        }
+    },
+
+    -- 13. East of the car park (Wood)
+    {
+        x = 127.012, y = -5.013, z = -12.133,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_wood", chance = 1.0, interval = 0.2, sound_list_size = 25, last_time = 0, base_volume = 2.0, min_dist = 2.0, max_dist = 5.0},
+
+        }
+    },
+
+    -- 14. East of the car park (Wood)
+    {
+        x = 128.545, y = -7.603, z = 0.513,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_wood", chance = 1.0, interval = 0.2, sound_list_size = 25, last_time = 0, base_volume = 2.0, min_dist = 2.0, max_dist = 5.0},
+
+        }
+    },
+
+    -- 15. North-east of the car park (Wood)
+    {
+        x = 117.262, y = -3.745, z = 9.127,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_wood", chance = 1.0, interval = 0.2, sound_list_size = 25, last_time = 0, base_volume = 2.0, min_dist = 2.0, max_dist = 5.0},
+
+        }
+    },
+
+    -- 16. North-east of the car park (Wood)
+    {
+        x = 109.923, y = 0.416, z = 3.064,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_wood", chance = 1.0, interval = 0.2, sound_list_size = 25, last_time = 0, base_volume = 2.0, min_dist = 2.0, max_dist = 5.0},
+
+        }
+    },
+
+-- 17. East of the car park (Metal)
+    {
+        x = 124.834, y = -6.621, z = -24.300,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_metal", chance = 1.0, interval = 0.2, sound_list_size = 20, last_time = 0, base_volume = 2.0, min_dist = 2.0, max_dist = 2.0},
+        }
+    },
+
+    -- 18. South-west of the railway bridge (Metal)
+    {
+        x = -8.801, y = 4.353, z = 80.937,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_metal", chance = 1.0, interval = 0.2, sound_list_size = 20, last_time = 0, base_volume = 2.0, min_dist = 2.0, max_dist = 2.0},
+        }
+    },
+
+    -- 19. West of the railway bridge (Metal)
+    {
+        x = 1.479, y = 3.833, z = 105.328,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_metal", chance = 1.0, interval = 0.2, sound_list_size = 20, last_time = 0, base_volume = 2.0, min_dist = 2.0, max_dist = 2.0},
+        }
+    },
+
+    -- 20. South-west of the railway bridge (Metal)
+    {
+        x = 17.125, y = 13.786, z = 93.129,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_metal", chance = 1.0, interval = 0.2, sound_list_size = 20, last_time = 0, base_volume = 2.0, min_dist = 2.0, max_dist = 2.0},
+        }
+    },
+
+    -- 21. South-west of the railway bridge (Metal)
+    {
+        x = 6.636, y = 14.458, z = 94.820,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_metal", chance = 1.0, interval = 0.2, sound_list_size = 20, last_time = 0, base_volume = 2.0, min_dist = 2.0, max_dist = 2.0},
+        }
+    },
+
+    -- 22. South-west of the railway bridge (Wood)
+    {
+        x = -9.431, y = 9.813, z = 63.831,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_wood", chance = 1.0, interval = 0.2, sound_list_size = 25, last_time = 0, base_volume = 2.0, min_dist = 2.0, max_dist = 5.0},
+
+        }
+    },
+
+    -- 23. South-west of the railway bridge (Wood)
+    {
+        x = -23.410, y = 12.353, z = 72.004,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_wood", chance = 1.0, interval = 0.2, sound_list_size = 25, last_time = 0, base_volume = 2.0, min_dist = 2.0, max_dist = 5.0},
+
+        }
+    },
+
+    -- 24. South-west of the railway bridge (Wood)
+    {
+        x = -23.530, y = 12.434, z = 86.879,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_wood", chance = 1.0, interval = 0.2, sound_list_size = 25, last_time = 0, base_volume = 2.0, min_dist = 2.0, max_dist = 5.0},
+
+        }
+    },
+
+-- 25. West of the railway bridge (Metal)
+    {
+        x = -78.604, y = 1.558, z = 117.652,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_metal", chance = 1.0, interval = 0.2, sound_list_size = 20, last_time = 0, base_volume = 2.0, min_dist = 2.0, max_dist = 2.0},
+        }
+    },
+
+    -- 26. West of the railway bridge (Metal)
+    {
+        x = -78.561, y = -1.231, z = 125.691,
+        max_hearing_dist = 20.0,
+        sound_list = {
+            {name="raindrops", chance = 1.0, interval = 0.4, sound_list_size = 8, last_time = 0, base_volume = 2.0, min_dist = 2.0, max_dist = 2.0},
+        }
+    },
+
+    -- 27. South-west of the farm (Metal)
+    {
+        x = -66.877, y = -1.176, z = 189.217,
+        max_hearing_dist = 20.0,
+        sound_list = {
+            {name="raindrops", chance = 1.0, interval = 0.4, sound_list_size = 8, last_time = 0, base_volume = 2.0, min_dist = 2.0, max_dist = 2.0},
+        }
+    },
+
+    -- 28. South-west of the farm (Metal)
+    {
+        x = -62.709, y = 1.973, z = 203.446,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_metal", chance = 1.0, interval = 0.2, sound_list_size = 20, last_time = 0, base_volume = 2.0, min_dist = 2.0, max_dist = 2.0},
+        }
+    },
+
+-- 29. At the farm (Metal)
+    {
+        x = 17.568, y = 1.998, z = 276.594,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_metal", chance = 1.0, interval = 0.2, sound_list_size = 20, last_time = 0, base_volume = 2.0, min_dist = 2.0, max_dist = 2.0},
+        }
+    },
+
+    -- 30. North-west of the farm (Wood)
+    {
+        x = -6.551, y = 8.393, z = 292.160,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_wood", chance = 1.0, interval = 0.2, sound_list_size = 25, last_time = 0, base_volume = 2.0, min_dist = 2.0, max_dist = 5.0},
+        }
+    },
+
+    -- 31. North of the farm (Wood)
+    {
+        x = 10.589, y = 8.117, z = 292.939,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_wood", chance = 1.0, interval = 0.2, sound_list_size = 25, last_time = 0, base_volume = 2.0, min_dist = 2.0, max_dist = 5.0},
+        }
+    },
+
+    -- 32. South-west of the farm (Wood)
+    {
+        x = -12.394, y = 7.866, z = 257.021,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_wood", chance = 1.0, interval = 0.2, sound_list_size = 25, last_time = 0, base_volume = 2.0, min_dist = 2.0, max_dist = 5.0},
+        }
+    },
+
+    -- 33. South of the farm (Wood)
+    {
+        x = 8.080, y = 8.192, z = 256.642,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_wood", chance = 1.0, interval = 0.2, sound_list_size = 25, last_time = 0, base_volume = 2.0, min_dist = 2.0, max_dist = 5.0},
+        }
+    },
+
+    -- 34. East of the farm (Wood)
+    {
+        x = 134.926, y = 6.957, z = 339.790,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_wood", chance = 1.0, interval = 0.2, sound_list_size = 25, last_time = 0, base_volume = 2.0, min_dist = 2.0, max_dist = 5.0},
+        }
+    },
+
+    -- 35. East of the farm (Wood)
+    {
+        x = 142.094, y = 6.508, z = 339.418,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_wood", chance = 1.0, interval = 0.2, sound_list_size = 25, last_time = 0, base_volume = 2.0, min_dist = 2.0, max_dist = 5.0},
+        }
+    },
+-- 36. South of the anomaly in the woods (Metal)
+    {
+        x = 81.815, y = 3.544, z = 394.768,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_metal", chance = 1.0, interval = 0.2, sound_list_size = 20, last_time = 0, base_volume = 2.0, min_dist = 2.0, max_dist = 2.0},
+        }
+    },
+
+    -- 37. South of the anomaly in the woods (Metal)
+    {
+        x = 89.837, y = 2.095, z = 460.774,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_metal", chance = 1.0, interval = 0.2, sound_list_size = 20, last_time = 0, base_volume = 2.0, min_dist = 2.0, max_dist = 2.0},
+        }
+    },
+
+    -- 38. West of the anomaly in the woods (Metal)
+    {
+        x = 82.483, y = 1.380, z = 507.653,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_metal", chance = 1.0, interval = 0.2, sound_list_size = 20, last_time = 0, base_volume = 2.0, min_dist = 2.0, max_dist = 2.0},
+        }
+    },
+
+    -- 39. South of the northern checkpoint (Metal)
+    {
+        x = 15.224, y = 16.956, z = 646.295,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_metal", chance = 1.0, interval = 0.2, sound_list_size = 20, last_time = 0, base_volume = 2.0, min_dist = 2.0, max_dist = 2.0},
+        }
+    },
+
+    -- 40. North-east of the northern checkpoint (Wood)
+    {
+        x = 26.180, y = 21.099, z = 674.654,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_wood", chance = 1.0, interval = 0.2, sound_list_size = 25, last_time = 0, base_volume = 2.0, min_dist = 2.0, max_dist = 5.0},
+        }
+    },
+-- 41. North of the southern checkpoint (Metal)
+    {
+        x = -146.962, y = -28.657, z = -278.969,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_metal", chance = 1.0, interval = 0.2, sound_list_size = 20, last_time = 0, base_volume = 2.0, min_dist = 2.0, max_dist = 2.0},
+        }
+    },
+
+    -- 42. South-west of the southern checkpoint (Wood)
+    {
+        x = -165.497, y = -25.165, z = -352.047,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_wood", chance = 1.0, interval = 0.2, sound_list_size = 25, last_time = 0, base_volume = 2.0, min_dist = 2.0, max_dist = 5.0},
+        }
+    },
+
+    -- 43. South-east of the southern checkpoint (Wood)
+    {
+        x = -143.222, y = -24.814, z = -360.558,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_wood", chance = 1.0, interval = 0.2, sound_list_size = 25, last_time = 0, base_volume = 2.0, min_dist = 2.0, max_dist = 5.0},
+        }
+    },
+
+    -- 44. South-east of the southern checkpoint (Wood)
+    {
+        x = -120.271, y = -21.924, z = -389.012,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_wood", chance = 1.0, interval = 0.2, sound_list_size = 25, last_time = 0, base_volume = 2.0, min_dist = 2.0, max_dist = 5.0},
+        }
+    },
+
+    -- 45. South-east of the southern checkpoint (Wood)
+    {
+        x = -120.714, y = -21.617, z = -375.920,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_wood", chance = 1.0, interval = 0.2, sound_list_size = 25, last_time = 0, base_volume = 2.0, min_dist = 2.0, max_dist = 5.0},
+        }
+    },
+
+-- Cordon, south of the train tunnel
+    {
+        x = 311.398, y = 16.087, z = -0.922,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops_metal", chance = 1.0, interval = 0.2, sound_list_size = 20, last_time = 0, base_volume = 2.0, min_dist = 2.0, max_dist = 2.0},
+        }
+    },
+    -- Cordon, south of the train tunnel
+    {
+        x = 347.980, y = 14.993, z = -28.240,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="raindrops", chance = 1.0, interval = 0.4, sound_list_size = 8, last_time = 0, base_volume = 2.0, min_dist = 2.0, max_dist = 2.0},
+        }
+    },
+}

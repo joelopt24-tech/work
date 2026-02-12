@@ -1,0 +1,284 @@
+-- ARCHIVO: amb_map_l07_military.script
+
+emitters = {
+    -- 1. South of the Freedom base
+    {
+        x = 6.379, y = 1.742, z = -16.671,
+        max_hearing_dist = 80.0,
+        sound_list = {
+            {name="hangar_metal_details", chance = 0.9, interval = 10, sound_list_size = 10, last_time = 0, base_volume = 3.5, min_dist = 5.0, max_dist = 10.0},
+            {name="hangar_wind_gust", chance = 0.9, interval = 12, sound_list_size = 22, last_time = 0, base_volume = 3.5, min_dist = 5.0, max_dist = 10.0},
+        }
+    },
+    -- 2. East of the Freedom base
+    {
+        x = 81.653, y = -2.441, z = 13.203,
+        max_hearing_dist = 100.0,
+        sound_list = {
+            {name="hangar_metal_details", chance = 0.9, interval = 10, sound_list_size = 10, last_time = 0, base_volume = 3.5, min_dist = 5.0, max_dist = 10.0},
+            {name="hangar_wind_gust", chance = 0.9, interval = 12, sound_list_size = 22, last_time = 0, base_volume = 3.5, min_dist = 5.0, max_dist = 10.0},
+            {name="big_metal_structure_wind_small", chance = 0.9, interval = 20, sound_list_size = 16, last_time = 0, base_volume = 2.5, min_dist = 5.0, max_dist = 10.0},
+            {name="big_metal_structure_wind_medium", chance = 0.9, interval = 30, sound_list_size = 16, last_time = 0, base_volume = 2.5, min_dist = 5.0, max_dist = 10.0},
+        }
+    },
+    -- 3. West of the Freedom base (Elevated)
+    {
+        x = -14.669, y = 7.784, z = 32.503,
+        max_hearing_dist = 90.0,
+        sound_list = {
+            {name="hangar_metal_details", chance = 0.9, interval = 10, sound_list_size = 10, last_time = 0, base_volume = 3.5, min_dist = 5.0, max_dist = 10.0},
+            {name="hangar_wind_gust", chance = 0.9, interval = 12, sound_list_size = 22, last_time = 0, base_volume = 3.5, min_dist = 5.0, max_dist = 10.0},
+            {name="big_metal_structure_wind_small", chance = 0.9, interval = 20, sound_list_size = 16, last_time = 0, base_volume = 2.5, min_dist = 5.0, max_dist = 10.0},
+            {name="big_metal_structure_wind_medium", chance = 0.9, interval = 30, sound_list_size = 16, last_time = 0, base_volume = 2.5, min_dist = 5.0, max_dist = 10.0},
+        }
+    },
+    -- 4. North of the Freedom base (Elevated)
+    {
+        x = -13.523, y = 4.323, z = 70.920,
+        max_hearing_dist = 80.0,
+        sound_list = {
+            {name="hangar_metal_details", chance = 0.9, interval = 10, sound_list_size = 10, last_time = 0, base_volume = 3.5, min_dist = 5.0, max_dist = 10.0},
+            {name="hangar_wind_gust", chance = 0.9, interval = 12, sound_list_size = 22, last_time = 0, base_volume = 3.5, min_dist = 5.0, max_dist = 10.0},
+            {name="big_metal_structure_wind_small", chance = 0.9, interval = 20, sound_list_size = 16, last_time = 0, base_volume = 2.5, min_dist = 5.0, max_dist = 10.0},
+            {name="big_metal_structure_wind_medium", chance = 0.9, interval = 30, sound_list_size = 16, last_time = 0, base_volume = 2.5, min_dist = 5.0, max_dist = 10.0},
+        }
+    },
+    -- 5. East of the anomaly on the southern hill
+    {
+        x = -102.706, y = 3.028, z = 36.872,
+        max_hearing_dist = 90.0,
+        sound_list = {
+            {name="hangar_metal_details", chance = 0.9, interval = 10, sound_list_size = 10, last_time = 0, base_volume = 3.5, min_dist = 5.0, max_dist = 10.0},
+            {name="hangar_wind_gust", chance = 0.9, interval = 12, sound_list_size = 22, last_time = 0, base_volume = 3.5, min_dist = 5.0, max_dist = 10.0},
+            {name="big_metal_structure_wind_small", chance = 0.9, interval = 20, sound_list_size = 16, last_time = 0, base_volume = 2.5, min_dist = 5.0, max_dist = 10.0},
+            {name="big_metal_structure_wind_medium", chance = 0.9, interval = 30, sound_list_size = 16, last_time = 0, base_volume = 2.5, min_dist = 5.0, max_dist = 10.0},
+        }
+    },
+    -- 6. South of the Freedom base (2)
+    {
+        x = 3.369, y = -1.727, z = -59.147,
+        max_hearing_dist = 90.0,
+        sound_list = {
+            {name="hangar_metal_details", chance = 0.9, interval = 10, sound_list_size = 10, last_time = 0, base_volume = 3.5, min_dist = 5.0, max_dist = 10.0},
+            {name="hangar_wind_gust", chance = 0.9, interval = 12, sound_list_size = 22, last_time = 0, base_volume = 3.5, min_dist = 5.0, max_dist = 10.0},
+            {name="big_metal_structure_wind_small", chance = 0.9, interval = 20, sound_list_size = 16, last_time = 0, base_volume = 2.5, min_dist = 5.0, max_dist = 10.0},
+            {name="big_metal_structure_wind_medium", chance = 0.9, interval = 30, sound_list_size = 16, last_time = 0, base_volume = 2.5, min_dist = 5.0, max_dist = 10.0},
+        }
+    },
+    -- 7. South-west of the Freedom base
+    {
+        x = -67.945, y = 0.384, z = -29.285,
+        max_hearing_dist = 90.0,
+        sound_list = {
+            {name="hangar_metal_details", chance = 0.9, interval = 10, sound_list_size = 10, last_time = 0, base_volume = 3.5, min_dist = 5.0, max_dist = 10.0},
+            {name="hangar_wind_gust", chance = 0.9, interval = 12, sound_list_size = 22, last_time = 0, base_volume = 3.5, min_dist = 5.0, max_dist = 10.0},
+            {name="big_metal_structure_wind_small", chance = 0.9, interval = 20, sound_list_size = 16, last_time = 0, base_volume = 2.5, min_dist = 5.0, max_dist = 10.0},
+            {name="big_metal_structure_wind_medium", chance = 0.9, interval = 30, sound_list_size = 16, last_time = 0, base_volume = 2.5, min_dist = 5.0, max_dist = 10.0},
+        }
+    },
+    -- 8. West of the Freedom base (2)
+    {
+        x = -52.785, y = -12.029, z = 51.458,
+        max_hearing_dist = 100.0,
+        sound_list = {
+            {name="metal_structure_small_strong", chance = 0.9, interval = 25, sound_list_size = 20, last_time = 0, base_volume = 1.5, min_dist = 5.0, max_dist = 13.0},
+            {name="metal_structure_small_weak", chance = 0.9, interval = 12, sound_list_size = 32, last_time = 0, base_volume = 1.3, min_dist = 5.0, max_dist = 12.0},
+        }
+    },
+    -- 9. South-east of the Freedom base
+    {
+        x = 23.841, y = -5.786, z = -6.660,
+        max_hearing_dist = 100.0,
+        sound_list = {
+            {name="metal_structure_small_strong", chance = 0.9, interval = 25, sound_list_size = 20, last_time = 0, base_volume = 1.5, min_dist = 5.0, max_dist = 13.0},
+            {name="metal_structure_small_weak", chance = 0.9, interval = 12, sound_list_size = 32, last_time = 0, base_volume = 1.3, min_dist = 5.0, max_dist = 12.0},
+        }
+    },
+    -- 10. South of the Freedom base (3)
+    {
+        x = -40.497, y = 0.197, z = -47.072,
+        max_hearing_dist = 100.0,
+        sound_list = {
+            {name="metal_structure_small_strong", chance = 0.9, interval = 25, sound_list_size = 20, last_time = 0, base_volume = 1.5, min_dist = 5.0, max_dist = 13.0},
+            {name="metal_structure_small_weak", chance = 0.9, interval = 12, sound_list_size = 32, last_time = 0, base_volume = 1.3, min_dist = 5.0, max_dist = 12.0},
+        }
+    },
+    -- 11. By the old shack (ACID HISS)
+    {
+        x = 57.018, y = -11.429, z = 135.497,
+        max_hearing_dist = 80.0,
+        sound_list = {
+            {name="acidhiss", chance = 0.9, interval = 5, sound_list_size = 10, last_time = 0, base_volume = 3.0, min_dist = 5.0, max_dist = 10.0},
+        }
+    },
+    -- 12. North-east of the old shack (ACID HISS)
+    {
+        x = 81.100, y = -12.724, z = 155.154,
+        max_hearing_dist = 90.0,
+        sound_list = {
+            {name="acidhiss", chance = 0.9, interval = 1, sound_list_size = 10, last_time = 0, base_volume = 3.0, min_dist = 5.0, max_dist = 10.0},
+        }
+    },
+    -- 13. North-east of the old shack (2) (ACID HISS)
+    {
+        x = 99.087, y = -12.753, z = 181.424,
+        max_hearing_dist = 100.0,
+        sound_list = {
+            {name="acidhiss", chance = 0.9, interval = 3, sound_list_size = 10, last_time = 0, base_volume = 3.0, min_dist = 5.0, max_dist = 10.0},
+        }
+    },
+    -- 14. West of the road to Radar
+    {
+        x = -357.342, y = -13.817, z = 385.469,
+        max_hearing_dist = 100.0,
+        sound_list = {
+            {name="metal_structure_small_strong", chance = 0.9, interval = 25, sound_list_size = 20, last_time = 0, base_volume = 1.5, min_dist = 5.0, max_dist = 13.0},
+            {name="metal_structure_small_weak", chance = 0.9, interval = 12, sound_list_size = 32, last_time = 0, base_volume = 1.3, min_dist = 5.0, max_dist = 12.0},
+        }
+    },
+-- Army Warehouses, north of the anomaly on the southern hill
+    {
+        x = -191.093, y = -13.013, z = 39.405,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="interior_detail_wood", chance = 1.0, interval = 8, sound_list_size = 25, last_time = 0, base_volume = 0.8, min_dist = 1.0, max_dist = 1.5},
+        }
+    },
+    -- Army Warehouses, north of the anomaly on the southern hill
+    {
+        x = -201.577, y = -9.015, z = 65.686,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="interior_detail_wood", chance = 1.0, interval = 8, sound_list_size = 25, last_time = 0, base_volume = 0.8, min_dist = 1.0, max_dist = 1.5},
+        }
+    },
+    -- Army Warehouses, west of the anomaly on the southern hill
+    {
+        x = -236.206, y = -9.369, z = 47.694,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="interior_detail_wood", chance = 1.0, interval = 8, sound_list_size = 25, last_time = 0, base_volume = 0.8, min_dist = 1.0, max_dist = 1.5},
+        }
+    },
+    -- Army Warehouses, south of the abandoned village
+    {
+        x = -283.470, y = -18.213, z = 196.562,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="interior_detail_wood", chance = 1.0, interval = 8, sound_list_size = 25, last_time = 0, base_volume = 0.8, min_dist = 1.0, max_dist = 1.5},
+        }
+    },
+    -- Army Warehouses, south-west of the abandoned village
+    {
+        x = -304.175, y = -17.859, z = 211.976,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="interior_detail_wood", chance = 1.0, interval = 8, sound_list_size = 25, last_time = 0, base_volume = 0.8, min_dist = 1.0, max_dist = 1.5},
+        }
+    },
+    -- Army Warehouses, west of the abandoned village
+    {
+        x = -319.612, y = -19.079, z = 236.470,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="interior_detail_wood", chance = 1.0, interval = 8, sound_list_size = 25, last_time = 0, base_volume = 0.8, min_dist = 1.0, max_dist = 1.5},
+        }
+    },
+    -- Army Warehouses, west of the abandoned village
+    {
+        x = -322.732, y = -19.090, z = 235.298,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="interior_detail_wood", chance = 1.0, interval = 8, sound_list_size = 25, last_time = 0, base_volume = 0.8, min_dist = 1.0, max_dist = 1.5},
+        }
+    },
+    -- Army Warehouses, north of the abandoned village
+    {
+        x = -297.914, y = -18.209, z = 288.044,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="interior_detail_wood", chance = 1.0, interval = 8, sound_list_size = 25, last_time = 0, base_volume = 0.8, min_dist = 1.0, max_dist = 1.5},
+        }
+    },
+    -- Army Warehouses, north of the abandoned village
+    {
+        x = -275.382, y = -22.512, z = 266.864,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="interior_detail_wood", chance = 1.0, interval = 8, sound_list_size = 25, last_time = 0, base_volume = 0.8, min_dist = 1.0, max_dist = 1.5},
+        }
+    },
+    -- Army Warehouses, west of the abandoned village
+    {
+        x = -319.876, y = -19.097, z = 236.140,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="interior_detail_wood", chance = 1.0, interval = 8, sound_list_size = 25, last_time = 0, base_volume = 0.8, min_dist = 1.0, max_dist = 1.5},
+        }
+    },
+    -- Army Warehouses, north of the abandoned village
+    {
+        x = -290.926, y = -18.220, z = 289.745,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="interior_detail_wood", chance = 1.0, interval = 8, sound_list_size = 25, last_time = 0, base_volume = 0.8, min_dist = 1.0, max_dist = 1.5},
+        }
+    },
+    -- Army Warehouses, east of the abandoned village
+    {
+        x = -269.130, y = -17.791, z = 243.207,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="interior_detail_wood", chance = 1.0, interval = 8, sound_list_size = 25, last_time = 0, base_volume = 0.8, min_dist = 1.0, max_dist = 1.5},
+        }
+    },
+    -- Army Warehouses, east of the abandoned village
+    {
+        x = -243.167, y = -18.174, z = 224.869,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="interior_detail_wood", chance = 1.0, interval = 8, sound_list_size = 25, last_time = 0, base_volume = 0.8, min_dist = 1.0, max_dist = 1.5},
+        }
+    },
+    -- Army Warehouses, south-east of the abandoned village
+    {
+        x = -231.735, y = -21.779, z = 200.680,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="interior_detail_wood", chance = 1.0, interval = 8, sound_list_size = 25, last_time = 0, base_volume = 0.8, min_dist = 1.0, max_dist = 1.5},
+        }
+    },
+    -- Army Warehouses, east of the abandoned village
+    {
+        x = -203.009, y = -21.927, z = 207.644,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="interior_detail_wood", chance = 1.0, interval = 8, sound_list_size = 25, last_time = 0, base_volume = 0.8, min_dist = 1.0, max_dist = 1.5},
+        }
+    },
+    -- Army Warehouses, south of the road to Radar
+    {
+        x = -190.136, y = -16.035, z = 368.206,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="interior_detail_wood", chance = 1.0, interval = 8, sound_list_size = 25, last_time = 0, base_volume = 0.8, min_dist = 1.0, max_dist = 1.5},
+        }
+    },
+    -- Army Warehouses, south-east of the road to Radar
+    {
+        x = -165.460, y = -12.578, z = 381.108,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="interior_detail_wood", chance = 1.0, interval = 8, sound_list_size = 25, last_time = 0, base_volume = 0.8, min_dist = 1.0, max_dist = 1.5},
+        }
+    },
+    -- Army Warehouses, north-east of the old shack
+    {
+        x = 104.300, y = -8.627, z = 166.360,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="interior_detail_wood", chance = 1.0, interval = 8, sound_list_size = 25, last_time = 0, base_volume = 0.8, min_dist = 1.0, max_dist = 1.5},
+        }
+    },
+
+}

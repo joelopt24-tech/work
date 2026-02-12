@@ -1,0 +1,230 @@
+emitters = {
+        {
+            x = -67.178, y = -8.807, z = -51.664,
+            max_hearing_dist = 60.0,
+            sound_list = {
+                {name="frogs_swamp", chance = 0.9, interval = 10, sound_list_size = 32, last_time = 0, base_volume = 3.5, min_dist = 15.0, max_dist = 25.0},
+                {name="frogs_swamp_B", chance = 0.8, interval = 5, sound_list_size = 31, last_time = 0, base_volume = 3.5, min_dist = 10.0, max_dist = 15.0},
+            }
+        }, 
+
+        {
+            x = 15.695, y = 10.779, z = 93.757, -- Coordenadas exactas
+            max_hearing_dist = 100.0,            
+            sound_list = {
+                {name="metal_structure_small_strong", chance = 0.9, interval = 25, sound_list_size = 20, last_time = 0, base_volume = 1.5, min_dist = 5.0, max_dist = 13.0},
+                {name="metal_structure_small_weak", chance = 0.9, interval = 13, sound_list_size = 32, last_time = 0, base_volume = 1.3, min_dist = 5.0, max_dist = 12.0},
+            }
+        }, 
+
+        {
+            x = -10.073, y = 2.463, z = 61.500, -- Coordenadas exactas
+            max_hearing_dist = 100.0,
+            sound_list = {
+                {name="metal_structure_small_strong", chance = 0.9, interval = 25, sound_list_size = 20, last_time = 0, base_volume = 1.5, min_dist = 5.0, max_dist = 13.0},
+                {name="metal_structure_small_weak", chance = 0.9, interval = 12, sound_list_size = 32, last_time = 0, base_volume = 1.3, min_dist = 5.0, max_dist = 12.0},
+            }
+        },
+
+        {
+            x = 51.618, y = 19.856, z = 155.444, -- Coordenadas exactas
+            max_hearing_dist = 180.0,            
+            sound_list = {
+                {name="hangar_metal_details", chance = 0.9, interval = 35, sound_list_size = 10, last_time = 0, base_volume = 3.5, min_dist = 5.0, max_dist = 10.0},
+                {name="hangar_wind_gust", chance = 0.9, interval = 12, sound_list_size = 22, last_time = 0, base_volume = 3.0, min_dist = 5.0, max_dist = 10.0},
+                {name="big_metal_structure_wind_small", chance = 0.9, interval = 20, sound_list_size = 16, last_time = 0, base_volume = 2.5, min_dist = 5.0, max_dist = 10.0},
+                {name="big_metal_structure_wind_medium", chance = 0.9, interval = 30, sound_list_size = 16, last_time = 0, base_volume = 2.5, min_dist = 5.0, max_dist = 10.0},
+            }
+        }, 
+
+        {
+            x = 14.496, y = 0.387, z = 267.654, -- Coordenadas exactas
+            max_hearing_dist = 80.0,            
+            sound_list = {
+                {name="metal_structure_small_weak", chance = 0.9, interval = 13, sound_list_size = 32, last_time = 0, base_volume = 1.3, min_dist = 5.0, max_dist = 12.0},
+            }
+        },
+    -- By the southern checkpoint (Metal)
+    {
+        x = -155.150, y = -30.254, z = -354.502,
+        max_hearing_dist = 70.0,
+        sound_list = {
+            {name="metal_structure_small_strong", chance = 0.9, interval = 25, sound_list_size = 20, last_time = 0, base_volume = 1.5, min_dist = 5.0, max_dist = 13.0},
+            {name="metal_structure_small_weak", chance = 0.9, interval = 12, sound_list_size = 32, last_time = 0, base_volume = 1.3, min_dist = 5.0, max_dist = 12.0},
+        }
+    },
+    -- South of the southern checkpoint (Metal)
+    {
+        x = -142.658, y = -30.138, z = -372.084,
+        max_hearing_dist = 70.0,
+        sound_list = {
+            {name="metal_structure_small_strong", chance = 0.9, interval = 25, sound_list_size = 20, last_time = 0, base_volume = 1.5, min_dist = 5.0, max_dist = 13.0},
+            {name="metal_structure_small_weak", chance = 0.9, interval = 12, sound_list_size = 32, last_time = 0, base_volume = 1.3, min_dist = 5.0, max_dist = 12.0},
+        }
+    },
+    -- South of the car park (Metal)
+    {
+        x = 84.618, y = -7.993, z = -37.678,
+        max_hearing_dist = 70.0,
+        sound_list = {
+            {name="metal_structure_small_strong", chance = 0.9, interval = 25, sound_list_size = 20, last_time = 0, base_volume = 1.5, min_dist = 5.0, max_dist = 13.0},
+            {name="metal_structure_small_weak", chance = 0.9, interval = 12, sound_list_size = 32, last_time = 0, base_volume = 1.3, min_dist = 5.0, max_dist = 12.0},
+        }
+    },
+    -- East of the car park (Metal)
+    {
+        x = 112.991, y = -7.674, z = -21.316,
+        max_hearing_dist = 70.0,
+        sound_list = {
+            {name="metal_structure_small_strong", chance = 0.9, interval = 25, sound_list_size = 20, last_time = 0, base_volume = 1.5, min_dist = 5.0, max_dist = 13.0},
+            {name="metal_structure_small_weak", chance = 0.9, interval = 12, sound_list_size = 32, last_time = 0, base_volume = 1.3, min_dist = 5.0, max_dist = 12.0},
+        }
+    },
+    -- North of the northern checkpoint (Elevated Metal)
+    {
+        x = 22.790, y = 19.704, z = 670.674,
+        max_hearing_dist = 80.0,
+        sound_list = {
+            {name="metal_structure_small_strong", chance = 0.9, interval = 25, sound_list_size = 20, last_time = 0, base_volume = 1.5, min_dist = 5.0, max_dist = 13.0},
+            {name="metal_structure_small_weak", chance = 0.9, interval = 12, sound_list_size = 32, last_time = 0, base_volume = 1.3, min_dist = 5.0, max_dist = 12.0},
+
+        }
+    },
+-- Cordon, west of the rookie village
+    {
+        x = -220.503, y = -19.940, z = -163.413,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="interior_detail_wood", chance = 1.0, interval = 8, sound_list_size = 25, last_time = 0, base_volume = 0.8, min_dist = 1.0, max_dist = 1.5},
+        }
+    },
+    -- Cordon, west of the rookie village
+    {
+        x = -236.922, y = -20.040, z = -154.997,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="interior_detail_wood", chance = 1.0, interval = 8, sound_list_size = 25, last_time = 0, base_volume = 0.8, min_dist = 1.0, max_dist = 1.5},
+        }
+    },
+    -- Cordon, west of the rookie village
+    {
+        x = -219.038, y = -19.641, z = -134.795,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="interior_detail_wood", chance = 1.0, interval = 8, sound_list_size = 25, last_time = 0, base_volume = 0.8, min_dist = 1.0, max_dist = 1.5},
+        }
+    },
+    -- Cordon, north of the rookie village
+    {
+        x = -193.404, y = -16.639, z = -134.195,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="interior_detail_wood", chance = 1.0, interval = 8, sound_list_size = 25, last_time = 0, base_volume = 0.8, min_dist = 1.0, max_dist = 1.5},
+        }
+    },
+    -- Cordon, south-west of the rookie village
+    {
+        x = -200.443, y = -16.970, z = -158.999,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="interior_detail_wood", chance = 1.0, interval = 8, sound_list_size = 25, last_time = 0, base_volume = 0.8, min_dist = 1.0, max_dist = 1.5},
+        }
+    },
+    -- Cordon, south-east of the rookie village
+    {
+        x = -177.754, y = -19.943, z = -162.076,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="interior_detail_wood", chance = 1.0, interval = 8, sound_list_size = 25, last_time = 0, base_volume = 0.8, min_dist = 1.0, max_dist = 1.5},
+        }
+    },
+    -- Cordon, north-east of the rookie village
+    {
+        x = -170.488, y = -16.830, z = -132.629,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="interior_detail_wood", chance = 1.0, interval = 8, sound_list_size = 25, last_time = 0, base_volume = 0.8, min_dist = 1.0, max_dist = 1.5},
+        }
+    },
+    -- Cordon, south-east of the southern checkpoint
+    {
+        x = -120.785, y = -26.291, z = -375.330,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="interior_detail_wood", chance = 1.0, interval = 8, sound_list_size = 25, last_time = 0, base_volume = 0.8, min_dist = 1.0, max_dist = 1.5},
+        }
+    },
+    -- Cordon, south-east of the southern checkpoint
+    {
+        x = -121.024, y = -26.251, z = -388.311,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="interior_detail_wood", chance = 1.0, interval = 8, sound_list_size = 25, last_time = 0, base_volume = 0.8, min_dist = 1.0, max_dist = 1.5},
+        }
+    },
+    -- Cordon, east of the car park
+    {
+        x = 111.973, y = -2.982, z = -24.976,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="interior_detail_wood", chance = 1.0, interval = 8, sound_list_size = 25, last_time = 0, base_volume = 0.8, min_dist = 1.0, max_dist = 1.5},
+        }
+    },
+    -- Cordon, south-east of the car park
+    {
+        x = 107.339, y = -2.982, z = -37.172,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="interior_detail_wood", chance = 1.0, interval = 8, sound_list_size = 25, last_time = 0, base_volume = 0.8, min_dist = 1.0, max_dist = 1.5},
+        }
+    },
+    -- Cordon, north-east of the car park
+    {
+        x = 109.301, y = 0.414, z = 5.107,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="interior_detail_wood", chance = 1.0, interval = 8, sound_list_size = 25, last_time = 0, base_volume = 0.8, min_dist = 1.0, max_dist = 1.5},
+        }
+    },
+    -- Cordon, south of the farm
+    {
+        x = 11.613, y = 3.954, z = 256.572,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="interior_detail_wood", chance = 1.0, interval = 8, sound_list_size = 25, last_time = 0, base_volume = 0.8, min_dist = 1.0, max_dist = 1.5},
+        }
+    },
+    -- Cordon, south-west of the farm
+    {
+        x = -6.321, y = 3.954, z = 256.209,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="interior_detail_wood", chance = 1.0, interval = 8, sound_list_size = 25, last_time = 0, base_volume = 0.8, min_dist = 1.0, max_dist = 1.5},
+        }
+    },
+    -- Cordon, north-west of the farm
+    {
+        x = 2.689, y = 3.952, z = 291.621,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="interior_detail_wood", chance = 1.0, interval = 8, sound_list_size = 25, last_time = 0, base_volume = 0.8, min_dist = 1.0, max_dist = 1.5},
+        }
+    },
+    -- Cordon, east of the farm
+    {
+        x = 132.708, y = 3.514, z = 339.139,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="interior_detail_wood", chance = 1.0, interval = 8, sound_list_size = 25, last_time = 0, base_volume = 0.8, min_dist = 1.0, max_dist = 1.5},
+        }
+    },
+    -- Cordon, east of the farm
+    {
+        x = 141.281, y = 3.272, z = 341.178,
+        max_hearing_dist = 40.0,
+        sound_list = {
+            {name="interior_detail_wood", chance = 1.0, interval = 8, sound_list_size = 25, last_time = 0, base_volume = 0.8, min_dist = 1.0, max_dist = 1.5},
+        }
+    },
+
+    }
