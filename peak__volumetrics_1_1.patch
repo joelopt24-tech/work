@@ -1,0 +1,266 @@
+diff --git forkSrcPrefix/src/Layers/xrRenderPC_R4/r4_rendertarget.cpp forkDstPrefix/src/Layers/xrRenderPC_R4/r4_rendertarget.cpp
+index 7ec99470eca7cd5a35aa7ee23c03c9578b151a54..aae386e6c5f850d8ce4a2f3403d2a29b79468eb7 100644
+--- forkSrcPrefix/src/Layers/xrRenderPC_R4/r4_rendertarget.cpp
++++ forkDstPrefix/src/Layers/xrRenderPC_R4/r4_rendertarget.cpp
+@@ -630,8 +630,8 @@ CRenderTarget::CRenderTarget()
+ 			rt_ssfx_bloom_tmp4_2.create(r2_RT_ssfx_bloom_tmp4_2, w / 4.0f, h / 4.0f, D3DFMT_A16B16G16R16F); // Bloom / 4
+ 		}
+ 
+-		rt_ssfx_volumetric.create(r2_RT_ssfx_volumetric, w / 8.0f, h / 8.0f, D3DFMT_A16B16G16R16F); // Volumetric
+-		rt_ssfx_volumetric_tmp.create(r2_RT_ssfx_volumetric_tmp, w / 8.0f, h / 8.0f, D3DFMT_A16B16G16R16F); // Volumetric
++		rt_ssfx_volumetric.create(r2_RT_ssfx_volumetric, w / RImplementation.o.volsize, h / RImplementation.o.volsize, D3DFMT_A16B16G16R16F); // Volumetric
++		rt_ssfx_volumetric_tmp.create(r2_RT_ssfx_volumetric_tmp, w / RImplementation.o.volsize, h / RImplementation.o.volsize, D3DFMT_A16B16G16R16F); // Volumetric
+ 		rt_ssfx_rain.create(r2_RT_ssfx_rain, w / 8.0f, h / 8.0f, D3DFMT_A8R8G8B8); // Rain refraction buffer
+ 		rt_ssfx_water_waves.create(r2_RT_ssfx_water_waves, 512, 512, D3DFMT_A8R8G8B8); // Water Waves
+ 
+diff --git forkSrcPrefix/src/Layers/xrRender/rendertarget_phase_blur.cpp forkDstPrefix/src/Layers/xrRender/rendertarget_phase_blur.cpp
+index 4bf6623c3e937438592b8401bd6a260315a06e04..de8b4eb59f9a9035f0f7a3f87fc9be7e365ae631 100644
+--- forkSrcPrefix/src/Layers/xrRender/rendertarget_phase_blur.cpp
++++ forkDstPrefix/src/Layers/xrRender/rendertarget_phase_blur.cpp
+@@ -362,7 +362,7 @@ void CRenderTarget::phase_ssfx_volumetric_blur()
+ 	p1.set(1.0f, 1.0f);
+ 
+ 	// Volumetric always at 1/8 res
+-	set_viewport_size(HW.pContext, w / 8, h / 8);
++	set_viewport_size(HW.pContext, w / RImplementation.o.volsize, h / RImplementation.o.volsize);
+ 
+ 	ref_rt* rt_VolBlur[2] = { &rt_ssfx_volumetric_tmp, &rt_ssfx_volumetric };
+ 	int pixelsize[4] = { 0, 1, 1, 2 }; // half pixel + pixelsize
+@@ -385,7 +385,7 @@ void CRenderTarget::phase_ssfx_volumetric_blur()
+ 
+ 		// Draw COLOR
+ 		RCache.set_Element(s_ssfx_volumetric_blur->E[b % 2]);
+-		RCache.set_c("blur_setup", w / 8, h / 8, pixelsize[b], pixelscale[b]);
++		RCache.set_c("blur_setup", w / RImplementation.o.volsize, h / RImplementation.o.volsize, pixelsize[b], pixelscale[b]);
+ 		RCache.set_Geometry(g_combine);
+ 		RCache.Render(D3DPT_TRIANGLELIST, Offset, 0, 4, 0, 2);
+ 	}
+diff --git forkSrcPrefix/src/Layers/xrRender/xrRender_console.cpp forkDstPrefix/src/Layers/xrRender/xrRender_console.cpp
+index c2931fd2b112d51f0b4fdbe822dd1200c031aa00..72e47543de40b0eeb6b27b591a196380178c5ef3 100644
+--- forkSrcPrefix/src/Layers/xrRender/xrRender_console.cpp
++++ forkDstPrefix/src/Layers/xrRender/xrRender_console.cpp
+@@ -516,6 +516,8 @@ float ps_r2_gloss_min = 0.0f;
+ int opt_static = 2;
+ int opt_dynamic = 2;
+ 
++int ps_pfx_volumetric_mode = 1;
++
+ #ifndef _EDITOR
+ #include	"../../xrEngine/xr_ioconsole.h"
+ #include	"../../xrEngine/xr_ioc_cmd.h"
+@@ -1557,7 +1559,7 @@ void xrRender_initconsole()
+ 	CMD1(CCC_memory_stats, "render_memory_stats");
+ 
+ 	CMD4(CCC_Vector4, "vignette_control", &ps_vignette_control, Fvector4().set(0.0f, 0.0f, 0.0f, 0.0f), Fvector4().set(1.0f, 1.0f, 1.0f, 1.0f));
+-
++	CMD4(CCC_Integer,	"pfx_volumetric_mode", &ps_pfx_volumetric_mode, 0, 1);	
+ 	//	CMD3(CCC_Mask,		"r2_sun_ignore_portals",		&ps_r2_ls_flags,			R2FLAG_SUN_IGNORE_PORTALS);
+ }
+ #endif
+diff --git forkSrcPrefix/src/Layers/xrRender/xrRender_console.h forkDstPrefix/src/Layers/xrRender/xrRender_console.h
+index 0eb586fe56d73fbb11c6ad2f005a744526762b67..d91bead19cd20c89b4cf79873a812a7108c5f20d 100644
+--- forkSrcPrefix/src/Layers/xrRender/xrRender_console.h
++++ forkDstPrefix/src/Layers/xrRender/xrRender_console.h
+@@ -280,6 +280,7 @@ extern ECORE_API int ps_r3_dyn_wet_surf_sm_res; // 256
+ 
+ extern ECORE_API int opt_static;
+ extern ECORE_API int opt_dynamic;
++extern ECORE_API int ps_pfx_volumetric_mode;
+ 
+ enum
+ {
+diff --git forkSrcPrefix/src/Layers/xrRenderPC_R4/blender_combine.cpp forkDstPrefix/src/Layers/xrRenderPC_R4/blender_combine.cpp
+index 00a143c04fbe80c379f37693eaebcf40d1363265..f53c3018e863d7ffab89f517566fb57ce5278e51 100644
+--- forkSrcPrefix/src/Layers/xrRenderPC_R4/blender_combine.cpp
++++ forkDstPrefix/src/Layers/xrRenderPC_R4/blender_combine.cpp
+@@ -182,6 +182,15 @@ void CBlender_combine::Compile(CBlender_Compile& C)
+ 		C.r_End();
+ 		break;
+ 	case 5: // post-processing
++		C.r_Pass("pfx_volumetric_light", "pfx_volumetric_light", false, FALSE, FALSE, TRUE, D3DBLEND_ONE, D3DBLEND_ONE);
++
++		C.r_dx10Texture("s_position", r2_RT_P);
++		C.r_dx10Texture("s_smap", r2_RT_smap_depth);
++
++		C.r_dx10Sampler("smp_rtlinear");
++		C.r_dx10Sampler("smp_smap");
++		C.r_dx10Sampler("smp_nofilter");
++		C.r_End();
+ 		break;
+ 	}
+ }
+diff --git forkSrcPrefix/src/Layers/xrRenderPC_R4/r2_R_lights.cpp forkDstPrefix/src/Layers/xrRenderPC_R4/r2_R_lights.cpp
+index 07f8a0cabfdd334fcbd2c972a712777bdd95241b..5cf65dfce20f02d1eece9efda433862223ac6ac4 100644
+--- forkSrcPrefix/src/Layers/xrRenderPC_R4/r2_R_lights.cpp
++++ forkDstPrefix/src/Layers/xrRenderPC_R4/r2_R_lights.cpp
+@@ -251,9 +251,12 @@ void CRender::render_lights(light_Package& LP)
+ 
+ 					// Adjust resolution
+ 					if (RImplementation.o.ssfx_volumetric)
+-						Target->set_viewport_size(HW.pContext, w / 8, h / 8);
++						Target->set_viewport_size(HW.pContext, w / RImplementation.o.volsize, h / RImplementation.o.volsize);
+ 
+-					Target->accum_volumetric(L_spot_s[it]);
++					if(ps_pfx_volumetric_mode == 1)
++						Target->accum_volumetric_lv(L_spot_s[it]);
++					else
++						Target->accum_volumetric(L_spot_s[it]);
+ 
+ 					// Restore resolution
+ 					if (RImplementation.o.ssfx_volumetric)
+diff --git forkSrcPrefix/src/Layers/xrRenderPC_R4/r4.cpp forkDstPrefix/src/Layers/xrRenderPC_R4/r4.cpp
+index 606d8dc9a4cea8f736ce734a600eae997550635b..81ed8807933eb0ff078ef6a6f692dff37a61c186 100644
+--- forkSrcPrefix/src/Layers/xrRenderPC_R4/r4.cpp
++++ forkDstPrefix/src/Layers/xrRenderPC_R4/r4.cpp
+@@ -202,6 +202,10 @@ void CRender::create()
+ 
+ 	m_skinning = -1;
+ 	m_MSAASample = -1;
++	o.volsize = 8;
++	if (strstr(Core.Params, "-volumetric1")) o.volsize = 1;
++	if (strstr(Core.Params, "-volumetric2")) o.volsize = 2;
++	if (strstr(Core.Params, "-volumetric4")) o.volsize = 4;
+ 
+ 	// hardware
+ 	o.smapsize = 2048;
+diff --git forkSrcPrefix/src/Layers/xrRenderPC_R4/r4.h forkDstPrefix/src/Layers/xrRenderPC_R4/r4.h
+index 16288d0302931a2d3ae8faa6f645525049442157..91dfb7c4fe22b8a5d7cecaca36d14a1f6e826b29 100644
+--- forkSrcPrefix/src/Layers/xrRenderPC_R4/r4.h
++++ forkDstPrefix/src/Layers/xrRenderPC_R4/r4.h
+@@ -85,7 +85,7 @@ public:
+ 		u32 ssao_hdao : 1;
+ 		u32 ssao_ultra : 1;
+ 		u32 hbao_vectorized : 1;
+-
++		u32 volsize : 16;
+ 		u32 smapsize : 16;
+ 		u32 depth16 : 1;
+ 		u32 mrt : 1;
+diff --git forkSrcPrefix/src/Layers/xrRenderPC_R4/r4_rendertarget.h forkDstPrefix/src/Layers/xrRenderPC_R4/r4_rendertarget.h
+index 16c93f664725280588f05d141fa05bedf0f7dbcf..b344351f5c514bb6846d44c10f3e709d062177f9 100644
+--- forkSrcPrefix/src/Layers/xrRenderPC_R4/r4_rendertarget.h
++++ forkDstPrefix/src/Layers/xrRenderPC_R4/r4_rendertarget.h
+@@ -495,6 +495,7 @@ public:
+ 	void accum_reflected(light* L);
+ 	//	Igor: for volumetric lights
+ 	void accum_volumetric(light* L);
++	void accum_volumetric_lv(light* L);
+ 	void phase_bloom();
+ 	void phase_luminance();
+ 	void phase_combine();
+diff --git forkSrcPrefix/src/Layers/xrRenderPC_R4/r4_rendertarget_accum_spot.cpp forkDstPrefix/src/Layers/xrRenderPC_R4/r4_rendertarget_accum_spot.cpp
+index aeca39b4d2bd1926fab42e98f69ae11e262f166b..745691e5becfe40b869971577abaf2d0fb183123 100644
+--- forkSrcPrefix/src/Layers/xrRenderPC_R4/r4_rendertarget_accum_spot.cpp
++++ forkDstPrefix/src/Layers/xrRenderPC_R4/r4_rendertarget_accum_spot.cpp
+@@ -273,6 +273,111 @@ void CRenderTarget::accum_spot(light* L)
+ 	u_DBT_disable();
+ }
+ 
++void CRenderTarget::accum_volumetric_lv(light* L)
++{
++	//LV: Point lights will be fixed later... I hope
++	if (L == nullptr)
++		return;
++
++	// [ SSS ] Fade through distance volumetric lights.
++	if (ps_ssfx_volumetric.x > 0)
++	{
++		float Falloff = ps_ssfx_volumetric.y - std::min(std::max((L->vis.distance - 20) * 0.01f, 0.0f), 1.0f) * ps_ssfx_volumetric.y;
++		L->m_volumetric_intensity = Falloff;
++		L->flags.bVolumetric = Falloff <= 0 ? false : true;
++	}
++
++	if (!L->flags.bVolumetric)
++		return;
++	
++	if (!RImplementation.o.ssfx_volumetric)
++	{
++		phase_vol_accumulator();
++	}
++	else
++	{
++		if (!m_bHasActiveVolumetric_spot)
++		{
++			m_bHasActiveVolumetric_spot = true;
++
++			FLOAT ColorRGBA[4] = { 0.0f, 0.0f, 0.0f, 0.0f };
++			HW.pContext->ClearRenderTargetView(rt_ssfx_volumetric->pRT, ColorRGBA);
++		}
++
++		u_setrt(rt_ssfx_volumetric, NULL, NULL, NULL);
++
++		RCache.set_Stencil(FALSE);
++		RCache.set_CullMode(CULL_NONE);
++		RCache.set_ColorWriteEnable();
++	}
++
++	//Set XFORMs, we gonna transform our geometry in VS
++	L->xform_calc();
++	RCache.set_xform_world(L->m_xform);
++	RCache.set_xform_view(Device.mView);
++	RCache.set_xform_project(Device.mProject);
++
++	//Shadow xform (+texture adjustment matrix)
++	Fmatrix m_Shadow, m_Lmap;
++	{
++		float smapsize = float(RImplementation.o.smapsize);
++		float fTexelOffs = (.5f / smapsize);
++		float view_dim = float(L->X.S.size - 2) / smapsize;
++		float view_sx = float(L->X.S.posX + 1) / smapsize;
++		float view_sy = float(L->X.S.posY + 1) / smapsize;
++		float fRange = float(1.f) * ps_r2_ls_depth_scale;
++		float fBias = ps_r2_ls_depth_bias;
++
++		Fmatrix m_TexelAdjust = {
++			view_dim / 2.f, 0.0f, 0.0f, 0.0f,
++			0.0f, -view_dim / 2.f, 0.0f, 0.0f,
++			0.0f, 0.0f, fRange, 0.0f,
++			view_dim / 2.f + view_sx + fTexelOffs, view_dim / 2.f + view_sy + fTexelOffs, fBias, 1.0f
++		};
++
++		//Compute xforms
++		Fmatrix xf_world;
++		xf_world.invert(Device.mView);
++		Fmatrix xf_view = L->X.S.view;
++		Fmatrix xf_project;
++		xf_project.mul(m_TexelAdjust, L->X.S.project);
++
++		m_Shadow.set(xf_view);
++		m_Shadow.mulA_44(xf_project);
++	}
++
++	//Light direction (spot), color, and position. All in world space
++	Fvector L_dir, L_clr, L_pos;
++	L_clr.set(L->color.r, L->color.g, L->color.b);
++	L_clr.mul(L->m_volumetric_intensity);
++	L_clr.mul(L->m_volumetric_distance);
++	L_clr.mul(L->get_LOD());
++
++	L_pos.set(L->position);
++	L_dir.set(L->direction);
++	L_dir.normalize();
++
++	//Attenuation
++	float att_R = L->m_volumetric_distance * L->range * .95f;
++	float att_factor = 1.f / (att_R * att_R);
++
++	//Set the shader
++    RCache.set_Element(s_combine->E[5]);
++	RCache.set_CullMode(CULL_CW);
++	RCache.set_Stencil(FALSE);
++
++	RCache.set_ColorWriteEnable();
++	//Set constants
++	RCache.set_c("Ldynamic_pos", L_pos.x, L_pos.y, L_pos.z, att_factor);
++	RCache.set_c("Ldynamic_dir", L_dir.x, L_dir.y, L_dir.z, -cos(L->cone * 0.5));
++	RCache.set_c("Ldynamic_color", L_clr.x, L_clr.y, L_clr.z, L->get_LOD());
++
++	RCache.set_c("m_shadow", m_Shadow);
++
++	//Render, no IB/VB - geometry in VS
++	draw_volume(L);
++}
++
+ void CRenderTarget::accum_volumetric(light* L)
+ {
+ 	// [ SSS ] Fade through distance volumetric lights.
